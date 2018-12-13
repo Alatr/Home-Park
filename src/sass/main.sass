@@ -32,6 +32,18 @@ b, strong
 
 img
 	width: 100%
+	&:focus
+		outline: none
+
+a
+	text-decoration: none
+	&:hover
+		cursor: pointer
+button
+	border: none
+	text-decoration: none
+	&:hover
+		cursor: pointer
 .button
 	margin: 0 auto
 	display: block
@@ -104,10 +116,33 @@ img
 		font-weight: 700
 		text-align: center
 		text-transform: uppercase
+		font-weight: 500
 	&__descr
 		margin: 15px 0
 		font-size: 18px
+		font-weight: 400
+	button
+		font-weight: 300
 
+
+.header
+	display: flex
+	align-items: center
+	justify-content: center
+	min-height: 90px
+	background-color: $accent
+	color: #ffffff
+	font-family: "Gotham Pro"
+	font-size: 14px
+	font-weight: 500
+	line-height: 31px
+	letter-spacing: 0.14px
+	.webcamera
+		display: flex
+		align-items: center
+		background-color: 
+		&__icon
+			
 
 
 

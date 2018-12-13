@@ -28,49 +28,44 @@
 
 <body>
 
-	<!-- Custom HTML -->
-<?php echo 'Hallo baby'; ?>
-	<section class="nature">
-		<div class="container">
-			<div class="productItems">
-				<div class="productItem">
-					<img src="img/img-1.jpg" alt="Фото-1" class="productItem__img">
-					<!-- /.productItem__img -->
-					<h4 class="productItem__title">Наша природа</h4>
-					<!-- /.productItem__title -->
-					<p class="productItem__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officiis ab aut excepturi qui et quam tempora mollitia natus.</p>
-					<!-- /.productItem__descr -->
-					<button class="button">Уехать</button>
-				</div>
-				<!-- /.productItem -->
-				<div class="productItem">
-					<img src="img/img-2.jpg" alt="Фото-1" class="productItem__img">
-					<!-- /.productItem__img -->
-					<h4 class="productItem__title">Наша природа</h4>
-					<!-- /.productItem__title -->
-					<p class="productItem__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officiis ab aut excepturi qui et quam tempora mollitia natus.</p>
-					<!-- /.productItem__descr -->
-					<button class="button">Уехать</button>
-				</div>
-				<!-- /.productItem -->
-				<div class="productItem">
-					<img src="img/img-3.jpg" alt="Фото-1" class="productItem__img">
-					<!-- /.productItem__img -->
-					<h4 class="productItem__title">Наша природа</h4>
-					<!-- /.productItem__title -->
-					<p class="productItem__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officiis ab aut excepturi qui et quam tempora mollitia natus.</p>
-					<!-- /.productItem__descr -->
-					<button class="button">Уехать</button>
-				</div>
-				<!-- /.productItem -->
-			</div>
-			<!-- /.productItems -->
+<div class="container">
+	<header class="header">
+		<div class="language">
+			<a href="#" class="top-menu__link">▼</a>
+			<ul class="lang_list">
+				<li class="lang_item lang_item_active" "><a href="">Укр</a></li>
+				<li class="lang_item">Рус</li>
+			</ul>
+			<!-- <span>Укр</span> -->
 		</div>
-		<!-- /.container -->
-	</section>
-	<!-- /.nature -->
+		<!-- /.language -->
+		<a href="#" class="webcamera">
+			<img src="img/icon/webCamera-icon.svg" alt="Иконка веб камеры" class="webcamera__icon">
+			<span class="webcamera__text">Камера</span>
+		</a>
+		<!-- /.webcamera -->
+		<div class="gallery">
+			<img src="img/icon/picture-icon.svg" alt="" class="gallery__icon">
+			<span class="gallery__text">Галерея</span>
+		</div>
+		<!-- /.gallery -->
+		<img src="img/logo.svg" alt="" class="logo">
+		<a href="tel:+380635781801"class="tellink">(044) 222-35-47</a>
+		 <div class="btn">
+		 	<img src="img/icon/phone-icon.svg" alt="" class="phone-icon">
+		 	<span>Заказать звонок</span>
+		 </div>
+		 <!-- /.btn -->
+		 <div id="showMenu" class="call_menu">
+			<span class="upper">меню</span>
+			<i class="icon-menu orange"></i>
+		</div>
+	</header>
+	<!-- /.header -->
+</div>
+<!-- /.container -->
 
-	<script src="js/scripts.min.js"></script>
+<script src="js/scripts.min.js"></script>
 
 </body>
 </html>
