@@ -28,17 +28,58 @@
 
 <body>
 
+<!-- <div class="debug">
+	<div>
+		<div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
 <div class="container">
 	<header class="header">
-		<div class="language">
+		<!-- <div class="language">
 			<a href="#" class="top-menu__link">▼</a>
 			<ul class="lang_list">
 				<li class="lang_item lang_item_active" "><a href="">Укр</a></li>
 				<li class="lang_item">Рус</li>
 			</ul>
-			<!-- <span>Укр</span> -->
+			<span>Укр</span>
 		</div>
-		<!-- /.language -->
+		/.language -->
+
+	    <div class="language">
+	        <div class="language-btn"></div>
+	        <ul class="language__list">
+	        	<li class="lang__item lang_item_active"><a href="#">Укр</a></li>
+	        	<li class="lang__item"><a href="#">Рус</a></li>
+	        	<li class="lang__item"><a href="#">Рус</a></li>
+	        </ul>
+	    </div>
 		<a href="#" class="webcamera">
 			<img src="img/icon/webCamera-icon.svg" alt="Иконка веб камеры" class="webcamera__icon">
 			<span class="webcamera__text">Камера</span>
@@ -49,7 +90,7 @@
 			<span class="gallery__text">Галерея</span>
 		</div>
 		<!-- /.gallery -->
-		<img src="img/logo.svg" alt="" class="logo">
+		<div class="logo"></div>
 		<a href="tel:+380635781801"class="tellink">(044) 222-35-47</a>
 		 <div class="btn">
 		 	<img src="img/icon/phone-icon.svg" alt="" class="phone-icon">
