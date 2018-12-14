@@ -1,9 +1,46 @@
 $(function() {
 
-	$('.language .language-btn').on('click', function(){
-	        var langList = $(this).next();
-	        
-	        $('.language .language__list:visible').not(langList).slideUp(400);
-	        	langList.slideToggle(400);
-	});
+
 });
+
+(function($) {
+	
+	var mainSlider = function() {
+
+		$('.main-slider').slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			arrows: false
+			//prevArrow: '<div class="btn-slider-next"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="7"><defs><path id="arrow" d="M246 641v-1h10v-3.003h1v2V638h1v1.997V639h1v1.997h-2.6V641h2.6v1h-1v1h-1v1h-1v-1.003.002V641zm13 0v-1h1v1z"/></defs><use fill="#568f0a" xlink:href="#arrow" transform="translate(-246 -637)"/></svg></div>',
+			//nextArrow: '<div class="btn-slider-prev"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="7"><defs><path id="arrow" d="M246 641v-1h10v-3.003h1v2V638h1v1.997V639h1v1.997h-2.6V641h2.6v1h-1v1h-1v1h-1v-1.003.002V641zm13 0v-1h1v1z"/></defs><use fill="#568f0a" xlink:href="#arrow" transform="translate(-246 -637)"/></svg></div>'
+		  });
+
+		$('.btn-slider-prev').click(function(){
+		  $('.main-slider').slick('slickPrev');
+		})
+
+		$('.btn-slider-next').click(function(){
+		  $('.main-slider').slick('slickNext');
+		})
+	};
+
+	var changeLang = function() {
+		$('.language .language-btn, .lang__item, .lang_item_active').hover( function(){
+		        $('.language__list').addClass('language__list-active')
+			},function(){
+		        $('.language__list').removeClass('language__list-active')
+
+			});
+	};
+
+
+	/* Initialize
+	 * ------------------------------------------------------ */
+	 (function hpInit() {
+	     mainSlider();
+	     changeLang();
+	 })();
+})(jQuery);

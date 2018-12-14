@@ -128,34 +128,95 @@ button
 	button
 		font-weight: 300
 
-
-.header
+.btn
+	padding: 3px 20px
 	display: flex
 	align-items: center
-	justify-content: center
+	border: 2px solid #ffffff
+	svg
+		margin-right: 15px
+	&__text
+		white-space: nowrap
+	&:hover
+		cursor: pointer
+
+.top-menu
+	&-left
+		min-height: 130px
+		display: flex
+		align-items: center
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 10px
+	&-right
+		min-width: 440px
+		justify-content: space-between
+		display: flex
+		align-items: center
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 10px
+
+.logo
+	position: absolute
+	left: 50%
+	top: 0
+	transform: translateX(-50%)
+
+.header
+	position: relative
 	min-height: 90px
-	background-color: $accent
 	color: #ffffff
-	font-family: "Gotham Pro"
+	font-family: "GothamPro"
 	font-size: 14px
 	font-weight: 500
 	line-height: 31px
 	letter-spacing: 0.14px
+
+	&-section
+		background-color: $accent
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 10
+	a
+		color: #fff
 	.webcamera
+		padding: 4px 30px
+		margin-right: 33px
 		display: flex
 		align-items: center
-		background-color: 
-		&__icon
+		background-color: #689a23
+		svg
+			margin-right: 15px
 	.logo
 		width: 290px
 		height: 170px
 		background: $accent url('../img/logo.svg') center center no-repeat
-			
+	.gallery
+		display: flex
+		.wrap-icon
+			margin-right: 15px
+			position: relative
+			width: 30px
+			height: 30px
+			margin-right: 15px
+			display: block
+			border-radius: 50%
+			background-color: #689a23
+			display: flex
+			justify-content: center
+			align-items: center
+	.tellink
+		white-space: nowrap
+
 .language
 	display: flex
 	align-items: center
-	a
-		color: #fff
+	margin-right: 33px
 	&-btn
 		position: relative
 		width: 30px
@@ -175,11 +236,160 @@ button
 			border-top: 4px solid #fff
 		&:hover
 			cursor: pointer
+	.lang__item
+		a
+			position: relative
+			&::after
+				position: absolute
+				bottom: -2px
+				left: 0
+				content: ''
+				display: block
+				height: 1px
+				width: 100%
+				background-color: #fff
+				transform: scale(0)
+			&:hover
+				&::after
+					transition: 0.4s
+					transform: scale(1)
 	&__list
-
+		max-height: 20px
+		overflow: hidden
+		line-height: 1.5
+		transition: 0.6s
+		&-active
+			max-height: 44px
+			height: auto
 	&__item
-	
 
+.section-main
+	position: relative
+	background-color: #777
+	height: 100vh
+	width: 100vw
+	overflow: hidden
+	.main-slider
+		position: absolute
+		top: 0
+		left: 0
+		width: 100vw
+		height: 100vh
+		&-img
+			width: 100vw
+			height: 100vh
+			&:nth-child(1)
+				height: 100vh
+				background: #eaeaea url('../img/home/home-bg.jpg') center center no-repeat
+				background-size: cover
+			&:nth-child(2)
+				height: 100vh
+				background: red url('../img/home/home__about.jpg') center center no-repeat
+				background-size: cover
+
+	.slaierNav
+		padding: 55px 10px
+		padding-left: 180px
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 585px
+		min-height: 312px
+		background-color: #ffffff
+		opacity: 0.9
+		box-sizing: border-box
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			bottom: 61px
+			right: 65px
+			width: 30px
+			height: 24px
+			background: url('../img/svg/leaves-w.svg') center center no-repeat
+		&__title
+			margin-bottom: 25px
+			color: $accent
+			font-size: 36px
+			font-weight: 300
+			line-height: 48px
+			text-transform: uppercase
+			letter-spacing: 2.52px
+		.btn-slider-next, .btn-slider-prev
+			margin-right: 15px
+			position: relative
+			width: 30px
+			height: 30px
+			margin-right: 15px
+			border-radius: 50%
+			background-color: transparent
+			border: 1px solid $accent
+			display: flex
+			justify-content: center
+			align-items: center
+			svg
+				fill: $accent
+				stroke: $accent
+				.st0
+					fill: $accent
+					stroke: $accent
+			&:hover
+				cursor: pointer
+				background-color: $accent
+				svg
+					fill: #fff
+					stroke: #fff
+					.st0
+						fill: #fff
+						stroke: #fff
+		.btn-slider-prev
+			transform: rotate(180deg)
+		.arrows-block
+			position: relative
+			display: flex
+			align-items: center
+			&::after
+				content: ""
+				display: block
+				position: absolute
+				top: 50%
+				right: 120px
+				width: 168px
+				height: 1px
+				background-color: $accent
+
+	&-down
+		position: absolute
+		bottom: 40px
+		left: 50%
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		background-color: $accent
+		display: flex
+		justify-content: center
+		align-items: center
+		opacity: .9
+		transform: translateX(-50%)
+		animation: bounce 2s infinite
+		svg
+			width: 27px
+			fill: #fff
+			stroke: #fff
+			transform: rotate(90deg)
+		&:hover
+			cursor: pointer
+
+.section-title
+	color: $accent
+	font-family: "GothamPro"
+	font-size: 30px
+	font-weight: 300
+	line-height: 60px
+	letter-spacing: 2.1px	
+.sectionHome__about
+	padding-top: 70px
+	padding-bottom: 115px
 
 
 

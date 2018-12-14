@@ -14,7 +14,7 @@
 	
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
+	<!-- <link rel="icon" href="img/favicon/favicon.ico"> -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
 	
@@ -50,59 +50,91 @@
 	</div>
 </div> -->
 
+<div class="header-section">
+	<div class="container">
+		<header class="header">
+		    <div class="top-menu-left">
+		    	<div class="language">
+		    	    <div class="language-btn"></div>
+		    	    <ul class="language__list">
+		    	    	<li class="lang__item lang_item_active"><a href="#">Укр</a></li>
+		    	    	<li class="lang__item"><a href="#">Рус</a></li>
+		    	    </ul>
+		    	</div>
+		    			<a href="#" class="webcamera">
+		    				<?php include('img/svg/webCamera-icon.svg'); ?>
+		    				<span class="webcamera__text">Камера</span>
+		    			</a>
+		    			<!-- /.webcamera -->
+		    			<div class="gallery">
+		    				<div class="wrap-icon">
+		    					<?php include('img/svg/picture-icon.svg'); ?>
+		    				</div>
+		    				<span class="gallery__text">Галерея</span>
+		    			</div>
+		    			<!-- /.gallery -->
+		    </div>
+		    <!-- /.left-top-menu -->
+			<a href="#"><div class="logo"></div></a>
+			<div class="top-menu-right">
+				<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
+				 <div class="btn">
+				 	<?php include('img/svg/phone-icon.svg'); ?>
+				 	<span class="btn__text">Заказать звонок</span>
+				 </div>
+				 <!-- /.btn -->
+				 <div id="showMenu" class="call_menu">
+					<?php include('img/svg/menu-icon.svg'); ?>
+				</div>
+			</div>
+			<!-- /.right-top-menu -->
+		</header>
+		<!-- /.header -->
+	</div>
+	<!-- /.container -->
+</div>
+<!-- /.section-header -->
 
+<div class="section-main">
+	<div class="main-slider">
+		<div class="main-slider-img"></div>
+		<div class="main-slider-img"></div>
+	</div>
+	<!-- /.main-slider -->
+	<div class="slaierNav">
+		<h2 class="slaierNav__title">Все для семейного счастья</h2>
 
-
-
-
-
-
-
-
+		<div class="arrows-block">
+			<div class="btn-slider-prev"><?php include('img/svg/arrow.svg'); ?></div>
+			<div class="btn-slider-next"><?php include('img/svg/arrow.svg'); ?></div>
+		</div>
+		
+	</div>
+	<!-- /.slaierNav -->
+		}
+	<div class="section-main-down">
+		<?php include('img/svg/arrow.svg'); ?>
+	</div>
+</div>
+<!-- /.section-main -->
 
 <div class="container">
-	<header class="header">
-		<!-- <div class="language">
-			<a href="#" class="top-menu__link">▼</a>
-			<ul class="lang_list">
-				<li class="lang_item lang_item_active" "><a href="">Укр</a></li>
-				<li class="lang_item">Рус</li>
-			</ul>
-			<span>Укр</span>
-		</div>
-		/.language -->
-
-	    <div class="language">
-	        <div class="language-btn"></div>
-	        <ul class="language__list">
-	        	<li class="lang__item lang_item_active"><a href="#">Укр</a></li>
-	        	<li class="lang__item"><a href="#">Рус</a></li>
-	        	<li class="lang__item"><a href="#">Рус</a></li>
-	        </ul>
-	    </div>
-		<a href="#" class="webcamera">
-			<img src="img/icon/webCamera-icon.svg" alt="Иконка веб камеры" class="webcamera__icon">
-			<span class="webcamera__text">Камера</span>
-		</a>
-		<!-- /.webcamera -->
-		<div class="gallery">
-			<img src="img/icon/picture-icon.svg" alt="" class="gallery__icon">
-			<span class="gallery__text">Галерея</span>
-		</div>
-		<!-- /.gallery -->
-		<div class="logo"></div>
-		<a href="tel:+380635781801"class="tellink">(044) 222-35-47</a>
-		 <div class="btn">
-		 	<img src="img/icon/phone-icon.svg" alt="" class="phone-icon">
-		 	<span>Заказать звонок</span>
-		 </div>
-		 <!-- /.btn -->
-		 <div id="showMenu" class="call_menu">
-			<span class="upper">меню</span>
-			<i class="icon-menu orange"></i>
-		</div>
-	</header>
-	<!-- /.header -->
+	<div class="sectionHome__about">
+		<article class="article">
+			<h2 class="section-title">О проeкте</h2>
+			<!-- /.section-title -->
+			<img src="" alt="" class="article__img">
+			<div class="article__descr">
+				<h3 class="article__subtitle"></h3>
+				<!-- /.article__subtitle -->
+				<div class="article__text"></div>
+				<!-- /.article__text -->
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
+	</div>
+	<!-- /.sectionHome__about -->
 </div>
 <!-- /.container -->
 
