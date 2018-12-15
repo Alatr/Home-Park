@@ -66,12 +66,12 @@
 		    				<span class="webcamera__text">Камера</span>
 		    			</a>
 		    			<!-- /.webcamera -->
-		    			<div class="gallery">
+		    			<a href="#" class="gallery">
 		    				<div class="wrap-icon">
 		    					<?php include('img/svg/picture-icon.svg'); ?>
 		    				</div>
 		    				<span class="gallery__text">Галерея</span>
-		    			</div>
+		    			</a>
 		    			<!-- /.gallery -->
 		    </div>
 		    <!-- /.left-top-menu -->
@@ -80,10 +80,10 @@
 				<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
 				 <div class="btn">
 				 	<?php include('img/svg/phone-icon.svg'); ?>
-				 	<span class="btn__text">Заказать звонок</span>
+				 	Заказать звонок
 				 </div>
 				 <!-- /.btn -->
-				 <div id="showMenu" class="call_menu">
+				 <div class="menu-icon">
 					<?php include('img/svg/menu-icon.svg'); ?>
 				</div>
 			</div>

@@ -36,11 +36,20 @@ $(function() {
 			});
 	};
 
+	var menuIcon = function(){
+		var menu = document.querySelector('.menu-icon');
+
+		menu.addEventListener('click', function(){
+			menu.classList.toggle('menu-active');
+		});
+	};
+
 
 	/* Initialize
 	 * ------------------------------------------------------ */
 	 (function hpInit() {
 	     mainSlider();
-	     changeLang();
+			 changeLang();
+			 menuIcon();
 	 })();
 })(jQuery);

@@ -128,17 +128,7 @@ button
 	button
 		font-weight: 300
 
-.btn
-	padding: 3px 20px
-	display: flex
-	align-items: center
-	border: 2px solid #ffffff
-	svg
-		margin-right: 15px
-	&__text
-		white-space: nowrap
-	&:hover
-		cursor: pointer
+
 
 .top-menu
 	&-left
@@ -212,7 +202,108 @@ button
 			align-items: center
 	.tellink
 		white-space: nowrap
+	.menu-icon
+		user-select: none
+		transition: .25s ease-in-out
+		overflow: hidden
+		&:hover
+			cursor: pointer
+	.menu-icon.menu-active
+		.top
+			width: 0%
+			transition-delay: 0s
+			transition: .25s ease-in-out
+		.middle
+			width: 0%
+			transition-delay: 0.125s
+			transition: .35s ease-in-out
+		.bottom
+			width: 0%
+			transition-delay: 0.250s
+			transition: .45s ease-in-out
 
+		.leaves
+			transform: translateX(100%)
+			transition-delay: 0.350s
+			transition: .45s ease-in-out
+		.word
+			.m
+				transform: translateY(-100%)
+				transition-delay: 0s
+				transition: .45s ease-in-out
+			.e
+				transform: translateY(-100%)
+				transition-delay: 0.125s
+				transition: .55s ease-in-out
+			.n
+				transform: translateY(-100%)
+				transition-delay: 0.250s
+				transition: .65s ease-in-out
+			.u
+				transform: translateY(-100%)
+				transition-delay: 0.300s
+				transition: .75s ease-in-out
+		.cross_1
+			width: 100%
+			transform: rotate(45deg) translateY(49%) translateX(2%)
+			transform-origin: 50% 50%
+			transition-delay: 1.625s
+			transition: .25s ease-in-out
+			
+		.cross_2
+			width: 100%
+			transform: rotate(-45deg) translateY(49%) translateX(-1%)
+			transform-origin: 50% 50%
+			transition-delay: 1.375s
+			transition: .25s ease-in-out
+
+	.menu-icon
+		.menuIcon
+
+		.top
+			transition-delay: 0.5s
+			transition: .25s ease-in-out
+		.middle
+			transition-delay: 0.625s
+			transition: .35s ease-in-out
+		.bottom
+			transition-delay: 0.750s
+			transition: .45s ease-in-out
+
+		.leaves
+			transform: translateX(0)
+			transition-delay: 0.350s
+			transition: .45s ease-in-out
+		.word
+			.m
+				transform: translateY(0)
+				transition-delay: 0s
+				transition: .45s ease-in-out
+			.e
+				transform: translateY(0)
+				transition-delay: 0.125s
+				transition: .55s ease-in-out
+			.n
+				transform: translateY(0)
+				transition-delay: 0.250s
+				transition: .65s ease-in-out
+			.u
+				transform: translateY(0)
+				transition-delay: 0.300s
+				transition: .75s ease-in-out
+		.cross_1
+			width: 0%
+			transform: rotate(45deg) translateY(49%)
+			transform-origin: 50% 50%
+			transition-delay: 1.375s
+			transition: .25s ease-in-out
+
+		.cross_2
+			width: 0%
+			transform: rotate(-45deg) translateY(49%)
+			transform-origin: 50% 50%
+			transition-delay: 1.375s
+			transition: .25s ease-in-out
 .language
 	display: flex
 	align-items: center
