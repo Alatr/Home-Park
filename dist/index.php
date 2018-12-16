@@ -60,13 +60,17 @@
 		    	    	<li class="lang__item lang_item_active"><a href="#">Укр</a></li>
 		    	    	<li class="lang__item"><a href="#">Рус</a></li>
 		    	    </ul>
+		    	    <!-- <select name="lang">
+		    	    	<option value="ua">Укр</option>
+		    	    	<option value="rus">Рус</option>
+		    	    </select> -->
 		    	</div>
-		    			<a href="#" class="webcamera">
+		    			<a href="#" class="webcamera btn">
 		    				<?php include('img/svg/webCamera-icon.svg'); ?>
-		    				<span class="webcamera__text">Камера</span>
+		    				Камера
 		    			</a>
 		    			<!-- /.webcamera -->
-		    			<a href="#" class="gallery">
+		    			<a href="#" class="gallery btn-empty">
 		    				<div class="wrap-icon">
 		    					<?php include('img/svg/picture-icon.svg'); ?>
 		    				</div>
