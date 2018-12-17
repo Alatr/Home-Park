@@ -15,7 +15,7 @@
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<!-- <link rel="icon" href="img/favicon/favicon.ico"> -->
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"> -->
 	<!-- Template Basic Images End -->
 	
 	<!-- Custom Browsers Color Start -->
@@ -60,18 +60,22 @@
 		    	    	<li class="lang__item lang_item_active"><a href="#">Укр</a></li>
 		    	    	<li class="lang__item"><a href="#">Рус</a></li>
 		    	    </ul>
+		    	    <!-- <select name="lang">
+		    	    	<option value="ua">Укр</option>
+		    	    	<option value="rus">Рус</option>
+		    	    </select> -->
 		    	</div>
-		    			<a href="#" class="webcamera">
+		    			<a href="#" class="webcamera btn">
 		    				<?php include('img/svg/webCamera-icon.svg'); ?>
-		    				<span class="webcamera__text">Камера</span>
+		    				Камера
 		    			</a>
 		    			<!-- /.webcamera -->
-		    			<div class="gallery">
+		    			<a href="#" class="gallery btn-empty">
 		    				<div class="wrap-icon">
 		    					<?php include('img/svg/picture-icon.svg'); ?>
 		    				</div>
 		    				<span class="gallery__text">Галерея</span>
-		    			</div>
+		    			</a>
 		    			<!-- /.gallery -->
 		    </div>
 		    <!-- /.left-top-menu -->
@@ -80,10 +84,10 @@
 				<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
 				 <div class="btn">
 				 	<?php include('img/svg/phone-icon.svg'); ?>
-				 	<span class="btn__text">Заказать звонок</span>
+				 	Заказать звонок
 				 </div>
 				 <!-- /.btn -->
-				 <div id="showMenu" class="call_menu">
+				 <div class="menu-icon">
 					<?php include('img/svg/menu-icon.svg'); ?>
 				</div>
 			</div>
@@ -119,24 +123,150 @@
 <!-- /.section-main -->
 
 <div class="container">
-	<div class="sectionHome__about">
+	<div class="article-block">
 		<article class="article">
 			<h2 class="section-title">О проeкте</h2>
 			<!-- /.section-title -->
-			<img src="" alt="" class="article__img">
+			<div class="article__img">
+				<img src="img/home/home-bg.jpg" alt="Мужик с собакой" >
+			</div>
 			<div class="article__descr">
-				<h3 class="article__subtitle"></h3>
+				<h3 class="article__subtitle">Что нужно для счастья? </h3>
 				<!-- /.article__subtitle -->
-				<div class="article__text"></div>
+				<div class="article__text">
+					<p>Комфортное жилье по экономной цене. Парк для прогулок и спорта рядом с домом.</p>
+					<p>Современная и безопасная инфраструктура для ваших детей. Все, что необходимо - в вашем доме или рядом с ним.</p>
+				</div>
+				<!-- /.article__text -->
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
+
+		<article class="article article-mt">
+			<h2 class="section-title">РАСПОЛОЖЕНИЕ</h2>
+			<!-- /.section-title -->
+			<div class="article__img">
+				<img src="img/home/home__about.jpg" alt="Мужик с собакой" >
+			</div>
+			<div class="article__descr">
+				<h3 class="article__subtitle">HOME&PARK расположен</h3>
+				<!-- /.article__subtitle -->
+				<div class="article__text"> 
+					<p>в центре Борисполя по адресу ул. Беживка, 14 рядом
+					с гимназией «Перспектива».</p>
+					<p>Где бы вы ни работали — в Киеве или в Борисполе, вам будет удобно добираться до работы. А вашим детям — в школу или в детский садик, который находится в доме.</p>
+					
+				</div>
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
 				<!-- /.article__text -->
 			</div>
 			<!-- /.article__descr -->
 		</article>
 		<!-- /.article -->
+
 	</div>
-	<!-- /.sectionHome__about -->
+	<!-- /.article-block -->
 </div>
 <!-- /.container -->
+
+<div class="sectionHome__banner sectionHome__banner-plan">
+	<h2 class='banner__title'>ГенПлан</h2>
+</div>
+<!-- /.sectionHome__plan -->
+<div class="container">
+	<div class="article-block">
+		<article class="article article-slider">
+			<h2 class="section-title">ПРЕИМУЩЕСТВА</h2>
+			<!-- /.section-title -->
+			<div class="article__img">
+				<img src="img/home/home__featyres.jpg" alt="ПРЕИМУЩЕСТВА" >
+			</div>
+			<div class="article__descr">
+				<!-- /.article__subtitle -->
+				<div class="article__text">
+					<p class="article__text-top">Удобные планировки квартир, которые удовлетворяют запросы любой семьи </p>
+					<p class="article__text-bottom"><span class="color-accent-block">Выбирая жилье,</span>
+					надо учесть много различных факторов. Но главный из них - счастливое и гармоничное жизни вашей семьи</p>
+				</div>
+				<!-- /.article__text -->
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
+				<div class="article-slider__nav">
+					<div class="article-slider__nav-left">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-left -->
+					<div class="article-slider__nav-right">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-right -->
+				</div>
+				<!-- /.article-slider__nav -->
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
+
+
+	</div>
+	<!-- /.article-block -->
+</div>
+<!-- /.container -->
+<div class="sectionHome__banner sectionHome__banner-gallery">
+	<h2 class='banner__title'>галерея</h2>
+</div>
+<!-- /.sectionHome__gallery -->
+<div class="sectionHome__banner sectionHome__banner-apartment">
+	<div class="container">
+		<div class="sectionHome__banner-wrap">
+			<h2 class='banner__title'>Квартиры</h2>
+			<div class="bannerDescr">
+				<div class="bannerDescr__text bannerDescr__text-width">Выберите квартиру вашей мечты уже сейчас!</div>
+				<div class="btn bannerDescr__btn">
+					<?php include('img/svg/key-icon.svg'); ?>
+					Выбрать квартиру
+				</div>
+			</div>
+		</div>
+		<!-- /.sectionHome__banner-apartment-wrap -->
+	</div>
+	<!-- /.container -->
+</div>
+<!-- /.sectionHome__apartment -->
+<div class="sectionHome__banner sectionHome__banner-day-in">
+	<div class="container">
+		<div class="sectionHome__banner-wrap">
+			<h2 class='banner__title'>День в Home & park</h2>
+			<div class="bannerDescr">
+				<div class="bannerDescr__text bannerDescr__text-width">Посмотрите, как проходит наполненный счастьем день в HOME & PARK!</div>
+				<div class="btn bannerDescr__btn">
+					Смотреть
+				</div>
+			</div>
+		</div>
+		<!-- /.sectionHome__banner-wrap -->
+	</div>
+	<!-- /.container -->
+</div>
 
 <script src="js/scripts.min.js"></script>
 
