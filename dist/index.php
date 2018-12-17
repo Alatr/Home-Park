@@ -201,6 +201,7 @@
 					<p class="article__text-top">Удобные планировки квартир, которые удовлетворяют запросы любой семьи </p>
 					<p class="article__text-bottom"><span class="color-accent-block">Выбирая жилье,</span>
 					надо учесть много различных факторов. Но главный из них - счастливое и гармоничное жизни вашей семьи</p>
+					<span class="slider__count">6</span>
 				</div>
 				<!-- /.article__text -->
 				<div class="article__btn">
@@ -226,7 +227,44 @@
 		</article>
 		<!-- /.article -->
 
-
+		<article class="article article-slider article-mt">
+			<h2 class="section-title">ИНФРАСТРУКТУРА</h2>
+			<!-- /.section-title -->
+			<div class="article__img">
+				<img src="img/home/home__infostructure.jpg" alt="ПРЕИМУЩЕСТВА" >
+			</div>
+			<div class="article__descr">
+				<!-- /.article__subtitle -->
+				<div class="article__text">
+					<p class="article__text-top">Собственный парк для вашей семьи Собственный парк для вашей семьи Собственный парк для вашей семьи</p>
+					<p class="article__text-bottom"><span class="color-accent-block">Гармоничная инфраструктура</span>
+					
+					<span class="color-accent">HOME&PARK</span> создана для семейного счастья.</p>
+					<span class="slider__count">1</span>
+				</div>
+				<!-- /.article__text -->
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
+				<div class="article-slider__nav">
+					<div class="article-slider__nav-left">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-left -->
+					<div class="article-slider__nav-right">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-right -->
+				</div>
+				<!-- /.article-slider__nav -->
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
 	</div>
 	<!-- /.article-block -->
 </div>
@@ -235,6 +273,89 @@
 	<h2 class='banner__title'>галерея</h2>
 </div>
 <!-- /.sectionHome__gallery -->
+
+<div class="container">
+	<div class="article-block">
+		<article class="article article-slider">
+			<h2 class="section-title">ПРЕИМУЩЕСТВА</h2>
+			<!-- /.section-title -->
+			<div class="article__img">
+				<img src="img/home/home__featyres.jpg" alt="ПРЕИМУЩЕСТВА" >
+			</div>
+			<div class="article__descr">
+				<!-- /.article__subtitle -->
+				<div class="article__text">
+					<p class="article__text-top">Удобные планировки квартир, которые удовлетворяют запросы любой семьи </p>
+					<p class="article__text-bottom"><span class="color-accent-block">Выбирая жилье,</span>
+					надо учесть много различных факторов. Но главный из них - счастливое и гармоничное жизни вашей семьи</p>
+					<span class="slider__count">6</span>
+				</div>
+				<!-- /.article__text -->
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
+				<div class="article-slider__nav">
+					<div class="article-slider__nav-left">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-left -->
+					<div class="article-slider__nav-right">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-right -->
+				</div>
+				<!-- /.article-slider__nav -->
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
+
+		<article class="article article-slider article-mt">
+			<h2 class="section-title">ИНФРАСТРУКТУРА</h2>
+			<!-- /.section-title -->
+			<div class="article__img">
+				<img src="img/home/home__infostructure.jpg" alt="ПРЕИМУЩЕСТВА" >
+			</div>
+			<div class="article__descr">
+				<!-- /.article__subtitle -->
+				<div class="article__text">
+					<p class="article__text-top">Собственный парк для вашей семьи Собственный парк для вашей семьи Собственный парк для вашей семьи</p>
+					<p class="article__text-bottom"><span class="color-accent-block">Гармоничная инфраструктура</span>
+					
+					<span class="color-accent">HOME&PARK</span> создана для семейного счастья.</p>
+					<span class="slider__count">1</span>
+				</div>
+				<!-- /.article__text -->
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
+				<div class="article-slider__nav">
+					<div class="article-slider__nav-left">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-left -->
+					<div class="article-slider__nav-right">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-right -->
+				</div>
+				<!-- /.article-slider__nav -->
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
+	</div>
+	<!-- /.article-block -->
+</div>
+<!-- /.container -->
 <div class="sectionHome__banner sectionHome__banner-apartment">
 	<div class="container">
 		<div class="sectionHome__banner-wrap">
@@ -252,6 +373,165 @@
 	<!-- /.container -->
 </div>
 <!-- /.sectionHome__apartment -->
+<div class="container">
+	<div class="article-block">
+		<article class="article article-slider">
+			<h2 class="section-title">ПРЕИМУЩЕСТВА</h2>
+			<!-- /.section-title -->
+			<div class="article__img">
+				<img src="img/home/home__featyres.jpg" alt="ПРЕИМУЩЕСТВА" >
+			</div>
+			<div class="article__descr">
+				<!-- /.article__subtitle -->
+				<div class="article__text">
+					<p class="article__text-top">Удобные планировки квартир, которые удовлетворяют запросы любой семьи </p>
+					<p class="article__text-bottom"><span class="color-accent-block">Выбирая жилье,</span>
+					надо учесть много различных факторов. Но главный из них - счастливое и гармоничное жизни вашей семьи</p>
+					<span class="slider__count">6</span>
+				</div>
+				<!-- /.article__text -->
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
+				<div class="article-slider__nav">
+					<div class="article-slider__nav-left">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-left -->
+					<div class="article-slider__nav-right">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-right -->
+				</div>
+				<!-- /.article-slider__nav -->
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
+
+		<article class="article article-slider article-mt">
+			<h2 class="section-title">ИНФРАСТРУКТУРА</h2>
+			<!-- /.section-title -->
+			<div class="article__img">
+				<img src="img/home/home__infostructure.jpg" alt="ПРЕИМУЩЕСТВА" >
+			</div>
+			<div class="article__descr">
+				<!-- /.article__subtitle -->
+				<div class="article__text">
+					<p class="article__text-top">Собственный парк для вашей семьи Собственный парк для вашей семьи Собственный парк для вашей семьи</p>
+					<p class="article__text-bottom"><span class="color-accent-block">Гармоничная инфраструктура</span>
+					
+					<span class="color-accent">HOME&PARK</span> создана для семейного счастья.</p>
+					<span class="slider__count">1</span>
+				</div>
+				<!-- /.article__text -->
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
+				<div class="article-slider__nav">
+					<div class="article-slider__nav-left">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-left -->
+					<div class="article-slider__nav-right">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-right -->
+				</div>
+				<!-- /.article-slider__nav -->
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
+
+		<article class="article article-slider">
+			<h2 class="section-title">ПРЕИМУЩЕСТВА</h2>
+			<!-- /.section-title -->
+			<div class="article__img">
+				<img src="img/home/home__featyres.jpg" alt="ПРЕИМУЩЕСТВА" >
+			</div>
+			<div class="article__descr">
+				<!-- /.article__subtitle -->
+				<div class="article__text">
+					<p class="article__text-top">Удобные планировки квартир, которые удовлетворяют запросы любой семьи </p>
+					<p class="article__text-bottom"><span class="color-accent-block">Выбирая жилье,</span>
+					надо учесть много различных факторов. Но главный из них - счастливое и гармоничное жизни вашей семьи</p>
+					<span class="slider__count">6</span>
+				</div>
+				<!-- /.article__text -->
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
+				<div class="article-slider__nav">
+					<div class="article-slider__nav-left">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-left -->
+					<div class="article-slider__nav-right">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-right -->
+				</div>
+				<!-- /.article-slider__nav -->
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
+
+		<article class="article article-slider article-mt">
+			<h2 class="section-title">ИНФРАСТРУКТУРА</h2>
+			<!-- /.section-title -->
+			<div class="article__img">
+				<img src="img/home/home__infostructure.jpg" alt="ПРЕИМУЩЕСТВА" >
+			</div>
+			<div class="article__descr">
+				<!-- /.article__subtitle -->
+				<div class="article__text">
+					<p class="article__text-top">Собственный парк для вашей семьи Собственный парк для вашей семьи Собственный парк для вашей семьи</p>
+					<p class="article__text-bottom"><span class="color-accent-block">Гармоничная инфраструктура</span>
+					
+					<span class="color-accent">HOME&PARK</span> создана для семейного счастья.</p>
+					<span class="slider__count">1</span>
+				</div>
+				<!-- /.article__text -->
+				<div class="article__btn">
+					<span class="article__btn-text">
+						<?php include('img/svg/arrow.svg'); ?>
+						Читать
+						<?php include('img/svg/leaves-w.svg'); ?>
+					</span>
+				</div>
+				<div class="article-slider__nav">
+					<div class="article-slider__nav-left">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-left -->
+					<div class="article-slider__nav-right">
+						<?php include('img/svg/arrow.svg'); ?>
+					</div>
+					<!-- /.article-slider__nav-right -->
+				</div>
+				<!-- /.article-slider__nav -->
+			</div>
+			<!-- /.article__descr -->
+		</article>
+		<!-- /.article -->
+	</div>
+	<!-- /.article-block -->
+</div>
+<!-- /.container -->
 <div class="sectionHome__banner sectionHome__banner-day-in">
 	<div class="container">
 		<div class="sectionHome__banner-wrap">
