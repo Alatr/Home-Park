@@ -386,6 +386,10 @@ button
 				height: 100vh
 				background: #eaeaea url('../img/home/home-bg.jpg') center center no-repeat
 				background-size: cover
+			&:nth-child(3)
+				height: 100vh
+				background: #eaeaea url('../img/home/home-bg.jpg') center center no-repeat
+				background-size: cover
 			&:nth-child(2)
 				height: 100vh
 				background: red url('../img/home/home__about.jpg') center center no-repeat
@@ -497,7 +501,7 @@ button
 	text-transform: uppercase	
 .article-block
 	+row-flex();
-	justify-content: space-around
+	justify-content: space-between
 	padding-bottom: 30px
 	padding-top: 70px
 
@@ -516,8 +520,7 @@ button
 		position: relative
 	&__descr
 		position: relative
-		padding: 35px 70px 5px 40px
-		min-height: 246px
+		padding: 35px 45px 20px 40px
 		max-width: 420px
 		transform: translateY(-50px)
 		background-color: #fff
@@ -614,12 +617,16 @@ button
 			padding: 26px 44px
 			padding-right: 110px
 			margin: 0
+			min-height: 109px
 			border-bottom: 1px solid #efefef
+			box-sizing: border-box
 		&-bottom
 			padding-top: 20px
 			padding-bottom: 40px
 			padding-right: 70px
 			margin: 0
+			min-height: 109px
+			box-sizing: border-box
 			span
 				margin-bottom: 6px
 				font-size: 20px
@@ -732,6 +739,91 @@ button
 			font-weight: 500
 			line-height: 31px
 			letter-spacing: 0.7px
+
+.container
+	.logo-slaider-block
+		padding-top: 70px
+		padding-bottom: 100px
+		position: relative
+
+		.logo-slaider-wrap
+			margin: 0 auto
+			width: 917px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.logo-slaider-items
+				margin: 0 20px
+				height: 100%
+				line-height: 48px
+				svg
+					fill: $accent !important
+					stroke: $accent !important
+					path
+						fill: $accent !important
+						stroke: $accent !important
+					polygon
+						fill: $accent !important
+					rect
+						fill: $accent !important
+				
+
+			.logo-link
+				display: block
+				&:hover
+					svg
+						fill: inherit !important
+						stroke: inherit !important
+						path
+							fill: inherit !important
+							stroke: inherit !important
+						polygon
+							fill: inherit !important
+						rect
+							fill: inherit !important
+			.slick-track
+				display: flex
+				align-items: center
+			
+		.logo-slaider-btn
+			width: 45px
+			height: 20px
+			padding: 10px
+			position: absolute
+			top: 55%
+			display: flex
+			align-items: center
+			transform: translateY(-50%)
+			svg
+				width: 100%
+				height: 13px
+				.st0
+					fill: #568F0A
+					stroke-width: 0
+				.st1
+					fill: #568F0A
+					stroke: #568F0A
+					stroke-miterlimit: 10
+					stroke-width: 1
+			&:hover
+				cursor: pointer
+
+			&-left
+				left: 0
+				svg
+					transform: rotate(180deg)
+			&-right
+				right: 0
+
+
+
+
+
+
+
+
+
+
 
 
 @import "media" // Always at the end
