@@ -88,7 +88,8 @@ button
 			opacity: .32
 
 
-+reset();
++reset()
+
 
 
 .debug
@@ -96,10 +97,12 @@ button
 	+debug(rgba(0,0,0,.5), 1px solid #ff0)
 
 .container
-	+wrapper();
+	+wrapper()
+	
 
 .productItems
-	+row-flex();
+	+row-flex()
+	
 	justify-content: space-around	
 	
 .productItem
@@ -108,10 +111,14 @@ button
 	border-radius: 5px
 	background-color: #fff
 
-	+col();
-	+size(4);
-	+size-md(6);
-	+size-xs(12);
+	+col()
+	
+	+size(4)
+
+	+size-md(6)
+	
+	+size-xs(12)
+	
 	&__img
 
 	&__title
@@ -492,23 +499,27 @@ button
 			cursor: pointer
 
 .section-title
+	margin-bottom: 25px
 	color: $accent
 	font-family: "GothamPro"
 	font-size: 30px
 	font-weight: 300
-	line-height: 60px
+	line-height: 40px
 	letter-spacing: 2.1px
 	text-transform: uppercase	
 .article-block
-	+row-flex();
+	+row-flex()
+	
 	justify-content: space-between
 	padding-bottom: 30px
 	padding-top: 70px
 
 
 .article
-	+col();
-	+size(7);
+	+col()
+	
+	+size(7)
+	
 	color: #000000
 	font-family: "GothamPro"
 	font-weight: 400
@@ -520,7 +531,7 @@ button
 		position: relative
 	&__descr
 		position: relative
-		padding: 35px 45px 20px 40px
+		padding: 35px 45px 20px 0px
 		max-width: 420px
 		transform: translateY(-50px)
 		background-color: #fff
@@ -552,6 +563,7 @@ button
 		display: flex
 		justify-content: center
 		align-items: center
+		overflow: hidden
 		&-text
 			position: relative
 			margin-left: 20px
@@ -561,22 +573,66 @@ button
 			letter-spacing: 0.12px
 			svg
 				position: absolute
-				top: -7px
-				width: 42px
+				top: -6px
+				width: 100%
+				height: 13px
 				fill: $accent
 				stroke: $accent
+				.arrow-line
+					fill: #568F0A
+					stroke-width: 0
+				.arrow-angle
+					fill: #568F0A
+					stroke: #568F0A
+					stroke-miterlimit: 10
+					stroke-width: 1
 			.leaves-w
 				position: absolute
-				top: 10%
+				top: 8%
 				left: -45px
-				width: 42px
+				width: 100%
+				height: 90px
 				transform: translateY(-50%)
 				fill: $accent
 				stroke: $accent
+		&::before
+			border-radius: 50%
+			opacity: .5
+			transform: translateX(-50%) translateY(-50%)
+			content: ""
+			position: absolute
+			background: none repeat scroll 0 0 $accent
+			height: 0%
+			left: 50%
+			top: 50%
+			width: 0%
+			z-index: -1
+			transition: all .7s ease 0s
 			
 		&:hover
 			cursor: pointer
-
+			&::before
+				height: 150%
+				opacity: 1
+				width: 150%
+			.article__btn-text
+				color: #fff
+				svg
+					fill: #fff
+					stroke: #fff
+					.arrow-line
+						fill: #fff
+					.arrow-angle
+						fill: #fff
+						stroke: #fff
+				.leaves-w
+					.st0
+						fill:none
+						stroke: #fff
+						stroke-width: 3
+						stroke-linecap: round
+						stroke-linejoin: round
+						stroke-miterlimit: 10
 .article-slider
 	&__nav
 		position: absolute
@@ -714,19 +770,19 @@ button
 		&::before
 			position: absolute
 			top: 50%
-			left: -50px
+			left: -60px
 			transform: translateY(-50%)
 			content: ''
 			display: inline-block
-
-			width: 30px
-			height: 24px
+			width: 40px
+			height: 34px
 			background: url('../img/svg/leaves-w-w.svg') center center no-repeat
 
 	.bannerDescr
 		display: flex
 		flex-direction: column
 		align-items: center
+		margin-right: 70px
 		font-size: 14px
 		color: #fff
 		&__text
@@ -740,80 +796,198 @@ button
 			line-height: 31px
 			letter-spacing: 0.7px
 
-.container
-	.logo-slaider-block
-		padding-top: 70px
-		padding-bottom: 100px
-		position: relative
 
-		.logo-slaider-wrap
-			margin: 0 auto
-			width: 917px
-			display: flex
-			justify-content: space-between
-			align-items: center
-			.logo-slaider-items
-				margin: 0 20px
-				height: 100%
-				line-height: 48px
-				svg
+.logo-slaider-block
+	padding-top: 70px
+	padding-bottom: 100px
+	position: relative
+
+	.logo-slaider-wrap
+		margin: 0 auto
+		width: 917px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.logo-slaider-items
+			margin: 0 20px
+			height: 100%
+			line-height: 48px
+		.logo-slaider-items
+			.logo-link svg.active
+				fill: $accent !important
+				stroke: $accent !important
+				path
 					fill: $accent !important
 					stroke: $accent !important
-					path
-						fill: $accent !important
-						stroke: $accent !important
-					polygon
-						fill: $accent !important
-					rect
-						fill: $accent !important
-				
+				polygon
+					fill: $accent !important
+				rect
+					fill: $accent !important
+		.logo-link
+			display: block
 
-			.logo-link
-				display: block
-				&:hover
-					svg
-						fill: inherit !important
-						stroke: inherit !important
-						path
-							fill: inherit !important
-							stroke: inherit !important
-						polygon
-							fill: inherit !important
-						rect
-							fill: inherit !important
-			.slick-track
-				display: flex
-				align-items: center
-			
-		.logo-slaider-btn
-			width: 45px
-			height: 20px
-			padding: 10px
-			position: absolute
-			top: 55%
+		.slick-track
 			display: flex
 			align-items: center
-			transform: translateY(-50%)
+		
+	.logo-slaider-btn
+		width: 45px
+		height: 20px
+		padding: 10px
+		position: absolute
+		top: 55%
+		display: flex
+		align-items: center
+		transform: translateY(-50%)
+		svg
+			width: 100%
+			height: 13px
+			.arrow-line
+				fill: #568F0A
+				stroke-width: 0
+			.arrow-angle
+				fill: #568F0A
+				stroke: #568F0A
+				stroke-miterlimit: 10
+				stroke-width: 1
+		&:hover
+			cursor: pointer
+
+		&-left
+			left: 0
 			svg
-				width: 100%
-				height: 13px
-				.st0
-					fill: #568F0A
-					stroke-width: 0
-				.st1
-					fill: #568F0A
-					stroke: #568F0A
-					stroke-miterlimit: 10
-					stroke-width: 1
+				transform: rotate(180deg)
+		&-right
+			right: 0
+.tabs
+	padding: 50px 0
+	&__header
+		display: flex
+		align-items: center
+		li
+			padding: 16px 0
+			color: $accent
+			font-size: 14px
+			font-weight: 400
+			line-height: 18px
+			letter-spacing: 0.14px
+			flex-basis: 33.3333%
+			text-align: center
+			border: 1px solid #efefef
 			&:hover
 				cursor: pointer
-
-			&-left
-				left: 0
-				svg
-					transform: rotate(180deg)
-			&-right
+		li.active-li
+			background-color: #efefef
+			color: #000
+	&__content
+		position: relative
+		min-height: 370px
+		.tabs__inner
+			display: none
+			padding: 50px 70px 60px
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border: 1px solid #efefef
+			box-sizing: border-box
+		.tabs__inner.active-js
+			display: block
+	.mainForm
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between	
+		.btn-fill
+			width: 45%
+		&-wrap
+			height: 80px
+			position: relative
+			display: flex
+			flex-basis: 45%
+			flex-direction: column
+		&-wrap.requaired
+			&::after
+				content: ""
+				position: absolute
 				right: 0
+				top: 0
+				display: block
+				border: 20px solid transparent
+				border-top: 20px solid $accent
+				border-right: 20px solid $accent
+			&::before
+				content: "*"
+				position: absolute
+				width: 8px
+				height: 8px
+				right: 9px
+				top: -2px
+				display: block
+				color: #fff
+				z-index: 2
+				font-size: 25px
+
+
+		&__input
+			
+			border: none
+			box-shadow: 0 1px 0 #efefef
+
+.sectionHome__footer
+	min-height: 90px
+	background-color: $accent
+	color: #fff
+	a
+		color: #fff
+	.row
+		display: flex
+		justify-content: space-between
+		line-height: 90px
+		.footer__menu
+			display: flex
+			flex-basis: 60%
+			justify-content: space-between
+			li
+				a
+					position: relative
+					color: #fff
+					font-size: 16px
+					font-weight: 400
+					line-height: 30px
+					letter-spacing: 0.4px
+					&::after
+						position: absolute
+						bottom: -8px
+						left: 0
+						content: ''
+						display: block
+						height: 1px
+						width: 100%
+						background-color: #fff
+						transform: scale(0)
+					&:hover
+						&::after
+							transition: 0.4s
+							transform: scale(1)
+		.footer-wrap
+			display: flex
+			align-items: center
+			justify-content: space-between
+			flex-basis: 30%
+			
+
+			.btn-zindex
+				height: 40px
+				background-color: darken($accent, 3%)
+				border: none
+				z-index: 2
+				&::before
+					z-index: -1
+
+
+
+
 
 
 

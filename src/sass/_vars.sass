@@ -68,9 +68,57 @@ $bcolor: #000
 			use
 				fill: $accent
 
+.btn-fill
+	position: relative
+	display: flex
+	align-items: center
+	white-space: nowrap
+	justify-content: center
+	background-color: $accent
+	color: #fff
+	overflow: hidden
+	transition: .5s
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		bottom: -1px
+		width: 100%
+		height: 0
+		background-color: #fff
+		transition: .8s
+		border-radius: 50% 50% 0 0 
+		box-sizing: border-box
+		z-index: -1
+	&:hover
+		border: 1px solid $accent
+		box-sizing: border-box
+		color: $accent
+		cursor: pointer
+		&::before
+			box-sizing: border-box
+			height: 190%
+		svg
+			use
+				fill: #fff
+
+
+.t25p
+	&::before
+		top: 25% !important
+
 .mt-40
 	margin-top: 40px
+.mt50
+	margin-top: 50px
+.mt60
+	margin-top: 60px
 .mt-90
+	margin-top: 90px
+.mt70
+	margin-top: 70px
+.mt90
 	margin-top: 90px
 .pb50
 	padding-bottom: 50px
@@ -85,5 +133,22 @@ $bcolor: #000
 .color-accent-block
 	display: block
 	color: $accent
+
+
+
+
+
+.leaves-green
+	padding-bottom: 45px
+	position: relative
+	display: flex
+	align-items: center
+	&::before
+		content: ''
+		margin-right: 30px
+		width: 40px
+		height: 40px
+		background: url('../img/svg/leaves-w.svg') center center no-repeat
+
 
 

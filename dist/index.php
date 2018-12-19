@@ -139,19 +139,19 @@
 					<p>Современная и безопасная инфраструктура для ваших детей. Все, что необходимо - в вашем доме или рядом с ним.</p>
 				</div>
 				<!-- /.article__text -->
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 			</div>
 			<!-- /.article__descr -->
 		</article>
 		<!-- /.article -->
 
-		<article class="article  mt-40">
+		<article class="article  mt60">
 			<h2 class="section-title">РАСПОЛОЖЕНИЕ</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
@@ -166,13 +166,13 @@
 					<p>Где бы вы ни работали — в Киеве или в Борисполе, вам будет удобно добираться до работы. А вашим детям — в школу или в детский садик, который находится в доме.</p>
 					
 				</div>
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 				<!-- /.article__text -->
 			</div>
 			<!-- /.article__descr -->
@@ -210,13 +210,13 @@
 					<span class="slider__count">6</span>
 				</div>
 				<!-- /.article__text -->
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 				<div class="article-slider__nav">
 					<div class="article-slider__nav-left">
 						<?php include('img/svg/arrow.svg'); ?>
@@ -254,13 +254,13 @@
 					<span class="slider__count">1</span>
 				</div>
 				<!-- /.article__text -->
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 				<div class="article-slider__nav">
 					<div class="article-slider__nav-left">
 						<?php include('img/svg/arrow.svg'); ?>
@@ -308,13 +308,13 @@
 					<span class="slider__count">6</span>
 				</div>
 				<!-- /.article__text -->
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 				<div class="article-slider__nav">
 					<div class="article-slider__nav-left">
 						<?php include('img/svg/arrow.svg'); ?>
@@ -351,13 +351,13 @@
 					<span class="slider__count">1</span>
 				</div>
 				<!-- /.article__text -->
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 				<div class="article-slider__nav">
 					<div class="article-slider__nav-left">
 						<?php include('img/svg/arrow.svg'); ?>
@@ -409,19 +409,19 @@
 					активно развивается. Неизменным спросом пользуется коммерческая недвижимость...
 				</div>
 				<!-- /.article__text -->
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 			</div>
 			<!-- /.article__descr -->
 		</article>
 		<!-- /.article -->
 
-		<article class="article mt-40">
+		<article class="article mt90">
 			<h2 class="section-title">Sfera Living System</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
@@ -435,13 +435,13 @@
 					во всех дома, созданных компанией SAGA Development.
 					
 				</div>
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 				<!-- /.article__text -->
 			</div>
 			<!-- /.article__descr -->
@@ -460,13 +460,13 @@
 					<p>	и этапы выполнения работ.</p>
 				</div>
 				<!-- /.article__text -->
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 			</div>
 			<!-- /.article__descr -->
 		</article>
@@ -484,13 +484,13 @@
 				<div class="article__text"> 
 					<p>	компания SAGA Development</p>
 				</div>
-				<div class="article__btn">
+				<a href="#" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
 						<?php include('img/svg/leaves-w.svg'); ?>
 					</span>
-				</div>
+				</a>
 				<!-- /.article__text -->
 			</div>
 			<!-- /.article__descr -->
@@ -500,22 +500,6 @@
 	<!-- /.article-block -->
 </div>
 <!-- /.container -->
-<div class="sectionHome__banner sectionHome__banner-day-in">
-	<div class="container">
-		<div class="sectionHome__banner-wrap">
-			<h2 class='banner__title'>День в Home & park</h2>
-			<div class="bannerDescr">
-				<div class="bannerDescr__text bannerDescr__text-width">Посмотрите, как проходит наполненный счастьем день в HOME & PARK!</div>
-				<div class="btn bannerDescr__btn">
-					Смотреть
-				</div>
-			</div>
-		</div>
-		<!-- /.sectionHome__banner-wrap -->
-	</div>
-	<!-- /.container -->
-</div>
-
 <div class="container">
 	<div class="logo-slaider-block">
 		<h2 class="section-title pb50">Другие проекты застройщика</h2>
@@ -572,6 +556,93 @@
 	<!-- /.logo-slaider-block -->
 </div>
 <!-- /.container -->
+<div class="sectionHome__banner sectionHome__banner-day-in">
+	<div class="container">
+		<div class="sectionHome__banner-wrap">
+			<h2 class='banner__title t25p'>День в Home & park</h2>
+			<div class="bannerDescr">
+				<div class="bannerDescr__text bannerDescr__text-width">Посмотрите, как проходит наполненный счастьем день в HOME & PARK!</div>
+				<div class="btn bannerDescr__btn">
+					Смотреть
+				</div>
+			</div>
+		</div>
+		<!-- /.sectionHome__banner-wrap -->
+	</div>
+	<!-- /.container -->
+</div>
+<div class="container">
+	<div class="tabs">
+		<ul class="tabs__header">
+			<li data-page="0">Наши контактные данные</li>
+			<li class="active-li" data-page="1">Заказать звонок</li>
+			<li data-page="2">Форма обратной связи</li>
+		</ul>
+		<div class="tabs__content">
+			<div class="tabs__inner">
+				конткнт 1
+			</div>
+			<!-- /.tabs__inner -->
+			<div class="tabs__inner active-js">
+				<h3 class="section-title leaves-green">Заказать телефонный звонок</h3>
+
+				<form class="mainForm" onsubmit="ajax_form(this)" id="mainForm">
+					<div class="mainForm-wrap requaired">
+						<span class="contact-form-input__text" data-defaultMessage="Имя" data-errorMessage="Имя не заполнено">Имя</span>
+						<input placeholder="" name="name" type="text" class="mainForm__input">
+					</div>
+					<div class="mainForm-wrap requaired">
+						<span class="contact-form-input__text" data-defaultMessage="Телефон" data-errorMessage="Телефон не заполнен">Телефон</span>
+						<input placeholder="" name="tel" type="text" class="mainForm__input">
+					</div>
+					<div class="mainForm-wrap">
+						<span class="contact-form-input__text" data-defaultMessage="Сообщение" data-errorMessage="Заполните сообщение">Сообщение</span>
+						<input placeholder="" name="message" type="text" class="mainForm__input">
+					</div>
+						<div class="btn-fill">
+							Отправить
+						</div>
+					<!--  </contact-form-submit> -->
+				</form>
+			</div>
+			<!-- /.tabs__inner -->
+			<div class="tabs__inner">
+				конткнт 3
+			</div>
+			<!-- /.tabs__inner -->
+		</div>
+		<!-- /.tabs__content -->
+	</div>
+	<!-- /.tabs -->
+</div>
+<!-- /.container -->
+
+
+
+	<footer class="sectionHome__footer">
+		<div class="container">
+			<div class="row">
+				<ul class="footer__menu">
+					<li><a href="#">Про проект</a></li>
+					<li><a href="#">Выбрать квартиру</a></li>
+					<li><a href="#">Ход строительства</a></li>
+					<li><a href="#">Отдел продаж</a></li>
+				</ul>
+				<!-- /.footer__menu -->
+				<div class="footer-wrap">
+					<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
+					 <div class="btn btn-zindex">
+					 	<?php include('img/svg/phone-icon.svg'); ?>
+					 	Заказать звонок
+					 </div>
+				</div>
+				<!-- /.footer-wrap -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.sectionHome__footer -->
 
 <script src="js/scripts.min.js"></script>
 
