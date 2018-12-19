@@ -588,22 +588,36 @@
 
 				<form class="mainForm" onsubmit="ajax_form(this)" id="mainForm">
 					<div class="mainForm-wrap requaired">
-						<span class="contact-form-input__text" data-defaultMessage="Имя" data-errorMessage="Имя не заполнено">Имя</span>
+						<span class="mainForm__text" data-defaultMessage="Имя:" data-errorMessage="Имя не заполнено">
+							<div class="wrap-icon">
+								<?php include('img/svg/user-icon.svg'); ?>
+							</div>
+						Имя:
+						</span>
 						<input placeholder="" name="name" type="text" class="mainForm__input">
 					</div>
+					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap requaired">
-						<span class="contact-form-input__text" data-defaultMessage="Телефон" data-errorMessage="Телефон не заполнен">Телефон</span>
+						<span class="mainForm__text" data-defaultMessage="Ваш телефон:" data-errorMessage="Телефон не заполнен">Ваш телефон:</span>
 						<input placeholder="" name="tel" type="text" class="mainForm__input">
 					</div>
+					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap">
-						<span class="contact-form-input__text" data-defaultMessage="Сообщение" data-errorMessage="Заполните сообщение">Сообщение</span>
+						<span class="mainForm__text " data-defaultMessage="В какое удобное время Вам перезвонить:" data-errorMessage="Заполните сообщение">
+							<div class="wrap-icon">
+								<?php include('img/svg/phone-icon.svg'); ?>
+							</div>
+							В какое удобное время Вам перезвонить:
+						</span>
 						<input placeholder="" name="message" type="text" class="mainForm__input">
 					</div>
-						<div class="btn-fill">
+					<!--  </mainForm-wrap> -->
+						<button class="btn-fill">
 							Отправить
-						</div>
+						</button>
 					<!--  </contact-form-submit> -->
 				</form>
+				<!-- /form -->
 			</div>
 			<!-- /.tabs__inner -->
 			<div class="tabs__inner">
