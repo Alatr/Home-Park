@@ -1,7 +1,3 @@
-$(function() {
-
-
-});
 
 (function($) {
 	
@@ -98,10 +94,17 @@ $(function() {
 	};
 
 	var menuIcon = function(){
-		var menu = document.querySelector('.menu-icon');
+		var menuIcon = document.querySelector('.menu-icon'),
+			menuBlock = document.querySelector('.menu-section'),
+			body = document.querySelector('body');
 
-		menu.addEventListener('click', function(){
-			menu.classList.toggle('menu-active');
+		menuIcon.addEventListener('click', function(e){
+			e.preventDefault();
+			e.stopPropagation();
+
+			body.classList.toggle('ofh');
+			menuIcon.classList.toggle('menu-active');
+			menuBlock.classList.toggle('active-js');
 		});
 
 
@@ -122,16 +125,7 @@ $(function() {
 				}
 			});
 
-		var scrollBtn = document.querySelector('.section-main-down');
-
-
-			scrollBtn.addEventListener('click', function(){
-				var secondSection = $('.sectionHome__about');
-				        
-				        $('html, body').animate({
-				            scrollTop: secondSection.offset().top
-				        }, 1500);
-			});
+		
 	};
 
 	var tabs = function() {
@@ -159,67 +153,89 @@ $(function() {
 			}
 		});
 
-		function ajax_form(e) {
-			console.log('jjr')
-		    event.preventDefault();
-		    var str = $("#"+e.id).serialize();
-		    var x = document.forms[e.id]["name"].value;
-		    var y = document.forms[e.id]["tel"].value;
 
-		    var errors = false; // по умолчанию ошибок в форме нет
-		    $(e).find('.mainForm__input').each(function() {
-		        if ( $.trim ( $(this).val() ) === '') {  // $.trim - убирает пробелы с начала и конца строки таким образом пользователь не может отправить строку с пробелами
+		$('.mainForm').on('submit', function(e){
+			event.preventDefault();
+			var parent = e.target;
+			ajax_form(parent);
+		});
 
-		            errors = true;
-		            var errorMessage = $(this).prev().data("errormessage"); // добавляем в input сообщение об ошибке из dataAttr и class
-		            $(this).prev().text(errorMessage);
-		            $(this).addClass('js-no-valid');
-		        }
+			function ajax_form(e) {
+				event.preventDefault();
+				console.log(e)
+			    var str = $("#"+e.id).serialize();
+			    var x = document.forms[e.id]["name"].value;
+			    var y = document.forms[e.id]["tel"].value;
 
-		        $(".mainForm__input").on("mouseup", function(){
-		            var defaultMessage = $(this).prev().data("defaultmessage"); // при клике на input убираем сообщение и class
-		            $(this).prev().text(defaultMessage);
-		            $(this).removeClass('js-no-valid');
-		        });
+			    var errors = false; // по умолчанию ошибок в форме нет
+			    $(e).find('.mainForm__input-requaired').each(function() {
+			        if ( $.trim ( $(this).val() ) === '') {  // $.trim - убирает пробелы с начала и конца строки таким образом пользователь не может отправить строку с пробелами
 
-		    });
-		    if ( !errors) {
-		        $.ajax({
-		            method: "POST",
-		            url: "",
-		            data: str,
-		            beforeSend: function() {
-		                $(e).find('button').text('Отправка...') // замена текста в кнопке при отправке
-		            },
-		            error: function(){
-		                $(e).find('button').text('Ошибка отправки!');// замена текста в кнопке при отправке в случае
-		            }
+			            errors = true;
+			            var errorMessage = $(this).prev().data("errormessage"); // добавляем в input сообщение об ошибке из dataAttr и class
+			            $(this).prev().text(errorMessage);
+			            $(this).addClass('js-no-valid');
+			        }
 
-		        })
+			        $(".mainForm__input").on("mouseup", function(){
+			            var defaultMessage = $(this).prev().data("defaultmessage"); // при клике на input убираем сообщение и class
+			            $(this).prev().text(defaultMessage);
+			            $(this).removeClass('js-no-valid');
+			        });
 
-		            .done(function (msg) {
-		                // success();
-		                $('.form-succses').addClass('form-succses-active');
-		                $(e).find('input').val('');
-		                $(e).find('input').prev().removeClass('contact-form-input__text_active')
-		                $(e).find('button').text('Отправить')
-		                /*ga('send', {
-		                  hitType: 'event',
-		                  eventCategory: 'sendForm',
-		                  eventAction: 'send',
-		                  eventLabel: 'newRequest'
-		                });*/
-		            });
-		    }
-		}
+			    });
+			    if ( !errors) {
+			        $.ajax({
+			            method: "POST",
+			            url: "",
+			            data: str,
+			            beforeSend: function() {
+			                $(e).find('button').text('Отправка...') // замена текста в кнопке при отправке
+			            },
+			            error: function(){
+			                $(e).find('button').text('Ошибка отправки!');// замена текста в кнопке при отправке в случае
+			            }
 
+			        })
+
+			            .done(function (msg) {
+			                // success();
+			                $('.form-succses').addClass('form-succses-active');
+			                $(e).find('input').val('');
+			                //$(e).find('input').prev().removeClass('contact-form-input__text_active')
+			                $(e).find('button').text('Отправить')
+			                /*ga('send', {
+			                  hitType: 'event',
+			                  eventCategory: 'sendForm',
+			                  eventAction: 'send',
+			                  eventLabel: 'newRequest'
+			                });*/
+			            });
+			    }
+			}
 	};
 
+	var scrollBtn = function(){
+		var scrollBtn = document.querySelector('.section-main-down');
+		var headerHeight;
 
+		$(window).on('resize', function(){
+			var headerHeightResize = $('.header-section').height();
+			headerHeight = headerHeightResize;
+		});
+
+		scrollBtn.addEventListener('click', function(){
+			var secondSection = $('.article-block');
+			        
+	        $('html, body').animate({
+	            scrollTop: secondSection.offset().top - headerHeight
+	        }, 1500);
+		});
+	};
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 (function hpInit() {
+	 $(function hpInit() {
 	    	mainSlider();
 	    	pagesSlider();
 	    	logoSlider();
@@ -227,8 +243,12 @@ $(function() {
 			menuIcon();
 			tabs();
 			mainForm();
-	 })();
+			scrollBtn();
+	 });
+
+
 })(jQuery);
+
 
 
 

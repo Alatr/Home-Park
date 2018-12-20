@@ -1,103 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
-
-	<title>Home&Park</title>
-	<meta name="description" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<!-- <link rel="icon" href="img/favicon/favicon.ico"> -->
-	<!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"> -->
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
-
-	<link rel="stylesheet" href="css/main.min.css">
-
-</head>
-
-<body>
-
-<!-- <div class="debug">
-	<div>
-		<div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-</div> -->
-
-<div class="header-section">
-	<div class="container">
-		<header class="header">
-		    <div class="top-menu-left">
-		    	<div class="language">
-		    	    <div class="language-btn"></div>
-		    	    <ul class="language__list">
-		    	    	<li class="lang__item lang_item_active"><a href="#">Укр</a></li>
-		    	    	<li class="lang__item"><a href="#">Рус</a></li>
-		    	    </ul>
-		    	    <!-- <select name="lang">
-		    	    	<option value="ua">Укр</option>
-		    	    	<option value="rus">Рус</option>
-		    	    </select> -->
-		    	</div>
-		    			<a href="#" class="webcamera btn">
-		    				<?php include('img/svg/webCamera-icon.svg'); ?>
-		    				Камера
-		    			</a>
-		    			<!-- /.webcamera -->
-		    			<a href="#" class="gallery btn-empty">
-		    				<div class="wrap-icon">
-		    					<?php include('img/svg/picture-icon.svg'); ?>
-		    				</div>
-		    				<span class="gallery__text">Галерея</span>
-		    			</a>
-		    			<!-- /.gallery -->
-		    </div>
-		    <!-- /.left-top-menu -->
-			<a href="#"><div class="logo"></div></a>
-			<div class="top-menu-right">
-				<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
-				 <div class="btn">
-				 	<?php include('img/svg/phone-icon.svg'); ?>
-				 	Заказать звонок
-				 </div>
-				 <!-- /.btn -->
-				 <div class="menu-icon">
-					<?php include('img/svg/menu-icon.svg'); ?>
-				</div>
-			</div>
-			<!-- /.right-top-menu -->
-		</header>
-		<!-- /.header -->
-	</div>
-	<!-- /.container -->
-</div>
-<!-- /.section-header -->
+<?php include('includes/header.php'); ?>
 
 <div class="section-main">
 	<div class="main-slider">
@@ -136,7 +37,7 @@
 				<!-- /.article__subtitle -->
 				<div class="article__text">
 					<p>Комфортное жилье по экономной цене. Парк для прогулок и спорта рядом с домом.</p>
-					<p>Современная и безопасная инфраструктура для ваших детей. Все, что необходимо - в вашем доме или рядом с ним.</p>
+					<p>Современная и безопасная для ваших детей. Все, что необходимо - в вашем доме или рядом с ним.</p>
 				</div>
 				<!-- /.article__text -->
 				<a href="#" class="article__btn">
@@ -571,94 +472,9 @@
 	</div>
 	<!-- /.container -->
 </div>
-<div class="container">
-	<div class="tabs">
-		<ul class="tabs__header">
-			<li data-page="0">Наши контактные данные</li>
-			<li class="active-li" data-page="1">Заказать звонок</li>
-			<li data-page="2">Форма обратной связи</li>
-		</ul>
-		<div class="tabs__content">
-			<div class="tabs__inner">
-				конткнт 1
-			</div>
-			<!-- /.tabs__inner -->
-			<div class="tabs__inner active-js">
-				<h3 class="section-title leaves-green">Заказать телефонный звонок</h3>
 
-				<form class="mainForm" onsubmit="ajax_form(this)" id="mainForm">
-					<div class="mainForm-wrap requaired">
-						<span class="mainForm__text" data-defaultMessage="Имя:" data-errorMessage="Имя не заполнено">
-							<div class="wrap-icon">
-								<?php include('img/svg/user-icon.svg'); ?>
-							</div>
-						Имя:
-						</span>
-						<input placeholder="" name="name" type="text" class="mainForm__input">
-					</div>
-					<!--  </mainForm-wrap> -->
-					<div class="mainForm-wrap requaired">
-						<span class="mainForm__text" data-defaultMessage="Ваш телефон:" data-errorMessage="Телефон не заполнен">Ваш телефон:</span>
-						<input placeholder="" name="tel" type="text" class="mainForm__input">
-					</div>
-					<!--  </mainForm-wrap> -->
-					<div class="mainForm-wrap">
-						<span class="mainForm__text " data-defaultMessage="В какое удобное время Вам перезвонить:" data-errorMessage="Заполните сообщение">
-							<div class="wrap-icon">
-								<?php include('img/svg/phone-icon.svg'); ?>
-							</div>
-							В какое удобное время Вам перезвонить:
-						</span>
-						<input placeholder="" name="message" type="text" class="mainForm__input">
-					</div>
-					<!--  </mainForm-wrap> -->
-						<button class="btn-fill">
-							Отправить
-						</button>
-					<!--  </contact-form-submit> -->
-				</form>
-				<!-- /form -->
-			</div>
-			<!-- /.tabs__inner -->
-			<div class="tabs__inner">
-				конткнт 3
-			</div>
-			<!-- /.tabs__inner -->
-		</div>
-		<!-- /.tabs__content -->
-	</div>
-	<!-- /.tabs -->
-</div>
-<!-- /.container -->
+<?php include('includes/contact-form.php'); ?>
+<?php include('includes/footer.php'); ?>
 
 
 
-	<footer class="sectionHome__footer">
-		<div class="container">
-			<div class="row">
-				<ul class="footer__menu">
-					<li><a href="#">Про проект</a></li>
-					<li><a href="#">Выбрать квартиру</a></li>
-					<li><a href="#">Ход строительства</a></li>
-					<li><a href="#">Отдел продаж</a></li>
-				</ul>
-				<!-- /.footer__menu -->
-				<div class="footer-wrap">
-					<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
-					 <div class="btn btn-zindex">
-					 	<?php include('img/svg/phone-icon.svg'); ?>
-					 	Заказать звонок
-					 </div>
-				</div>
-				<!-- /.footer-wrap -->
-			</div>
-			<!-- /.row -->
-		</div>
-		<!-- /.container -->
-	</footer>
-	<!-- /.sectionHome__footer -->
-
-<script src="js/scripts.min.js"></script>
-
-</body>
-</html>

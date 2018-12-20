@@ -138,6 +138,18 @@ button
 
 
 
+/* ===========================Header_style========================*/
+/* ===========================Home_main_slaider========================*/
+/* ===========================Article_style========================*/
+/* ===========================Home _banner========================*/
+/* ===========================Logo_slaider========================*/
+/* ===========================Tabs_contact========================*/
+/* ===========================Section_footer========================*/
+
+
+
+
+/* ===========================Header_style========================*/
 .top-menu
 	&-left
 		min-height: 130px
@@ -156,13 +168,11 @@ button
 		top: 50%
 		transform: translateY(-50%)
 		right: 10px
-
 .logo
 	position: absolute
 	left: 50%
 	top: 0
 	transform: translateX(-50%)
-
 .header
 	position: relative
 	min-height: 90px
@@ -371,7 +381,7 @@ button
 			max-height: 44px
 			height: auto
 	&__item
-
+/* ===========================Home_main_slaider========================*/
 .section-main
 	position: relative
 	background-color: #777
@@ -415,10 +425,10 @@ button
 			content: ""
 			display: block
 			position: absolute
-			bottom: 61px
+			bottom: 55px
 			right: 65px
-			width: 30px
-			height: 24px
+			width: 50px
+			height: 44px
 			background: url('../img/svg/leaves-w.svg') center center no-repeat
 		&__title
 			margin-bottom: 25px
@@ -443,16 +453,25 @@ button
 			svg
 				fill: $accent
 				stroke: $accent
-				.st0
+				
+				.arrow-line
+					fill: $accent
+					stroke-width: 5
+				.arrow-angle
 					fill: $accent
 					stroke: $accent
+					stroke-miterlimit: 10
+					stroke-width: 3
 			&:hover
 				cursor: pointer
 				background-color: $accent
 				svg
 					fill: #fff
 					stroke: #fff
-					.st0
+					.arrow-line
+						fill: #fff
+						stroke: #fff
+					.arrow-angle
 						fill: #fff
 						stroke: #fff
 		.btn-slider-prev
@@ -495,7 +514,7 @@ button
 				stroke: #fff
 		&:hover
 			cursor: pointer
-
+/* ===========================Article_style========================*/
 .section-title
 	margin-bottom: 25px
 	color: $accent
@@ -511,8 +530,6 @@ button
 	justify-content: space-between
 	padding-bottom: 30px
 	padding-top: 70px
-
-
 .article
 	+col()
 	
@@ -700,9 +717,7 @@ button
 		font-weight: 400
 		line-height: 26px
 		letter-spacing: 0.3px
-
-
-
+/* ===========================Home _banner========================*/
 .sectionHome__banner
 	position: relative
 	background-size: cover
@@ -799,8 +814,7 @@ button
 			font-weight: 500
 			line-height: 31px
 			letter-spacing: 0.7px
-
-
+/* ===========================Logo_slaider========================*/
 .logo-slaider-block
 	padding-top: 70px
 	padding-bottom: 100px
@@ -863,7 +877,12 @@ button
 				transform: rotate(180deg)
 		&-right
 			right: 0
+/* ===========================Tabs_contact========================*/
 .tabs
+	a
+		color: #000
+		display: inline-block
+		white-space: normal
 	padding: 50px 0
 	&__header
 		display: flex
@@ -885,7 +904,7 @@ button
 			color: #000
 	&__content
 		position: relative
-		min-height: 370px
+		min-height: 410px
 		.tabs__inner
 			display: none
 			padding: 50px 70px 60px
@@ -898,6 +917,52 @@ button
 			box-sizing: border-box
 		.tabs__inner.active-js
 			display: block
+			position: relative
+			min-height: 410px
+
+		.contact
+			&-list
+				display: flex
+				justify-content: space-between
+				&__item
+					max-width: 200px
+					font-size: 14px
+					letter-spacing: 0.14px
+					line-height: 24px
+					font-weight: 400
+					letter-spacing: 0.14px
+					color: #000
+					.phone-icon
+						&::before
+							color: $accent
+							background: url('../img/svg/phone-icon-g.svg') center center no-repeat
+					.email-icon
+						&::before
+							background: url('../img/svg/email-icon.svg') center center no-repeat
+					.location-icon
+						&::before
+							background: url('../img/svg/location-icon.svg') center center no-repeat
+					.clock-icon
+						&::before
+							background: url('../img/svg/clock-icon.svg') center center no-repeat
+				&__title
+					margin-bottom: 5px
+					font-weight: 700
+					color: $accent
+					position: relative
+					&::before
+						display: block
+						content: ''
+						position: absolute
+						width: 16px
+						height: 16px
+						top: 3px
+						left: -36px
+					
+
+					
+
+
 	.mainForm
 		display: flex
 		flex-wrap: wrap
@@ -957,8 +1022,6 @@ button
 				display: inline-flex
 				justify-content: center
 				align-items: center
-
-
 		&__input
 			height: 60px
 			position: relative
@@ -966,6 +1029,7 @@ button
 			border: none
 			box-shadow: 0 1px 0 #efefef
 
+/* ===========================Section_footer========================*/
 .sectionHome__footer
 	min-height: 90px
 	background-color: $accent
@@ -1016,6 +1080,54 @@ button
 				z-index: 2
 				&::before
 					z-index: -1
+
+/* ===========================Home _banner========================*/
+
+.section-preview
+	position: relative
+	
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, .5)
+		z-index: -1
+
+	&__title
+		position: relative
+		padding-top: 140px
+		font-size: 30px
+		font-weight: 300
+		line-height: 60px
+		text-transform: uppercase
+		letter-spacing: 2.1px
+		color: #fff
+		text-transform: uppercase
+		&::before
+			position: absolute
+			top: 85%
+			left: -60px
+			transform: translateY(-50%)
+			content: ''
+			display: inline-block
+			width: 40px
+			height: 34px
+			background: url('../img/svg/leaves-w-w.svg') center center no-repeat
+	&-contact
+		height: 420px
+		display: flex
+		justify-content: center
+		align-items: center
+		background: #eaeaea url('../img/contacts/contact-page.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	.breadcrumb
+		position: absolute
+		bottom: 30px
 
 
 
