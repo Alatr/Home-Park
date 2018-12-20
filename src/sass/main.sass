@@ -1085,7 +1085,9 @@ button
 
 .section-preview
 	position: relative
-	
+	.container
+		position: relative
+		height: 100%
 	&::before
 		content: ''
 		display: block
@@ -1099,11 +1101,11 @@ button
 
 	&__title
 		position: relative
-		padding-top: 140px
 		font-size: 30px
 		font-weight: 300
-		line-height: 60px
+		line-height: 550px
 		text-transform: uppercase
+		text-align: center
 		letter-spacing: 2.1px
 		color: #fff
 		text-transform: uppercase
@@ -1119,15 +1121,51 @@ button
 			background: url('../img/svg/leaves-w-w.svg') center center no-repeat
 	&-contact
 		height: 420px
-		display: flex
-		justify-content: center
-		align-items: center
 		background: #eaeaea url('../img/contacts/contact-page.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
+		left: 0
+		display: flex
+		li
+			margin-right: 40px
+			color: #fff
+			font-size: 16px
+			font-weight: 400
+			line-height: 30px
+			letter-spacing: 0.4px
+		
+			
+			a
+				position: relative
+				color: #fff
+				font-size: 16px
+				font-weight: 400
+				line-height: 30px
+				letter-spacing: 0.4px
+				&::after
+					position: absolute
+					bottom: -8px
+					left: 0
+					content: ''
+					display: block
+					height: 1px
+					width: 100%
+					background-color: #fff
+					transform: scale(0)
+				&::before
+					position: absolute
+					top: 50%
+					right: -25px
+					transform: translateY(-50%)
+					content: '\2022'
+					color: #fff
+				&:hover
+					&::after
+						transition: 0.4s
+						transform: scale(1)
 
 
 
