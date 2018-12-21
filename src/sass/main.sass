@@ -898,6 +898,8 @@ button
 			text-align: center
 			border: 1px solid #efefef
 			&:hover
+				background-color: #efefef
+				color: #000
 				cursor: pointer
 		li.active-li
 			background-color: #efefef
@@ -1081,7 +1083,7 @@ button
 				&::before
 					z-index: -1
 
-/* ===========================Home _banner========================*/
+/* ===========================preview _banner========================*/
 
 .section-preview
 	position: relative
@@ -1101,9 +1103,12 @@ button
 
 	&__title
 		position: relative
+		display: inline-block
+		left: 50%
+		transform: translateX(-50%)
 		font-size: 30px
 		font-weight: 300
-		line-height: 550px
+		padding-top: 250px
 		text-transform: uppercase
 		text-align: center
 		letter-spacing: 2.1px
@@ -1111,9 +1116,8 @@ button
 		text-transform: uppercase
 		&::before
 			position: absolute
-			top: 85%
+			bottom: 10px
 			left: -60px
-			transform: translateY(-50%)
 			content: ''
 			display: inline-block
 			width: 40px
@@ -1122,6 +1126,11 @@ button
 	&-contact
 		height: 420px
 		background: #eaeaea url('../img/contacts/contact-page.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-web_camera
+		height: 420px
+		background: #eaeaea url('../img/web-camera/web-bg.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
 	.breadcrumb
@@ -1168,9 +1177,24 @@ button
 						transform: scale(1)
 
 
+/* ===========================preview _banner========================*/
 
+.webCamera
+	&__video
+		position: relative
+		height: 0
+		width: 100%
+		padding-bottom: 56.25%
+		background-color: #eaeaea
+		&-embed
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border: none
 
-
+	&__descr
 
 
 

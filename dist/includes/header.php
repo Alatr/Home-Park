@@ -147,7 +147,7 @@
 	                <li class="has-children">
 	                    <a href="#" class="menu__title">Конткты</a>
 	                    <ul class="sub-menu">
-                        	<li><a href="#">Расположение</a></li>
+                        	<li><a href="../contacts">Расположение</a></li>
                         	<li><a href="#">Связь</a></li>
 	                    </ul>
 	                </li>

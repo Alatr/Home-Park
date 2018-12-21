@@ -13,3 +13,9 @@
 <!-- /.sectionHome__gallery -->
 <?php include('includes/contact-form.php'); ?>
 <?php include('includes/footer.php'); ?>
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/contact.js"></script>
+
+	</body>
+</html>
