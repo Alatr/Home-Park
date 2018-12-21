@@ -17,21 +17,27 @@
 	<div class="webCamera">
 		<div class="webCamera__video">
 
-			<a href="#" class="video__link">
+			<a href="https://www.youtube.com/watch?v=Bumj1_bZGog" class="video__link" target="_blank">
 				<picture>
 					<source srcset="https://img.youtube.com/vi_webp/Bumj1_bZGog/maxresdefault.webp" type="imge/webp">
 					<img class='webCamera__video-embed' src="https://img.youtube.com/vi/Bumj1_bZGog/maxresdefault.jpg" alt="">
 				</picture>
 			</a>
-
-
-
-
-			<!-- <iframe  class='webCamera__video-embed' width="1045" height="588" src="https://www.youtube.com/embed/Bumj1_bZGog" frameborder="0"></iframe> -->
+			
+			<button class="video-btn" aria-label='Запустить видео'>
+				<?php include('img/svg/youtybe.svg'); ?>
+			</button>
 		</div>
 		<!-- /.webCamera__video -->
 		<div class="webCamera__descr">
-			
+			<h3 class="descr__title">Запланированное время завершения строительства:</h3>
+			<!-- /.descr__title -->
+			<h4 class="descr__subtitle">IV квартал 2018 года</h4>
+			<!-- /.descr__subtitle -->
+			<div class="btn-green-border">
+				Ход строительства
+			</div>
+			<!-- /.btn -->
 		</div>
 		<!-- /.webCamera__descr -->
 	</div>
@@ -42,6 +48,7 @@
 <?php include('includes/footer.php'); ?>
 
 	<script src="js/scripts.min.js"></script>
+	<script src="js/web-camera.js"></script>
 
 	</body>
 </html>

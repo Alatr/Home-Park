@@ -1133,6 +1133,11 @@ button
 		background: #eaeaea url('../img/web-camera/web-bg.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+	&-values
+		height: 420px
+		background: #eaeaea url('../img/values/values-bg.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
@@ -1178,14 +1183,26 @@ button
 
 
 /* ===========================preview _banner========================*/
-
 .webCamera
+	padding: 60px 0
+	display: flex
+	align-items: center
 	&__video
 		position: relative
 		height: 0
-		width: 100%
-		padding-bottom: 56.25%
+		width: 66%
+		padding-bottom: 37.125%
 		background-color: #eaeaea
+		&:hover
+			.video-btn .video-btn-shape
+				fill: #ff0000
+				fill-opacity: 1
+		
+		.video-btn
+			&:focus
+				.video-btn-shape
+					fill: #ff0000
+					fill-opacity: 1
 		&-embed
 			position: absolute
 			top: 0
@@ -1193,12 +1210,82 @@ button
 			width: 100%
 			height: 100%
 			border: none
+	.video-btn
+		position: absolute
+		padding: 0
+		top: 50%
+		left: 50%
+		width: 68px
+		height: 48px
+		background-color: transparent
+		transform: translate(-50%, -50%)
+		outline: none
+		display: none
+		.video-btn-shape
+			fill: #212121
+	&__descr
+		position: relative
+		padding: 73px 35px 45px 35px
+		display: block
+		max-width: 300px
+		background-color: #efefef
+		box-sizing: border-box
+		&::before
+			content: ""
+			display: block
+			position: absolute
+			top: 9%
+			left: 9%
+			width: 40px
+			height: 44px
+			background: url('../img/svg/leaves-w.svg') center center no-repeat
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			top: 16%
+			left: 30%
+			width: 180px
+			height: 1px
+			background-color: #cbcbcb
+		.descr
+			&__title
+				margin-bottom: 15px
+				color: $accent
+				font-size: 20px
+				font-weight: 400
+				line-height: 24px
+				letter-spacing: 0.2px
+			&__subtitle
+				margin-bottom: 20px
+				color: #000
+				font-size: 14px
+				font-weight: 400
+				line-height: 26px
+				letter-spacing: 0.2px
+		.btn-green-border
+			padding: 11px 24px
+
+.video--enabled .video-btn
+	display: block
+.video--enabled
+	cursor: pointer
+
 
 	&__descr
 
 
+/* ===========================values========================*/
 
-
+.values
+	&-block
+		padding: 55px 0
+		.article-slider__nav
+			top: auto
+	&-slider-wrapper
+		.slick-list
+			padding: 0 11% 0 0 !important
+		.slick-slide:not(.slick-active)
 
 
 

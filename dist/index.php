@@ -200,7 +200,6 @@
 				<!-- /.slider-wrap -->
 			</div>
 			<div class="article__descr">
-				<!-- /.article__subtitle -->
 				<div class="article__text">
 					<p class="article__text-top"><span class="fw500  block">СЕМЬЯ</span>
 					Благодаря вниманию к деталям уют и комфорт 

@@ -18,7 +18,7 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInit() {
+	 $(function hpInitContact() {
 			tabs();
 	 });
 
