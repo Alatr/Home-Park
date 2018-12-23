@@ -15,23 +15,21 @@
 <div class="container">
 	<div class="values-block">
 		<div class="values-slider-wrapper">
+			
 			<div class="values-slider__items">
 				<img src="img/values/values-slaider.jpg" alt="Слайд-1">
 			</div>
 			<!-- /.values-slider__items -->
+			
 			<div class="values-slider__items">
-				<img src="img/values/values-slaider.jpg" alt="Слайд-1">
-				<!-- <img src="img/home/home__about.jpg" alt="Слайд-2"> -->
+				<img src="img/values/values-slaider.jpg" alt="Слайд-2">
 			</div>
 			<!-- /.values-slider__items -->
-			<!-- <div class="values-slider__items">
-				<img src="img/values/values-slaider.jpg" alt="Слайд-3">
-			</div>
-			/.values-slider__items
 			<div class="values-slider__items">
 				<img src="img/values/values-slaider.jpg" alt="Слайд-3">
 			</div>
-			/.values-slider__items -->
+			<!-- /.values-slider__items -->
+			
 		</div>
 		<!-- /.values-slider-wrapper -->
 		<div class="article-slider__nav">
