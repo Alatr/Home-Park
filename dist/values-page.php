@@ -58,6 +58,7 @@
 				<img src="img/home/home-bg.jpg" alt="Слайд-1">
 			</div>
 			<!-- /.values-slider__items -->
+
 			
 			
 		</div>
@@ -79,9 +80,7 @@
 			<h4 class="descr__subtitle">Благодаря вниманию к деталям уют и комфорт вашей семьи обеспечен</h4>
 			<!-- /.descr__subtitle -->
 			<ul class="slider-navigation">
-				<li class="active">01</li>
-				<li>02</li>
-				<li>03</li>
+				<!-- вывод li через js -->
 			</ul>
 		</div>
 		<!-- /.webCamera__descr -->

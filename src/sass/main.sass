@@ -189,7 +189,7 @@ button
 		top: 0
 		left: 0
 		width: 100%
-		z-index: 10
+		z-index: 9999
 	a
 		color: #fff
 	.webcamera
@@ -1146,6 +1146,21 @@ button
 		background: #eaeaea url('../img/values/values-bg.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+	&-day-in
+		height: 420px
+		background: #eaeaea url('../img/day-in/banner_dayIn.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-developer
+		height: 420px
+		background: #eaeaea url('../img/developer/developer-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-specifically
+		height: 420px
+		background: #eaeaea url('../img/specifically/specifically-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
@@ -1323,17 +1338,20 @@ button
 				margin: 0
 			.slider-navigation
 				position: absolute
-				right: -32%
+				right: -40%
 				top: 12%
+				transition: all 1s
 				li
 					position: relative
 					margin-bottom: 20px
-					padding-left: 10px
+					padding-left: 15px
 					color: #808080
 					font-size: 12px
 					font-weight: 400
 					line-height: 26px
 					letter-spacing: 0.12px
+					transition: all 1s
+
 					
 
 				li.active
@@ -1342,13 +1360,14 @@ button
 					font-weight: 700
 					line-height: 26px
 					letter-spacing: 0.36px
+					transition: all 1s
 					&::before
 						content: ''
 						display: block
 						position: absolute
 						top: 50%
-						left: -90%
-						width: 60px
+						left: -75%
+						width: 50px
 						height: 1px
 						background-color: $accent
 						transform: translateY(-50%)
@@ -1356,7 +1375,7 @@ button
 	&-slider-wrapper
 		position: relative
 		min-height: 700px
-		.values-slider__items
+		&>div
 			position: absolute
 			top: 0
 			left: 0
@@ -1371,10 +1390,271 @@ button
 				height: 100%
 			
 
+.day-in-block
+	padding-top: 170px
+	.images-block
+		position: relative
+		max-width: 990px
+		margin: 0 auto 205px
+		&::after
+			display: block
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 20px
+			right: -20px
+			border: 1px solid #efefef
+			background-color: #ffffff
+			z-index: -1
+
+		.images-block-descr
+			position: absolute
+			top: -135px
+			left: -111px
+			min-width: 635px
+			min-height: 236px
+			display: flex
+			align-items: center
+			background-color: $wcolor
+			&__title
+				max-width: 470px
+				max-height: 120px
+				font-size: 24px
+				font-weight: 400
+				line-height: 30px
+				letter-spacing: 0.24px
+				color: $bcolor
+				overflow: hidden
+			&__time
+				position: absolute
+				right: 46px
+				top: 25px
+				color: $accent
+				font-size: 36px
+				font-weight: 700
+				line-height: 47.96px
+				text-transform: uppercase
+				letter-spacing: -2.16px
+				&::before
+					position: absolute
+					display: block
+					content: ''
+					top: 50%
+					left: -440px
+					width: 420px
+					height: 1px
+					background-color: #efefef
+					transform: translateY(-50%)
+
+				&::after
+					position: absolute
+					display: block
+					content: ''
+					top: 50%
+					left: -485px
+					width: 25px
+					height: 25px
+					background-color: #efefef
+					background: #efefef url('../img/svg/sand-clock-icon.svg') center no-repeat
+					transform: translateY(-50%)
+			&::before
+				content: ""
+				display: block
+				position: absolute
+				bottom: 35px
+				right: 50px
+				width: 40px
+				height: 44px
+				background: url('../img/svg/leaves-w.svg') center center no-repeat
+			&::after
+				content: ""
+				display: block
+				position: absolute
+				bottom: 55px
+				left: 0
+				width: 537px
+				height: 1px
+				background-color: #efefef
+.images-block__counter
+	width: 130px
+	height: 130px
+	padding: 35px 0
+	display: flex
+	align-items: center
+	justify-content: center
+	position: absolute
+	right: -67px
+	bottom: -67px
+	border: 1px solid #efefef
+	background-color: #efefef
+	box-sizing: border-box
+	&--current
+		position: relative
+		align-self: flex-start
+		color: $accent
+		font-size: 36px
+		font-weight: 700
+		line-height: 26px
+		letter-spacing: 0.36px
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			top: 120%
+			left: 100%
+			width: 38px
+			height: 1px
+			background-color: #ccc
+			transform: translate(-50%, -50%) rotate(-45deg)
+
+	&--total
+		align-self: flex-end
+		color: $bcolor
+		font-size: 12px
+		font-weight: 400
+		line-height: 26px
+		letter-spacing: 0.12px
+
+.developer-slider
+	margin: 45px 0
+	border: 1px solid #efefef
+	.logo-slaider-block .logo-slaider-btn-right
+		padding-right: 20px
+	.logo-slaider-block .logo-slaider-btn-left
+		padding-left: 20px
+	.wrap
+		background-color: #689a23
+	.logo-slaider-block
+		padding: 28px 0
+	&__title
+		margin: 0 auto
+		padding: 27px 0
+		max-width: 815px
+		font-size: 24px
+		font-weight: 400
+		line-height: 36px
+		color: $wcolor
+		text-align: center
+		letter-spacing: 0.6px
+.main-developer
+	background: #eaeaea url('../img/developer/developer-main-bg.jpg') center no-repeat
+	min-height: 1084px
+	.wrap
+		display: flex
+		justify-content: flex-end
+	.dev-descr
+		padding-top: 130px
+		margin-left: auto
+		&__img
+			max-width: 180px
+			margin-bottom: 30px
+			border-radius: 50%
+		&__text
+
+			max-width: 335px
+			margin-bottom: 35px
+			font-size: 12px
+			font-weight: 400
+			line-height: 29.99px
+			letter-spacing: 0.3px
+			color: $bcolor
+		&__list
+			font-size: 12px
+			font-weight: 400
+			line-height: 29.99px
+			letter-spacing: 0.3px
+			a
+				margin-bottom: 11px
+				display: block
+				color: $bcolor
+				&::before
+					display: inline-block
+					content: ''
+					margin-right: 25px
+					width: 17px
+					height: 17px
+			.tel-icon
+				&::before
+					vertical-align: middle
+					background: transparent url('../img/svg/phone-icon-g.svg') center no-repeat
+			.adr-icon
+				&::before
+					vertical-align: middle
+					background: transparent url('../img/svg/location-icon.svg') center no-repeat
+			.mail-icon
+				&::before
+					vertical-align: middle
+					background: transparent url('../img/svg/email-icon.svg') center no-repeat
+
+.specifically-block
+	padding: 100px 0 70px
+	.specifically-items
+		margin-bottom: 105px
+		.specifically__title
+			position: relative
+			&--top
+				color: #cacaca
+				font-size: 72px
+				font-weight: 700
+				line-height: 72px
+				text-transform: uppercase
+				&::first-letter
+					color: $accent
+			&--bottom
+				margin-bottom: -9px
+				color: #cacaca
+				font-size: 72px
+				font-weight: 700
+				line-height: 72px
+				text-transform: uppercase
+
+			&--small
+				max-width: 160px
+				position: absolute
+				bottom: 28px
+				left: 690px
+				color: $bcolor
+				font-size: 12px
+				font-weight: 400
+				line-height: 20px
+				letter-spacing: 0.12px
+				&::before
+					display: inline-block
+					content: ''
+					position: absolute
+					top: 7px
+					height: 1px
+					background-color: #efefef
+			.w264
+				&::before
+					left: -158%
+					width: 264px
+			.w260
+				&::before
+					left: -165%
+					width: 260px
+			.w150
+				&::before
+					left: -115%
+					width: 185px
+
+		.specifically__img
+			position: relative
+			&::after
+				display: inline-block
+				content: ''
+				position: absolute
+				top: -53px
+				right: 0
+				height: 34px
+				width: 40px
+				background: transparent url('../img/svg/leaves.svg') center no-repeat
 
 
-
-
+			.images-block__counter
+				right: 0
+				bottom: -50px
 
 
 

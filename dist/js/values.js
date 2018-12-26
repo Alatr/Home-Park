@@ -3,8 +3,7 @@
 	var valuesSlider = function() {
 		
 		let touchStartX,touchStartY;
-		let sliderImage = document.querySelectorAll('.values-slider__items');
-		console.log(sliderImage)
+		let sliderImage = document.querySelectorAll('.values-slider-wrapper>div');
 		let slider = {
 		  position:{
 		    active1: 0,
@@ -19,9 +18,9 @@
 		        this.position[key] = 0;
 		      }
 		    }
+		    sliderImage[slider.position.active3].classList.add('active3','threeLeft');
 		    sliderImage[slider.position.active1].classList.add('active1','firstLeft');
 		    sliderImage[slider.position.active2].classList.add('active2','twoLeft');
-		    sliderImage[slider.position.active3].classList.add('active3','threeLeft');
 		  },
 		  right:function () {
 
@@ -32,71 +31,62 @@
 		        this.position[key] = sliderImage.length-1;
 		      }
 		    }
-		    /*if(slider.position.active1 === sliderImage.length-1 ){
-		      sliderImage[0].classList.add('firstRight');
-		    }else{
-		      sliderImage[slider.position.active1+1].classList.add('firstRight');
-		    }*/
+
 		    sliderImage[slider.position.active1].classList.add('active1','twoRight');
 		    sliderImage[slider.position.active2].classList.add('active2','threeRight');
 		    sliderImage[slider.position.active3].classList.add('active3','fourRight');
-		    console.log('после удаления')
 
+		  },
+
+		  createLi: function(){
+		  	let ulNavigation = document.querySelector('.slider-navigation');
+
+		  		for (var i = 0; i < sliderImage.length; i++) {
+		  			var newLi = document.createElement("li");
+		  			if (i >= 9) {
+		  				var current = document.createTextNode(""+ (i+1) +"");
+		  			} else {
+		  				var current = document.createTextNode("0"+ (i+1) +"");
+		  			}
+		  			newLi.appendChild(current);  
+		  			ulNavigation.appendChild(newLi);
+		  		}
+		  },
+		  activeLi: function(){
+		  	var liNavigation = document.querySelectorAll('.slider-navigation li');
+		  	for (var i = 0; i < sliderImage.length; i++) {
+		  		liNavigation[i].classList.remove('active');
+		  		if(sliderImage[i].classList.contains('active1')){
+		  			liNavigation[i].classList.add('active');
+		  		}
+		  	}
 		  }
 
 		};
-
-
 
 		function sliderClassInit() {
 		  sliderImage[slider.position.active1].classList.add('active1','firstLeft');
 		  sliderImage[slider.position.active2].classList.add('active2','twoLeft');
 		  sliderImage[slider.position.active3].classList.add('active3');
+		  slider.createLi();
+		  slider.activeLi();
 		}
 
 		function swipeLeft() {
-			/*sliderImage.forEach(image=>{
-			  image.removeAttribute('class');
-			});*/
-		  sliderImage.forEach(image=>{
-		    let list = image.classList;
-		    list.forEach( classJob =>{
-			
-		      if(classJob !== 'values-slider__items'){
-		        image.classList.remove(classJob);
-		      }
-		    });
-
-		  });
-		  slider.left();
-		}
-		function swipeRight() {
-			
 			sliderImage.forEach(image=>{
-			  let list = image.classList;
-			  list.forEach( classJob =>{
-			
-			//console.log(classJob)
-			    if(classJob !== 'values-slider__items'){
-			      image.classList.remove(classJob);
-			//console.log(classJob)
-			    }
-			  });
-
+			  image.removeAttribute('class');
 			});
-			console.log('до удаления')
-		 
-		  slider.right();
+		  slider.left();
+		  slider.activeLi();
 		}
 
-
-
-
-
-
-
-
-
+		function swipeRight() {
+			sliderImage.forEach(image=>{
+			  image.removeAttribute('class');
+			});
+		  slider.right();
+		  slider.activeLi();
+		}
 
 		sliderClassInit();
 
@@ -121,11 +111,11 @@
 			btnNext = document.querySelector('.article-slider__nav-right');
 
 		btnPrev.addEventListener('click', function (e) {
-			swipeLeft();
+			swipeRight();
 		});
 
 		btnNext.addEventListener('click', function (e) {
-			swipeRight();
+			swipeLeft();
 		});
 
 	};
