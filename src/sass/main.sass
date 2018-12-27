@@ -44,6 +44,7 @@ button
 	text-decoration: none
 	&:hover
 		cursor: pointer
+
 .button
 	margin: 0 auto
 	display: block
@@ -1161,6 +1162,21 @@ button
 		background: #eaeaea url('../img/specifically/specifically-banner.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+	&-news
+		height: 420px
+		background: #eaeaea url('../img/news/news-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-news-single
+		height: 420px
+		background: #eaeaea url('../img/news-single/news-single-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-features
+		height: 420px
+		background: #eaeaea url('../img/features/features-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
@@ -1324,6 +1340,7 @@ button
 			text-transform: uppercase
 			letter-spacing: -1.44px
 			transform: rotate(-90deg)
+			user-select: none
 			&:first-letter
 				color: $accent
 		.webCamera__descr
@@ -1656,6 +1673,321 @@ button
 				right: 0
 				bottom: -50px
 
+.news
+	&-block
+		padding-top: 35px
+		padding-bottom: 73px
+		.navigation
+			min-width: 610px
+			margin: 0 auto
+			display: block
+			.nav-links
+				display: flex
+				justify-content: center
+				.current
+					display: block
+					width: 40px
+					height: 40px
+					color: $wcolor
+					font-size: 12px
+					font-weight: 400
+					line-height: 40px
+					letter-spacing: 0.12px
+					text-align: center
+					background-color: $accent
+
+				.dots
+					display: block
+					width: 40px
+					height: 40px
+					color: #000000
+					font-size: 12px
+					font-weight: 400
+					line-height: 40px
+					letter-spacing: 0.12px
+					text-align: center
+					user-select: none
+
+				a
+					display: block
+					margin: 0 15px
+					width: 40px
+					height: 40px
+					font-size: 12px
+					font-weight: 400
+					line-height: 40px
+					letter-spacing: 0.12px
+					text-align: center
+					color: #000
+					transition: all 0.3s
+					&:hover
+						transform: scale(1.2)
+						cursor: pointer
+
+			.prev
+				width: 42px
+				display: inline-block
+				padding-right: 32px
+				svg
+					width: 100%
+					height: 13px
+					transform: rotate(180deg)
+					.arrow-line
+						fill: #568F0A
+						stroke-width: 0
+					.arrow-angle
+						fill: #568F0A
+						stroke: #568F0A
+						stroke-miterlimit: 10
+						stroke-width: 1
+				&:hover
+					cursor: pointer
+			.next
+				width: 42px
+				display: inline-block
+				padding-left: 32px
+				svg
+					width: 100%
+					height: 13px
+					.arrow-line
+						fill: #568F0A
+						stroke-width: 0
+					.arrow-angle
+						fill: #568F0A
+						stroke: #568F0A
+						stroke-miterlimit: 10
+						stroke-width: 1
+				&:hover
+					cursor: pointer
+	&-items
+		+row-flex()
+		justify-content: space-between
+		.article
+			+col()
+			+size(7)
+			margin-bottom: 40px
+			.section-title
+				font-size: 20px
+				font-weight: 400
+				line-height: 36px
+				text-transform: uppercase
+				letter-spacing: 1.4px
+			.article__text
+				max-width: 340px
+			.article__text p
+				margin-bottom: 10px
+			.article__descr
+				padding: 25px 45px 20px 0
+			.article__img
+				img
+					height: 100%
+					object-fit: cover
+.post-type
+	position: relative
+	display: block
+	color: $bcolor
+	font-size: 12px
+	font-weight: 400
+	line-height: 26px
+	letter-spacing: 0.12px
+	transform: translateY(-40px)
+	&::before
+		margin-right: 12px
+		content: ''
+		display: inline-block
+		width: 12px
+		height: 11px
+		background: transparent url('../img/svg/calendar-icon.svg') center no-repeat
+		vertical-align: middle
+
+.news-single-block
+	padding-top: 32px
+	.slaider
+		position: relative
+		.news-slider-btn
+			position: absolute
+			top: 50%
+			display: block
+			width: 65px
+			height: 44px
+			font-size: 12px
+			font-weight: 400
+			line-height: 50px
+			letter-spacing: 0.12px
+			text-align: center
+			color: #000
+			background-color: #fff
+			transform: translateY(-50%)
+			transition: all 0.3s
+			&:hover
+				cursor: pointer
+				background-color: $accent
+				svg
+					.arrow-line
+						fill: $wcolor
+					.arrow-angle
+						fill: $wcolor
+						stroke: $wcolor
+			svg
+				width: 42px
+				height: 13px
+				.arrow-line
+					fill: #568F0A
+					stroke-width: 0
+				.arrow-angle
+					fill: #568F0A
+					stroke: #568F0A
+					stroke-miterlimit: 10
+					stroke-width: 1
+		.prev
+			left: 0
+			svg
+				transform: rotate(180deg)
+		.next
+			right: 0
+
+	.content
+		position: relative
+		max-width: 860px
+		padding: 0 75px
+		padding-top: 25px
+		margin: 0 auto
+		margin-bottom: -25px
+		background-color: $wcolor
+		border-bottom: 1px solid #efefef
+		transform: translateY(-50px)
+		box-sizing: border-box
+		&__data
+			margin-bottom: 30px
+			text-align: right
+			.post-type
+				transform: translateY(0)
+		&__text
+			color: $bcolor
+			font-size: 18px
+			font-weight: 400
+			line-height: 30px
+			letter-spacing: 0.18px
+			p
+				margin-bottom: 30px
+				text-align: justify
+		&__btn
+			display: flex
+			justify-content: space-between
+			margin-bottom: 44px
+			.btn-icon
+				padding: 11px 31px
+				svg
+					width: 43px
+					height: 13px
+					transform: rotate(180deg)
+					.arrow-line
+						fill: #568F0A
+						stroke-width: 0
+					.arrow-angle
+						fill: #568F0A
+						stroke: #568F0A
+						stroke-miterlimit: 10
+						stroke-width: 1
+				&:hover
+					svg
+						.arrow-line
+							fill: #fff
+						.arrow-angle
+							fill: #fff
+							stroke: #fff
+			.btn-icon-key
+				padding: 4px 57px
+				#key-icon
+					width: 21px
+					height: 10px
+					fill: #568F0A
+				&:hover
+					#key-icon
+						width: 21px
+						height: 10px
+						fill: #fff
+		&::before
+			display: block
+			content: ''
+			position: absolute
+			top: 15px
+			height: 34px
+			width: 40px
+			background: transparent url('../img/svg/leaves.svg') center no-repeat
+		&::after
+			display: block
+			content: ''
+			position: absolute
+			top: 40px
+			left: 47%
+			height: 1px
+			width: 550px
+			background-color: #efefef
+			transform: translateX(-50%)
+	.also
+		&__title
+			margin-bottom: 25px
+			color: $accent
+			font-size: 30px
+			font-weight: 300
+			line-height: 60px
+			text-transform: uppercase
+			letter-spacing: 2.1px
+			text-align: center
+			user-select: none
+
+	.news-items
+		+row-flex()
+		justify-content: space-between
+		.article
+			+col()
+			+size(7)
+			margin-bottom: 30px
+
+.features
+	&-block
+		padding-top: 60px
+		padding-bottom: 80px
+		.features-leaves-icon
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				bottom: -12px
+				left: -25px
+				width: 40px
+				height: 40px
+				background: transparent url('../img/svg/leaves.svg') center no-repeat
+	&-items
+		display: flex
+		flex-direction: row-reverse
+		&:nth-child(odd)
+			flex-direction: row
+		&__img
+			position: relative
+			max-width: 460px
+			.images-block__counter
+				top: 0
+				right: 0
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				bottom: -12px
+				left: -25px
+				width: 40px
+				height: 40px
+				background: transparent url('../img/svg/leaves.svg') center no-repeat
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				top: 38px
+				left: -380px
+				width: 380px
+				height: 1px
+				background-color: #efefef
 
 
 @import "media" // Always at the end
