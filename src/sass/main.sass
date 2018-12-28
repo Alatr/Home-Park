@@ -1177,6 +1177,11 @@ button
 		background: #eaeaea url('../img/features/features-banner.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+	&-infostructure
+		height: 420px
+		background: #eaeaea url('../img/infostructure/infostructure_banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
@@ -1949,27 +1954,19 @@ button
 	&-block
 		padding-top: 60px
 		padding-bottom: 80px
-		.features-leaves-icon
-			&::before
-				content: ''
-				display: block
-				position: absolute
-				bottom: -12px
-				left: -25px
-				width: 40px
-				height: 40px
-				background: transparent url('../img/svg/leaves.svg') center no-repeat
+		.minus-top
+			transform: translateY(-100px)
+		
 	&-items
+		position: relative
 		display: flex
-		flex-direction: row-reverse
+		flex-direction: row
 		&:nth-child(odd)
-			flex-direction: row
-		&__img
-			position: relative
-			max-width: 460px
-			.images-block__counter
-				top: 0
-				right: 0
+			flex-direction: row-reverse
+			.features-items__img
+				margin-right: 90px
+			
+		.features-leaves-icon--left
 			&::before
 				content: ''
 				display: block
@@ -1979,15 +1976,446 @@ button
 				width: 40px
 				height: 40px
 				background: transparent url('../img/svg/leaves.svg') center no-repeat
+		.features-leaves-icon--right
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				bottom: -8px
+				right: -19px
+				width: 40px
+				height: 40px
+				background: transparent url('../img/svg/leaves.svg') center no-repeat
+		.features-line-icon
 			&::after
 				content: ''
 				display: block
 				position: absolute
 				top: 38px
-				left: -380px
-				width: 380px
+				left: -450px
+				width: 450px
 				height: 1px
 				background-color: #efefef
+		.features-leaves-icon--big
+			position: absolute
+			top: -20px
+			left: 50px
+			width: 133px
+			height: 102px
+			.leaves-first, .leaves-third
+				fill: #efefef
+		.border-harmony--width
+			right: 28%
+			top: 73%
+			&::before
+				left: -6%
+				width: 579px
+			.note-left
+				left: 17%
+		.border-location--width
+			right: 28%
+			top: 50%
+			&::before
+				width: 600px
+		.border-safety--width
+			top: 26.5%
+			right: 32.5%
+			text-align: right
+			&::before
+				width: 447px
+				left: 25%
+			.features-items__title--bottom
+				padding: 20px 0
+				background-color: transparent
+			.features-items__title--top
+				transform: translateX(0)
+			.note-left
+				text-align: left
+				left: 46%
+				bottom: -90px
+		.border-conditions--width
+			right: 50%
+			top: 50%
+			text-align: right
+			&::before
+				width: 450px
+				left: 31%
+			.features-items__title--bottom
+				padding: 20px 0
+				background-color: transparent
+			.features-items__title--top
+				transform: translateX(0)
+			.note-left
+				left: 61%
+				text-align: left
+		.border-garden--width
+			top: 50%
+			right: 0
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				bottom: 0
+				right: 16%
+				height: 200px
+				border-top: 1px solid #efefef
+				border-bottom: 1px solid #efefef
+				border-right: 1px solid #efefef
+			.features-items__title--bottom
+				padding: 20px 0
+				padding-left: 75px
+				background-color: transparent
+			.features-items__title--top
+				transform: translateX(0)
+			.note-left
+				top: 94px
+				left: 73%
+				max-width: 177px
+				width: 177px
+				&::before
+					display: none
+		.border-childgarden--width
+			top: 50%
+			right: 0
+			text-align: right
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				bottom: 0
+				right: 8%
+				height: 270px
+				border-top: 1px solid #efefef
+				border-bottom: 1px solid #efefef
+				border-right: 1px solid #efefef
+			.features-items__title--bottom
+				padding: 0 0 20px
+				padding-right: 120px
+
+				background-color: transparent
+			.features-items__title--top
+				transform: translateX(0)
+			.note-left
+				top: 62%
+				left: auto
+				right: -4%
+				&::before
+					top: -12px
+					left: -45px
+					z-index: 2
+				&::after
+
+					left: -100px
+		.border-comfort--width
+			top: 50%
+			right: 0
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				bottom: 0
+				right: 7%
+				height: 200px
+				border-top: 1px solid #efefef
+				border-bottom: 1px solid #efefef
+				border-right: 1px solid #efefef
+				z-index: -1
+			.features-items__title--bottom
+				padding: 20px 0
+				padding-left: 50px
+				background-color: transparent
+			.features-items__title--top
+				transform: translateX(0)
+			.note-left
+				top: 107%
+				left: 39%
+				max-width: 177px
+				width: 177px
+				&::before
+
+
+
+		.note-left
+			bottom: -65px
+			left: 30px
+			&::before
+				content: ''
+				position: absolute
+				display: block
+				top: 0
+				left: -175px
+				width: 40px
+				height: 40px
+				background: transparent url('../img/svg/leaves.svg') center no-repeat
+				
+			&::after
+				content: ''
+				position: absolute
+				display: block
+				top: 8px
+				left: -130px
+				width: 115px
+				height: 1px
+				background-color: #efefef
+		.note-right
+			&::before
+				content: ''
+				position: absolute
+				display: block
+				top: 50%
+				right: -175px
+				width: 40px
+				height: 40px
+				background: transparent url('../img/svg/leaves.svg') center no-repeat
+				transform: translateY(-50%)
+			&::after
+				content: ''
+				position: absolute
+				display: block
+				top: 8px
+				right: -130px
+				width: 115px
+				height: 1px
+				background-color: #efefef
+
+		&__img
+			position: relative
+			max-width: 460px
+			margin-left: 90px
+			img
+				height: 100%
+				object-fit: cover
+			.images-block__counter
+				top: 0
+				right: 0
+
+		&__title
+			position: absolute
+			transform: translateY(-50%)
+			background-color: transparent
+			&--top
+				color: #cbcbcb
+				font-size: 72px
+				font-weight: 700
+				line-height: 72px
+				text-transform: uppercase
+				letter-spacing: -1.44px
+				transform: translateX(-95px)
+				&::first-letter
+					color: #568f0a
+			&--bottom
+				padding: 20px 15px
+				background-color: #fff
+				color: #cbcbcb
+				font-size: 72px
+				font-weight: 700
+				line-height: 72px
+				text-transform: uppercase
+				letter-spacing: -1.44px	
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				bottom: 0
+				left: -19%
+				height: 200px
+				border-top: 1px solid #efefef
+				border-bottom: 1px solid #efefef
+				border-left: 1px solid #efefef
+		&__subtitle
+			position: absolute
+			max-width: 175px
+			color: $bcolor
+			font-size: 14px
+			font-weight: 400
+			line-height: 22px
+			letter-spacing: 0.14px
+			
+.infostructure
+	&-block
+		padding-top: 46px
+		padding-bottom: 100px
+		.personal-park
+			.infostructure__title
+				margin-bottom: -9px
+				display: flex
+			.infostructure__img
+				padding-left: 70px
+				.images-block__counter
+					top: 50%
+					left: 5px
+					transform: translateY(-50%)
+			.w130
+				margin-left: 130px
+				&::before
+					top: 10px
+					right: 85px
+					width: 130px
+				&::after
+					top: 30%
+					transform: translateY(-50%)
+					right: -220%
+
+
+
+
+
+		.child-garden
+			display: flex
+			.infostructure__title
+				position: relative
+				order: 2
+				margin-left: 38px
+				padding-top: 109px
+
+				&--top
+					margin-left: 70px
+
+				&--bottom
+					padding-bottom: 74px
+				&--small
+					position: absolute
+					bottom: 111px
+					left: -38px
+					max-width: 91%
+					width: 91%
+					padding: 17px 0
+					padding-left: 150px
+					border-right: 1px solid #efefef
+					border-top: 1px solid #efefef
+					border-bottom: 1px solid #efefef
+			.infostructure__img
+				max-width: 740px
+				.images-block__counter
+					top: 50%
+					left: 0
+					transform: translateY(-50%)
+			.border
+				&::before
+					display: none
+				&::after
+					top: 50%
+					left: 100px
+					transform: translateY(-50%)
+
+
+
+		.child-improve
+			display: flex
+			.infostructure__title
+				position: relative
+				max-width: 460px
+				align-self: center
+
+				&--top
+
+				&--bottom
+				&--small
+					position: absolute
+					top: -55px
+					right: 0
+					width: 330px
+					height: 300px
+					border-left: 1px solid #efefef
+					border-top: 1px solid #efefef
+					border-bottom: 1px solid #efefef
+					z-index: -1
+			.infostructure__img
+				max-width: 740px
+				.images-block__counter
+					top: 50%
+					right: 0
+					transform: translateY(-50%)
+			.border
+				&::before
+				&::after
+					top: 18%
+					right: 50px
+
+
+
+
+		.family-cofe
+			.infostructure__title
+				margin-top: 30px
+				margin-bottom: -9px
+				display: flex
+				flex-direction: row-reverse
+			.infostructure__img
+				padding-left: 70px
+				.images-block__counter
+					top: 50%
+					left: 5px
+					transform: translateY(-50%)
+			.w440
+				margin-right: 20px
+				&::before
+					width: 440px
+					top: 50%
+					right: 0
+					transform: translateY(-50%)
+				&::after
+					top: 50%
+					transform: translateY(-50%)
+					left: -500px
+
+
+
+
+	&__title
+		&--top
+			color: #cbcbcb
+			font-size: 72px
+			font-weight: 700
+			line-height: 72px
+			text-transform: uppercase
+			letter-spacing: -1.44px
+			&::first-letter
+				color: #568f0a
+
+		&--bottom
+			color: #cbcbcb
+			font-size: 72px
+			font-weight: 700
+			line-height: 72px
+			text-transform: uppercase
+			letter-spacing: -1.44px
+		&--small
+			position: relative
+			color: $bcolor
+			font-size: 14px
+			font-weight: 400
+			line-height: 22px
+			letter-spacing: 0.14px
+			&::before
+				display: inline-block
+				content: ''
+				position: absolute
+				height: 1px
+				background-color: #efefef
+				z-index: -1
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				width: 40px
+				height: 40px
+				background: transparent url('../img/svg/leaves.svg') center no-repeat
+
+	&__img
+		position: relative
+		margin-bottom: 25px
+		.images-block__counter
+			right: auto
+			bottom: auto
+
+		.personal-park
+			.infostructure__title
+				&--top
+				&--bottom
+				&--small
+			.infostructure__img
+				.images-block__counter
 
 
 @import "media" // Always at the end
