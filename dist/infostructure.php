@@ -111,6 +111,53 @@
 		<!-- /.infostructure-items -->
 
 
+		<div class="infostructure-items safety-gym">
+			<div class="infostructure__title">
+				<div class="infostructure__title--top">Безопасные детские</div>
+				<!-- /.infostructure__title--top -->
+				<div class="infostructure__title--bottom">и спортивные площадки</div>
+				<!-- /.specifically__title--bottom -->
+				<div class="infostructure__title--small line"></div>
+				<!-- /.infostructure__title--small -->
+			</div>
+			<!-- /.infostructure__title -->
+			<div class="infostructure__img">
+				<img src="img/infostructure/infostructure_5.jpg" title="" alt="">
+				<div class="images-block__counter">
+					<span class="images-block__counter--current">05</span>
+					<span class="images-block__counter--total">06</span>
+				</div>
+				<!-- /.images-block__counter -->
+			</div>
+			<!-- /.infostructure__img -->
+		</div>
+		<!-- /.infostructure-items -->
+
+
+
+		<div class="infostructure-items parking-stroller">
+			<div class="infostructure__title">
+				<div class="infostructure__title--top">Пространство для хранения</div>
+				<!-- /.infostructure__title--top -->
+				<div class="infostructure__title--bottom">детских колясок и велосипедов</div>
+				<!-- /.specifically__title--bottom -->
+				<div class="infostructure__title--small line-w120"></div>
+				<!-- /.infostructure__title--small -->
+			</div>
+			<!-- /.infostructure__title -->
+			<div class="infostructure__img">
+				<img src="img/infostructure/infostructure_6.jpg" title="" alt="">
+				<div class="images-block__counter">
+					<span class="images-block__counter--current">06</span>
+					<span class="images-block__counter--total">06</span>
+				</div>
+				<!-- /.images-block__counter -->
+			</div>
+			<!-- /.infostructure__img -->
+		</div>
+		<!-- /.infostructure-items -->
+
+
 	</div>
 	<!-- /.infostructure-block -->
 </div>

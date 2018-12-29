@@ -1182,6 +1182,16 @@ button
 		background: #eaeaea url('../img/infostructure/infostructure_banner.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+	&-about
+		height: 420px
+		background: #eaeaea url('../img/about/about-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-stage-building
+		height: 420px
+		background: #eaeaea url('../img/stage-building/stage-building-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
@@ -2234,7 +2244,7 @@ button
 .infostructure
 	&-block
 		padding-top: 46px
-		padding-bottom: 100px
+		padding-bottom: 75px
 		.personal-park
 			.infostructure__title
 				margin-bottom: -9px
@@ -2355,9 +2365,107 @@ button
 					right: 0
 					transform: translateY(-50%)
 				&::after
+
 					top: 50%
 					transform: translateY(-50%)
 					left: -500px
+
+		
+
+
+		.safety-gym
+			.infostructure__title
+				padding-left: 65px
+				margin-top: 55px
+				margin-bottom: 15px
+				position: relative
+				&--top
+					font-size: 48px
+					font-weight: 700
+					line-height: 60px
+					text-transform: uppercase
+					letter-spacing: -0.96px
+				&--bottom
+					font-size: 48px
+					font-weight: 700
+					line-height: 60px
+					text-transform: uppercase
+					letter-spacing: -0.96px
+				&--small
+					position: absolute
+					right: 0
+					top: 10px
+				&::after
+					content: ''
+					display: block
+					width: 944px
+					height: 300px
+					position: absolute
+					top: -30px
+					left: -50px
+					border: 1px solid #efefef
+			.infostructure__img
+				padding-right: 70px
+				.images-block__counter
+					top: 50%
+					right: 5px
+					transform: translateY(-50%)
+			.line
+				&::before
+					position: absolute
+					width: 210px
+					left: -230px
+					top: 10px
+
+
+		.parking-stroller
+			.infostructure__title
+				padding-left: 65px
+				margin-top: 55px
+				margin-bottom: 15px
+				position: relative
+				text-align: right
+				&--top
+					font-size: 48px
+					font-weight: 700
+					line-height: 60px
+					text-transform: uppercase
+					letter-spacing: -0.96px
+				&--bottom
+					font-size: 48px
+					font-weight: 700
+					line-height: 60px
+					text-transform: uppercase
+					letter-spacing: -0.96px
+				&--small
+					position: absolute
+					left: 0
+					top: 10px
+				&::after
+					content: ''
+					display: block
+					width: 1036px
+					height: 398px
+					position: absolute
+					top: -30px
+					right: -50px
+					border: 1px solid #efefef
+			.infostructure__img
+				.images-block__counter
+					left: 50%
+					bottom: -65px
+					transform: translateX(-50%)
+			.line-w120
+				&::before
+					position: absolute
+					width: 120px
+					left: 70px
+					top: 15px
+
+
+
+
+
 
 
 
@@ -2409,13 +2517,119 @@ button
 			right: auto
 			bottom: auto
 
-		.personal-park
-			.infostructure__title
-				&--top
-				&--bottom
-				&--small
-			.infostructure__img
-				.images-block__counter
 
+.about-block
+	padding-bottom: 60px
+	&__descr
+		+row-flex()
+		padding: 50px 0
+		justify-content: space-around
+		text-align: justify
+		color: $bcolor
+		font-size: 12px
+		font-weight: 400
+		line-height: 29.99px
+		letter-spacing: 0.3px
+		&--wrap
+			background-color: #f3f3f3
+
+		.text--left
+			+col()
+			+size(5)
+		.text--right
+			+col()
+			+size(8.5)
+	&__title
+		padding: 40px 0
+		color: $bcolor
+		font-size: 18px
+		font-weight: 500
+		line-height: 30px
+		letter-spacing: 0.45px
+		text-align: center
+	&__items
+		+row-flex()
+		justify-content: space-between
+		.about-item
+			+col()
+			+size(7)
+			display: flex
+			flex-direction: column
+			margin-bottom: 25px
+			&__title
+				margin-bottom: -12px
+
+				color: #cbcbcb
+				font-size: 48px
+				font-weight: 700
+				line-height: 60px
+				text-transform: uppercase
+				letter-spacing: -0.96px
+				z-index: 22
+				&::first-letter
+					color: $accent
+			&__img
+				img
+					object-fit: cover
+					height: 100%
+					z-index: 1
+	&__items--long
+		.about-item
+			&__title
+				margin-bottom: -12px
+				color: #cbcbcb
+				font-size: 48px
+				font-weight: 700
+				line-height: 60px
+				text-transform: uppercase
+				letter-spacing: -0.96px
+				z-index: 22
+				&::first-letter
+					color: $accent
+			&__img
+				img
+					object-fit: cover
+					height: 100%
+					margin-bottom: 43px
+	&__info
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.about-info
+			&__text
+				color: $bcolor
+				font-size: 18px
+				font-weight: 700
+				line-height: 29.99px
+				letter-spacing: 0.45px
+			&__btn--wrap
+				display: flex
+				a
+					padding: 10px 63px
+					margin: 0 16px
+
+.stage-block
+	padding-bottom: 61px
+	&__title
+		padding: 30px 0
+		color: $bcolor
+		font-size: 14px
+		font-weight: 400
+		line-height: 34px
+		text-align: center
+	&__items
+		+row-flex()
+		justify-content: space-between
+		.stage-item
+			+col()
+			+size(7)
+			&__img
+				position: relative
+				time
+					position: absolute
+					bottom: 0
+					left: 0
+					background-color: #689a23
+					opacity: 0.9
 
 @import "media" // Always at the end
