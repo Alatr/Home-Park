@@ -190,7 +190,7 @@ button
 		top: 0
 		left: 0
 		width: 100%
-		z-index: 9999
+		z-index: 999
 	a
 		color: #fff
 	.webcamera
@@ -1190,6 +1190,21 @@ button
 	&-stage-building
 		height: 420px
 		background: #eaeaea url('../img/stage-building/stage-building-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-documentation
+		height: 420px
+		background: #eaeaea url('../img/documentation/documentation-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-gallery
+		height: 420px
+		background: #eaeaea url('../img/gallery/gallery-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-location
+		height: 420px
+		background: #eaeaea url('../img/location/location-banner.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
 	.breadcrumb
@@ -2620,16 +2635,194 @@ button
 	&__items
 		+row-flex()
 		justify-content: space-between
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			left: 50%
+			top: 0
+			width: 1px
+			height: 98%
+			background-color: #689a23
+			transform: translateX(-50%)
+
 		.stage-item
 			+col()
-			+size(7)
+			+size(7.4)
+			margin-bottom: 20px
+			position: relative	
+			&::after
+				content: ''
+				position: absolute
+				width: 30px
+				height: 30px
+				background: transparent url('../img/svg/leaves.svg') center no-repeat
+			&:nth-child(odd)
+				&::after
+					top: -10px
+					right: -25px
+					transform: rotate(-90deg)
+
+			&:nth-child(even)
+				&::after
+					bottom: -10px
+					left: -25px
+					transform: rotate(90deg)
+					
 			&__img
 				position: relative
+				height: 300px
+				overflow: hidden
+				img
+					object-fit: cover
+					height: 100%
 				time
 					position: absolute
 					bottom: 0
 					left: 0
+					padding: 12px 21px
+					color: $wcolor
 					background-color: #689a23
+					transform: translateY(0)
 					opacity: 0.9
+					&::before
+						background: transparent url('../img/svg/calendar-icon-w.svg') center no-repeat
+	.progress-block
+		margin-top: 30px
+		padding: 20px 80px 55px 80px
+		min-height: 207px
+		background-color: #f0f0f0
+		box-sizing: border-box
+		display: flex
+		flex-wrap: wrap	
+		justify-content: space-between	
+		.progress-item
+			margin: 0 20px 10px
+			min-width: 300px
+			display: inline-block
+			&__title
+				margin-bottom: 7px
+				text-align: center
+				color: $bcolor
+				font-size: 12px
+				font-weight: 400
+				line-height: 20px
+				letter-spacing: 0.6px
+			.wrapper
+				display: inline-block
+				position: relative
+				background-color: #fff
+				width: 300px
+				height: 40px
+				
+				.line--accent
+					position: absolute
+					top: 0
+					left: 0
+					height: 40px
+					width: 300px
+					background-color: $accent
+					color: #fff
+					clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%)
+					font-size: 14px
+					font-weight: 700
+					line-height: 20px
+					letter-spacing: 0.7px
+					text-align: center
+					line-height: 40px
+					transition: all 5s
+					
+				.line--white
+					position: absolute
+					top: 0
+					left: 0
+					height: 40px
+					width: 300px
+					background-color: $wcolor
+					color: #000
+					font-size: 14px
+					font-weight: 700
+					line-height: 20px
+					letter-spacing: 0.7px
+					text-align: center
+					line-height: 40px
+					transition: all 5s
+		a
+			width: 670px
+			height: 48px
+			margin-top: 28px
+			svg
+				margin-left: 15px	
+				width: 42px
+				height: 13px
+				.arrow-line
+					fill: #568F0A
+					stroke-width: 0
+				.arrow-angle
+					fill: #568F0A
+					stroke: #568F0A
+					stroke-miterlimit: 10
+					stroke-width: 1
 
+
+.documentation
+	&-block
+		padding: 70px 0
+	&-items
+		+row-flex()
+		justify-content: center
+		.documentation-item
+			+col()
+			+size(3)
+			position: relative
+			margin: 0 25px
+			padding: 40px 30px
+			box-shadow: 0 5px 13px rgba(128, 128, 128, 0.16)
+			&__img
+				margin-bottom: 15px
+				display: block
+				max-height: 220px
+				height: 220px
+				img
+					height: 100%
+					object-fit: cover
+			&__title
+				color: $bcolor
+				font-size: 12px
+				font-weight: 400
+				line-height: 18px
+				letter-spacing: 0.12px
+				text-align: center
+
+			&::after
+				content: ''
+				left: 50%
+				top: -25px
+				transform: translateX(-50%)
+				position: absolute
+				width: 50px
+				height: 50px
+				border-radius: 50%
+				background: #efefef url('../img/svg/leaves-w.svg') 50% 50% no-repeat
+				background-size: 40px 40px
+
+
+.gallery
+	&-block
+		padding: 35px 0 60px
+	&-items
+		column-count: 4
+		column-gap: 50px
+		.gallery-item
+			margin: 20px 0
+			max-width: 410px
+			text-align: center
+			width: 100%
+			display: inline-block
+			overflow: hidden
+			img
+				user-select: none
+				transition: all 0.4s
+				&:hover
+					transform: scale(1.2)
 @import "media" // Always at the end
