@@ -45,42 +45,42 @@
 	<div class="map-aside">
 		<h2 class="map-aside__title">Инфраструктура</h2>
 		<ul class="map-aside__nav">
-			<li>
+			<li data-category='pharmacy' class='mark-item'>
 				<button>
 				<?php include('img/svg/location/location-icon-pharm-cross.svg'); ?>
 				Аптеки</button>
 			</li>
-			<li>
+			<li data-category='hospital' class='mark-item'>
 				<button>
 				<?php include('img/svg/location/location-icon-pharm.svg'); ?>
 				Медицинские учреждения</button>
 			</li>
-			<li>
+			<li data-category='gym' class='mark-item'>
 				<button>
 				<?php include('img/svg/location/location-icon-gym.svg'); ?>
 				Спортивные комплексы</button>
 			</li>
-			<li>
+			<li data-category='graduation' class='mark-item'>
 				<button>
 				<?php include('img/svg/location/location-icon-graduation-hat.svg'); ?>
 				Университеты</button>
 			</li>
-			<li>
+			<li data-category='school' class='mark-item'>
 				<button>
 				<?php include('img/svg/location/location-icon-book.svg'); ?>
 				Школы</button>
 			</li>
-			<li>
+			<li data-category='garden' class='mark-item'>
 				<button>
 				<?php include('img/svg/location/location-icon-coub.svg'); ?>
 				Детские садики</button>
 			</li>
-			<li>
+			<li data-category='mall' class='mark-item'>
 				<button>
 				<?php include('img/svg/location/location-icon-shop-bag.svg'); ?>
 				Торгово-развлекательные комплексы</button>
 			</li>
-			<li>
+			<li data-category='supermarket' class='mark-item'>
 				<button>
 				<?php include('img/svg/location/location-icon-shop-cart.svg'); ?>
 				Продуктовые магазины</button>
@@ -95,13 +95,13 @@
 	</div>
 	<!-- /.main-map -->
 </div>
-<!-- /.map-block -->
+<!-- /.map-block AIzaSyC3v4tMpbXGrrr2GY00co Dwi9YeP4aqyA4-->
 
 
 <?php include('includes/footer.php'); ?>
 
 	<script src="js/scripts.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key="></script>
 
 	<script src="js/map.js"></script>
 	</body>
