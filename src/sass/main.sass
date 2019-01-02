@@ -2825,4 +2825,107 @@ button
 				transition: all 0.4s
 				&:hover
 					transform: scale(1.2)
+
+
+
+.location
+	&-block
+	&-items
+		padding: 55px 0 38px
+		+row-flex()
+		justify-content: space-between
+		.location-item
+			+col()
+			+size(4)
+			display: flex
+			svg
+				margin-right: 30px
+			&__text
+				max-width: 255px
+				color: $bcolor
+				font-size: 12px
+				font-weight: 400
+				line-height: 30px
+				letter-spacing: 0.3px
+.map
+	&-block
+		min-height: 500px
+		position: relative
+		.main-map
+			#map
+				min-height: 500px
+				.content
+					color: #fff
+					font-size: 12px
+					font-weight: 400
+					line-height: 30.01px
+					letter-spacing: 0.3px
+					text-align: center
+				.gm-style-iw
+					position: relative
+					text-align: center
+					background-color: $accent
+
+					&::after
+						content: ''
+						display: block
+						width: 0
+						height: 0
+						border: 22px solid transparent
+						border-top-color: $accent
+						z-index: 4
+						position: absolute
+						top: auto
+						bottom: -53px
+						left: 50%
+						transform: translateX(-50%)						
+						margin: auto
+				.poi-info-window
+					background-color: $accent
+				.gm-style-iw
+					background: $accent
+					box-shadow: -14px 0px 0px $accent, -14px 9px 0px $accent, -14px -8px 0px $accent, 15px -8px 0px $accent, 15px 9px 0px $accent
+				.gm-style-iw
+					overflow: visible !important
+				
+				
+	&-aside
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 20%
+		padding: 70px 40px 0
+		background-color: #efefef
+		box-sizing: border-box
+		z-index: 2
+		&__title
+			margin-bottom: 20px
+			color: $bcolor
+			font-size: 24px
+			font-weight: 300
+			line-height: 60px
+			text-transform: uppercase
+			letter-spacing: 1.68px
+			text-align: center
+		&__nav
+			li
+				button
+					width: 100%
+					color: $bcolor
+					font-size: 12px
+					font-weight: 400
+					line-height: 36px
+					letter-spacing: 0.3px
+					text-align: left
+					vertical-align: middle
+					background-color: transparent
+					svg
+						vertical-align: middle
+						width: 22px
+						margin-right: 22px
+
+		
+
+
 @import "media" // Always at the end
