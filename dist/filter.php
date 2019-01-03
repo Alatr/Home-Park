@@ -69,15 +69,15 @@
 				<!-- /.range-item -->
 
 
-				<p class="option__results option__item">По вашим параметрам найдено 125 квартир</p>
+				<p class="option__results option__item">По вашим параметрам найдено <span class="number_flats">0</span> квартир</p>
 				<!-- /.option__results -->
-				<button class="option__item btn-fill">Искать</button>
-				<button class="option__item option__reset js-reset-filter-button">Скинуть параметры</button>
+				<button class="option__item btn-fill js-button_search">Искать</button>
+				<button class="option__item option__reset js-reset_button">Скинуть параметры</button>
 		</div>
 		<!-- /.option-block -->
 
 		<div class="filter-info">
-			<p class="filter-info__text">Найдено типов квартир: <span class="result-counter">3768</span></p>
+			<p class="filter-info__text">Найдено типов квартир: <span class="count_filter"></span></p>
 			<!-- /.filter-info__text -->
 			<div class="filter-info--wrap">
 				<button class="btn-green-border apartment-button">1-комнатные</button>
@@ -94,7 +94,7 @@
 
 
 			
-			<li class="filter-item" data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
+			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
 				<a href="#" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
@@ -105,7 +105,7 @@
 							</tr>
 							<tr>
 								<td class='table-title'>Кіл-ть кімнат:</td>
-								<td class="table-result">185</td>
+								<td class="table-result">2</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Загальна площа:</td>
@@ -124,7 +124,38 @@
 
 
 
-			<li class="filter-item" data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
+			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
+				<a href="#" class="filter-item__link">
+					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
+					<table class="filter-item__table">
+						<tbody>
+							<tr>
+								<td class='table-title'>Секція:</td>
+								<td class="table-result">12</td>
+							</tr>
+							<tr>
+								<td class='table-title'>Кіл-ть кімнат:</td>
+								<td class="table-result">2</td>
+							</tr>
+							<tr>
+								<td class='table-title'>Загальна площа:</td>
+								<td class="table-result">41.16</td>
+							</tr>
+							<tr>
+								<td class='table-title'>Житлова площа:</td>
+								<td class="table-result">16.84</td>
+							</tr>
+						</tbody>
+					</table>
+					<button class="filter-item__button btn-fill">Смотреть квартиру</button>
+				</a>
+			</li>
+			<!-- /.filter-item -->
+
+
+
+			
+			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
 				<a href="#" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
@@ -155,7 +186,7 @@
 
 
 			
-			<li class="filter-item" data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
+			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
 				<a href="#" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
@@ -186,38 +217,7 @@
 
 
 			
-			<li class="filter-item" data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
-				<a href="#" class="filter-item__link">
-					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
-					<table class="filter-item__table">
-						<tbody>
-							<tr>
-								<td class='table-title'>Секція:</td>
-								<td class="table-result">12</td>
-							</tr>
-							<tr>
-								<td class='table-title'>Кіл-ть кімнат:</td>
-								<td class="table-result">185</td>
-							</tr>
-							<tr>
-								<td class='table-title'>Загальна площа:</td>
-								<td class="table-result">41.16</td>
-							</tr>
-							<tr>
-								<td class='table-title'>Житлова площа:</td>
-								<td class="table-result">16.84</td>
-							</tr>
-						</tbody>
-					</table>
-					<button class="filter-item__button btn-fill">Смотреть квартиру</button>
-				</a>
-			</li>
-			<!-- /.filter-item -->
-
-
-
-			
-			<li class="filter-item" data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
+			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
 				<a href="#" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">

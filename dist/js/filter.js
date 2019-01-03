@@ -1,6 +1,6 @@
 (function($) {
 
-	var filter = function() {
+	var filterIn = function() {
 		
 		var filter = {
 			val_entrance: {
@@ -71,7 +71,7 @@
 			})
 		});
 
-		var rows = document.querySelectorAll('.result__item');
+		var rows = document.querySelectorAll('.js-result__item');
 
 		function Appartment(app) {
 			this.selector = app;
@@ -87,8 +87,8 @@
 			appartments.push(new Appartment(row))
 		});
 
-		var searchBtn = document.querySelector('.button_search_js');
-		var resetBtn = document.querySelector('#reset_button');
+		var searchBtn = document.querySelector('.js-button_search');
+		var resetBtn = document.querySelector('.js-reset_button');
 
 		document.querySelector(".number_flats").innerHTML = appartments.length;
 		document.querySelector(".count_filter").innerHTML = appartments.length;
@@ -186,16 +186,16 @@
 	/* Initialize
 	 * ------------------------------------------------------ */
 	 $(function hpInitFilter() {
-			//filter();
+			filterIn();
 	 });
 
 })(jQuery);
 
 
 
-$('.range-init').ionRangeSlider({
+/*$('.range-init').ionRangeSlider({
 	type: "double",
 	hide_min_max: true,
 	grid: false
-});
+});*/
 
