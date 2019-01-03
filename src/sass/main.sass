@@ -1207,6 +1207,11 @@ button
 		background: #eaeaea url('../img/location/location-banner.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+	&-filter
+		height: 420px
+		background: #eaeaea url('../img/filter/filter-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
@@ -2909,6 +2914,13 @@ button
 			letter-spacing: 1.68px
 			text-align: center
 		&__nav
+			li.active-map-item
+				background-color: $accent
+				button
+					color: $wcolor
+					svg
+						fill: $wcolor
+						stroke: $wcolor
 			li
 				button
 					width: 100%
@@ -2926,6 +2938,177 @@ button
 						margin-right: 22px
 
 		
+.filter
+	&-block
+		padding: 40px 0 45px
+		.filter-see-more
+			margin: 0 auto
+			min-width: 700px
+			min-height: 48px
+			font-size: 12px
+			font-weight: 600
+		.option-block
+			padding: 30px 60px 40px
+			margin-bottom: 20px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			flex-wrap: wrap
+			border: 1px solid #cdcdcd
+			.irs--flat .irs-line
+				height: 2px
+				background-color: #525249
+			.irs--flat .irs-bar
+				height: 2px
+				background-color: $accent
+			.irs--flat .irs-handle
+				width: 10px
+				height: 10px
+				background-color: $accent
+				border-radius: 50%
+			.irs--flat .irs-handle>i:first-child
+				background-color: $accent
+			
+			.option__item
+				display: block
+				width: 300px
+				margin-bottom: 10px
+			.option__item.btn-fill
+				padding: 9px 0
+				margin-top: 10px
+				font-size: 14px
+				font-weight: 500
+				line-height: 31px
+				letter-spacing: 0.7px
+				border: 1px solid $accent
+			.option__results
+				padding: 0 55px
+				color: $accent
+				font-size: 12px
+				font-weight: 500
+				line-height: 20px
+				text-align: center
+				box-sizing: border-box
+			.option__reset
+				margin: 0
+				padding: 17px 0
+				align-self: center
+				color: $accent
+				font-size: 12px
+				font-weight: 500
+				text-decoration: underline
+				background-color: transparent
+			.option__title
+				color: $accent
+				font-size: 20px
+				font-weight: 400
+				line-height: 30px
+				text-transform: uppercase
+				letter-spacing: 1.4px
+				text-align: center
+			.checkbox-item
+				text-align: center
+				.filter__checkbox:checked + label
+					font-size: 14px
+					background-color: $accent
+					color: $wcolor
+					cursor: pointer
+				input
+					display: none
+					visibility: hidden
+					opacity: 0
+				label
+					display: inline-block
+					width: 46px
+					height: 46px
+					color: $bcolor
+					font-size: 12px
+					font-weight: 400
+					line-height: 46px
+					text-align: center
+					border: 1px solid #b8b8b8
+					box-sizing: border-box
+					overflow: hidden
+					transition: all 0.4s
+					&:hover
+						font-size: 14px
+						background-color: #f0f0f0
+						cursor: pointer
+			.range-item
+				input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
+					display: none
+				input[type="number"]
+					width: 140px
+					height: 46px
+					border: 1px solid #b8b8b8
+					text-align: center
+
+				max-width: 300px
+				text-align: center
+				&__title
+					margin-bottom: 13px
+					color: $accent
+					font-size: 12px
+					font-weight: 500
+	&-info
+		display: flex
+		justify-content: space-around
+		align-items: center
+		margin-bottom: 23px
+		&__text
+			color: $bcolor
+			font-size: 12px
+			font-weight: 400
+		&--wrap
+			display: flex
+			.apartment-button
+				margin: 0 6px
+				padding: 14px 33px
+	&-results
+		+row-flex()
+		justify-content: space-between
+		margin-bottom: 50px
+		.filter-item
+			+col()
+			+size(3)
+			position: relative
+			border: 1px solid #cdcdcd
+			transition: all 0.4s
+			&:hover
+				transform: scale(1.1)
+			&__img
+				margin-bottom: 40px
+			&__table
+				margin-bottom: 65px
+				width: 100%
+				.table-title
+					color: $bcolor
+					font-size: 13px
+					font-weight: 500
+					line-height: 25.49px
+					font-weight: 500
+				.table-result
+					color: $bcolor
+					font-size: 13px
+					font-weight: 500
+					line-height: 25.49px
+					font-weight: 400
+					text-align: left
+
+			&__button
+				width: 100%
+				position: absolute
+				bottom: 0
+				left: 0
+				padding: 8px 0
+				font-size: 13px
+				font-weight: 500
+				line-height: 32.92px
+				letter-spacing: 0.6px
+			&__link
+				display: block
+				padding: 35px 15px 0
+				
 
 
 @import "media" // Always at the end

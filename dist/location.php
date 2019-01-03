@@ -75,7 +75,7 @@
 				<?php include('img/svg/location/location-icon-coub.svg'); ?>
 				Детские садики</button>
 			</li>
-			<li data-category='mall' class='mark-item'>
+			<li data-category='mall' class='mark-item active-map-item'>
 				<button>
 				<?php include('img/svg/location/location-icon-shop-bag.svg'); ?>
 				Торгово-развлекательные комплексы</button>
