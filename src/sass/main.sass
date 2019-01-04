@@ -1212,6 +1212,11 @@ button
 		background: #eaeaea url('../img/filter/filter-banner.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+	&-appartment
+		height: 420px
+		background: #eaeaea url('../img/appartment/appartment-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
@@ -3076,8 +3081,12 @@ button
 			transition: all 0.4s
 			&:hover
 				transform: scale(1.1)
+				box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px -1px
 			&__img
 				margin-bottom: 40px
+				height: 110px
+				img
+					height: 100%
 			&__table
 				margin-bottom: 65px
 				width: 100%
@@ -3109,6 +3118,96 @@ button
 				display: block
 				padding: 35px 15px 0
 				
+.appartment-block
+	padding: 30px 0 60px
+	display: flex
+	justify-content: space-between
+	&__left
+		flex-basis: 17%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		.button-wrap
+			.appartment-btn
+				padding: 11px 0
+				margin: 20px 0
+				width: 100%
+			.arrow--size
+				svg
+					width: 42px
+					height: 13px
+					transform: rotate(180deg)
+					.arrow-line
+						fill: #568F0A
+						stroke-width: 0
+					.arrow-angle
+						fill: #568F0A
+						stroke: #568F0A
+						stroke-miterlimit: 10
+						stroke-width: 1
+				&:hover
+					.arrow-line
+						fill: #fff
+					.arrow-angle
+						fill: #fff
+						stroke: #fff
+			.pdf--color
+				&:hover
+					svg
+						g
+							g
+								use
+									fill: $wcolor
+			.filter--margin
+				svg
+					margin-right: 10px
+				&:hover
+					.svg--color
+						g
+							use
+								fill: $accent
 
+		.plan-floor
+			&__title
+				margin-bottom: 15px
+				text-align: center
+				color: $bcolor
+				font-size: 12px
+				font-weight: 500
+			img
+	&__center
+		flex-basis: 50%
+		align-self: center
+		img
+	&__right
+		flex-basis: 24%
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		overflow: hidden
+		.compass-img
+			margin-bottom: 35px
+			text-align: right
+			img
+				max-width: 70px
+		.appartment-table
+			min-width: 260px
+			padding: 50px 20px
+			display: block
+			background-color: #f0f0f0
+			box-sizing: border-box
+			table
+				width: 100%
+				tbody
+					tr
+						td
+							color: $bcolor
+							font-size: 12px
+							font-weight: 400
+							line-height: 26px
+							font-weight: 400
+							&:first-child
+								padding-right: 10px
+								font-weight: 500
 
 @import "media" // Always at the end

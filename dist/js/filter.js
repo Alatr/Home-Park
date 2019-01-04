@@ -1,7 +1,8 @@
 (function($) {
 
 	var filterIn = function() {
-		
+
+// Общий Object в котором указаны все параметры фильтра по которым идёт выборка квартир  	
 		var filter = {
 			val_entrance: {
 				min: '',
@@ -22,30 +23,33 @@
 			rooms: []
 		};
 
+// Ф-я которая записывает общие данные из slider(при инициализации) в глобальный Object
 		function setFilter(ionRange, range) {
 			filter[range.id].min = Number(ionRange.from);
 			filter[range.id].max = Number(ionRange.to);
 		};
 
+// Ф-я которая устанавливает начальные значения из дата атрибутов в slider
 		function setValue(el, val) {
 			$('.js_' + el.id + '_min').val(val.from);
 			$('.js_' + el.id + '_max').val(val.to);
 		}
 
 		var ranges = document.querySelectorAll('.range-init');
-
 		var sliders = [];
 
+//Init всех Sliders с классом .range-init
 		ranges.forEach(function(range) {
 			$(range).ionRangeSlider({
 				type: "double",
 				grid: true,
 				values_separator: '-',
-				min: range.value.split('/')[0],
-				max: range.value.split('/')[1],
-				from: range.value.split('/')[0],
-				to: range.value.split('/')[1],
+				min: range.value.split(';')[0],
+				max: range.value.split(';')[1],
+				from: range.value.split(';')[0],
+				to: range.value.split(';')[1],
 				hide_min_max: true,
+				hide_from_to: true,
 				grid: false,
 				onStart: function(ionRange) {
 					setFilter(ionRange, range);
@@ -58,9 +62,10 @@
 			sliders.push($(range).data("ionRangeSlider"));
 
 		});
+		var checkboxesConainer = document.querySelector('.js_checkboxes__rooms'); // wrap checkboxs
+		var checkboxes = document.querySelectorAll('.checkbox__room'); // label
 
-		var checkboxesConainer = document.querySelector('.js_checkboxes__rooms');
-		var checkboxes = document.querySelectorAll('.checkbox__room');
+// Отслежка выбора checbox и запись выбраных элементов в глобальный Object filter
 
 		checkboxesConainer.addEventListener('change', function() {
 			filter.rooms = [];
@@ -71,7 +76,9 @@
 			})
 		});
 
-		var rows = document.querySelectorAll('.js-result__item');
+
+// Ф-я конструктор котрая создаёт отдельный Object на каждую квартиру, берёт данные из дата атрибута и записывает 
+		var rows = document.querySelectorAll('.js-result__item'); // все карточки с квартирами li 
 
 		function Appartment(app) {
 			this.selector = app;
@@ -81,21 +88,24 @@
 			this.val_floor = parseInt(app.dataset.floor);
 			this.rooms = parseInt(app.dataset.rooms);
 		}
-
+// Записывает все квартиры в отдельный массив
 		var appartments = [];
 		rows.forEach(function(row){
 			appartments.push(new Appartment(row))
 		});
 
+// выборка кнопок и установка значения общего к-ва квартир
 		var searchBtn = document.querySelector('.js-button_search');
 		var resetBtn = document.querySelector('.js-reset_button');
 
 		document.querySelector(".number_flats").innerHTML = appartments.length;
 		document.querySelector(".count_filter").innerHTML = appartments.length;
 
+// Обработчик на кнопку поиска
 		searchBtn.addEventListener('click', function() {
 			var totalAppartments = appartments.length;
 			var i = 0;
+			// Проход по массиву и сверка ключей и данных
 			appartments.forEach(function(appartment){
 				appartment.selector.style.display = 'block';
 				for(var key in filter) {
@@ -117,6 +127,8 @@
 			document.querySelector(".count_filter").innerHTML = totalAppartments - i <= 0 ? 0 : totalAppartments - i;
 		});
 
+
+// Обнуление данных методы плагина 
 		resetBtn.addEventListener('click', function(e) {
 			e.preventDefault();
 			sliders.forEach(function(slider) {
@@ -134,6 +146,7 @@
 		});
 
 
+// установка и обработка значений ввидённых с клавиатуру в поля инпутов минимальных и максимальных значений
 		var minInputs = document.querySelectorAll('.slider__currentMin');
 
 		function setMinSliderFromInput(id, val) {

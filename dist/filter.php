@@ -43,9 +43,9 @@
 
 				<div class="range-item option__item">
 					<div class="range-item__title">Этаж</div>
-					<input class="js_val_entrance_min slider__currentMin" type="number" min="1" value="1" max="4" id="entrance_min">
-					<input class="js_val_entrance_max slider__currentMax" type="number" min="1" value="4" max="4" id="entrance_max">
-					<input type="hidden" class="range-init irs-hidden-input" id="val_entrance" value="1;4" readonly="">
+					<input class="js_val_floor_min slider__currentMin" type="number" min="3" value="3" max="25" id="entrance_min">
+					<input class="js_val_floor_max slider__currentMax" type="number" min="3" value="25" max="25" id="entrance_max">
+					<input type="hidden" class="range-init irs-hidden-input" id="val_floor" value="3;25" readonly="">
 				</div>
 				<!-- /.range-item -->
 
@@ -53,18 +53,18 @@
 
 				<div class="range-item option__item">
 					<div class="range-item__title">Общая площадь, м.кв</div>
-					<input class="js_val_entrance_min slider__currentMin" type="number" min="1" value="1" max="4" id="entrance_min">
-					<input class="js_val_entrance_max slider__currentMax" type="number" min="1" value="4" max="4" id="entrance_max">
-					<input type="hidden" class="range-init irs-hidden-input" id="val_entrance" value="1;4" readonly="">
+					<input class="js_val_square_min slider__currentMin" type="number" min="39" value="39" max="100" id="entrance_min">
+					<input class="js_val_square_max slider__currentMax" type="number" min="39" value="100" max="100" id="entrance_max">
+					<input type="hidden" class="range-init irs-hidden-input" id="val_square" value="39;100" readonly="">
 				</div>
 				<!-- /.range-item -->
 
 
 				<div class="range-item option__item">
 					<div class="range-item__title">Жилая площадь, м.кв</div>
-					<input class="js_val_entrance_min slider__currentMin" type="number" min="1" value="1" max="4" id="entrance_min">
-					<input class="js_val_entrance_max slider__currentMax" type="number" min="1" value="4" max="4" id="entrance_max">
-					<input type="hidden" class="range-init irs-hidden-input" id="val_entrance" value="1;4" readonly="">
+					<input class="js_val_squareLiv_min slider__currentMin" type="number" min="15" value="15" max="99" id="entrance_min">
+					<input class="js_val_squareLiv_max slider__currentMax" type="number" min="15" value="99" max="99" id="entrance_max">
+					<input type="hidden" class="range-init irs-hidden-input" id="val_squareLiv" value="15;99" readonly="">
 				</div>
 				<!-- /.range-item -->
 
@@ -94,14 +94,48 @@
 
 
 			
-			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
+			<li class="filter-item js-result__item" data-floor="6" data-rooms="1" data-area="66" data-larea="68" data-build="4">
 				<a href="#" class="filter-item__link">
-					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
+					<div class="filter-item__img">
+						<img src="img/home/home-bg.jpg" alt="" title="">
+					</div>
 					<table class="filter-item__table">
 						<tbody>
 							<tr>
 								<td class='table-title'>Секція:</td>
-								<td class="table-result">12</td>
+								<td class="table-result">1</td>
+							</tr>
+							<tr>
+								<td class='table-title'>Кіл-ть кімнат:</td>
+								<td class="table-result">1</td>
+							</tr>
+							<tr>
+								<td class='table-title'>Загальна площа:</td>
+								<td class="table-result">66</td>
+							</tr>
+							<tr>
+								<td class='table-title'>Житлова площа:</td>
+								<td class="table-result">68</td>
+							</tr>
+						</tbody>
+					</table>
+					<button class="filter-item__button btn-fill">Смотреть квартиру</button>
+				</a>
+			</li>
+			<!-- /.filter-item -->
+
+
+
+			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="40" data-larea="35" data-build="1">
+				<a href="#" class="filter-item__link">
+					<div class="filter-item__img">
+						<img src="img/filter/Plan_copy.png" alt="" title="">
+					</div>
+					<table class="filter-item__table">
+						<tbody>
+							<tr>
+								<td class='table-title'>Секція:</td>
+								<td class="table-result">2</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Кіл-ть кімнат:</td>
@@ -109,11 +143,11 @@
 							</tr>
 							<tr>
 								<td class='table-title'>Загальна площа:</td>
-								<td class="table-result">41.16</td>
+								<td class="table-result">45</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Житлова площа:</td>
-								<td class="table-result">16.84</td>
+								<td class="table-result">40</td>
 							</tr>
 						</tbody>
 					</table>
@@ -124,14 +158,15 @@
 
 
 
-			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
+			
+			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="39" data-larea="20" data-build="1">
 				<a href="#" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
 						<tbody>
 							<tr>
 								<td class='table-title'>Секція:</td>
-								<td class="table-result">12</td>
+								<td class="table-result">3</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Кіл-ть кімнат:</td>
@@ -139,11 +174,11 @@
 							</tr>
 							<tr>
 								<td class='table-title'>Загальна площа:</td>
-								<td class="table-result">41.16</td>
+								<td class="table-result">25</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Житлова площа:</td>
-								<td class="table-result">16.84</td>
+								<td class="table-result">20</td>
 							</tr>
 						</tbody>
 					</table>
@@ -155,26 +190,26 @@
 
 
 			
-			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
+			<li class="filter-item js-result__item " data-floor="3" data-rooms="3" data-area="70" data-larea="65" data-build="1">
 				<a href="#" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
 						<tbody>
 							<tr>
 								<td class='table-title'>Секція:</td>
-								<td class="table-result">12</td>
+								<td class="table-result">4</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Кіл-ть кімнат:</td>
-								<td class="table-result">185</td>
+								<td class="table-result">3</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Загальна площа:</td>
-								<td class="table-result">41.16</td>
+								<td class="table-result">70</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Житлова площа:</td>
-								<td class="table-result">16.84</td>
+								<td class="table-result">65</td>
 							</tr>
 						</tbody>
 					</table>
@@ -186,57 +221,26 @@
 
 
 			
-			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
+			<li class="filter-item js-result__item " data-floor="3" data-rooms="4" data-area="95" data-larea="90" data-build="1">
 				<a href="#" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
 						<tbody>
 							<tr>
 								<td class='table-title'>Секція:</td>
-								<td class="table-result">12</td>
+								<td class="table-result">5</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Кіл-ть кімнат:</td>
-								<td class="table-result">185</td>
+								<td class="table-result">4</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Загальна площа:</td>
-								<td class="table-result">41.16</td>
+								<td class="table-result">95</td>
 							</tr>
 							<tr>
 								<td class='table-title'>Житлова площа:</td>
-								<td class="table-result">16.84</td>
-							</tr>
-						</tbody>
-					</table>
-					<button class="filter-item__button btn-fill">Смотреть квартиру</button>
-				</a>
-			</li>
-			<!-- /.filter-item -->
-
-
-
-			
-			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="69.44" data-larea="32.88" data-build="1">
-				<a href="#" class="filter-item__link">
-					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
-					<table class="filter-item__table">
-						<tbody>
-							<tr>
-								<td class='table-title'>Секція:</td>
-								<td class="table-result">12</td>
-							</tr>
-							<tr>
-								<td class='table-title'>Кіл-ть кімнат:</td>
-								<td class="table-result">185</td>
-							</tr>
-							<tr>
-								<td class='table-title'>Загальна площа:</td>
-								<td class="table-result">41.16</td>
-							</tr>
-							<tr>
-								<td class='table-title'>Житлова площа:</td>
-								<td class="table-result">16.84</td>
+								<td class="table-result">90</td>
 							</tr>
 						</tbody>
 					</table>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="11" viewBox="0 0 26 11">
+	<defs>
+		<path id="7xyza" d="M427 492v-1h23v1z"/><path id="7xyzb" d="M425.5 490a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/><path id="7xyzc" d="M427 500v-1h23v1z"/><path id="7xyzd" d="M425.5 498a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/><path id="7xyze" d="M424 496v-1h23v1z"/><path id="7xyzf" d="M448.5 494a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/>
+	</defs>
+	<g>
+		<g class="svg--color" transform="translate(-424 -490)"><g><use fill="#fff" xlink:href="#7xyza"/></g><g>
+	<use fill="#fff" xlink:href="#7xyzb"/></g><g><use fill="#fff" xlink:href="#7xyzc"/></g><g><use fill="#fff" xlink:href="#7xyzd"/></g><g><use fill="#fff" xlink:href="#7xyze"/></g><g><use fill="#fff" xlink:href="#7xyzf"/></g></g></g></svg>
