@@ -1217,6 +1217,16 @@ button
 		background: #eaeaea url('../img/appartment/appartment-banner.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+	&-check-floor
+		height: 420px
+		background: #eaeaea url('../img/check-floor/check-floor-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
+	&-floor
+		height: 420px
+		background: #eaeaea url('../img/floor/floor-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
@@ -3174,11 +3184,22 @@ button
 				color: $bcolor
 				font-size: 12px
 				font-weight: 500
-			img
+			&__link
+				&:hover
+					img
+						user-select: none
+						transform: scale(1.05)
+				img
+					transition: all 0.3s
 	&__center
 		flex-basis: 50%
 		align-self: center
+		&:hover
+			img
+				transform: scale(1.02)
 		img
+			user-select: none
+			transition: all 0.3s
 	&__right
 		flex-basis: 24%
 		display: flex
@@ -3189,6 +3210,7 @@ button
 			margin-bottom: 35px
 			text-align: right
 			img
+				user-select: none
 				max-width: 70px
 		.appartment-table
 			min-width: 260px
@@ -3209,5 +3231,23 @@ button
 							&:first-child
 								padding-right: 10px
 								font-weight: 500
+.mfp-bg--white
+	background-color: #efefef
+	.mfp-close
+		right: -35px
+		color: $accent
+		font-size: 40px
+		font-weight: normal
+	.mfp-figure:after
+		background-color: none
+		box-shadow: none
+
+.check-floor
+	background-color: #e7e9ec
+	&__img
+		margin: 0 auto
+		.floor-item-link
+		.floor-item-group
+
 
 @import "media" // Always at the end

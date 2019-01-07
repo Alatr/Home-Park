@@ -29,16 +29,16 @@
 				Скачать PDF</a>
 				<a class="appartment-btn btn-fill" href="#">Узнать цену</a>
 			</div>
-			<!-- /.batton--wrap -->
+			<!-- /.batton-wrap -->
 			<div class="plan-floor">
 				<p class="plan-floor__title">План поверху</p>
-				<a href="#">
+				<a class="plan-floor__link" href="#">
 					<img src="img/appartment/plan-floor.png" title="" alt="">
 				</a>
 			</div>
 		</div>
 		<!-- /.appartment-block__left -->
-		<a href="img/appartment/appartment-plan.jpg" class="appartment-block__center">
+		<a href="../src/img/appartment/floor-plan--big.png" data-modal-class="mfp-bg--white" class="appartment-block__center">
 			<img src="img/appartment/appartment-plan.jpg" alt="" title="" class="appartment-block-img">
 		</a>
 		<!-- /.appartment-block__center -->
