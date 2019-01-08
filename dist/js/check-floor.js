@@ -29,44 +29,29 @@
 
 			//// функционал при наведении на єтаж
 
-			$( "polygon" ).each(function() {
+			$( ".floor-item-group" ).each(function() {
 
-			  var myBox = $("#floorNumber");
-			  var infoBox1 = $("#floorNumber1");
-			  var infoBox2 = $("#flatsNumber");
-			  var newlink = $('#new_link_house');
+			  var myBox = $(".info-block-floor");
+			  var infoBox2 = $(".info-block-appartments");
+			  var newlink = $('.floor-item-link');
 			  if ($(window).width() > 768) {
 
 				$(this).mouseenter(function() {
-				  // var offset = $(this).offset();
 				  var level = this.dataset.level;
 				  var flatSale = this.dataset.sale;
 				  myBox.html(level);
-				  infoBox1.html(level);
 				  infoBox2.html(flatSale);
-				  $(".arrow_blink").hide("slow");
-				  // myBox.css("opacity","1");
-				  // myBox.offset({top:offset.top, left:offset.left});
-				});
-
-				$(this).mouseleave(function() {
-				  // var myBox = $("#floorNumber");
-				  // myBox.css("opacity","0");
 				});
 			  }
 			  else{
 
 				$(this).click(function(e){
 				  e.preventDefault();
-				  // var myBox = $("#floorNumber");
-				  // var infoBox1 = $("#floorNumber1");
-				  // var infoBox2 = $("#flatsNumber");
 				  var level = this.dataset.level;
 				  var flatSale = this.dataset.sale;
 				  var href = this.dataset.href;
 				  console.log(href);
 				  myBox.html(level);
-				  infoBox1.html(level);
 				  infoBox2.html(flatSale);
 				  newlink.attr("href", href);
 

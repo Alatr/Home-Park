@@ -13,21 +13,14 @@
 <!-- /.sectionHome__gallery -->
 <div class="check-floor">
 	<div class="check-floor__img">
-		
 		<svg version="1.1" id="main-build" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 viewBox="0 0 1920 800" style="enable-background:new 0 0 1920 800;" xml:space="preserve">
-		<style type="text/css">
-			.floor{opacity:0.7;fill:#568F0A;}
-		</style>
-		<image style="overflow:visible;" width="100%" height="100%" xlink:href="img/check-floor/main.jpg"></image>
+			<style type="text/css">
+				.floor{opacity:0.7;fill:#568F0A;}
+			</style>
+			<image style="overflow:visible;" width="100%" height="100%" xlink:href="img/check-floor/main.jpg"></image>
 
-
-		
-		<a class="level_list_item" xlink:href="/floor-plan/13/">
-		    <polygon class="st0" data-level="13" data-sale="18" data-href="/floor-plan/13/" points="960,692.8 1094.9,832 1094.9,858.3 960,726.3 833.3,864.3 799,860.5 659,1043.8 659,1032.8 799.3,835.7 833.8,842.5 " style="opacity: 0; display: block;"></polygon>
-		</a>
-
-			<a class="floor-item-link" xlink:href="/floor-plan/17/">
+			<a class="floor-item-link" xlink:href="#">
 				<g class="floor-item-group" data-level="17" data-sale="17" data-href="/floor-plan/17/">
 					<polygon id="left-side_13_" class="floor" points="1132,260 1132,236 1113,222 1092,234 1079,219 1024,246 1024,259 901,322 892,320 
 						892,308 849,287 856,280 750,221 746,224 671,182 630,225 598,208 573,240 573,282 599,252 630,265 672,219 745,257 749,252 
@@ -48,7 +41,7 @@
 					<path id="right-side_8_" class="floor" d="M1131,250v-33l41-21l8,5l219-104l11,4v9l50-25l10,5l56-26v10c11.6,0.2,21,3.5,24,16l10,5
 						v36l-9-4c-6.2-9.9-15.1-15.1-26-17l-52,21l-11-6l-53,26v-16l-12-3l-217,101l-6-3L1131,250z"/>
 				</g>
-			</Б.
+			</a>
 
 
 
@@ -86,7 +79,7 @@
 					<path id="right-side_10_" class="floor" d="M1560,262l-10-6c-0.9-7.1-12.1-9.7-24-12v-12l-54,18v-8l-64,20v-10l-226,84l-8-6l-43,17
 						v-36l42-18l6,5l220-90h9v17l53-20l9,6l56-19c15.1,2.3,24.6,9.9,26,25l8,4V262z"/>
 				</g>
-			</Б.
+			</a>
 
 
 
@@ -114,13 +107,13 @@
 					<path id="right-side_12_" class="floor" d="M1560,301v40l-33-14v-11l-54,15v-10l-61,17v-8l-229,67l-8-4l-44,15.7V378l44-17l8,5
 						l227-77v10l62-18v9l55-16v10c10.6-0.3,19.8,1.6,24,11L1560,301z"/>
 				</g>
-			</Б.
+			</a>
 
 
 
 
 			<a class="floor-item-link" xlink:href="/floor-plan/10/">
-				<g class="floor-item-group" data-level="10" data-sale="18" data-href="/floor-plan/10/">
+				<g class="floor-item-group" data-level="10" data-sale="13" data-href="/floor-plan/10/">
 					<polygon id="left-side_4_" class="floor" points="1131,437 1131,462 1115,457 1087,466 1077,462 1059,468 1049,464 1022,471 
 						1022,479 899,510 883,505 883,500 845,491 852,486 748,454 737,461 672,442 637,460 599,455 573,468 573,444 598,428 634,434 
 						672,415 745,432 751,427 852,462 843,467 885,478 885,483 899,486 1022,452 1022,444 1048,436 1056,440 1078,433 1085,436 
@@ -133,7 +126,7 @@
 
 
 			<a class="floor-item-link" xlink:href="/floor-plan/910/">
-				<g class="floor-item-group" data-level="910" data-sale="18" data-href="/floor-plan/910/">
+				<g class="floor-item-group" data-level="910" data-sale="1" data-href="/floor-plan/910/">
 					<polygon id="left-side_5_" class="floor" points="1131,462 1131,495 1116,487 1087,493 1078,490 1059,496 1048,492 1023,498 
 						1023,504 898,534 883,529 883,524 848,515 852,512 749,486 738,491 672,474 637,489 598,485 573,498 573,468 599,455 637,460 
 						672,442 737,461 748,454 852,486 845,491 883,500 883,505 899,510 1022,479 1022,471 1049,464 1059,468 1077,462 1087,466 
@@ -146,7 +139,7 @@
 
 
 			<a class="floor-item-link" xlink:href="/floor-plan/8/">
-				<g class="floor-item-group" data-level="8" data-sale="18" data-href="/floor-plan/8/">
+				<g class="floor-item-group" data-level="8" data-sale="15" data-href="/floor-plan/8/">
 				
 					<polygon id="left-side_6_" class="floor" points="1131,495 1131,525 1116,516 1088,522 1077,519 1057,523 1049,519 1024,524 
 						1024,530 899,557 883,551 883,546 849,539 852,536 750,516 736,520 736,515 672,502 638,514 598,510 573,522 573,498 598,485 
@@ -160,7 +153,7 @@
 
 
 			<a class="floor-item-link" xlink:href="/floor-plan/7/">
-				<g class="floor-item-group" data-level="7" data-sale="18" data-href="/floor-plan/7/">
+				<g class="floor-item-group" data-level="7" data-sale="17" data-href="/floor-plan/7/">
 					<polygon id="left-side_7_" class="floor" points="1131,525 1131,548 1121,543 1089,550 1084,547 1056,550 1048,548 1023,552 
 						1023,557 898,579 883,574 883,571 849,564 851,562 749,544 736,547 736,544 672,535 640,544 599,541 573,554 573,522 598,510 
 						638,514 672,502 736,515 736,520 749.2,516.2 852,536 849,539 883,546 883,551 899,557 1024,530 1024,524 1049,519 1057,523 
@@ -184,7 +177,7 @@
 
 
 			<a class="floor-item-link" xlink:href="/floor-plan/5/">
-				<g class="floor-item-group" data-level="5" data-sale="18" data-href="/floor-plan/5/">
+				<g class="floor-item-group" data-level="5" data-sale="182" data-href="/floor-plan/5/">
 					<polygon id="left-side_9_" class="floor" points="1131,601 1024,607 1024,612 899,619 672,592 641,598 597,595 573,606 573,579 
 						598,568 641,571 672,564 849,588 899,598 1024,583 1024,577 1050,574 1060,577 1124,572 1131,576 	"/>
 					<polygon id="right-side_3_" class="floor" points="1560,573 1527,560 1472,566 1472,560 1132,594 1132,564 1473,519 1473,525 
@@ -214,10 +207,44 @@
 				</g>
 			</a>
 		</svg>
-
 	</div>
 	<!-- /.check-floor__img -->
-	
+	<aside class="check-floor__aside">
+		<div class="button-wrap">
+			<a class="btn-fill filter--margin" href="#">
+				<?php include('img/svg/filter-icon.svg'); ?>
+				Фильтр
+			</a>
+			<a href="#" class="btn-green-border">1-комнатные</a>
+			<a href="#" class="btn-green-border">2-комнатные</a>
+			<a href="#" class="btn-green-border">3-комнатные</a>
+		</div>
+		<!-- /.button-wrap -->
+		<div class="info-block-wrap">
+			<p class="info-block__item background--green"><span class="info-block-floor">3</span>этаж</p>
+			<!-- /.info-floor -->
+			<div class="info-block__item padding--side">
+				<p>
+					<span class="info-block-appartments">17</span>квартир на этаже
+				</p>
+			</div>
+			<!-- /.info-appartment -->
+			<div class="compass-img">
+				<img src="img/appartment/icon-compass.png" alt="" title="">
+			</div>
+		</div>
+		<!-- /.info-block-wrap -->
+	</aside>
+	<!-- /.check-floor__aside -->
+	<div class="check-floor__note">
+		<p class="note-title">Выберите нужный этаж</p>
+		<!-- /.note-title -->
+		<div class="arrow--position">
+			<?php include('img/svg/arrow.svg'); ?>
+		</div>
+		<!-- /.arrow-wrap -->
+	</div>
+	<!-- /.check-floor__note -->
 </div>
 <!-- /.check-floor -->
 <?php include('includes/footer.php'); ?>

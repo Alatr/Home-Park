@@ -1042,41 +1042,64 @@ button
 
 /* ===========================Section_footer========================*/
 .sectionHome__footer
-	min-height: 90px
+	height: 90px
+	width: 100%
+	padding-top: 30px
 	background-color: $accent
 	color: #fff
+	position: fixed
+	bottom: 0
+	left: 0
+	z-index: 100
+	transition: all 0.5s
+	box-sizing: border-box
 	a
 		color: #fff
 	.row
 		display: flex
 		justify-content: space-between
-		line-height: 90px
 		.footer__menu
 			display: flex
 			flex-basis: 60%
 			justify-content: space-between
-			li
-				a
-					position: relative
-					color: #fff
-					font-size: 16px
-					font-weight: 400
-					line-height: 30px
-					letter-spacing: 0.4px
-					&::after
-						position: absolute
-						bottom: -8px
-						left: 0
-						content: ''
-						display: block
-						height: 1px
-						width: 100%
-						background-color: #fff
-						transform: scale(0)
-					&:hover
+			.footer-location__text
+				max-width: 125px
+				color: $wcolor
+				font-size: 12px
+				font-weight: 400
+				letter-spacing: 0.4px
+				line-height: 30px
+			li.footer-menu__title
+				position: relative
+				color: #fff
+				font-size: 16px
+				font-weight: 400
+				line-height: 30px
+				letter-spacing: 0.4px
+				margin-bottom: 30px
+				.sub-menu
+					li
+						a
+							color: $wcolor
+							font-size: 12px
+							font-weight: 400
+							letter-spacing: 0.4px
+							line-height: 30px
+					a
 						&::after
-							transition: 0.4s
-							transform: scale(1)
+							position: absolute
+							bottom: -8px
+							left: 0
+							content: ''
+							display: block
+							height: 1px
+							width: 100%
+							background-color: #fff
+							transform: scale(0)
+						&:hover
+							&::after
+								transition: 0.4s
+								transform: scale(1)
 		.footer-wrap
 			display: flex
 			align-items: center
@@ -1092,6 +1115,9 @@ button
 				&::before
 					z-index: -1
 
+.footer-active
+	min-height: 455px
+	transition: all 0.4s
 /* ===========================preview _banner========================*/
 
 .section-preview
@@ -3243,11 +3269,200 @@ button
 		box-shadow: none
 
 .check-floor
+	min-height: 800px
+	position: relative
 	background-color: #e7e9ec
+
 	&__img
-		margin: 0 auto
+		svg
 		.floor-item-link
 		.floor-item-group
+
+	&__aside
+			position: absolute
+			top: 0
+			left: 24%
+			transform: translateX(-50%)
+			padding-top: 55px
+			width: 200px
+			.button-wrap
+
+				a
+					padding: 11px 0
+					margin-bottom: 20px
+				.filter--margin
+					svg
+						margin-right: 10px
+					&:hover
+						.svg--color
+							g
+								use
+									fill: $accent
+			.info-block-wrap
+				margin-top: 105px
+				.info-block__item
+					min-height: 70px
+					display: flex
+					align-items: center
+					justify-content: center
+					color: $bcolor
+					font-size: 14px
+					font-weight: 500
+					line-height: 18px
+					letter-spacing: 0.7px
+					color: $accent
+					background-color: $wcolor
+					text-align: center
+				.padding--side
+					padding: 0 45px
+				.info-block-floor
+					width: 20px
+					margin-right: 5px
+					text-align: center
+				.info-block-appartments
+					width: 15px
+					margin-right: 10px
+					display: inline-block
+					text-align: center
+				.background--green
+					color: $wcolor
+					background-color: $accent
+				.compass-img
+					margin-top: 100px
+	&__note
+		position: absolute
+		top: 55px
+		left: 50%
+		transform: translateX(-50%)
+		.note-title
+			color: $accent
+			font-size: 20px
+			font-weight: 400
+			line-height: 30px
+			letter-spacing: 0.2px
+		.arrow--position
+			margin-top: 10px
+			text-align: center
+			svg
+				width: 42px
+				height: 13px
+				transform: rotate(90deg)
+				.arrow-line
+					fill: #568F0A
+					stroke-width: 0
+				.arrow-angle
+					fill: #568F0A
+					stroke: #568F0A
+					stroke-miterlimit: 10
+					stroke-width: 1
+.compass-img
+	text-align: center
+	img
+		user-select: none
+		max-width: 70px
+.arrow--size
+	svg
+		width: 42px
+		height: 13px
+		transform: rotate(180deg)
+		.arrow-line
+			fill: #568F0A
+			stroke-width: 0
+		.arrow-angle
+			fill: #568F0A
+			stroke: #568F0A
+			stroke-miterlimit: 10
+			stroke-width: 1
+	&:hover
+		.arrow-line
+			fill: #fff
+		.arrow-angle
+			fill: #fff
+			stroke: #fff
+.filter--margin
+	svg
+		margin-right: 10px
+	&:hover
+		.svg--color
+			g
+				use
+					fill: $accent
+.arrow--next
+	transform: rotate(180deg)
+.floor-block
+	padding: 50px 0 147px
+	&__header
+		padding-bottom: 20px
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		.button-wrap
+			a
+				padding: 11px 24px
+				margin-bottom: 20px
+		.floor-nav
+			display: flex
+			justify-content: center	
+			align-items: center	
+			&__button
+					width: 70px
+					height: 48px
+					display: flex
+					justify-content: center	
+					align-items: center	
+					border: 2px solid #568f0a
+					box-sizing: border-box
+					transition: all 0.4s
+					&:hover
+						background-color: $accent
+						svg
+							.arrow-line
+								fill: $wcolor
+							.arrow-angle
+								fill: $wcolor
+								stroke: $wcolor
+
+			.floor-nav__current
+				margin: 0 45px	
+				color: $accent
+				font-size: 14px
+				font-weight: 500
+				line-height: 31px
+				letter-spacing: 0.7px
+		.block--padding	
+			padding-right: 10%
+	&__img
+		max-width: 828px
+		margin: 0 auto
+		.plan-appartment
+			transition: all 0.4s
+			&:hover
+				opacity: 0.5
+.appartment-info
+	position: absolute
+	padding: 10px 20px 20px
+	display: inline-block
+	background-color: rgba(241,241,241,0.9)
+	box-sizing: border-box
+	z-index: 2
+	display: none
+	visibility: hidden
+	.logo-img
+		svg
+			path, polygon
+				fill: $accent
+	&__table
+		width: 100%
+		color: $bcolor
+		font-size: 12px
+		font-weight: 400
+		line-height: 24px
+		tbody
+			tr
+				td
+					&:first-child
+						padding-right: 10px
+						font-weight: 500
 
 
 @import "media" // Always at the end
