@@ -1044,8 +1044,8 @@ button
 .sectionHome__footer
 	height: 90px
 	width: 100%
-	padding-top: 30px
-	background-color: $accent
+	padding-top: 37px
+	background-color: #689a23
 	color: #fff
 	position: fixed
 	bottom: 0
@@ -1056,11 +1056,12 @@ button
 	a
 		color: #fff
 	.row
+		padding-bottom: 45px
 		display: flex
 		justify-content: space-between
 		.footer__menu
 			display: flex
-			flex-basis: 60%
+			flex-basis: 62%
 			justify-content: space-between
 			.footer-location__text
 				max-width: 125px
@@ -1069,22 +1070,23 @@ button
 				font-weight: 400
 				letter-spacing: 0.4px
 				line-height: 30px
-			li.footer-menu__title
+			.sub-menu__title
 				position: relative
+				display: block
+				margin-bottom: 20px
 				color: #fff
 				font-size: 16px
 				font-weight: 400
 				line-height: 30px
 				letter-spacing: 0.4px
-				margin-bottom: 30px
-				.sub-menu
-					li
-						a
-							color: $wcolor
-							font-size: 12px
-							font-weight: 400
-							letter-spacing: 0.4px
-							line-height: 30px
+			.sub-menu
+				li
+					a
+						color: $wcolor
+						font-size: 12px
+						font-weight: 400
+						letter-spacing: 0.4px
+						line-height: 30px
 					a
 						&::after
 							position: absolute
@@ -1102,21 +1104,39 @@ button
 								transform: scale(1)
 		.footer-wrap
 			display: flex
-			align-items: center
+			align-items: flex-start
 			justify-content: space-between
 			flex-basis: 30%
+			.margin--top
+				margin-top: 3px
 			
 
 			.btn-zindex
+				margin-top: -5px
 				height: 40px
 				background-color: darken($accent, 3%)
 				border: none
 				z-index: 2
 				&::before
 					z-index: -1
+	.footer-copyright
+		background-color: #568f0a
+		&-wrap
+			height: 60px
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__title
+			color: $wcolor
+			font-size: 12px
+			font-weight: 400
+			line-height: 48px
+			letter-spacing: 0.3px
+		&__link
+			max-width: 65px
 
 .footer-active
-	min-height: 455px
+	min-height: 425px
 	transition: all 0.4s
 /* ===========================preview _banner========================*/
 
