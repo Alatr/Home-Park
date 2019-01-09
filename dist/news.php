@@ -1,10 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-news">
 	<div class="container">
-		<h2 class='section-preview__title'>Новости</h2>
+		<h1 class='section-preview__title'>Новости</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>Новости</li>
 		</ul>
 	</div>
@@ -30,7 +30,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать
@@ -58,7 +58,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать
@@ -86,7 +86,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать
@@ -114,7 +114,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать
@@ -142,7 +142,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать
@@ -170,7 +170,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать
@@ -198,7 +198,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать
@@ -226,7 +226,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать
@@ -254,7 +254,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать
@@ -282,7 +282,7 @@
 						<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 					</div>
 					<!-- /.article__text -->
-					<a href="#" class="article__btn">
+					<a href="/dist/news-single.php" class="article__btn">
 						<span class="article__btn-text">
 							<?php include('img/svg/arrow.svg'); ?>
 							Читать

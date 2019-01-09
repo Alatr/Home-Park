@@ -1,10 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-about">
 	<div class="container">
-		<h2 class='section-preview__title'>О проекте</h2>
+		<h1 class='section-preview__title'>О проекте</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>О проекте</li>
 		</ul>
 	</div>
@@ -122,8 +122,8 @@
 				<div class="about-info__text">Завершение строительства: || квартал 2019 года</div>
 				<!-- /.about-info__text -->
 				<div class="about-info__btn--wrap">
-					<a class="btn-green-border" href="#">Ход строительства</a>
-					<a class="btn-green-border" href="#">Выбрать квартиру</a>
+					<a class="btn-green-border" href="/dist/stage-building.php">Ход строительства</a>
+					<a class="btn-green-border" href="/dist/filter.php">Выбрать квартиру</a>
 				</div>
 				<!-- /.about-info__btn--wrap -->
 			</div>
@@ -134,10 +134,9 @@
 	<!-- /.about-block -->
 
 
-<?php include('includes/footer.php'); ?>
+	<?php include('includes/footer.php'); ?>
 
 	<script src="js/scripts.min.js"></script>
-	<script src="js/contact.js"></script>
 
 	</body>
 </html>

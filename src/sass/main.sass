@@ -751,6 +751,7 @@ button
 		justify-content: center
 		align-items: center
 		background: #eaeaea url('../img/home/home__plan.jpg') center center no-repeat
+		background-size: cover
 		z-index: 1
 	&-gallery
 		height: 330px
@@ -758,10 +759,12 @@ button
 		justify-content: center
 		align-items: center
 		background: #eaeaea url('../img/home/home__galery.jpg') center center no-repeat
+		background-size: cover
 		z-index: 1
 	&-apartment
 		height: 330px
 		background: #eaeaea url('../img/home/home__appartment.jpg') center center no-repeat
+		background-size: cover
 		z-index: 1
 		.bannerDescr__text-width
 			max-width: 190px
@@ -772,6 +775,7 @@ button
 	&-day-in
 		height: 400px
 		background: #eaeaea url('../img/home/home__dayIn.jpg') center center no-repeat
+		background-size: cover
 		z-index: 1
 		.bannerDescr__text-width
 			max-width: 300px
@@ -820,6 +824,7 @@ button
 			letter-spacing: 0.14px
 				
 		&__btn
+			color: $wcolor
 			font-weight: 500
 			line-height: 31px
 			letter-spacing: 0.7px
@@ -888,6 +893,7 @@ button
 			right: 0
 /* ===========================Tabs_contact========================*/
 .tabs
+	margin-bottom: 90px
 	a
 		color: #000
 		display: inline-block
@@ -1013,6 +1019,10 @@ button
 				z-index: 2
 				font-size: 25px
 
+		&__text.position--left
+			padding-left: 65px
+		.inputtelmask
+			width: 100%
 		&__text
 			position: absolute
 			padding-left: 30px
@@ -1044,15 +1054,17 @@ button
 .sectionHome__footer
 	height: 90px
 	width: 100%
-	padding-top: 37px
+	padding-top: 31px
 	background-color: #689a23
 	color: #fff
 	position: fixed
 	bottom: 0
 	left: 0
-	z-index: 100
+	z-index: 667
 	transition: all 0.5s
 	box-sizing: border-box
+	&:hover
+		cursor: pointer
 	a
 		color: #fff
 	.row
@@ -1073,21 +1085,20 @@ button
 			.sub-menu__title
 				position: relative
 				display: block
-				margin-bottom: 20px
+				margin-bottom: 25px
 				color: #fff
 				font-size: 16px
 				font-weight: 400
-				line-height: 30px
 				letter-spacing: 0.4px
 			.sub-menu
 				li
 					a
+						position: relative
 						color: $wcolor
 						font-size: 12px
 						font-weight: 400
 						letter-spacing: 0.4px
 						line-height: 30px
-					a
 						&::after
 							position: absolute
 							bottom: -8px
@@ -1107,8 +1118,6 @@ button
 			align-items: flex-start
 			justify-content: space-between
 			flex-basis: 30%
-			.margin--top
-				margin-top: 3px
 			
 
 			.btn-zindex
@@ -1135,9 +1144,6 @@ button
 		&__link
 			max-width: 65px
 
-.footer-active
-	min-height: 425px
-	transition: all 0.4s
 /* ===========================preview _banner========================*/
 
 .section-preview
@@ -1281,29 +1287,31 @@ button
 		li
 			margin-right: 40px
 			color: #fff
-			font-size: 16px
+			font-size: 12px
 			font-weight: 400
 			line-height: 30px
-			letter-spacing: 0.4px
+			letter-spacing: 0.3px
 		
 			
 			a
+				display: block
 				position: relative
 				color: #fff
-				font-size: 16px
+				font-size: 12px
 				font-weight: 400
 				line-height: 30px
 				letter-spacing: 0.4px
+				transition: 0.4s
 				&::after
 					position: absolute
-					bottom: -8px
+					bottom: 6px
 					left: 0
 					content: ''
 					display: block
 					height: 1px
 					width: 100%
-					background-color: #fff
-					transform: scale(0)
+					background-color: rgba(255,255,255, 0.4)
+					transform: scale(1)
 				&::before
 					position: absolute
 					top: 50%
@@ -1312,14 +1320,15 @@ button
 					content: '\2022'
 					color: #fff
 				&:hover
+					font-size: 16px
 					&::after
-						transition: 0.4s
-						transform: scale(1)
+						display: none
 
 
 /* ===========================preview _banner========================*/
 .webCamera
 	padding: 60px 0
+	margin-bottom: 90px
 	display: flex
 	align-items: center
 	&__video
@@ -1417,13 +1426,14 @@ button
 	&-block
 		padding-bottom: 80px
 		padding-top: 160px
+		margin-bottom: 90px
 		position: relative
 		.article-slider__nav
 			top: auto
 			left: 0
 			bottom: 136px
 			width: 120px
-			z-index: 999
+			z-index: 666
 		.values-note
 			position: absolute
 			left: -13%
@@ -1446,7 +1456,7 @@ button
 			padding: 85px 35px 45px 35px
 			min-height: 270px
 			background-color: #fff
-			z-index: 999
+			z-index: 666
 			h4
 				margin: 0
 			.slider-navigation
@@ -1520,6 +1530,8 @@ button
 			border: 1px solid #efefef
 			background-color: #ffffff
 			z-index: -1
+	.images-block.margin--bottom
+		margin-bottom: 295px
 
 		.images-block-descr
 			position: absolute
@@ -1702,6 +1714,7 @@ button
 
 .specifically-block
 	padding: 100px 0 70px
+	margin-bottom: 90px
 	.specifically-items
 		margin-bottom: 105px
 		.specifically__title
@@ -1773,6 +1786,7 @@ button
 	&-block
 		padding-top: 35px
 		padding-bottom: 73px
+		margin-bottom: 90px
 		.navigation
 			min-width: 610px
 			margin: 0 auto
@@ -2045,6 +2059,7 @@ button
 	&-block
 		padding-top: 60px
 		padding-bottom: 80px
+		margin-bottom: 90px
 		.minus-top
 			transform: translateY(-100px)
 		
@@ -2326,6 +2341,7 @@ button
 	&-block
 		padding-top: 46px
 		padding-bottom: 75px
+		margin-bottom: 90px
 		.personal-park
 			.infostructure__title
 				margin-bottom: -9px
@@ -2601,6 +2617,7 @@ button
 
 .about-block
 	padding-bottom: 60px
+	margin-bottom: 90px
 	&__descr
 		+row-flex()
 		padding: 50px 0
@@ -2691,6 +2708,7 @@ button
 
 .stage-block
 	padding-bottom: 61px
+	margin-bottom: 90px
 	&__title
 		padding: 30px 0
 		color: $bcolor
@@ -2834,6 +2852,7 @@ button
 .documentation
 	&-block
 		padding: 70px 0
+		margin-bottom: 90px
 	&-items
 		+row-flex()
 		justify-content: center
@@ -2876,6 +2895,7 @@ button
 .gallery
 	&-block
 		padding: 35px 0 60px
+		margin-bottom: 90px
 	&-items
 		column-count: 4
 		column-gap: 50px
@@ -2917,6 +2937,7 @@ button
 	&-block
 		min-height: 500px
 		position: relative
+		margin-bottom: 90px
 		.main-map
 			#map
 				min-height: 500px
@@ -3002,6 +3023,7 @@ button
 .filter
 	&-block
 		padding: 40px 0 45px
+		margin-bottom: 90px
 		.filter-see-more
 			margin: 0 auto
 			min-width: 700px
@@ -3128,11 +3150,12 @@ button
 	&-results
 		+row-flex()
 		justify-content: space-between
-		margin-bottom: 50px
+		margin-bottom: 30px
 		.filter-item
 			+col()
 			+size(3)
 			position: relative
+			margin-bottom: 20px
 			border: 1px solid #cdcdcd
 			transition: all 0.4s
 			&:hover
@@ -3176,6 +3199,7 @@ button
 				
 .appartment-block
 	padding: 30px 0 60px
+	margin-bottom: 90px
 	display: flex
 	justify-content: space-between
 	&__left
@@ -3285,11 +3309,12 @@ button
 		font-size: 40px
 		font-weight: normal
 	.mfp-figure:after
-		background-color: none
+		background-color: transparent
 		box-shadow: none
 
 .check-floor
 	min-height: 800px
+	margin-bottom: 90px
 	position: relative
 	background-color: #e7e9ec
 
@@ -3411,6 +3436,7 @@ button
 	transform: rotate(180deg)
 .floor-block
 	padding: 50px 0 147px
+	margin-bottom: 90px
 	&__header
 		padding-bottom: 20px
 		display: flex

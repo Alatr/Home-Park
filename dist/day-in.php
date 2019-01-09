@@ -1,10 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-day-in">
 	<div class="container">
-		<h2 class='section-preview__title'>ДЕНЬ В HOME & PARK Comfort House</h2>
+		<h1 class='section-preview__title'>ДЕНЬ В HOME & PARK Comfort House</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>День в HOME & PARK Comfort House</li>
 		</ul>
 	</div>
@@ -185,7 +185,7 @@
 		</div>
 		<!-- /.dayIn-image-blck -->
 
-		<div class="images-block">
+		<div class="images-block margin--bottom">
 			<img src="img/day-in/dayIn__10.jpg" alt="" title="" class="images-block__img">
 			<div class="images-block-descr">
 				<span class="images-block-descr__time">22:00</span>
@@ -210,7 +210,7 @@
 </div>
 <!-- /.container -->
 
-<?php include('includes/footer.php'); ?>
+	<?php include('includes/footer.php'); ?>
 
 	<script src="js/scripts.min.js"></script>
 

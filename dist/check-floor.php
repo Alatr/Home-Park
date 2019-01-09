@@ -1,10 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-check-floor">
 	<div class="container">
-		<h2 class='section-preview__title'>Выбор этажа</h2>
+		<h1 class='section-preview__title'>Выбор этажа</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>Выбор этажа</li>
 		</ul>
 	</div>
@@ -211,7 +211,7 @@
 	<!-- /.check-floor__img -->
 	<aside class="check-floor__aside">
 		<div class="button-wrap">
-			<a class="btn-fill filter--margin" href="#">
+			<a class="btn-fill filter--margin" href="/dist/filter.php">
 				<?php include('img/svg/filter-icon.svg'); ?>
 				Фильтр
 			</a>

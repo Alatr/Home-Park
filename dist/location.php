@@ -1,10 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-location">
 	<div class="container">
-		<h2 class='section-preview__title'>Расположение</h2>
+		<h1 class='section-preview__title'>Расположение</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>Расположение</li>
 		</ul>
 	</div>

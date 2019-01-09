@@ -1,10 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-floor">
 	<div class="container">
-		<h2 class='section-preview__title'>Выбор квартиры</h2>
+		<h1 class='section-preview__title'>Выбор квартиры</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>Выбор квартиры</li>
 		</ul>
 	</div>
@@ -16,10 +16,10 @@
 	<div class="floor-block">
 		<div class="floor-block__header">
 			<div class="button-wrap">
-				<a class="appartment-btn btn-green-border arrow--size" href="#">
+				<a class="appartment-btn btn-green-border arrow--size" href="/dist/check-floor.php">
 				<?php include('img/svg/arrow.svg'); ?>
 				Выбрать этаж</a>
-				<a class="appartment-btn btn-fill filter--margin" href="#">
+				<a class="appartment-btn btn-fill filter--margin" href="/dist/filter.php">
 				<?php include('img/svg/filter-icon.svg'); ?>
 				Фильтр</a>
 			</div>
@@ -48,32 +48,32 @@
 				<image style="overflow:visible;" width="100%" height="100%" xlink:href="img/floor/full-plan.png"></image>
 
 
-				<a class="plan-floor-appartment-link" xlink:href="#" data-number="380" data-square="75.95" data-livsquare="39.61" data-flats="2">
+				<a class="plan-floor-appartment-link" xlink:href="/dist/appartment.php" data-number="380" data-square="75.95" data-livsquare="39.61" data-flats="2">
 					<polygon class="plan-appartment" points="4.5,5.5 4.5,232.5 116.5,232.5 116.5,125.5 124.5,125.5 124.5,92.5 140.5,92.5 140.5,5.5 "/>
 				</a>
 
 
-				<a class="plan-floor-appartment-link" xlink:href="#" data-number="3" data-square="7.95" data-livsquare="3.61" data-flats="7">
+				<a class="plan-floor-appartment-link" xlink:href="/dist/appartment.php" data-number="3" data-square="7.95" data-livsquare="3.61" data-flats="7">
 					<polygon class="plan-appartment" points="222,233 222,135 169,135 169,125 158,125 158,93 142,93 142,6 278,6 278,233 "/>
 				</a>
 
 
-				<a class="plan-floor-appartment-link" xlink:href="#" data-number="15" data-square="15.95" data-livsquare="15.61" data-flats="15">
+				<a class="plan-floor-appartment-link" xlink:href="/dist/appartment.php" data-number="15" data-square="15.95" data-livsquare="15.61" data-flats="15">
 					<polygon class="plan-appartment" points="391,233 391,125 399,125 399,94 414,94 414,6 280,6 280,233 "/>
 				</a>
 
 
-				<a class="plan-floor-appartment-link" xlink:href="#" data-number="38" data-square="71.95" data-livsquare="39.61" data-flats="2">
+				<a class="plan-floor-appartment-link" xlink:href="/dist/appartment.php" data-number="38" data-square="71.95" data-livsquare="39.61" data-flats="2">
 					<polygon class="plan-appartment" points="416,6 416,93 431,93 431,124 443,124 443,134 495,134 495,233 552,233 552,6 "/>
 				</a>
 
 
-				<a class="plan-floor-appartment-link" xlink:href="#" data-number="22" data-square="22.95" data-livsquare="22.61" data-flats="22">
+				<a class="plan-floor-appartment-link" xlink:href="/dist/appartment.php" data-number="22" data-square="22.95" data-livsquare="22.61" data-flats="22">
 					<polygon class="plan-appartment" points="556,233 556,6 690,6 690,92 674,92 674,124 667,124 667,233 "/>
 				</a>
 
 
-				<a class="plan-floor-appartment-link" xlink:href="#" data-number="77" data-square="77.95" data-livsquare="77.61" data-flats="77">
+				<a class="plan-floor-appartment-link" xlink:href="/dist/appartment.php" data-number="77" data-square="77.95" data-livsquare="77.61" data-flats="77">
 					<polygon class="plan-appartment" points="824,233 824,6 690,6 690,92 706,92 706,124 717,124 717,134 769,134 769,233 "/>
 				</a>
 			</svg>

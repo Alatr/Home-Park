@@ -4,8 +4,8 @@
 		<h2 class='section-preview__title'>Фильтр</h2>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
-		  <li><a href="#">Выбор этажа</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
+		  <li><a href="/dist/check-floor.php">Выбор этажа</a></li>
 		  <li>Фильтр</li>
 		</ul>
 	</div>
@@ -28,8 +28,8 @@
 					<label for="checkbox__room2" class="checkbox__text">2</label>
 					<input id="checkbox__room3" class="checkbox__room filter__checkbox" type="checkbox" value="3">
 					<label for="checkbox__room3" class="checkbox__text">3</label>
-					<input id="checkbox__room4" class="checkbox__room filter__checkbox" type="checkbox" value="4">
-					<label for="checkbox__room4" class="checkbox__text">4</label>
+					<!-- <input id="checkbox__room4" class="checkbox__room filter__checkbox" type="checkbox" value="4">
+					<label for="checkbox__room4" class="checkbox__text">4</label> -->
 				</div>
 				<!-- /.checkbox-wrap -->
 				<div class="range-item option__item">
@@ -83,7 +83,7 @@
 				<button class="btn-green-border apartment-button">1-комнатные</button>
 				<button class="btn-green-border apartment-button">2-комнатные</button>
 				<button class="btn-green-border apartment-button">3-комнатные</button>
-				<button class="btn-green-border apartment-button">4-комнатные</button>
+				<!-- <button class="btn-green-border apartment-button">4-комнатные</button> -->
 			</div>
 			<!-- /.filter-info--wrap -->
 		</div>
@@ -95,7 +95,7 @@
 
 			
 			<li class="filter-item js-result__item" data-floor="6" data-rooms="1" data-area="66" data-larea="68" data-build="4">
-				<a href="#" class="filter-item__link">
+				<a href="/dist/appartment.php" class="filter-item__link">
 					<div class="filter-item__img">
 						<img src="img/home/home-bg.jpg" alt="" title="">
 					</div>
@@ -124,10 +124,11 @@
 			</li>
 			<!-- /.filter-item -->
 
+			
 
 
 			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="40" data-larea="35" data-build="1">
-				<a href="#" class="filter-item__link">
+				<a href="/dist/appartment.php" class="filter-item__link">
 					<div class="filter-item__img">
 						<img src="img/filter/Plan_copy.png" alt="" title="">
 					</div>
@@ -160,7 +161,7 @@
 
 			
 			<li class="filter-item js-result__item " data-floor="3" data-rooms="2" data-area="39" data-larea="20" data-build="1">
-				<a href="#" class="filter-item__link">
+				<a href="/dist/appartment.php" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
 						<tbody>
@@ -191,7 +192,7 @@
 
 			
 			<li class="filter-item js-result__item " data-floor="3" data-rooms="3" data-area="70" data-larea="65" data-build="1">
-				<a href="#" class="filter-item__link">
+				<a href="/dist/appartment.php" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
 						<tbody>
@@ -222,7 +223,7 @@
 
 			
 			<li class="filter-item js-result__item " data-floor="3" data-rooms="4" data-area="95" data-larea="90" data-build="1">
-				<a href="#" class="filter-item__link">
+				<a href="/dist/appartment.php" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
 						<tbody>

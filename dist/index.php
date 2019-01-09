@@ -40,7 +40,7 @@
 					<p>Современная и безопасная для ваших детей. Все, что необходимо - в вашем доме или рядом с ним.</p>
 				</div>
 				<!-- /.article__text -->
-				<a href="#" class="article__btn">
+				<a href="/dist/about.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -56,7 +56,7 @@
 			<h2 class="section-title">РАСПОЛОЖЕНИЕ</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
-				<img src="img/home/home__map.jpg" alt="карта" >
+				<img src="img/home/home-locat.jpg" alt="карта" >
 			</div>
 			<div class="article__descr">
 				<h3 class="article__subtitle">HOME&PARK расположен</h3>
@@ -67,7 +67,7 @@
 					<p>Где бы вы ни работали — в Киеве или в Борисполе, вам будет удобно добираться до работы. А вашим детям — в школу или в детский садик, который находится в доме.</p>
 					
 				</div>
-				<a href="#" class="article__btn">
+				<a href="/dist/location.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -111,7 +111,7 @@
 					<span class="slider__count">6</span>
 				</div>
 				<!-- /.article__text -->
-				<a href="#" class="article__btn">
+				<a href="/dist/features.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -155,7 +155,7 @@
 					<span class="slider__count">1</span>
 				</div>
 				<!-- /.article__text -->
-				<a href="#" class="article__btn">
+				<a href="/dist/infostructure.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -208,7 +208,7 @@
 					<span class="slider__count">6</span>
 				</div>
 				<!-- /.article__text -->
-				<a href="#" class="article__btn">
+				<a href="/dist/values-page.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -251,7 +251,7 @@
 					<span class="slider__count">1</span>
 				</div>
 				<!-- /.article__text -->
-				<a href="#" class="article__btn">
+				<a href="/dist/specifically.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -283,10 +283,10 @@
 			<h2 class='banner__title'>Квартиры</h2>
 			<div class="bannerDescr">
 				<div class="bannerDescr__text bannerDescr__text-width">Выберите квартиру вашей мечты уже сейчас!</div>
-				<div class="btn bannerDescr__btn">
+				<a href="/dist/filter.php" class="btn bannerDescr__btn">
 					<?php include('img/svg/key-icon.svg'); ?>
 					Выбрать квартиру
-				</div>
+				</a>
 			</div>
 		</div>
 		<!-- /.sectionHome__banner-apartment-wrap -->
@@ -309,7 +309,7 @@
 					активно развивается. Неизменным спросом пользуется коммерческая недвижимость...
 				</div>
 				<!-- /.article__text -->
-				<a href="#" class="article__btn">
+				<a href="/dist/news.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -335,7 +335,7 @@
 					во всех дома, созданных компанией SAGA Development.
 					
 				</div>
-				<a href="#" class="article__btn">
+				<a href="/dist/news.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -360,7 +360,7 @@
 					<p>	и этапы выполнения работ.</p>
 				</div>
 				<!-- /.article__text -->
-				<a href="#" class="article__btn">
+				<a href="/dist/stage-building.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -384,7 +384,7 @@
 				<div class="article__text"> 
 					<p>	компания SAGA Development</p>
 				</div>
-				<a href="#" class="article__btn">
+				<a href="/dist/developer.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать
@@ -415,9 +415,9 @@
 			<h2 class='banner__title t25p'>День в Home & park</h2>
 			<div class="bannerDescr">
 				<div class="bannerDescr__text bannerDescr__text-width">Посмотрите, как проходит наполненный счастьем день в HOME & PARK!</div>
-				<div class="btn bannerDescr__btn">
+				<a href="/dist/day-in.php" class="btn bannerDescr__btn">
 					Смотреть
-				</div>
+				</a>
 			</div>
 		</div>
 		<!-- /.sectionHome__banner-wrap -->

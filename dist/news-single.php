@@ -1,11 +1,11 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-news-single">
 	<div class="container">
-		<h2 class='section-preview__title'>В Home & Park — лучшие решения для инсоляции дома</h2>
+		<h1 class='section-preview__title'>В Home & Park — лучшие решения для инсоляции дома</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
-		  <li><a href="#">Новости</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
+		  <li><a href="/dist/news.php">Новости</a></li>
 		  <li>В Home & Park — лучшие решения для инсоляции дома</li>
 		</ul>
 	</div>
@@ -44,16 +44,16 @@
 			</div>
 			<!-- /.content__text -->
 			<div class="content__btn">
-				<div class="btn-green-border btn-icon">
+				<a href="/dist/news.php" class="btn-green-border btn-icon">
 					<?php include('img/svg/arrow.svg'); ?>
 					Вернуться к новостям
-				</div>
+				</a>
 				<!-- /.btn -->
 
-				<div class="btn-green-border btn-icon-key">
+				<a href="/dist/filter.php" class="btn-green-border btn-icon-key">
 					<?php include('img/svg/key-icon.svg'); ?>
 					Выбрать квартиру
-				</div>
+				</a>
 				<!-- /.btn -->
 			</div>
 			<!-- /.content__btn -->

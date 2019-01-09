@@ -1,10 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-specifically">
 	<div class="container">
-		<h2 class='section-preview__title'>Специальные условия</h2>
+		<h1 class='section-preview__title'>Специальные условия</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>Специальные условия</li>
 		</ul>
 	</div>
@@ -113,7 +113,6 @@
 	<?php include('includes/footer.php'); ?>
 
 	<script src="js/scripts.min.js"></script>
-	<script src="js/contact.js"></script>
 
 	</body>
 </html>

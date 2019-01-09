@@ -117,13 +117,7 @@
 		});
 	};
 
-	var footerToggle = function() {
-		var footer = $('.sectionHome__footer');
-
-		footer.on('click', function() {
-			$(this).toggleClass('footer-active')
-		})
-	}
+	
 
 	/* Initialize Home page
 	 * ------------------------------------------------------ */
@@ -133,7 +127,6 @@
 	    	logoSlider();
 			tabs();
 			scrollBtn();
-			footerToggle();
 	 });
 })(jQuery);
 

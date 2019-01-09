@@ -1,9 +1,9 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-developer">
 	<div class="container">
-		<h2 class='section-preview__title'>Застройщик</h2>
+		<h1 class='section-preview__title'>Застройщик</h1>
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>Застройщик</li>
 		</ul>
 	</div>

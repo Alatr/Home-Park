@@ -58,8 +58,8 @@
 					</div>
 					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap requaired">
-						<span class="mainForm__text" data-defaultMessage="Ваш телефон:" data-errorMessage="Телефон не заполнен">Ваш телефон:</span>
-						<input name="tel" type="text" class="mainForm__input mainForm__input-requaired">
+						<span class="mainForm__text position--left" data-defaultMessage="Ваш телефон:" data-errorMessage="Телефон не заполнен"></span>
+						<input name="tel" type="text" placeholder="Ваш телефон:" class="mainForm__input mainForm__input-requaired inputtelmask">
 					</div>
 					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap">

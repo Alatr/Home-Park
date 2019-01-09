@@ -5,6 +5,12 @@ $wcolor: #fff
 $bcolor: #000
 
 /* ===========================main-style========================*/
+.iti-flag
+	background-image: url("../img/flag/flags.png")
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) 
+	.iti-flag 
+		background-image: url("../img/flag/flags@2x.png")
 
 .btn
 	position: relative
@@ -290,10 +296,11 @@ $bcolor: #000
 				transform: translateY(-70px)
 				z-index: 20
 				.has-children
-					a.menu__title
+					.menu__title
 						margin-bottom: 65px
 						display: block
 						font-size: 20px
+						color: $wcolor
 						text-transform: uppercase
 					ul.sub-menu
 						list-style: square outside

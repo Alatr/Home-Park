@@ -65,12 +65,12 @@
 		    	    	<option value="rus">Рус</option>
 		    	    </select> -->
 		    	</div>
-		    			<a href="#" class="webcamera btn">
+		    			<a href="/dist/web-camera.php" class="webcamera btn">
 		    				<?php include('img/svg/webCamera-icon.svg'); ?>
 		    				Камера
 		    			</a>
 		    			<!-- /.webcamera -->
-		    			<a href="#" class="gallery btn-empty">
+		    			<a href="/dist/gallery.php" class="gallery btn-empty">
 		    				<div class="wrap-icon">
 		    					<?php include('img/svg/picture-icon.svg'); ?>
 		    				</div>
@@ -79,7 +79,7 @@
 		    			<!-- /.gallery -->
 		    </div>
 		    <!-- /.left-top-menu -->
-			<a href="#"><div class="logo"></div></a>
+			<a href="/dist/index.php"><div class="logo"></div></a>
 			<div class="top-menu-right">
 				<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
 				 <div class="btn">
@@ -109,46 +109,46 @@
 			<div class="menu-wrap">
 				<ul class="header-menu">
 	                <li class="has-children">
-	                    <a href="#" class="menu__title">Главная</a>
+	                    <span class="menu__title">Главная</span>
 	                    <ul class="sub-menu">
-                        	<li><a href="#">Новости</a></li>
-                        	<li><a href="#">Галерея</a></li>
+                        	<li><a href="/dist/news.php">Новости</a></li>
+                        	<li><a href="/dist/gallery.php">Галерея</a></li>
 	                    </ul>
 	                </li>
 	                <li class="has-children">
-	                    <a href="#" class="menu__title">О проекте</a>
+	                    <span class="menu__title">О проекте</span>
 	                    <ul class="sub-menu">
-                        	<li><a href="#">О Home & Park</a></li>
-                        	<li><a href="#">Преимущества</a></li>
-                        	<li><a href="#">Ценности</a></li>
-                        	<li><a href="#">Инфраструктура</a></li>
+                        	<li><a href="/dist/about.php">О Home & Park</a></li>
+                        	<li><a href="/dist/features.php">Преимущества</a></li>
+                        	<li><a href="/dist/values-page.php">Ценности</a></li>
+                        	<li><a href="/dist/infostructure.php">Инфраструктура</a></li>
 	                    </ul>
 	                </li>
 	                <li class="has-children">
-	                    <a href="#" class="menu__title">Выбрать квартиру</a>
+	                    <span class="menu__title">Выбрать квартиру</span>
 	                    <ul class="sub-menu">
-                        	<li><a href="#">Выбрать по этажу</a></li>
-                        	<li><a href="#">Выбрать по параметрам</a></li>
-                        	<li><a href="#">Однокомнатные</a></li>
-                        	<li><a href="#">Двухкомнатные</a></li>
-                        	<li><a href="#">Трехкомнатные</a></li>
+                        	<li><a href="/dist/check-floor.php">Выбрать по этажу</a></li>
+                        	<li><a href="/dist/filter.php">Выбрать по параметрам</a></li>
+                        	<li><a href="/dist/floor.php">Однокомнатные</a></li>
+                        	<li><a href="/dist/floor.php">Двухкомнатные</a></li>
+                        	<li><a href="/dist/floor.php">Трехкомнатные</a></li>
 	                    </ul>
 	                </li>
 	                <li class="has-children">
-	                    <a href="#" class="menu__title">Строительство</a>
+	                    <span class="menu__title">Строительство</span>
 	                    <ul class="sub-menu">
-	                        <li><a href="#">Застройщик</a></li>
-	                        <li><a href="#">Ход строительства</a></li>
-	                        <li><a href="#">Веб-камера</a></li>
-	                        <li><a href="#">Документация</a></li>
+	                        <li><a href="/dist/developer.php">Застройщик</a></li>
+	                        <li><a href="/dist/stage-building.php">Ход строительства</a></li>
+	                        <li><a href="/dist/web-camera.php">Веб-камера</a></li>
+	                        <li><a href="/dist/documentation.php">Документация</a></li>
 	                        <li><a href="#">Генплан</a></li>
 	                    </ul>
 	                </li>
 	                <li class="has-children">
-	                    <a href="#" class="menu__title">Конткты</a>
+	                    <span class="menu__title">Конткты</span>
 	                    <ul class="sub-menu">
-                        	<li><a href="../contacts">Расположение</a></li>
-                        	<li><a href="#">Связь</a></li>
+                        	<li><a href="/dist/location.php">Расположение</a></li>
+                        	<li><a href="/dist/contacts.php">Связь</a></li>
 	                    </ul>
 	                </li>
 				</ul>

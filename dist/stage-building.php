@@ -1,10 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-stage-building">
 	<div class="container">
-		<h2 class='section-preview__title'>Ход строительства</h2>
+		<h1 class='section-preview__title'>Ход строительства</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>Ход строительства</li>
 		</ul>
 	</div>
@@ -61,7 +61,7 @@
 
 			
 			<div class="link--wrap">
-				<a class="btn-green-border" href="#">Смотреть веб камеру
+				<a class="btn-green-border" href="/dist/web-camera.php">Смотреть веб камеру
 				<?php include('img/svg/arrow.svg'); ?>
 				</a>
 			</div>

@@ -1,12 +1,12 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-appartment">
 	<div class="container">
-		<h2 class='section-preview__title'>Квартира 3А-120</h2>
+		<h1 class='section-preview__title'>Квартира 3А-120</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
-		  <li><a href="#">Выбор этажа</a></li>
-		  <li><a href="#">Выбор квартиры</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
+		  <li><a href="/dist/check-floor.php">Выбор этажа</a></li>
+		  <li><a href="/dist/floor.php">Выбор квартиры</a></li>
 		  <li>Квартира 3А-120</li>
 		</ul>
 	</div>
@@ -18,10 +18,10 @@
 	<div class="appartment-block">
 		<div class="appartment-block__left">
 			<div class="button-wrap">
-				<a class="appartment-btn btn-fill filter--margin" href="#">
+				<a class="appartment-btn btn-fill filter--margin" href="/dist/filter.php">
 				<?php include('img/svg/filter-icon.svg'); ?>
 				Фильтр</a>
-				<a class="appartment-btn btn-green-border arrow--size" href="#">
+				<a class="appartment-btn btn-green-border arrow--size" href="/dist/check-floor.php">
 				<?php include('img/svg/arrow.svg'); ?>
 				Выбрать этаж</a>
 				<a class="appartment-btn btn-green-border pdf--color" href="#">
@@ -32,7 +32,7 @@
 			<!-- /.batton-wrap -->
 			<div class="plan-floor">
 				<p class="plan-floor__title">План поверху</p>
-				<a class="plan-floor__link" href="#">
+				<a class="plan-floor__link" href="/dist/floor.php">
 					<img src="img/appartment/plan-floor.png" title="" alt="">
 				</a>
 			</div>

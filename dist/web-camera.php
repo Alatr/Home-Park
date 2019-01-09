@@ -1,10 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-web_camera">
 	<div class="container">
-		<h2 class='section-preview__title'>Веб камера</h2>
+		<h1 class='section-preview__title'>Веб камера</h1>
 		
 		<ul class="breadcrumb">
-		  <li><a href="#">Главная</a></li>
+		  <li><a href="/dist/index.php">Главная</a></li>
 		  <li>Веб камера</li>
 		</ul>
 	</div>
@@ -33,9 +33,9 @@
 			<!-- /.descr__title -->
 			<h4 class="descr__subtitle">IV квартал 2018 года</h4>
 			<!-- /.descr__subtitle -->
-			<div class="btn-green-border">
+			<a href="/dist/stage-building.php" class="btn-green-border">
 				Ход строительства
-			</div>
+			</a>
 			<!-- /.btn -->
 		</div>
 		<!-- /.webCamera__descr -->

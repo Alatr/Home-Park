@@ -113,6 +113,19 @@
 			}
 	};
 
+	var footerToggle = function() {
+		var footer = $('.sectionHome__footer');
+
+		footer.on('click', function() {
+			$(this).toggleClass('footer-active');
+			if ($(this).hasClass('footer-active')) {
+				$(this).css('min-height','398px');
+			} else {
+				$(this).css('min-height','90px');
+			}
+		});
+	};
+
 	
 
 	/* Initialize 
@@ -121,6 +134,7 @@
 			changeLang();
 			menuIcon();
 			mainForm();
+			footerToggle();
 	 });
 })(jQuery);
 

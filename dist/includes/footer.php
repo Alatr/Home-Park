@@ -20,7 +20,7 @@
 							<li><a href="#">1-кімнатні</a></li>
 							<li><a href="#">2-кімнатні</a></li>
 							<li><a href="#">3-кімнатні</a></li>
-							<li><a href="#">4-кімнатні</a></li>
+							<!-- <li><a href="#">4-кімнатні</a></li> -->
 							<li><a href="#">Розстрочка</a></li>
 							<li><a href="#">Комерційна нерухомість</a></li>
 							<li><a href="#">Юридична інформація</a></li>
@@ -44,7 +44,7 @@
 				</ul>
 				<!-- /.footer__menu -->
 				<div class="footer-wrap">
-					<a href="tel:+380635781801" class="tellink margin--top">(044) 222-35-47</a>
+					<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
 					 <div class="btn btn-zindex">
 					 	<?php include('img/svg/phone-icon.svg'); ?>
 					 	Заказать звонок
@@ -60,7 +60,7 @@
 				<div class="footer-copyright-wrap">
 					<p class="footer-copyright__title">© 2018 Home & Park все права защищены.</p>
 					<!-- /.footer-copyright__title -->
-					<a href="#" target="_blabk" class="footer-copyright__link">
+					<a href="https://smarto.agency/" target="_blabk" class="footer-copyright__link">
 						<img src="img/logo-smart-orange.png" title="" alt="" class="footer-copyright__img">
 					</a>
 				</div>
