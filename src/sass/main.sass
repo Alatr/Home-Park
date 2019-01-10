@@ -1279,6 +1279,11 @@ button
 		background: #eaeaea url('../img/floor/floor-banner.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+	&-atmosfera
+		height: 420px
+		background: #eaeaea url('../img/atmosfera/atmosfera-banner.jpg') center center no-repeat
+		background-size: cover
+		z-index: 1
 	.breadcrumb
 		position: absolute
 		bottom: 30px
@@ -3509,6 +3514,82 @@ button
 					&:first-child
 						padding-right: 10px
 						font-weight: 500
+
+.atmosfera-block
+	padding: 50px 0
+	margin-bottom: 90px
+	.atmosfera__title
+		color: $accent
+		font-size: 30px
+		font-weight: 300
+		line-height: 60px
+		text-transform: uppercase
+		letter-spacing: 2.1px
+	p, li
+		color: $bcolor
+		font-size: 12px
+		font-weight: 400
+		line-height: 26px
+		letter-spacing: 0.12px
+	&__header
+		padding-bottom: 10px
+		display: flex
+		justify-content: space-between
+		border-bottom: 1px solid rgba(0,0,0, 0.15)
+		.atmosfera-header__descr
+			flex-basis: 45%
+			.logo-deckr
+				display: flex
+				&__img
+					min-width: 170px
+					img
+						max-width: 100px
+				&__title
+					margin-bottom: 0px
+				.wrap-text
+					.text--width
+						max-width: 300px
+
+			p
+			 margin-bottom: 30px
+
+		.atmosfera-header__video
+			flex-basis: 52%
+	&__info
+		padding: 8px 0 36px
+		border-bottom: 1px solid rgba(0,0,0, 0.15)
+		.info-block
+			display: flex
+			&__img
+				padding-top: 18px
+				flex-basis: 21%
+				.height-max
+					width: auto
+					height: auto
+					max-height: 90px
+				img
+					max-width: 60px
+			&__descr
+				flex-basis: 79%
+				.info-descr
+					&__title
+						margin-bottom: 10px
+					&__items
+						column-count: 2
+
+					&__sub-items
+
+						li
+							vertical-align: middle
+							list-style: disc
+						li.list--none
+							max-width: 220px
+							list-style: none
+							margin-bottom: 30px
+				.position--flex
+					display: flex
+					justify-content: space-between
+					column-count: auto
 
 
 @import "media" // Always at the end

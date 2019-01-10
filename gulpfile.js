@@ -75,7 +75,6 @@ gulp.task('js', function() {
 		'src/libs/ion.rangeSlider/js/ion.rangeSlider.min.js',
 		'src/libs/velocity/velocity.min.js',
 		'src/libs/masked-input/masked-input.min.js',
-		'src/libs/intl-tel-input-14.0.6/build/js/intlTelInput-jquery.min.js',
 		'src/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

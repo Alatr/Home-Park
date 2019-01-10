@@ -15,9 +15,11 @@
 			}
 		});
 
-		$.mask.definitions['#']='[0-9]';
-		$.mask.definitions['9'] = '';    
-		$(".inputtelmask").mask("+(38) ### ###-##-##",{placeholder:"_"});
+		jQuery(function($){
+				$.mask.definitions['#']='[0-9]';
+				$.mask.definitions['9'] = '';    
+				$(".inputtelmask").mask("+(38) ### ###-##-##",{placeholder:"_"});
+		});
 
 		var telInput = $(".inputtelmask");
 			

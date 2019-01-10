@@ -52,7 +52,13 @@
 		});
 
 
-		$('.mainForm').on('submit', function(e){
+		$('#mainForm').on('submit', function(e){
+			event.preventDefault();
+			var parent = e.target;
+			ajax_form(parent);
+		});
+
+		$('#mainForm2').on('submit', function(e){
 			event.preventDefault();
 			var parent = e.target;
 			ajax_form(parent);
@@ -62,8 +68,8 @@
 				event.preventDefault();
 				console.log(e)
 			    var str = $("#"+e.id).serialize();
-			    var x = document.forms[e.id]["name"].value;
-			    var y = document.forms[e.id]["tel"].value;
+			    //var x = document.forms[e.id]["name"].value;
+			    //var y = document.forms[e.id]["tel"].value;
 
 			    var errors = false; // по умолчанию ошибок в форме нет
 			    $(e).find('.mainForm__input-requaired').each(function() {
