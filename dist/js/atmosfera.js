@@ -26,10 +26,9 @@
 		}
 
 		function parseMediaURL(media) {
-			let regexp = /https:\/\/img\.youtube\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+			let regexp = /img\/atmosfera\/([a-zA-Z0-9_-]+)\.jpg/i;
 			let url = media.src;
 			let match = url.match(regexp);
-
 			return match[1];
 		}
 

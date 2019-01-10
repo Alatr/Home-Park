@@ -1415,13 +1415,6 @@ button
 		.btn-green-border
 			padding: 11px 24px
 
-.video--enabled .video-btn
-	display: block
-.video--enabled
-	cursor: pointer
-
-
-	&__descr
 
 
 /* ===========================values========================*/
@@ -3531,6 +3524,14 @@ button
 		font-weight: 400
 		line-height: 26px
 		letter-spacing: 0.12px
+	li
+		padding-left: 20px
+		padding-right: 20px
+		list-style: disc
+	li.list--none
+		list-style: none
+	li.p0
+		padding: 0
 	&__header
 		padding-bottom: 10px
 		display: flex
@@ -3541,6 +3542,7 @@ button
 			.logo-deckr
 				display: flex
 				&__img
+					padding-top: 18px
 					min-width: 170px
 					img
 						max-width: 100px
@@ -3562,34 +3564,85 @@ button
 			display: flex
 			&__img
 				padding-top: 18px
+				padding-left: 60px
 				flex-basis: 21%
-				.height-max
-					width: auto
-					height: auto
-					max-height: 90px
+				box-sizing: border-box
 				img
-					max-width: 60px
+					width: auto
 			&__descr
 				flex-basis: 79%
 				.info-descr
 					&__title
-						margin-bottom: 10px
+						margin-bottom: 20px
+						text-align: center
 					&__items
+						padding-left: 20px
 						column-count: 2
-
 					&__sub-items
-
 						li
-							vertical-align: middle
-							list-style: disc
-						li.list--none
-							max-width: 220px
-							list-style: none
+							padding-right: 30px
+						li.mb30
 							margin-bottom: 30px
+						li.padding--left
+							margin-left: 10px
 				.position--flex
 					display: flex
 					justify-content: space-between
 					column-count: auto
-
+					li
+						flex-basis: 45%
+	&__footer
+		padding-top: 20px
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		p
+			flex-basis: 33%
+			padding-right: 75px
+.atmosfera-header
+	padding: 60px 0
+	margin-bottom: 90px
+	display: flex
+	align-items: center
+	&__video
+		position: relative
+		height: 0
+		width: 66%
+		padding-bottom: 37.125%
+		background-color: #eaeaea
+		&:hover
+			.video-btn .video-btn-shape
+				fill: #ff0000
+				fill-opacity: 1
+		
+		.video-btn
+			&:focus
+				.video-btn-shape
+					fill: #ff0000
+					fill-opacity: 1
+		&-embed
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border: none
+		.video-btn
+			position: absolute
+			padding: 0
+			top: 50%
+			left: 50%
+			width: 68px
+			height: 48px
+			background-color: transparent
+			transform: translate(-50%, -50%)
+			outline: none
+			display: none
+			.video-btn-shape
+				fill: #212121
+.video--enabled .video-btn
+	display: block
+.video--enabled
+	cursor: pointer
 
 @import "media" // Always at the end

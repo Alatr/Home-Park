@@ -45,17 +45,13 @@
 			<!-- /.atmosfera-header__descr -->
 			<div class="atmosfera-header__video">
 
-				<img src="img/atmosfera/video-wrap.jpg">
-				<!-- <a href="https://www.youtube.com/watch?v=LYWyG4refiI" class="video__link" target="_blank">
-					<picture>
-						<source srcset="https://img.youtube.com/vi_webp/LYWyG4refiI/maxresdefault.webp" type="image/webp">
-						<img class='atmosfera-header__video-embed' src="https://img.youtube.com/vi/LYWyG4refiI/maxresdefault.jpg" alt="Картинка с ютуба">
-					</picture>
+				<a href="https://www.youtube.com/watch?v=LYWyG4refiI" class="video__link" target="_blank">
+					<img class='atmosfera-header__video-embed' src="img/atmosfera/LYWyG4refiI.jpg" alt="Картинка с ютуба">
 				</a>
 				
 				<button class="video-btn" aria-label='Запустить видео'>
 					<?php include('img/svg/youtybe.svg'); ?>
-				</button> -->
+				</button>
 			</div>
 			<!-- /.atmosfera-header__video -->
 		</div>
@@ -90,7 +86,7 @@
 		<div class="atmosfera-block__info">
 			<div class="info-block">
 				<div class="info-block__img">
-					<img class ="height-max" src="img/atmosfera/canal-trigger.png" alt="" title="">
+					<img  src="img/atmosfera/canal-trigger.png" alt="" title="">
 				</div>
 				<!-- /.info-block__img -->
 				<div class="info-block__descr">
@@ -216,28 +212,28 @@
 		<div class="atmosfera-block__info">
 			<div class="info-block">
 				<div class="info-block__img">
-					<img class="height-max' src="img/atmosfera/mic.png" alt="" title="">
+					<img class="height-max" src="img/atmosfera/canal-trigger.png" alt="" title="">
 				</div>
 				<!-- /.info-block__img -->
 				<div class="info-block__descr">
 					<h2 class="info-descr__title atmosfera__title">СИСТЕМА «РОЗУМНА КВАРТИРА»</h2>
 					<ul class="info-descr__items position--flex">
-						<li class="info-descr__sub-items">
+						<li class="info-descr__sub-items list--none p0">
 							<ul>
-								<li class="list--none">Система «розумний дім» встановлена у всіх місцях загального користування. Вона не стосується приватного життя. </li>
+								<li class="list--none mb30 p0">Система «розумний дім» встановлена у всіх місцях загального користування. Вона не стосується приватного життя. </li>
 								
-								<li class="list--none" >Система «розумна квартира» є частиною приватного простору, тому вона може бути встановлена лише за бажанням мешканця.</li>
+								<li class="list--none mb30 p0" >Система «розумна квартира» є частиною приватного простору, тому вона може бути встановлена лише за бажанням мешканця.</li>
 							</ul>
 						</li>
 						
-						<li class="info-descr__sub-items">
+						<li class="info-descr__sub-items list--none p0">
 							<ul>
-								<li class="list--none" >Ми допоможемо вам встановити систему «розумна квартира» та з моменту заселення даруємо вам Samsung SmartThing Hub. За його допомогою можна підключити у власній квартирі розумні пристрої: </li>
-								<li>Термостати</li>
-								<li>Освітлення</li>
-								<li>Камери</li>
-								<li>Акустичні системи</li>
-								<li>Голосові асистенти від Apple, Amazon чи Google</li>
+								<li class="list--none mb30 p0" >Ми допоможемо вам встановити систему «розумна квартира» та з моменту заселення даруємо вам Samsung SmartThing Hub. За його допомогою можна підключити у власній квартирі розумні пристрої: </li>
+								<li class="padding--left">Термостати</li>
+								<li class="padding--left">Освітлення</li>
+								<li class="padding--left">Камери</li>
+								<li class="padding--left">Акустичні системи</li>
+								<li class="padding--left">Голосові асистенти від Apple, Amazon чи Google</li>
 							</ul>
 						</li>
 					</ul>
@@ -249,8 +245,17 @@
 		<!-- /.atmosfera-block__info -->
 
 
-
-
+	<div class="atmosfera-block__footer">
+		<p class="footer-text">SAGA Development прагне створювати не лише будинки, але й атмосферу у них. </p>
+		<!-- /.footer-text -->
+		<p class="footer-text">Ми мріємо досягнути затишку, у якому абсолютний комфорт буде підкреслюватися сучасними технологіями. </p>
+		<!-- /.footer-text -->
+		<p class="footer-text">Саме тому в кожному будинку присутня ATMOSFERA – система для життя.
+		</p>
+		<!-- /.footer-text -->
+	</div>
+	<!-- /.atmosfera-block__footer -->
+		
 		
 	</div>
 	<!-- /.atmosfera-block -->
