@@ -16,11 +16,10 @@
 <div class="container">
 	<div class="webCamera">
 		<div class="webCamera__video">
-			
 			<a href="https://www.youtube.com/watch?v=Bumj1_bZGog" class="video__link" target="_blank">
 				<picture>
 					<source srcset="https://img.youtube.com/vi_webp/Bumj1_bZGog/maxresdefault.webp" type="image/webp">
-					<img class='__video-embed' src="https://img.youtube.com/vi/Bumj1_bZGog/maxresdefault.jpg" alt="Картинка с ютуба">
+					<img class='webCamera__video-embed' src="https://img.youtube.com/vi/Bumj1_bZGog/maxresdefault.jpg" alt="Картинка с ютуба">
 				</picture>
 			</a>
 			<button class="video-btn" aria-label='Запустить видео'>

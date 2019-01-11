@@ -85,10 +85,12 @@
 </div>
 <!-- /.container -->
 
-<div class="sectionHome__banner sectionHome__banner-plan">
-	<h2 class='banner__title'>ГенПлан</h2>
-</div>
-<!-- /.sectionHome__plan -->
+<a href="#">
+	<div class="sectionHome__banner sectionHome__banner-plan">
+		<h2 class='banner__title'>ГенПлан</h2>
+	</div>
+	<!-- /.sectionHome__plan -->
+</a>
 <div class="container">
 	<div class="article-block">
 		<article class="article article-slider features-slaider-js">
@@ -181,10 +183,12 @@
 	<!-- /.article-block -->
 </div>
 <!-- /.container -->
-<div class="sectionHome__banner sectionHome__banner-gallery">
-	<h2 class='banner__title'>галерея</h2>
-</div>
-<!-- /.sectionHome__gallery -->
+<a href="/dist/gallery.php">
+	<div class="sectionHome__banner sectionHome__banner-gallery">
+		<h2 class='banner__title'>галерея</h2>
+	</div>
+	<!-- /.sectionHome__gallery -->
+</a>
 
 <div class="container">
 	<div class="article-block">
@@ -335,7 +339,7 @@
 					во всех дома, созданных компанией SAGA Development.
 					
 				</div>
-				<a href="/dist/news.php" class="article__btn">
+				<a href="/dist/atmosfera.php" class="article__btn">
 					<span class="article__btn-text">
 						<?php include('img/svg/arrow.svg'); ?>
 						Читать

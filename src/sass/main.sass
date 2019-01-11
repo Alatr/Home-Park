@@ -545,6 +545,9 @@ button
 		height: 230px
 		overflow: hidden
 		position: relative
+		img
+			object-fit: cover
+			height: 100%
 	&__descr
 		position: relative
 		padding: 35px 45px 20px 0px
@@ -1052,7 +1055,6 @@ button
 
 /* ===========================Section_footer========================*/
 .sectionHome__footer
-	height: 90px
 	width: 100%
 	padding-top: 31px
 	background-color: #689a23
@@ -1061,8 +1063,9 @@ button
 	bottom: 0
 	left: 0
 	z-index: 667
-	transition: all 0.5s
+	transition: all 1s
 	box-sizing: border-box
+	transform: translateY(100%)
 	&:hover
 		cursor: pointer
 	a
@@ -1148,6 +1151,7 @@ button
 
 .section-preview
 	position: relative
+	overflow: hidden
 	.container
 		position: relative
 		height: 100%
@@ -1910,6 +1914,7 @@ button
 
 .news-single-block
 	padding-top: 32px
+	margin-bottom: 90px
 	.slaider
 		position: relative
 		.news-slider-btn
@@ -3536,6 +3541,7 @@ button
 		padding-bottom: 10px
 		display: flex
 		justify-content: space-between
+		align-items: flex-start
 		border-bottom: 1px solid rgba(0,0,0, 0.15)
 		.atmosfera-header__descr
 			flex-basis: 45%
@@ -3592,7 +3598,7 @@ button
 					li
 						flex-basis: 45%
 	&__footer
-		padding-top: 20px
+		padding-top: 30px
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
@@ -3607,8 +3613,8 @@ button
 	&__video
 		position: relative
 		height: 0
-		width: 66%
-		padding-bottom: 37.125%
+		width: 56.16%
+		padding-bottom: 29.25%
 		background-color: #eaeaea
 		&:hover
 			.video-btn .video-btn-shape
@@ -3644,5 +3650,15 @@ button
 	display: block
 .video--enabled
 	cursor: pointer
-
+.language
+	.lang_dropdown
+		position: absolute
+		max-height: 0
+		overflow: hidden
+		transition: .35s
+		width: 46.33px
+	.lang-dropdown--active
+		max-height: 60px
+	.lang--active
+		display: block
 @import "media" // Always at the end

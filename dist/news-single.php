@@ -18,17 +18,17 @@
 	<div class="news-single-block">
 		<div class="slaider">
 			<div class="slaider-images">
-				<img src="img/news-single/slider-photo.jpg" alt="" title="">
+				<img src="img/three-6.jpg" alt="" title="">
 				<img src="img/news-single/slider-photo.jpg" alt="" title="">
 				<img src="img/news-single/slider-photo.jpg" alt="" title="">
 			</div>
 			<!-- /.slaider-images -->
-			<div class="prev news-slider-btn" href="#">
+			<button class="prev news-slider-btn" href="#">
 				<?php include('img/svg/arrow.svg'); ?>
-			</div>
-			<div class="next news-slider-btn" href="#">
+			</button>
+			<button class="next news-slider-btn" href="#">
 				<?php include('img/svg/arrow.svg'); ?>
-			</div>
+			</button>
 		</div>
 		<!-- /.slaider-wrap -->
 		<div class="content">

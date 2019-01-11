@@ -1,10 +1,18 @@
 (function($) {
 
 	var changeLang = function() {
-		$('.language .language-btn, .lang__item, .lang_item_active').hover( function(){
+		/*$('.language .language-btn, .lang__item, .lang_item_active').hover( function(){
 		        $('.language__list').addClass('language__list-active')
 			},function(){
 		        $('.language__list').removeClass('language__list-active')
+
+			});*/
+
+
+		$('.language').hover( function(){
+		        $('.lang_dropdown').addClass('lang-dropdown--active')
+			},function(){
+		        $('.lang_dropdown').removeClass('lang-dropdown--active')
 
 			});
 	};
@@ -120,14 +128,21 @@
 	};
 
 	var footerToggle = function() {
-		var footer = $('.sectionHome__footer');
+		var footer = $('.sectionHome__footer'),
+			footerHeightInner = footer.innerHeight() - 90;
+
+			footer.css('transform', 'translateY('+footerHeightInner+'px)');
 
 		footer.on('click', function() {
 			$(this).toggleClass('footer-active');
 			if ($(this).hasClass('footer-active')) {
-				$(this).css('min-height','398px');
+				$(this).css({
+					transform: 'translateY(0px)',
+				});
 			} else {
-				$(this).css('min-height','90px');
+				$(this).css({
+					transform: 'translateY('+footerHeightInner+'px)',
+				});
 			}
 		});
 	};

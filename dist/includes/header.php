@@ -12,12 +12,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<!-- Template Basic Images Start -->
-	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
-	<!-- <link rel="icon" href="img/favicon/favicon.ico"> -->
-	<!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"> -->
-	<!-- Template Basic Images End -->
-	
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
@@ -55,26 +49,28 @@
 		<header class="header">
 		    <div class="top-menu-left">
 		    	<div class="language">
-		    	    <div class="language-btn"></div>
+		    	    <!-- <div class="language-btn"></div>
 		    	    <ul class="language__list">
 		    	    	<li class="lang__item lang_item_active"><a href="#">Укр</a></li>
 		    	    	<li class="lang__item"><a href="#">Рус</a></li>
-		    	    </ul>
-		    	    <!-- <select name="lang">
-		    	    	<option value="ua">Укр</option>
-		    	    	<option value="rus">Рус</option>
-		    	    </select> -->
+		    	    </ul> -->
+
+						<a class="lang--active" href="/">En <span class="nomobile">∨</span></a>
+						<ul class="lang_dropdown">
+							<li><a href="/">Укр</a></li>
+							<li><a href="/">Рус</a></li>
+						</ul>
 		    	</div>
 		    			<a href="/dist/web-camera.php" class="webcamera btn">
 		    				<?php include('img/svg/webCamera-icon.svg'); ?>
-		    				Камера
+		    				<span class="mobile--hidden">Камера</span>
 		    			</a>
 		    			<!-- /.webcamera -->
 		    			<a href="/dist/gallery.php" class="gallery btn-empty">
 		    				<div class="wrap-icon">
 		    					<?php include('img/svg/picture-icon.svg'); ?>
 		    				</div>
-		    				<span class="gallery__text">Галерея</span>
+		    				<span class="gallery__text mobile--hidden">Галерея</span>
 		    			</a>
 		    			<!-- /.gallery -->
 		    </div>
@@ -84,7 +80,7 @@
 				<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
 				 <div class="btn">
 				 	<?php include('img/svg/phone-icon.svg'); ?>
-				 	Заказать звонок
+				 	<span class="mobile--hidden">Заказать звонок</span>
 				 </div>
 				 <!-- /.btn -->
 				 <div class="menu-icon">

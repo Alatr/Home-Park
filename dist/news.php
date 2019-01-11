@@ -22,7 +22,7 @@
 				<h2 class="section-title">В Home & Park — лучшие решения для инсоляции дома</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
-					<img src="img/news/news_1.jpg" title="" alt="" >
+					<img src="img/three-6.jpg" title="" alt="" >
 				</div>
 				<div class="article__descr">
 					<!-- /.article__subtitle -->
