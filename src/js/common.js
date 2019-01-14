@@ -37,95 +37,60 @@
 		});
 
 
-		var logo = $('.logo')
+		var logo = $('.logo'),
 			header = $('.header'),
-			scrollOffset = 110;
-
+			scrollOffset = 110,
+			winWidth = $(window).width();
+			// Установка параметров header по уполчанию: высота шапки,высота логотипа, для mobile, tablet, desctop
 			if (winWidth <= '768') {
-
 				header.css({'min-height': '50px'});
-				logo.css({	'height': '45'});
+				logo.css({	'height': '45',
+							'background-image': 'url(img/logo-h.svg)'});
 
 			} else if (winWidth >= '768' && winWidth <= '1200'){
-
 				header.css({'min-height': '90px'});
-				logo.css({	'height': '142px'});
-			} else {
+				logo.css({'height': '142px'});
 
+			} else {
 				header.css({'min-height': '90px'});
 				logo.css({	'height': '170px'});
 			}
-
+			// Установка параметров header при скроле: высота шапки,высота логотипа, для mobile, tablet, desctop
 			$(window).scroll(function(){
-				var winPos = $(window).scrollTop(),
-					winWidth = $(window).width();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+				var winPos = $(window).scrollTop();
+					
 				if (winPos >= scrollOffset) {
 
-					logo.css({	'height': '64px'});
-					if (winWidth >= '768' && winWidth <= '1200') {
+					if (winWidth <= '768') {
+						header.css({'min-height': '50px'});
 						logo.css({'background-image': 'url(img/logo-h.svg)'});
 
+					} else if (winWidth >= '768' && winWidth <= '1200'){
 						header.css({'min-height': '64px'});
-					} else if (winWidth <= '768'){
-						header.css({'min-height': '50px'});
-						logo.css({'background-image': 'url(img/logo-h.svg)'});
-					}
-
-					
-
-
-
-
-				} else {
-					logo.css({'background-image': 'url(img/logo.svg)'});
-
-					if (winWidth >= '768' && winWidth <= '1200') {
-
-						header.css({'min-height': '90px'});
-						logo.css({	'height': '142px'});
-
-					} else if (winWidth <= '768'){
-
-						header.css({'min-height': '50px'});
+						logo.css({'height': '64px',
+								  'background-image': 'url(img/logo-h.svg)'});
 
 					} else {
-
-						header.css({'min-height': '90px'});
-						logo.css({	'height': '170px'});
+						header.css({'min-height': '64px'});
+						logo.css({'height': '64px',
+								  'background-image': 'url(img/logo-h.svg)'});
 					}
+				} else {
+					if (winWidth <= '768') {
+						header.css({'min-height': '50px'});
+						logo.css({'background-image': 'url(img/logo-h.svg)',
+								  'height': '45',});
 
+					} else if (winWidth >= '768' && winWidth <= '1200'){
+						header.css({'min-height': '90px'});
+						logo.css({'height': '142px',
+								  'background-image': 'url(img/logo.svg)'});
 
+					} else {
+						header.css({'min-height': '90px'});
+						logo.css({'height': '170px',
+								  'background-image': 'url(img/logo.svg)'});
+					}
 				}
 			});
 	};
