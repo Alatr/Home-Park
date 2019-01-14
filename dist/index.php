@@ -11,8 +11,8 @@
 		<h2 class="slaierNav__title">Все для семейного счастья</h2>
 
 		<div class="arrows-block">
-			<div class="btn-slider-prev"><?php include('img/svg/arrow.svg'); ?></div>
-			<div class="btn-slider-next"><?php include('img/svg/arrow.svg'); ?></div>
+			<button class="btn-slider-prev"><?php include('img/svg/arrow.svg'); ?></button>
+			<button class="btn-slider-next"><?php include('img/svg/arrow.svg'); ?></button>
 		</div>
 		
 	</div>
@@ -355,7 +355,7 @@
 			<h2 class="section-title">Строительство</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
-				<img src="img/home/home___build.jpg" alt="Строительство" >
+				<img class="img--position" src="img/home/home___build.jpg" alt="Строительство" >
 			</div>
 			<div class="article__descr">
 				<h3 class="article__subtitle">Узнайте про ход строительства</h3>
@@ -380,7 +380,7 @@
 			<h2 class="section-title">Застройщик</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
-				<img src="img/home/home__builder.jpg" alt="Застройщик" >
+				<img class="img--position" src="img/home/home__builder.jpg" alt="Застройщик" >
 			</div>
 			<div class="article__descr">
 				<h3 class="article__subtitle">Девелопер HOME&PARK –</h3>

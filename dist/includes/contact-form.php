@@ -1,9 +1,9 @@
 <div class="container">
 	<div class="tabs">
 		<ul class="tabs__header">
-			<li data-page="0">Наши контактные данные</li>
-			<li class="active-li" data-page="1">Заказать звонок</li>
-			<li data-page="2">Форма обратной связи</li>
+			<li data-page="0"><button>Наши контактные данные</button></li>
+			<li class="active-li" data-page="1"><button>Заказать звонок</button> </li>
+			<li data-page="2"><button>Форма обратной связи</button></li>
 		</ul>
 		<div class="tabs__content">
 			<div class="tabs__inner">

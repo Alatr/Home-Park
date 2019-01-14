@@ -49,43 +49,38 @@
 		<header class="header">
 		    <div class="top-menu-left">
 		    	<div class="language">
-		    	    <!-- <div class="language-btn"></div>
-		    	    <ul class="language__list">
-		    	    	<li class="lang__item lang_item_active"><a href="#">Укр</a></li>
-		    	    	<li class="lang__item"><a href="#">Рус</a></li>
-		    	    </ul> -->
-
-						<a class="lang--active" href="/">En <span class="nomobile">∨</span></a>
+		    	   		<button class="language-btn"></button>
+						<a class="lang--active" href="/">Рус</a>
 						<ul class="lang_dropdown">
-							<li><a href="/">Укр</a></li>
-							<li><a href="/">Рус</a></li>
+							<li class="lang__item"><a href="/">Укр</a></li>
+							<li class="lang__item"><a href="/">En</a></li>
 						</ul>
 		    	</div>
 		    			<a href="/dist/web-camera.php" class="webcamera btn">
 		    				<?php include('img/svg/webCamera-icon.svg'); ?>
-		    				<span class="mobile--hidden">Камера</span>
+		    				<span class="tablet--hidden">Камера</span>
 		    			</a>
 		    			<!-- /.webcamera -->
 		    			<a href="/dist/gallery.php" class="gallery btn-empty">
 		    				<div class="wrap-icon">
 		    					<?php include('img/svg/picture-icon.svg'); ?>
 		    				</div>
-		    				<span class="gallery__text mobile--hidden">Галерея</span>
+		    				<span class="gallery__text tablet--hidden">Галерея</span>
 		    			</a>
 		    			<!-- /.gallery -->
 		    </div>
 		    <!-- /.left-top-menu -->
 			<a href="/dist/index.php"><div class="logo"></div></a>
 			<div class="top-menu-right">
-				<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
-				 <div class="btn">
+				<a href="tel:+380635781801" class="tellink tablet--hidden">(044) 222-35-47</a>
+				 <button class="btn btn--header">
 				 	<?php include('img/svg/phone-icon.svg'); ?>
-				 	<span class="mobile--hidden">Заказать звонок</span>
-				 </div>
+				 	<span class="">Заказать звонок</span>
+				 </button>
 				 <!-- /.btn -->
-				 <div class="menu-icon">
+				 <button class="menu-icon">
 					<?php include('img/svg/menu-icon.svg'); ?>
-				</div>
+				</button>
 			</div>
 			<!-- /.right-top-menu -->
 		</header>

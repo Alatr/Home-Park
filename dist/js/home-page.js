@@ -138,6 +138,8 @@
 		});
 	};
 
+
+
 	
 
 	/* Initialize Home page
