@@ -38,27 +38,33 @@
 
 
 		var logo = $('.logo'),
-			header = $('.header'),
-			scrollOffset = 110,
-			winWidth = $(window).width();
-			// Установка параметров header по уполчанию: высота шапки,высота логотипа, для mobile, tablet, desctop
-			if (winWidth <= '768') {
-				header.css({'min-height': '50px'});
-				logo.css({	'height': '45',
-							'background-image': 'url(img/logo-h.svg)'});
+		    header = $('.header'),
+			 scrollOffset = 110;
 
-			} else if (winWidth >= '768' && winWidth <= '1200'){
-				header.css({'min-height': '90px'});
-				logo.css({'height': '142px'});
+			var checkWindowScroll = function(){
+				var winWidth = $(window).width();
+				// Установка параметров header по уполчанию: высота шапки,высота логотипа, для mobile, tablet, desctop
+				if (winWidth <= '768') {
+					header.css({'min-height': '50px'});
+					logo.css({	'height': '45',
+									'width': '140px',
+									'background-size': 'contain',
+									'background-image': 'url(img/logo-h.svg)'});
 
-			} else {
-				header.css({'min-height': '90px'});
-				logo.css({	'height': '170px'});
-			}
-			// Установка параметров header при скроле: высота шапки,высота логотипа, для mobile, tablet, desctop
-			$(window).scroll(function(){
+				} else if (winWidth >= '768' && winWidth <= '1200'){
+					header.css({'min-height': '90px'});
+					logo.css({  'height': '142px',
+									'width': '205px',
+								});
+
+				} else {
+					header.css({'min-height': '90px'});
+					logo.css({	'height': '170px',
+									'width': '290px'
+								});
+				}
+				// Установка параметров header при скроле: высота шапки,высота логотипа, для mobile, tablet, desctop
 				var winPos = $(window).scrollTop();
-					
 				if (winPos >= scrollOffset) {
 
 					if (winWidth <= '768') {
@@ -92,7 +98,10 @@
 								  'background-image': 'url(img/logo.svg)'});
 					}
 				}
-			});
+			};
+			checkWindowScroll();
+			$(window).scroll(checkWindowScroll);
+			$(window).resize(checkWindowScroll);
 	};
 
 	var mainForm = function(){
@@ -173,45 +182,53 @@
 	};
 
 	var footerToggle = function() {
-		var footer = $('.sectionHome__footer'),
-			footerHeightInner = footer.innerHeight() - 90;
-			
+			var footer = $('.sectionHome__footer'),
+				 footerHeightInner = footer.innerHeight() - 64; // высота footer  на котрую он выезжает 
 
-		footer.on('click', function() {
-			$(this).toggleClass('footer-active');
-			if ($(this).hasClass('footer-active')) {
-				$(this).css({
-					transform: 'translateY(0px)',
+			footer.off('click'); // удаление обработчика клика т.к ф-я footerToggle вызывается каждый раз при resize
+			var winWidth = $(window).width();
+		// для адаптива <= 768px собитие клика по футеру и скрытие по скролу отключается 
+			if (winWidth > '768') {
+				footer.css({'position': 'fixed'});
+		// событие выезжающего footer при sroll
+				$(window).scroll(function(){
+					var winPos = $(window).scrollTop(),
+						 scrollOffsetFooter = 50;
+
+					if (winPos >= scrollOffsetFooter) {
+						footer.css({'transform': 'translateY('+ footerHeightInner +'px)'});
+					} else {
+						footer.css({'transform': 'translateY(100%)'});
+					}
 				});
+
+		// click on footer and open them
+				footer.on('click', function() {
+					console.log('click')
+					$(this).toggleClass('footer-active');
+					if ($(this).hasClass('footer-active')) {
+						console.log('add')
+						$(this).css({'transform': 'translateY(0px)'});
+					} else {
+						console.log('del')
+						$(this).css({'transform': 'translateY('+footerHeightInner+'px)'});
+					}
+				});
+
 			} else {
-				$(this).css({
-					transform: 'translateY('+footerHeightInner+'px)',
-				});
-			}
-		});
+		// отключение ранее установленых событий 
+				footer.off('click');
+				$(window).off('scroll');
 
-		$(window).scroll(function(){
-			var winPos = $(window).scrollTop(),
-				scrollOffsetFooter = 50,
-				footer = $('.sectionHome__footer'),
-				footerHeightInner = footer.innerHeight() - 90;
-
-			if (winPos >= scrollOffsetFooter) {
 				footer.css({
-					transform: 'translateY('+ footerHeightInner +'px)'
-				});
-			} else {
-				footer.css({
-					transform: 'translateY(100%)'
-				});
+							'position': 'static',
+							'transform': 'translateY(0)'
+						});
 			}
-		});
-
-
-
-
+		
 	};
-
+	$(window).resize(footerToggle);
+	
 	
 
 	/* Initialize 

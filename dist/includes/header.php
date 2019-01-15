@@ -56,26 +56,31 @@
 							<li class="lang__item"><a href="/">En</a></li>
 						</ul>
 		    	</div>
-		    			<a href="/dist/web-camera.php" class="webcamera btn">
-		    				<?php include('img/svg/webCamera-icon.svg'); ?>
-		    				<span class="tablet--hidden">Камера</span>
-		    			</a>
-		    			<!-- /.webcamera -->
-		    			<a href="/dist/gallery.php" class="gallery btn-empty">
-		    				<div class="wrap-icon">
-		    					<?php include('img/svg/picture-icon.svg'); ?>
-		    				</div>
-		    				<span class="gallery__text tablet--hidden">Галерея</span>
-		    			</a>
-		    			<!-- /.gallery -->
+				<a href="/dist/web-camera.php" class="webcamera btn">
+					<?php include('img/svg/webCamera-icon.svg'); ?>
+					<span class="tablet--hidden-1200">Камера</span>
+				</a>
+				<!-- /.webcamera -->
+				<a href="/dist/gallery.php" class="gallery btn-empty">
+					<div class="wrap-icon">
+						<?php include('img/svg/picture-icon.svg'); ?>
+					</div>
+					<span class="gallery__text tablet--hidden-1050">Галерея</span>
+				</a>
+				<!-- /.gallery -->
+				<a href="#" class="phone">
+					<?php include('img/svg/phone-icon.svg'); ?>
+				</a>
+				<!-- /.gallery -->
+
 		    </div>
 		    <!-- /.left-top-menu -->
 			<a href="/dist/index.php"><div class="logo"></div></a>
 			<div class="top-menu-right">
-				<a href="tel:+380635781801" class="tellink tablet--hidden">(044) 222-35-47</a>
-				 <button class="btn btn--header">
+				<a href="tel:+380635781801" class="tellink tablet--hidden-1050">(044) 222-35-47</a>
+				 <button class="btn btn--header tablet--hidden-768">
 				 	<?php include('img/svg/phone-icon.svg'); ?>
-				 	<span class="">Заказать звонок</span>
+				 	<span>Заказать звонок</span>
 				 </button>
 				 <!-- /.btn -->
 				 <button class="menu-icon">

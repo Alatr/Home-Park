@@ -65,8 +65,26 @@
 			arrows: false,
 			dots: false,
 			infinite: true,
-			speed: 500
+			speed: 500,
+			responsive: [
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 2
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 1
+			      }
+			    }
+			  ]
 		  });
+
+		$(window).resize(function(){
+		  $('.logo-slaider-wrap').slick.refresh();
+		});
 
 		$('.logo-slaider-btn-left').click(function(){
 		  $('.logo-slaider-wrap').slick('slickPrev');
