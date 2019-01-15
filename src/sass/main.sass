@@ -542,6 +542,8 @@ button
 		background-color: #ffffff
 		opacity: 0.9
 		box-sizing: border-box
+		+to(1200px)
+			width: 55%
 		&::after
 			content: ""
 			display: block
@@ -653,14 +655,13 @@ button
 	padding-top: 70px
 .article
 	+col()
-	
 	+size(7)
-	
 	color: #000000
-	font-family: "GothamPro"
 	font-weight: 400
 	line-height: 26px
 	overflow: hidden
+	+to(1200px)
+		+size(15)
 	&__img
 		height: 230px
 		overflow: hidden
@@ -963,6 +964,10 @@ button
 		display: flex
 		justify-content: space-between
 		align-items: center
+		+to(1200px)
+			width: 80%
+			svg
+				width: 80%
 		.logo-slaider-items
 			margin: 0 20px
 			height: 100%
@@ -980,6 +985,8 @@ button
 					fill: $accent !important
 		.logo-link
 			display: block
+			+to(1200px)
+				text-align: center
 
 		.slick-track
 			display: flex

@@ -61,29 +61,31 @@
 
 		$('.logo-slaider-wrap').slick({
 			slidesToShow: 5,
-			slidesToScroll: 2,
+			slidesToScroll: 3,
 			arrows: false,
 			dots: false,
 			infinite: true,
 			speed: 500,
 			responsive: [
 			    {
-			      breakpoint: 768,
+			      breakpoint: 1200,
 			      settings: {
-			        slidesToShow: 2
+			        slidesToShow: 3,
+			        slidesToScroll: 3
 			      }
 			    },
 			    {
-			      breakpoint: 480,
+			      breakpoint: 768,
 			      settings: {
-			        slidesToShow: 1
+			        slidesToShow: 2,
+			        slidesToScroll: 2
 			      }
 			    }
 			  ]
 		  });
 
 		$(window).resize(function(){
-		  $('.logo-slaider-wrap').slick.refresh();
+		 //$('.logo-slaider-wrap').slick.refresh();
 		});
 
 		$('.logo-slaider-btn-left').click(function(){
