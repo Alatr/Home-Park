@@ -7,7 +7,7 @@
 		</ul>
 		<div class="tabs__content">
 			<div class="tabs__inner">
-				<h3 class="section-title tablet-font--size leaves-green">Наши контактные данные</h3>
+				<h3 class="section-title tablet-font--size leaves-green leaves-green--hidden">Наши контактные данные</h3>
 				<div class="contact-block">
 					<ul class="contact-list">
 						<li class="contact-list__item">
@@ -45,7 +45,7 @@
 			</div>
 			<!-- /.tabs__inner -->
 			<div class="tabs__inner active-js">
-				<h3 class="section-title tablet-font--size leaves-green">Заказать телефонный звонок</h3>
+				<h3 class="section-title tablet-font--size leaves-green leaves-green--hidden">Заказать телефонный звонок</h3>
 				<form class="mainForm" id="mainForm">
 					<div class="mainForm-wrap requaired">
 						<span class="mainForm__text" data-defaultMessage="Имя:" data-errorMessage="Имя не заполнено">
@@ -63,11 +63,11 @@
 					</div>
 					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap">
-						<span class="mainForm__text " data-defaultMessage="В какое удобное время Вам перезвонить:" data-errorMessage="Заполните сообщение">
+						<span class="mainForm__text display--mobile" data-defaultMessage="В какое удобное время Вам перезвонить:" data-errorMessage="Заполните сообщение">
 							<div class="wrap-icon">
 								<?php include('img/svg/phone-icon.svg'); ?>
 							</div>
-							В какое удобное время Вам перезвонить:
+							<span>В какое удобное время Вам перезвонить:</span>
 						</span>
 						<input name="message" type="text" class="mainForm__input">
 					</div>
@@ -81,7 +81,7 @@
 			</div>
 			<!-- /.tabs__inner -->
 			<div class="tabs__inner ">
-				<h3 class="section-title tablet-font--size leaves-green">Форма обратной связи</h3>
+				<h3 class="section-title tablet-font--size leaves-green leaves-green--hidden">Форма обратной связи</h3>
 				<form class="mainForm" id="mainForm2">
 					<div class="mainForm-wrap requaired">
 						<span class="mainForm__text" data-defaultMessage="Имя:" data-errorMessage="Имя не заполнено">
