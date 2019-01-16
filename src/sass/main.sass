@@ -543,7 +543,14 @@ button
 		opacity: 0.9
 		box-sizing: border-box
 		+to(1200px)
-			width: 55%
+			padding-left: 0
+			padding: 25px 25px 35px 25px
+			width: 56%
+		+to(666px)
+			left: 50%
+			width: 95%
+			padding: 25px 10px
+			transform: translate(-50%, -50%)
 		&::after
 			content: ""
 			display: block
@@ -553,6 +560,10 @@ button
 			width: 50px
 			height: 44px
 			background: url('../img/svg/leaves-w.svg') center center no-repeat
+			+to(1200px)
+				top: 15px
+				right: 15px
+				bottom: auto
 		&__title
 			margin-bottom: 25px
 			color: $accent
@@ -561,6 +572,32 @@ button
 			line-height: 48px
 			text-transform: uppercase
 			letter-spacing: 2.52px
+			+to(1200px)
+				font-size: 30px
+				line-height: 36px
+		&__subtitle
+			display: none
+			color: $accent
+			font-size: 20px
+			letter-spacing: 0.2px
+			+to(1200px)
+				display: block
+		&__descr
+			display: none
+			margin-bottom: 20px
+			color: $bcolor
+			font-size: 12px
+			font-weight: 400
+			line-height: 26px
+			letter-spacing: 0.12px
+			+to(1200px)
+				display: block
+		&__btn--size
+			padding: 11px 48px
+			margin-right: 30px
+			+to(666px)
+				margin-right: 10px
+
 		.btn-slider-next, .btn-slider-prev
 			margin-right: 15px
 			position: relative
@@ -573,6 +610,8 @@ button
 			display: flex
 			justify-content: center
 			align-items: center
+			+to(666px)
+				margin-right: 5px
 			svg
 				fill: $accent
 				stroke: $accent
@@ -603,6 +642,8 @@ button
 			position: relative
 			display: flex
 			align-items: center
+			+to(1200px)
+				position: static
 			&::after
 				content: ""
 				display: block
@@ -612,6 +653,11 @@ button
 				width: 168px
 				height: 1px
 				background-color: $accent
+				+to(1200px)
+					height: 60px
+					width: 1px
+					right: 36px
+					top: 70px
 
 	&-down
 		position: absolute
@@ -641,18 +687,30 @@ button
 .section-title
 	margin-bottom: 25px
 	color: $accent
-	font-family: "GothamPro"
 	font-size: 30px
 	font-weight: 300
 	line-height: 40px
 	letter-spacing: 2.1px
-	text-transform: uppercase	
+	text-transform: uppercase
+	+to(1200px)
+		text-align: center
+	+to(666px)
+		font-size: 24px
+		
+.section-title.tablet-font--size
+	+to(1200px)
+		font-size: 26px
 .article-block
 	+row-flex()
-	
 	justify-content: space-between
 	padding-bottom: 30px
 	padding-top: 70px
+	+to(1200px)
+		justify-content: center
+		padding-top: 15px
+		padding-bottom: 10px
+	+to(666px)
+		padding: 0
 .article
 	+col()
 	+size(7)
@@ -661,11 +719,22 @@ button
 	line-height: 26px
 	overflow: hidden
 	+to(1200px)
+		+size(11)
+		margin-top: 30px !important
+	+to(666px)
+		+size(13)
+	+to(450px)
 		+size(15)
 	&__img
 		height: 230px
 		overflow: hidden
 		position: relative
+		+to(1200px)
+			height: 335px
+		+to(666px)
+			height: 250px
+		+to(450px)
+			height: 150px
 		img
 			object-fit: cover
 			height: 100%
@@ -678,6 +747,15 @@ button
 		border-bottom: 1px solid #efefef
 		border-right: 1px solid #efefef
 		box-sizing: border-box
+		+to(1200px)
+			max-width: none
+			width: calc(100% - 129px)
+		+to(666px)
+			width: 100%
+			padding-top: 20px
+			padding-right: 0
+			border-right: none
+			transform: translateY(0)
 
 
 	&__subtitle
@@ -685,6 +763,8 @@ button
 		color: $accent
 		font-size: 20px
 		letter-spacing: 0.2px
+		+to(666px)
+			margin-bottom: 15px
 
 
 	&__text
@@ -704,6 +784,11 @@ button
 		justify-content: center
 		align-items: center
 		overflow: hidden
+		+to(666px)
+			position: static
+			width: 100%
+			height: 50px
+			transform: translateY(0)
 		&-text
 			position: relative
 			margin-left: 20px
@@ -711,6 +796,8 @@ button
 			font-size: 12px
 			font-weight: 500
 			letter-spacing: 0.12px
+			+to(666px)
+				padding-top: 5px
 			svg
 				position: absolute
 				top: -6px
@@ -735,6 +822,10 @@ button
 				transform: translateY(-50%)
 				fill: $accent
 				stroke: $accent
+				+to(666px)
+					top: auto
+					transform: translateY(-70%)
+
 		&::before
 			border-radius: 50%
 			opacity: .5
@@ -830,6 +921,9 @@ button
 			min-height: 109px
 			border-bottom: 1px solid #efefef
 			box-sizing: border-box
+			+to(666px)
+				padding: 26px 30px
+				padding-right: 10px
 		&-bottom
 			padding-top: 20px
 			padding-bottom: 40px
@@ -837,10 +931,14 @@ button
 			margin: 0
 			min-height: 109px
 			box-sizing: border-box
+			+to(666px)
+				padding-right: 0
 			span
 				margin-bottom: 6px
 				font-size: 20px
 				letter-spacing: 0.2px
+				+to(666px)
+					font-size: 18px
 	.slider__count
 		position: absolute
 		top: 32px
@@ -869,6 +967,9 @@ button
 		display: flex
 		align-items: center
 		justify-content: space-between
+		+to(666px)
+			flex-direction: column
+			justify-content: center
 	&-plan
 		height: 330px
 		display: flex
@@ -877,6 +978,9 @@ button
 		background: #eaeaea url('../img/home/home__plan.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+		+to(666px)
+			height: auto
+			min-height: 260px
 	&-gallery
 		height: 330px
 		display: flex
@@ -885,11 +989,20 @@ button
 		background: #eaeaea url('../img/home/home__galery.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+		+to(666px)
+			height: auto
+			min-height: 260px
+			margin-top: 25px
 	&-apartment
 		height: 330px
 		background: #eaeaea url('../img/home/home__appartment.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+		+to(666px)
+			margin-top: 25px
+			height: auto
+			max-height: 360px
+			flex-direction: column
 		.bannerDescr__text-width
 			max-width: 190px
 			text-align: center
@@ -901,6 +1014,9 @@ button
 		background: #eaeaea url('../img/home/home__dayIn.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+		+to(666px)
+			height: auto
+			max-height: 360px
 		.bannerDescr__text-width
 			max-width: 300px
 			text-align: right
@@ -909,11 +1025,18 @@ button
 		.banner__title
 			padding-bottom: 70px
 			align-self: flex-end
+			+to(666px)
+				align-self: center
+				padding-bottom: 0
 		.bannerDescr
 			padding-top: 40px
 			align-self: flex-start
+			+to(666px)
+				align-self: center
 		.sectionHome__banner-wrap
 			height: 400px
+			+to(666px)
+				height: auto	
 	.banner__title
 		position: relative
 		font-size: 30px
@@ -933,6 +1056,17 @@ button
 			width: 40px
 			height: 34px
 			background: url('../img/svg/leaves-w-w.svg') center center no-repeat
+			+to(666px)
+				position: static
+				top: auto
+				left: auto
+				margin-right: 10px
+				vertical-align: sub
+				transform: translateY(0)
+
+	.banner__title.tablet-appartment--position
+		+to(1200px)
+			margin-left: 60px
 
 	.bannerDescr
 		display: flex
@@ -941,22 +1075,52 @@ button
 		margin-right: 70px
 		font-size: 14px
 		color: #fff
+		+to(666px)
+			margin-right: 0
+			width: 80%
+
+
 		&__text
 			margin-bottom: 25px
 			font-weight: 400
 			line-height: 26px
 			letter-spacing: 0.14px
+			+to(666px)
+				line-height: 30px
+				text-align: center
 				
 		&__btn
 			color: $wcolor
 			font-weight: 500
 			line-height: 31px
 			letter-spacing: 0.7px
+	.sectionHome__banner-wrap--position
+		+to(1200px)
+			justify-content: flex-end
+		+to(666px)
+			padding: 25px 10px
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			box-sizing: border-box
+		.tablet-dayin--position
+			+to(1200px)
+				position: absolute
+				left: 10%
+			+to(666px)
+				position: static
+				text-align: center
+				line-height: 38px
+
+
 /* ===========================Logo_slaider========================*/
 .logo-slaider-block
 	padding-top: 70px
 	padding-bottom: 100px
 	position: relative
+	+to(1200px)
+		padding-top: 30px
+		padding-bottom: 30px
 
 	.logo-slaider-wrap
 		margin: 0 auto
@@ -966,6 +1130,8 @@ button
 		align-items: center
 		+to(1200px)
 			width: 80%
+		+to(555px)
+			width: 65%
 			svg
 				width: 80%
 		.logo-slaider-items
@@ -1023,8 +1189,9 @@ button
 			right: 0
 /* ===========================Tabs_contact========================*/
 .tabs
-	margin-bottom: 90px
+	margin-bottom: 64px
 	padding: 50px 0
+
 	a
 		color: #000
 		display: inline-block
@@ -1070,15 +1237,22 @@ button
 			height: 100%
 			border: 1px solid #efefef
 			box-sizing: border-box
+			+to(1200px)
+				padding: 30px 70px
 		.tabs__inner.active-js
 			display: block
 			position: relative
 			min-height: 410px
+			+to(1200px)
+				min-height: 502px
 
 		.contact
 			&-list
 				display: flex
 				justify-content: space-between
+				+to(1200px)
+					justify-content: space-around
+					flex-wrap: wrap
 				&__item
 					max-width: 200px
 					font-size: 14px
@@ -1087,6 +1261,10 @@ button
 					font-weight: 400
 					letter-spacing: 0.14px
 					color: #000
+					+to(1200px)
+						text-align: center
+						max-width: none
+						flex-basis: 45%
 					.phone-icon
 						&::before
 							color: $accent
@@ -1113,6 +1291,16 @@ button
 						height: 16px
 						top: 3px
 						left: -36px
+					+to(1200px)
+						&::before
+							display: inline-block
+							position: static
+							width: 16px
+							height: 16px
+							top: auto
+							left: auto
+							margin-right: 10px
+							vertical-align: sub
 					
 
 					
@@ -1121,7 +1309,9 @@ button
 	.mainForm
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-between	
+		justify-content: space-between
+		+to(1200px)
+			justify-content: center
 		.btn-fill
 			width: 45%
 			height: 60px
@@ -1132,6 +1322,8 @@ button
 			display: flex
 			flex-basis: 45%
 			flex-direction: column
+			+to(1200px)
+				flex-basis: 80%
 		&-wrap.input-focus-js
 			.mainForm__text
 				transform: translate(-30px, -40px)
@@ -1181,6 +1373,10 @@ button
 				display: inline-flex
 				justify-content: center
 				align-items: center
+			.color--white
+				svg
+					use
+						fill: $wcolor
 		&__input
 			height: 60px
 			position: relative

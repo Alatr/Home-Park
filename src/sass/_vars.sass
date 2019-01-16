@@ -11,7 +11,12 @@ $bcolor: #000
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) 
 	.iti-flag 
 		background-image: url("../img/flag/flags@2x.png")
-
+.intl-tel-input.allow-dropdown .flag-container, .intl-tel-input.separate-dial-code .flag-container
+	+to(1200px)
+		left: 5%
+.intl-tel-input.allow-dropdown input, .intl-tel-input.allow-dropdown input[type=tel], .intl-tel-input.allow-dropdown input[type=text], .intl-tel-input.separate-dial-code input, .intl-tel-input.separate-dial-code input[type=tel], .intl-tel-input.separate-dial-code input[type=text]
+	+to(1200px)
+		padding-left: 95px
 .btn
 	position: relative
 	padding: 3px 20px
@@ -160,8 +165,12 @@ $bcolor: #000
 	margin-top: 50px
 .mt60
 	margin-top: 60px
+	+to(1200px)
+		margin-top: 0
 .mt-90
 	margin-top: 90px
+	+to(1200px)
+		margin-top: 0
 .mt70
 	margin-top: 70px
 .mt90
@@ -170,8 +179,12 @@ $bcolor: #000
 	margin-bottom: 30px
 .ml60
 	margin-left: 60px
+	+to(1200)
+
 .pb50
 	padding-bottom: 50px
+	+to(1200px)
+		padding-bottom: 0
 .fw500
 	font-weight: 500
 .fw700

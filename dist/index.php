@@ -9,8 +9,17 @@
 	<!-- /.main-slider -->
 	<div class="slaierNav">
 		<h2 class="slaierNav__title">Все для семейного счастья</h2>
-
+		<div class="slaierNav__text">
+			<div class="slaierNav__subtitle">Home & Park –</div>
+			<!-- /.slaierNav__subtitle -->
+			<div class="slaierNav__descr">
+				будинок, у якому ми втілили мрії турботливих батьків. Інфраструктура для сім’ї, безпечна прибудинкова територія, закрита від автівок, сучасна архітектура та розташування неподалік метро — у Happy House є все для комфортного та щасливого життя.
+			</div>
+			<!-- /.slaierNav__descr -->
+		</div>
+		<!-- /.slaierNav__text -->
 		<div class="arrows-block">
+			<a href="/dist/filter.php" class="btn-fill slaierNav__btn--size">Выбрать квартиру</a>
 			<button class="btn-slider-prev"><?php include('img/svg/arrow.svg'); ?></button>
 			<button class="btn-slider-next"><?php include('img/svg/arrow.svg'); ?></button>
 		</div>
@@ -284,7 +293,7 @@
 <div class="sectionHome__banner sectionHome__banner-apartment">
 	<div class="container">
 		<div class="sectionHome__banner-wrap">
-			<h2 class='banner__title'>Квартиры</h2>
+			<h2 class='banner__title tablet-appartment--position'>Квартиры</h2>
 			<div class="bannerDescr">
 				<div class="bannerDescr__text bannerDescr__text-width">Выберите квартиру вашей мечты уже сейчас!</div>
 				<a href="/dist/filter.php" class="btn bannerDescr__btn">
@@ -415,8 +424,8 @@
 <!-- /.container -->
 <div class="sectionHome__banner sectionHome__banner-day-in">
 	<div class="container">
-		<div class="sectionHome__banner-wrap">
-			<h2 class='banner__title t25p'>День в Home & park</h2>
+		<div class="sectionHome__banner-wrap sectionHome__banner-wrap--position">
+			<h2 class='banner__title t25p tablet-dayin--position'>День в Home & park</h2>
 			<div class="bannerDescr">
 				<div class="bannerDescr__text bannerDescr__text-width">Посмотрите, как проходит наполненный счастьем день в HOME & PARK!</div>
 				<a href="/dist/day-in.php" class="btn bannerDescr__btn">

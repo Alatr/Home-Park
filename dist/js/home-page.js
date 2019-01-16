@@ -80,6 +80,13 @@
 			        slidesToShow: 2,
 			        slidesToScroll: 2
 			      }
+			    },
+			    {
+			      breakpoint: 555,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
 			    }
 			  ]
 		  });

@@ -101,7 +101,7 @@
 <?php include('includes/footer.php'); ?>
 
 	<script src="js/scripts.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key="></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4"></script>
 
 	<script src="js/map.js"></script>
 	</body>
