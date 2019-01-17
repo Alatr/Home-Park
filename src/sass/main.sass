@@ -3015,11 +3015,11 @@ button
 		padding-bottom: 75px
 		margin-bottom: 64px
 		+to(1200px)
-			padding: 0 10px
 			padding-top: 10px
 			padding-bottom: 64px
 		+to(768px)
 			margin-bottom: 20px
+			padding-bottom: 0
 		.personal-park
 			.infostructure__title
 				margin-bottom: -9px
@@ -3062,12 +3062,6 @@ button
 						right: 0
 					+to(768px)
 						transform: translateY(15px)
-
-
-
-
-
-
 		.child-garden
 			display: flex
 			+to(768px)
@@ -3088,6 +3082,7 @@ button
 					+to(1200px)
 						margin-left: 20px
 					+to(768px)
+
 						margin-left: 0
 						display: inline-block
 
@@ -3116,10 +3111,11 @@ button
 						position: static
 						bottom: auto
 						left: auto
-						padding-left: 0
+						margin-top: -12px
 						margin-left: 15px
-						display: inline-block
 						padding: 0
+						width: auto
+						display: inline-block
 						border: none
 
 			.infostructure__img
@@ -3144,25 +3140,32 @@ button
 					+to(768px)
 						left: auto
 						right: 5%
-						transform: translateY(0%)
-
-
+						transform: translateY(12px)
 		.child-improve
 			display: flex
+			flex-direction: column
 			.infostructure__title
 				position: relative
 				max-width: 460px
 				align-self: center
 				+to(1200px)
 					max-width: 260px
-
+				+to(768px)
+					max-width: none
+					padding-left: 10px
 				&--top
 					+to(1200px)
 						line-height: 40px
+					+to(768px)
+						display: inline-block
+						line-height: 30px
 
 				&--bottom
 					+to(1200px)
 						line-height: 40px
+					+to(768px)
+						display: inline
+						line-height: 30px
 				&--small
 					position: absolute
 					top: -55px
@@ -3177,34 +3180,56 @@ button
 						top: -35px
 						width: 200px
 						height: 200px
+					+to(768px)
+						top: -10px
+						right: auto
+						left: 0
+						height: 80px
+						width: 90%
+						border: 1px solid #efefef
+
 			.infostructure__img
 				max-width: 740px
 				.images-block__counter
 					top: 50%
 					right: 0
 					transform: translateY(-50%)
+					+to(768px)
+						top: auto
+						left: 0
+						bottom: -10px
+						transform: translateY(-0%)
 			.border
 				&::before
 				&::after
 					top: 18%
 					+to(1200px)
 						right: 2%
-
-
-
-
+					+to(786px)
+						position: absolute
+						right: 0
+						top: -23px
 		.family-cofe
 			.infostructure__title
 				margin-top: 30px
 				margin-bottom: -9px
 				display: flex
 				flex-direction: row-reverse
+				+to(768px)
+					flex-direction: row
 			.infostructure__img
 				padding-left: 70px
+				+to(768px)
+					padding-left: 0
 				.images-block__counter
 					top: 50%
 					left: 5px
 					transform: translateY(-50%)
+					+to(768px)
+						top: auto
+						left: 0
+						bottom: -10px
+						transform: translateY(-0%)
 			.w440
 				margin-right: 20px
 				&::before
@@ -3221,16 +3246,14 @@ button
 					left: -500px
 					+to(1200px)
 						left: -300px
-
-		
-
-
 		.safety-gym
 			.infostructure__title
 				padding-left: 65px
 				margin-top: 55px
 				margin-bottom: 15px
 				position: relative
+				+to(768px)
+					padding-left: 0
 				&--top
 					font-size: 48px
 					font-weight: 700
@@ -3240,6 +3263,11 @@ button
 					+to(1200px)
 						line-height: 40px
 						font-size: 30px
+					+to(768px)
+						width: auto
+						display: inline-block
+						font-size: 24px
+						line-height: 30px
 				&--bottom
 					font-size: 48px
 					font-weight: 700
@@ -3249,10 +3277,18 @@ button
 					+to(1200px)
 						line-height: 40px
 						font-size: 30px
+					+to(768px)
+						width: auto
+						display: inline-block
+						font-size: 24px
+						line-height: 30px
 				&--small
 					position: absolute
 					right: 15px
 					top: 10px
+					+to(768px)
+						right: 0
+						top: -30px
 				&::after
 					content: ''
 					display: block
@@ -3265,12 +3301,21 @@ button
 					+to(1200px)
 						width: 75%
 						left: -10px
+					+to(768px)
+						width: 90%
 			.infostructure__img
 				padding-right: 70px
+				+to(768px)
+					padding-right: 0
 				.images-block__counter
 					top: 50%
 					right: 5px
 					transform: translateY(-50%)
+					+to(768px)
+						top: auto
+						left: 0
+						bottom: -10px
+						transform: translateY(-0%)
 			.line
 				&::before
 					position: absolute
@@ -3281,8 +3326,6 @@ button
 						left: auto
 						right: 50px
 						width: 70px
-
-
 		.parking-stroller
 			.infostructure__title
 				padding-left: 65px
@@ -3290,6 +3333,9 @@ button
 				margin-bottom: 15px
 				position: relative
 				text-align: right
+				+to(768px)
+					text-align: left
+					padding-left: 0
 				&--top
 					font-size: 48px
 					font-weight: 700
@@ -3299,6 +3345,9 @@ button
 					+to(1200px)
 						line-height: 40px
 						font-size: 30px
+					+to(768px)
+						font-size: 24px
+						line-height: 30px
 
 				&--bottom
 					font-size: 48px
@@ -3309,10 +3358,18 @@ button
 					+to(1200px)
 						line-height: 40px
 						font-size: 30px
+					+to(768px)
+						font-size: 24px
+						line-height: 30px
 				&--small
 					position: absolute
 					left: 0
 					top: 10px
+					+to(768px)
+						&::after
+							position: absolute
+							right: -35px
+							top: -40px
 				&::after
 					content: ''
 					display: block
@@ -3326,11 +3383,19 @@ button
 						width: 85%
 						right: -2%
 						height: 240px
+					+to(768px)
+						right: -5px
 			.infostructure__img
 				.images-block__counter
 					left: 50%
 					bottom: -65px
 					transform: translateX(-50%)
+					+to(768px)
+						top: auto
+						right: 0
+						left: auto
+						bottom: -10px
+						transform: translateY(-0%)
 			.line-w120
 				&::before
 					position: absolute
@@ -3340,16 +3405,9 @@ button
 					+to(1200px)
 						width: 50px
 
-
-
-
-
-
-
-
-
-
 	&__title
+		+to(768px)
+			margin-bottom: 10px
 		&--top
 			color: #cbcbcb
 			font-size: 72px
@@ -3363,7 +3421,7 @@ button
 				font-size: 30px
 			+to(768px)
 				display: inline-block
-				margin-right: 15px
+				margin-right: 0
 				font-size: 24px
 				line-height: 30px
 
