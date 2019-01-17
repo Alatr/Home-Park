@@ -533,7 +533,7 @@ button
 
 	.slaierNav
 		padding: 55px 10px
-		padding-left: 180px
+		padding-left: 140px
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
@@ -555,15 +555,12 @@ button
 			content: ""
 			display: block
 			position: absolute
-			bottom: 55px
-			right: 65px
 			width: 50px
 			height: 44px
 			background: url('../img/svg/leaves-w.svg') center center no-repeat
-			+to(1200px)
-				top: 15px
-				right: 15px
-				bottom: auto
+			top: 15px
+			right: 15px
+			bottom: auto
 		&__title
 			margin-bottom: 25px
 			color: $accent
@@ -583,7 +580,6 @@ button
 			+to(1200px)
 				display: block
 		&__descr
-			display: none
 			margin-bottom: 20px
 			color: $bcolor
 			font-size: 12px
@@ -591,7 +587,6 @@ button
 			line-height: 26px
 			letter-spacing: 0.12px
 			+to(1200px)
-				display: block
 		&__btn--size
 			padding: 11px 48px
 			margin-right: 30px
@@ -639,25 +634,18 @@ button
 		.btn-slider-prev
 			transform: rotate(180deg)
 		.arrows-block
-			position: relative
 			display: flex
 			align-items: center
-			+to(1200px)
-				position: static
+			position: static
 			&::after
 				content: ""
 				display: block
 				position: absolute
-				top: 50%
-				right: 120px
-				width: 168px
-				height: 1px
+				height: 60px
+				width: 1px
+				right: 36px
+				top: 70px
 				background-color: $accent
-				+to(1200px)
-					height: 60px
-					width: 1px
-					right: 36px
-					top: 70px
 
 	&-down
 		position: absolute
@@ -720,6 +708,9 @@ button
 		padding-bottom: 10px
 	+to(666px)
 		padding: 0
++to(1200px)
+	.article:not(#q)
+		margin-top: 25px
 .article
 	+col()
 	+size(7)
@@ -729,7 +720,6 @@ button
 	overflow: hidden
 	+to(1200px)
 		+size(11)
-		margin-top: 30px !important
 	+to(666px)
 		+size(13)
 	+to(450px)
@@ -800,6 +790,7 @@ button
 			width: 100%
 			height: 50px
 			transform: translateY(0)
+			justify-content: flex-start
 		&-text
 			position: relative
 			margin-left: 20px
@@ -808,7 +799,8 @@ button
 			font-weight: 500
 			letter-spacing: 0.12px
 			+to(666px)
-				padding-top: 5px
+				display: block
+				width: 100%
 			svg
 				position: absolute
 				top: -6px
@@ -816,6 +808,12 @@ button
 				height: 13px
 				fill: $accent
 				stroke: $accent
+				+to(666px)
+					width: 10%
+					top: 50%
+					left: 20%
+					transform: translateY(-50%)
+					right: 0%
 				.arrow-line
 					fill: #568F0A
 					stroke-width: 0
@@ -830,12 +828,15 @@ button
 				left: -45px
 				width: 100%
 				height: 90px
-				transform: translateY(-50%)
+				transform: translateY(-46%)
 				fill: $accent
 				stroke: $accent
 				+to(666px)
 					top: auto
-					transform: translateY(-70%)
+					left: auto
+					right: 5%
+					width: 10%
+					transform: translateY(-36%)
 
 		&::before
 			border-radius: 50%
@@ -1339,6 +1340,7 @@ button
 		+to(460px)
 			.display--mobile
 				display: flex
+				line-height: 1
 				svg
 					padding-left: 9px
 					width: 48px
@@ -1611,12 +1613,19 @@ button
 			height: 34px
 			background: url('../img/svg/leaves-w-w.svg') center center no-repeat
 			+to(1200px)
+				margin-right: 10px
 				bottom: 2px
+				position: static
+				vertical-align: middle
 	&-contact
 		height: 420px
 		background: #eaeaea url('../img/contacts/contact-page.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+		+to(1200px)
+			height: 350px
+		+to(768px)
+			height: 290px
 	&-web_camera
 		height: 420px
 		background: #eaeaea url('../img/web-camera/web-bg.jpg') center center no-repeat
@@ -1680,7 +1689,13 @@ button
 		+to(1200px)
 			height: 350px
 		+to(768px)
-			height: 290px
+			min-height: 290px
+			height: auto
+			.breadcrumb:not(#ytyt)
+				position: static
+			.padding--lower
+				padding-top: 100px
+				padding-bottom: 10%
 	&-features
 		height: 420px
 		background: #eaeaea url('../img/features/features-banner.jpg') center center no-repeat
@@ -1794,6 +1809,7 @@ button
 		bottom: 30px
 		left: 20px
 		display: flex
+		flex-wrap: wrap
 		li
 			margin-right: 40px
 			color: #fff
@@ -2163,6 +2179,9 @@ button
 	border: 1px solid #efefef
 	background-color: #efefef
 	box-sizing: border-box
+	+to(768px)
+		width: 75px
+		height: 75px
 	&--current
 		position: relative
 		align-self: flex-start
@@ -2171,6 +2190,8 @@ button
 		font-weight: 700
 		line-height: 26px
 		letter-spacing: 0.36px
+		+to(768px)
+			align-self: flex-end
 		&::after
 			content: ""
 			display: block
@@ -2181,6 +2202,8 @@ button
 			height: 1px
 			background-color: #ccc
 			transform: translate(-50%, -50%) rotate(-45deg)
+			+to(768px)
+				left: 95%
 
 	&--total
 		align-self: flex-end
@@ -2189,6 +2212,8 @@ button
 		font-weight: 400
 		line-height: 26px
 		letter-spacing: 0.12px
+		+to(768px)
+			align-self: flex-start
 
 .developer-slider
 	margin: 45px 0
@@ -2325,8 +2350,6 @@ button
 				height: 34px
 				width: 40px
 				background: transparent url('../img/svg/leaves.svg') center no-repeat
-
-
 			.images-block__counter
 				right: 0
 				bottom: -50px
@@ -2335,11 +2358,18 @@ button
 	&-block
 		padding-top: 35px
 		padding-bottom: 73px
-		margin-bottom: 90px
+		margin-bottom: 64px
+		+to(768px)
+			margin-bottom: 0
+			padding-bottom: 35px
+
+
 		.navigation
 			min-width: 610px
 			margin: 0 auto
 			display: block
+			+to(1200px)
+				min-width: auto
 			.nav-links
 				display: flex
 				justify-content: center
@@ -2379,6 +2409,10 @@ button
 					text-align: center
 					color: #000
 					transition: all 0.3s
+					+to(500px)
+						margin: 0 5px
+					+to(420px)
+						margin: 0 0px
 					&:hover
 						transform: scale(1.2)
 						cursor: pointer
@@ -2387,6 +2421,8 @@ button
 				width: 42px
 				display: inline-block
 				padding-right: 32px
+				+to(500px)
+					padding-right: 15px
 				svg
 					width: 100%
 					height: 13px
@@ -2405,6 +2441,8 @@ button
 				width: 42px
 				display: inline-block
 				padding-left: 32px
+				+to(500px)
+					padding-left: 15px
 				svg
 					width: 100%
 					height: 13px
@@ -2421,10 +2459,33 @@ button
 	&-items
 		+row-flex()
 		justify-content: space-between
+		+to(1200px)
+			justify-content: center
 		.article
 			+col()
 			+size(7)
-			margin-bottom: 40px
+			+to(1200px)
+				margin-bottom: 0px
+				+size(12)
+			+to(500px)
+				+size(14)
+			+to(666px)
+				.article__btn
+					width: 70%
+					margin-left: auto
+					margin-top: 20px
+					+to(666px)
+						svg
+							width: 13%
+					+to(500px)
+						width: 60%
+						svg
+							width: 15%
+					+to(400px)
+						.arrow-svg
+							left: 35%
+						svg
+							width: 20%
 			.section-title
 				font-size: 20px
 				font-weight: 400
@@ -2433,10 +2494,22 @@ button
 				letter-spacing: 1.4px
 			.article__text
 				max-width: 340px
+				+to(666px)
+					width: 100%
+					max-width: none
+					margin-top: 30px
+					margin-bottom: auto
+					padding-bottom: 10px
+					border-bottom: 1px solid #efefef
 			.article__text p
 				margin-bottom: 10px
 			.article__descr
 				padding: 25px 45px 20px 0
+				+to(768px)
+					padding-top: 25px
+				+to(666px)
+					padding: 0
+					border-bottom: none
 			.article__img
 				img
 					height: 100%
@@ -2461,9 +2534,13 @@ button
 
 .news-single-block
 	padding-top: 32px
-	margin-bottom: 90px
+	margin-bottom: 64px
+
 	.slaider
 		position: relative
+		+to(1200px)
+			width: 95%
+			margin: 0 auto
 		.news-slider-btn
 			position: absolute
 			top: 50%
@@ -2517,11 +2594,18 @@ button
 		border-bottom: 1px solid #efefef
 		transform: translateY(-50px)
 		box-sizing: border-box
+		+to(1200px)
+			padding: 0 10px
+		+to(945px)
+			margin-bottom: 0
+			transform: translateY(0)
 		&__data
 			margin-bottom: 30px
 			text-align: right
 			.post-type
 				transform: translateY(0)
+				+to(1200px)
+					transform: translateY(50%)
 		&__text
 			color: $bcolor
 			font-size: 18px
@@ -2531,10 +2615,23 @@ button
 			p
 				margin-bottom: 30px
 				text-align: justify
+			+to(768px)
+				font-size: 14px
 		&__btn
 			display: flex
 			justify-content: space-between
 			margin-bottom: 44px
+			+to(670px)
+				width: 80%
+				margin-bottom: 0
+				margin: 0 auto
+				flex-direction: column
+				a
+					margin-bottom: 20px
+			+to(450px)
+				width: 100%
+				a:not(#ytyty)
+					padding: 11px 0 11px 15px
 			.btn-icon
 				padding: 11px 31px
 				svg
@@ -2551,17 +2648,24 @@ button
 						stroke-width: 1
 				&:hover
 					svg
+						+to(450px)
+							position: absolute
+							left: 5%
 						.arrow-line
 							fill: #fff
 						.arrow-angle
 							fill: #fff
 							stroke: #fff
 			.btn-icon-key
-				padding: 4px 57px
+				padding: 11px 57px
 				#key-icon
 					width: 21px
 					height: 10px
 					fill: #568F0A
+				+to(450px)
+					svg
+						position: absolute
+						left: 12%
 				&:hover
 					#key-icon
 						width: 21px
@@ -2585,6 +2689,13 @@ button
 			width: 550px
 			background-color: #efefef
 			transform: translateX(-50%)
+			+to(1200px)
+				width: 80%
+			+to(786px)
+				width: 60%
+			+to(786px)
+				width: 50%
+				left: 45%
 	.also
 		&__title
 			margin-bottom: 25px
@@ -2596,20 +2707,31 @@ button
 			letter-spacing: 2.1px
 			text-align: center
 			user-select: none
+			+to(768px)
+				margin-bottom: 0
+				font-size: 24px
+
 
 	.news-items
 		+row-flex()
 		justify-content: space-between
+		+to(1200px)
+			justify-content: center
 		.article
 			+col()
 			+size(7)
 			margin-bottom: 30px
+			+to(1200px)
+				+size(10)
+			+to(1000px)
+				+size(13)
+				margin-bottom: 0
 
 .features
 	&-block
 		padding-top: 60px
 		padding-bottom: 80px
-		margin-bottom: 90px
+		margin-bottom: 64px
 		.minus-top
 			transform: translateY(-100px)
 		
@@ -2891,19 +3013,43 @@ button
 	&-block
 		padding-top: 46px
 		padding-bottom: 75px
-		margin-bottom: 90px
+		margin-bottom: 64px
+		+to(1200px)
+			padding: 0 10px
+			padding-top: 10px
+			padding-bottom: 64px
+		+to(768px)
+			margin-bottom: 20px
 		.personal-park
 			.infostructure__title
 				margin-bottom: -9px
 				display: flex
+				+to(768px)
+					margin-bottom: 10px
+					display: block
 			.infostructure__img
 				padding-left: 70px
+				+to(768px)
+					padding-left: 0
 				.images-block__counter
 					top: 50%
 					left: 5px
 					transform: translateY(-50%)
+					+to(768px)
+						left: 0
+						top: auto
+						bottom: -10px
+						transform: translateY(0)
 			.w130
 				margin-left: 130px
+				+to(1200px)
+					margin-left: 145px
+					margin-top: 10px
+				+to(768px)
+					margin-top: 0
+					margin-left: 0
+					display: inline-block
+					margin-top: -15px
 				&::before
 					top: 10px
 					right: 85px
@@ -2912,6 +3058,11 @@ button
 					top: 30%
 					transform: translateY(-50%)
 					right: -220%
+					+to(1200px)
+						right: 0
+					+to(768px)
+						transform: translateY(15px)
+
 
 
 
@@ -2919,17 +3070,34 @@ button
 
 		.child-garden
 			display: flex
+			+to(768px)
+				display: block
 			.infostructure__title
 				position: relative
 				order: 2
 				margin-left: 38px
 				padding-top: 109px
+				+to(1200px)
+					padding-top: 40px
+				+to(768px)
+					padding-top: 0
+					margin-left: 0
 
 				&--top
 					margin-left: 70px
+					+to(1200px)
+						margin-left: 20px
+					+to(768px)
+						margin-left: 0
+						display: inline-block
 
 				&--bottom
 					padding-bottom: 74px
+					+to(1200px)
+						line-height: 30px
+					+to(768px)
+						display: inline-block
+						padding-bottom: 0
 				&--small
 					position: absolute
 					bottom: 111px
@@ -2941,12 +3109,29 @@ button
 					border-right: 1px solid #efefef
 					border-top: 1px solid #efefef
 					border-bottom: 1px solid #efefef
+					+to(1200px)
+						width: 60%
+						padding-left: 70px
+					+to(768px)
+						position: static
+						bottom: auto
+						left: auto
+						padding-left: 0
+						margin-left: 15px
+						display: inline-block
+						padding: 0
+						border: none
+
 			.infostructure__img
 				max-width: 740px
 				.images-block__counter
 					top: 50%
 					left: 0
 					transform: translateY(-50%)
+					+to(768px)
+						top: auto
+						bottom: -10px
+						transform: translateY(-0%)
 			.border
 				&::before
 					display: none
@@ -2954,7 +3139,12 @@ button
 					top: 50%
 					left: 100px
 					transform: translateY(-50%)
-
+					+to(1200px)
+						left: 5%
+					+to(768px)
+						left: auto
+						right: 5%
+						transform: translateY(0%)
 
 
 		.child-improve
@@ -2963,10 +3153,16 @@ button
 				position: relative
 				max-width: 460px
 				align-self: center
+				+to(1200px)
+					max-width: 260px
 
 				&--top
+					+to(1200px)
+						line-height: 40px
 
 				&--bottom
+					+to(1200px)
+						line-height: 40px
 				&--small
 					position: absolute
 					top: -55px
@@ -2977,6 +3173,10 @@ button
 					border-top: 1px solid #efefef
 					border-bottom: 1px solid #efefef
 					z-index: -1
+					+to(1200px)
+						top: -35px
+						width: 200px
+						height: 200px
 			.infostructure__img
 				max-width: 740px
 				.images-block__counter
@@ -2987,7 +3187,8 @@ button
 				&::before
 				&::after
 					top: 18%
-					right: 50px
+					+to(1200px)
+						right: 2%
 
 
 
@@ -3011,11 +3212,15 @@ button
 					top: 50%
 					right: 0
 					transform: translateY(-50%)
+					+to(1200px)
+						width: 250px
 				&::after
 
 					top: 50%
 					transform: translateY(-50%)
 					left: -500px
+					+to(1200px)
+						left: -300px
 
 		
 
@@ -3032,15 +3237,21 @@ button
 					line-height: 60px
 					text-transform: uppercase
 					letter-spacing: -0.96px
+					+to(1200px)
+						line-height: 40px
+						font-size: 30px
 				&--bottom
 					font-size: 48px
 					font-weight: 700
 					line-height: 60px
 					text-transform: uppercase
 					letter-spacing: -0.96px
+					+to(1200px)
+						line-height: 40px
+						font-size: 30px
 				&--small
 					position: absolute
-					right: 0
+					right: 15px
 					top: 10px
 				&::after
 					content: ''
@@ -3051,6 +3262,9 @@ button
 					top: -30px
 					left: -50px
 					border: 1px solid #efefef
+					+to(1200px)
+						width: 75%
+						left: -10px
 			.infostructure__img
 				padding-right: 70px
 				.images-block__counter
@@ -3063,6 +3277,10 @@ button
 					width: 210px
 					left: -230px
 					top: 10px
+					+to(1200px)
+						left: auto
+						right: 50px
+						width: 70px
 
 
 		.parking-stroller
@@ -3078,12 +3296,19 @@ button
 					line-height: 60px
 					text-transform: uppercase
 					letter-spacing: -0.96px
+					+to(1200px)
+						line-height: 40px
+						font-size: 30px
+
 				&--bottom
 					font-size: 48px
 					font-weight: 700
 					line-height: 60px
 					text-transform: uppercase
 					letter-spacing: -0.96px
+					+to(1200px)
+						line-height: 40px
+						font-size: 30px
 				&--small
 					position: absolute
 					left: 0
@@ -3097,6 +3322,10 @@ button
 					top: -30px
 					right: -50px
 					border: 1px solid #efefef
+					+to(1200px)
+						width: 85%
+						right: -2%
+						height: 240px
 			.infostructure__img
 				.images-block__counter
 					left: 50%
@@ -3108,6 +3337,9 @@ button
 					width: 120px
 					left: 70px
 					top: 15px
+					+to(1200px)
+						width: 50px
+
 
 
 
@@ -3127,6 +3359,13 @@ button
 			letter-spacing: -1.44px
 			&::first-letter
 				color: #568f0a
+			+to(1200px)
+				font-size: 30px
+			+to(768px)
+				display: inline-block
+				margin-right: 15px
+				font-size: 24px
+				line-height: 30px
 
 		&--bottom
 			color: #cbcbcb
@@ -3135,6 +3374,12 @@ button
 			line-height: 72px
 			text-transform: uppercase
 			letter-spacing: -1.44px
+			+to(1200px)
+				font-size: 30px
+			+to(768px)
+				display: inline-block
+				font-size: 24px
+				line-height: 30px
 		&--small
 			position: relative
 			color: $bcolor
@@ -3149,6 +3394,8 @@ button
 				height: 1px
 				background-color: #efefef
 				z-index: -1
+				+to(768px)
+					display: none
 			&::after
 				content: ''
 				display: block
@@ -3156,18 +3403,24 @@ button
 				width: 40px
 				height: 40px
 				background: transparent url('../img/svg/leaves.svg') center no-repeat
+				+to(768px)
+					position: static
+					display: inline-block
 
 	&__img
 		position: relative
 		margin-bottom: 25px
+		+to(1200px)
+			margin-bottom: 30px
 		.images-block__counter
 			right: auto
 			bottom: auto
 
 
+
 .about-block
 	padding-bottom: 60px
-	margin-bottom: 90px
+	margin-bottom: 64px
 	&__descr
 		+row-flex()
 		padding: 50px 0
@@ -3258,7 +3511,7 @@ button
 
 .stage-block
 	padding-bottom: 61px
-	margin-bottom: 90px
+	margin-bottom: 64px
 	&__title
 		padding: 30px 0
 		color: $bcolor
@@ -3402,7 +3655,11 @@ button
 .documentation
 	&-block
 		padding: 70px 0
-		margin-bottom: 90px
+		margin-bottom: 64px
+		+to(1200px)
+			padding: 70px 0 20px
+		+to(768px)
+			margin-bottom: 0
 	&-items
 		+row-flex()
 		justify-content: center
@@ -3413,6 +3670,15 @@ button
 			margin: 0 25px
 			padding: 40px 30px
 			box-shadow: 0 5px 13px rgba(128, 128, 128, 0.16)
+			+to(1200px)
+				+size(5)
+				margin-bottom: 45px
+			+to(678px)
+				+size(7)
+			+to(540px)
+				+size(10)
+			+to(360px)
+				+size(14)
 			&__img
 				margin-bottom: 15px
 				display: block
@@ -3420,7 +3686,7 @@ button
 				height: 220px
 				img
 					height: 100%
-					object-fit: cover
+					object-fit: contain
 			&__title
 				color: $bcolor
 				font-size: 12px
@@ -3445,7 +3711,7 @@ button
 .gallery
 	&-block
 		padding: 35px 0 60px
-		margin-bottom: 90px
+		margin-bottom: 64px
 		+to(768px)
 			padding: 35px 0 0
 			margin-bottom: 0
@@ -3502,7 +3768,7 @@ button
 	&-block
 		min-height: 500px
 		position: relative
-		margin-bottom: 90px
+		margin-bottom: 64px
 		.main-map
 			#map
 				min-height: 500px
@@ -3588,7 +3854,7 @@ button
 .filter
 	&-block
 		padding: 40px 0 45px
-		margin-bottom: 90px
+		margin-bottom: 64px
 		.filter-see-more
 			margin: 0 auto
 			min-width: 700px
@@ -3764,7 +4030,7 @@ button
 				
 .appartment-block
 	padding: 30px 0 60px
-	margin-bottom: 90px
+	margin-bottom: 64px
 	display: flex
 	justify-content: space-between
 	&__left
@@ -3879,7 +4145,7 @@ button
 
 .check-floor
 	min-height: 800px
-	margin-bottom: 90px
+	margin-bottom: 64px
 	position: relative
 	background-color: #e7e9ec
 
@@ -4001,7 +4267,7 @@ button
 	transform: rotate(180deg)
 .floor-block
 	padding: 50px 0 147px
-	margin-bottom: 90px
+	margin-bottom: 64px
 	&__header
 		padding-bottom: 20px
 		display: flex
@@ -4077,7 +4343,7 @@ button
 
 .atmosfera-block
 	padding: 50px 0
-	margin-bottom: 90px
+	margin-bottom: 64px
 	.atmosfera__title
 		color: $accent
 		font-size: 30px
@@ -4169,7 +4435,7 @@ button
 			padding-right: 75px
 .atmosfera-header
 	padding: 60px 0
-	margin-bottom: 90px
+	margin-bottom: 64px
 	display: flex
 	align-items: center
 	&__video

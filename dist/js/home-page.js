@@ -179,8 +179,3 @@
 			scrollBtn();
 	 });
 })(jQuery);
-
-
-
-
-

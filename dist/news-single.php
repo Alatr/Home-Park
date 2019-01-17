@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-news-single">
 	<div class="container">
-		<h1 class='section-preview__title'>В Home & Park — лучшие решения для инсоляции дома</h1>
+		<h1 class='section-preview__title padding--lower'>В Home & Park — лучшие решения для инсоляции дома</h1>
 		
 		<ul class="breadcrumb">
 		  <li><a href="/dist/index.php">Главная</a></li>

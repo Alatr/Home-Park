@@ -21,7 +21,7 @@
 			<div class="infostructure__title">
 				<div class="infostructure__title--top">Собственный парк</div>
 				<!-- /.infostructure__title--top -->
-				<div class="infostructure__title--small w130">для вашей<br>семьи</div>
+				<div class="infostructure__title--small w130">для вашей семьи</div>
 				<!-- /.infostructure__title--small -->
 			</div>
 			<!-- /.infostructure__title -->
@@ -45,7 +45,7 @@
 				<!-- /.infostructure__title--top -->
 				<div class="infostructure__title--bottom">садик</div>
 				<!-- /.specifically__title--bottom -->
-				<div class="infostructure__title--small border">нового<br>поколения</div>
+				<div class="infostructure__title--small border">нового поколения</div>
 				<!-- /.infostructure__title--small -->
 			</div>
 			<!-- /.infostructure__title -->
