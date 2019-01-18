@@ -2080,92 +2080,219 @@ button
 
 .day-in-block
 	padding-top: 170px
+	+to(700px)
+		padding-top: 20px
+
+	.images-block.margin--bottom
+		margin-bottom: 245px
+		+to(768px)
+			margin-bottom: 100px
 	.images-block
 		position: relative
 		max-width: 990px
 		margin: 0 auto 205px
+		margin-left: 0
+		padding-left: 10%
+		+to(1200px)
+			padding-right: 40px
+		+to(700px)
+			margin: 0 auto 75px
+			padding: 0
 		&::after
 			display: block
 			content: ''
 			position: absolute
-			width: 100%
+			width: 88%
 			height: 100%
 			top: 20px
 			right: -20px
-			border: 1px solid #efefef
+			border: 1px solid #c1c1c1
 			background-color: #ffffff
 			z-index: -1
-	.images-block.margin--bottom
-		margin-bottom: 295px
+			+to(1200px)
+				right: 10px
+				width: 75%
+			+to(700px)
+				right: -5px
+				height: 43%
+				top: auto
+				bottom: 20px
+
 
 		.images-block-descr
 			position: absolute
 			top: -135px
-			left: -111px
-			min-width: 635px
-			min-height: 236px
+			left: 0
+			min-width: 48%
+			min-height: 51%
 			display: flex
 			align-items: center
 			background-color: $wcolor
+			+to(1200px)
+				max-width: 48%
+				min-height: 41%
+				left: 5%
+			+to(700px)
+				position: relative
+				top: auto
+				left: auto
+				max-width: none
+				flex-direction: column
 			&__title
 				max-width: 470px
 				max-height: 120px
+				margin-top: 30px
 				font-size: 24px
 				font-weight: 400
 				line-height: 30px
 				letter-spacing: 0.24px
 				color: $bcolor
 				overflow: hidden
+				+to(1200px)
+					margin-top: 0
+					padding-top: 21%
+					padding-bottom: 11%
+					padding-right: 3%
+					width: 100%
+					line-height: 25px
+					font-size: 18px
+				+to(700px)
+					max-width: none
+					max-height: none
+					padding: 10px 0	50px
 			&__time
 				position: absolute
-				right: 46px
-				top: 25px
+				right: 0
+				padding-right: 46px
 				color: $accent
 				font-size: 36px
 				font-weight: 700
 				line-height: 47.96px
 				text-transform: uppercase
 				letter-spacing: -2.16px
-				&::before
-					position: absolute
-					display: block
-					content: ''
+				transform: translateY(24%)
+				+to(1200px)
 					top: 50%
-					left: -440px
-					width: 420px
-					height: 1px
-					background-color: #efefef
 					transform: translateY(-50%)
+				+to(700px)
+					position: relative
+					display: block
+					transform: translateY(0%)
+					text-align: right
+				+to(350px)
+					padding-right: 0
 
-				&::after
+				&-wrap
+					width: 100%
+					height: 30%
 					position: absolute
-					display: block
-					content: ''
-					top: 50%
-					left: -485px
-					width: 25px
-					height: 25px
-					background-color: #efefef
-					background: #efefef url('../img/svg/sand-clock-icon.svg') center no-repeat
-					transform: translateY(-50%)
+					top: 25px
+					+to(700px)
+						position: relative
+						display: block
+						top: auto
+						height: auto
+						min-height: auto
+
+					&::after
+						position: absolute
+						display: block
+						content: ''
+						top: 50%
+						left: 0
+						width: 25px
+						height: 25px
+						background-color: #efefef
+						background: #efefef url('../img/svg/sand-clock-icon.svg') center no-repeat
+						transform: translateY(-50%)
+						+to(1200px)
+							left: 0
+						+to(700px)
+							top: 50%
+					&::before
+						position: absolute
+						display: block
+						content: ''
+						top: 50%
+						left: 20%
+						width: 45%
+						height: 1px
+						background-color: #efefef
+						transform: translateY(-50%)
+						+to(1200px)
+							width: 45%
+							left: 13%
+						+to(768px)
+							width: 40%
+							left: 10%
+						+to(700px)
+							top: 50%
+
+
+						
 			&::before
 				content: ""
 				display: block
 				position: absolute
-				bottom: 35px
-				right: 50px
+				bottom: 15px
+				right: 25px
 				width: 40px
 				height: 44px
 				background: url('../img/svg/leaves-w.svg') center center no-repeat
+				+to(1200px)
+					right: 5%
+					bottom: 0%
+				+to(700px)
+					bottom: 0
+
 			&::after
 				content: ""
 				display: block
 				position: absolute
-				bottom: 55px
+				bottom: 35px
 				left: 0
-				width: 537px
+				width: 85%
 				height: 1px
 				background-color: #efefef
+				+to(1200px)
+					left: 0
+					bottom: 10%
+				+to(700px)
+					width: 80%
+					right: 0
+	.dayin__counter--size
+		+to(1200px)
+			right: 0
+			height: 100px
+			width: 100px
+			padding: 29px 0
+		+to(700px)
+			width: 80px
+			height: 80px
+			bottom: 0
+			left: 0
+			padding: 17px 0
+			transform: translateY(45%)
+		.images-block__counter--current
+			+to(1200px)
+				align-self: flex-start
+			+to(700px)
+				font-size: 24px
+		.images-block__counter--total
+			+to(1200px)
+				align-self: flex-end
+				line-height: 0
+	.dayin__counter--position-center
+		+to(700px)
+			left: 50%
+			bottom: -40px
+			transform: translateX(-50%)
+	.dayin__counter--position-right
+		+to(700px)
+			left: auto
+			right: 0
+
+
 .images-block__counter
 	width: 130px
 	height: 130px
@@ -3057,9 +3184,9 @@ button
 				&::after
 					top: 30%
 					transform: translateY(-50%)
-					right: -220%
+					right: -85%
 					+to(1200px)
-						right: 0
+						right: -40%
 					+to(768px)
 						transform: translateY(15px)
 		.child-garden
@@ -3097,8 +3224,8 @@ button
 					position: absolute
 					bottom: 111px
 					left: -38px
-					max-width: 91%
-					width: 91%
+					max-width: 75%
+					width: 75%
 					padding: 17px 0
 					padding-left: 150px
 					border-right: 1px solid #efefef
@@ -3143,7 +3270,9 @@ button
 						transform: translateY(12px)
 		.child-improve
 			display: flex
-			flex-direction: column
+			flex-direction: row
+			+to(768px)
+				flex-direction: column
 			.infostructure__title
 				position: relative
 				max-width: 460px
@@ -3202,7 +3331,7 @@ button
 			.border
 				&::before
 				&::after
-					top: 18%
+					top: 0
 					+to(1200px)
 						right: 2%
 					+to(786px)
@@ -3284,7 +3413,7 @@ button
 						line-height: 30px
 				&--small
 					position: absolute
-					right: 15px
+					right: 30px
 					top: 10px
 					+to(768px)
 						right: 0
@@ -3300,8 +3429,10 @@ button
 					border: 1px solid #efefef
 					+to(1200px)
 						width: 75%
-						left: -10px
+						left: -5px
 					+to(768px)
+						height: 130px
+						top: -20px
 						width: 90%
 			.infostructure__img
 				padding-right: 70px
@@ -3373,17 +3504,20 @@ button
 				&::after
 					content: ''
 					display: block
-					width: 1036px
+					width: 960px
 					height: 398px
 					position: absolute
 					top: -30px
-					right: -50px
+					right: -10px
 					border: 1px solid #efefef
+					z-index: -1
 					+to(1200px)
 						width: 85%
 						right: -2%
 						height: 240px
 					+to(768px)
+						height: 215px
+						top: -25px
 						right: -5px
 			.infostructure__img
 				.images-block__counter
