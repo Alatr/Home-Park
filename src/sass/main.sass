@@ -1993,18 +1993,30 @@ button
 		padding-top: 160px
 		margin-bottom: 90px
 		position: relative
+		+to(1200px)
+			padding-top: 80px
+		+to(768px)
+			margin-bottom: 0
+		+to(700px)
+			padding-bottom: 0
 		.article-slider__nav
 			top: auto
-			left: 0
+			left: 55px
 			bottom: 136px
 			width: 120px
 			z-index: 666
+			+to(1200px)
+				bottom: 36px
+			+to(700px)
+				left: 0
+				bottom: auto
+				top: 247px
+
 		.values-note
 			position: absolute
-			left: -13%
+			left: -8.5%
 			bottom: 48%
-			color: #cbcbcb
-			font-family: "GothamPro"
+			color: #c1c1c1
 			font-size: 72px
 			font-weight: 700
 			line-height: 72px
@@ -2014,21 +2026,73 @@ button
 			user-select: none
 			&:first-letter
 				color: $accent
+			+to(1200px)
+				font-size: 36px
+				left: -3.5%
+			+to(700px)
+				top: 6px
+				bottom: auto
+				left: 50%
+				height: auto
+				font-size: 28px
+				transform: translateX(-50%) rotate(0)
+
 		.webCamera__descr
 			position: absolute
-			right: -10%
+			right: 4.5%
 			bottom: 30%
 			padding: 85px 35px 45px 35px
 			min-height: 270px
 			background-color: #fff
 			z-index: 666
-			h4
+			+to(1200px)
+				min-height: 170px
+				max-width: 220px
+				padding: 65px 20px 15px 15px
+				text-align: justify
+				&::before
+					left: 5px
+					+to(700px)
+						top: 300px
+				&::after
+					top: 19%
+					left: 23%
+					width: 140px
+					+to(700px)
+						top: 318px
+			+to(700px)
+				padding: 0
+				position: static
+				max-width: none
+				display: flex
+				flex-direction: row
+				align-items: flex-start
+				justify-content: space-between
+
+
+			.descr__subtitle
 				margin: 0
+				+to(700px)
+					max-width: 56%
+					min-height: 100px
+					padding: 60px 50px 20px 20px
+					margin-right: 5px
+					margin-bottom: 20px
+					border: 1px solid #c1c1c1
 			.slider-navigation
 				position: absolute
-				right: -40%
+				right: -20%
 				top: 12%
 				transition: all 1s
+				+to(1200px)
+					top: -30%
+				+to(768px)
+					right: -15%
+				+to(700px)
+					margin-top: 15px
+					padding-right: 50px
+				+to(520px)
+					padding-right: 0
 				li
 					position: relative
 					margin-bottom: 20px
@@ -2039,9 +2103,6 @@ button
 					line-height: 26px
 					letter-spacing: 0.12px
 					transition: all 1s
-
-					
-
 				li.active
 					color: $accent
 					font-size: 36px
@@ -2049,20 +2110,35 @@ button
 					line-height: 26px
 					letter-spacing: 0.36px
 					transition: all 1s
+					+to(768px)
+						font-size: 24px
 					&::before
 						content: ''
 						display: block
 						position: absolute
 						top: 50%
-						left: -75%
-						width: 50px
+						left: -3%
+						width: 15px
 						height: 1px
 						background-color: $accent
 						transform: translateY(-50%)
+				+to(700px)
+					position: static
 
 	&-slider-wrapper
 		position: relative
 		min-height: 700px
+		width: 80%
+		margin-left: 55px
+		+to(1200px)
+			min-height: 400px
+		+to(992px)
+			min-height: 290px
+		+to(700px)
+			min-height: 210px
+			margin-left: 0
+			width: 100%
+
 		&>div
 			position: absolute
 			top: 0
@@ -2072,6 +2148,13 @@ button
 			visibility: hidden
 			box-sizing: border-box
 			overflow: hidden
+			+to(1200px)
+				height: 400px
+			+to(992px)
+				height: 290px
+			+to(700px)
+				height: 210px
+
 			img
 				user-select: none
 				object-fit: cover
@@ -2419,27 +2502,47 @@ button
 					background: transparent url('../img/svg/email-icon.svg') center no-repeat
 
 .specifically-block
-	padding: 100px 0 70px
-	margin-bottom: 90px
+	padding: 100px 0 10px
+	margin-bottom: 64px
+	+to(768px)
+		padding: 50px 0 40px
+		margin-bottom: 0
 	.specifically-items
 		margin-bottom: 105px
+		+to(768px)
+			margin-bottom: 25px
 		.specifically__title
 			position: relative
 			&--top
-				color: #cacaca
+				color: #bbb
 				font-size: 72px
 				font-weight: 700
 				line-height: 72px
 				text-transform: uppercase
 				&::first-letter
 					color: $accent
+				+to(1200px)
+					font-size: 36px
+					line-height: 42px
+				+to(666px)
+					font-size: 24px
+					line-height: 30px
 			&--bottom
 				margin-bottom: -9px
-				color: #cacaca
+				color: #bbb
 				font-size: 72px
 				font-weight: 700
 				line-height: 72px
 				text-transform: uppercase
+				+to(1200px)
+					font-size: 36px
+					line-height: 42px
+				+to(768px)
+					margin-bottom: 0
+
+				+to(666px)
+					font-size: 24px
+					line-height: 30px
 
 			&--small
 				max-width: 160px
@@ -2451,28 +2554,57 @@ button
 				font-weight: 400
 				line-height: 20px
 				letter-spacing: 0.12px
+				+to(1200px)
+					left: 65%
+				+to(666px)
+					position: static
+					max-width: none
+					margin: 10px 0
+
 				&::before
 					display: inline-block
 					content: ''
 					position: absolute
 					top: 7px
 					height: 1px
-					background-color: #efefef
+					background-color: #c1c1c1
+					+to(666px)
+						display: none
 			.w264
 				&::before
 					left: -158%
 					width: 264px
+					+to(1200px)
+						width: 60%
+						left: -66%
 			.w260
+				+to(1200px)
+					left: 55%
 				&::before
 					left: -165%
 					width: 260px
+					+to(1200px)
+						width: 60%
+						left: -66%
 			.w150
+				+to(1200px)
+					left: 55%
 				&::before
 					left: -115%
 					width: 185px
+					+to(1200px)
+						width: 60%
+						left: -66%
 
 		.specifically__img
 			position: relative
+			img
+				object-fit: cover
+				height: 100%
+			+to(666px)
+				height: 180px
+				img
+					object-position: center right
 			&::after
 				display: inline-block
 				content: ''
@@ -2482,9 +2614,13 @@ button
 				height: 34px
 				width: 40px
 				background: transparent url('../img/svg/leaves.svg') center no-repeat
+				+to(666px)
+					display: none
 			.images-block__counter
 				right: 0
 				bottom: -50px
+				+to(666px)
+					bottom: 0
 
 .news
 	&-block
@@ -3262,7 +3398,7 @@ button
 			&::before
 				content: ''
 				display: inline-block
-				width: 133px
+				width: 100%
 				height: 102px
 				.leaves-first, .leaves-third
 					fill: #c1c1c1
@@ -3382,8 +3518,8 @@ button
 					margin-top: -15px
 				&::before
 					top: 10px
-					right: 85px
-					width: 130px
+					left: -73%
+					width: 71%
 				&::after
 					top: 30%
 					transform: translateY(-50%)
@@ -3431,9 +3567,9 @@ button
 					width: 75%
 					padding: 17px 0
 					padding-left: 150px
-					border-right: 1px solid #efefef
-					border-top: 1px solid #efefef
-					border-bottom: 1px solid #efefef
+					border-right: 1px solid #c1c1c1
+					border-top: 1px solid #c1c1c1
+					border-bottom: 1px solid #c1c1c1
 					+to(1200px)
 						width: 60%
 						padding-left: 70px
@@ -3504,9 +3640,9 @@ button
 					right: 0
 					width: 330px
 					height: 300px
-					border-left: 1px solid #efefef
-					border-top: 1px solid #efefef
-					border-bottom: 1px solid #efefef
+					border-left: 1px solid #c1c1c1
+					border-top: 1px solid #c1c1c1
+					border-bottom: 1px solid #c1c1c1
 					z-index: -1
 					+to(1200px)
 						top: -35px
@@ -3518,7 +3654,7 @@ button
 						left: 0
 						height: 80px
 						width: 90%
-						border: 1px solid #efefef
+						border: 1px solid #c1c1c1
 
 			.infostructure__img
 				max-width: 740px
@@ -3629,7 +3765,7 @@ button
 					position: absolute
 					top: -30px
 					left: -50px
-					border: 1px solid #efefef
+					border: 1px solid #c1c1c1
 					+to(1200px)
 						width: 75%
 						left: -5px
@@ -3712,7 +3848,7 @@ button
 					position: absolute
 					top: -30px
 					right: -10px
-					border: 1px solid #efefef
+					border: 1px solid #c1c1c1
 					z-index: -1
 					+to(1200px)
 						width: 85%
@@ -3746,7 +3882,7 @@ button
 		+to(768px)
 			margin-bottom: 10px
 		&--top
-			color: #cbcbcb
+			color: #bbb
 			font-size: 72px
 			font-weight: 700
 			line-height: 72px
@@ -3763,7 +3899,7 @@ button
 				line-height: 30px
 
 		&--bottom
-			color: #cbcbcb
+			color: #bbb
 			font-size: 72px
 			font-weight: 700
 			line-height: 72px
@@ -3787,7 +3923,7 @@ button
 				content: ''
 				position: absolute
 				height: 1px
-				background-color: #efefef
+				background-color: #c1c1c1
 				z-index: -1
 				+to(768px)
 					display: none
@@ -3904,9 +4040,16 @@ button
 					padding: 10px 63px
 					margin: 0 16px
 
+.margin-before--lower
+	&::before
+		+to(520px)
+			margin-right: 3px
 .stage-block
 	padding-bottom: 61px
 	margin-bottom: 64px
+	+to(768px)
+		margin-bottom: 0
+		padding-bottom: 20px
 	&__title
 		padding: 30px 0
 		color: $bcolor
@@ -3918,6 +4061,8 @@ button
 		+row-flex()
 		justify-content: space-between
 		position: relative
+		+to(1200px)
+			justify-content: center
 		&::after
 			content: ''
 			position: absolute
@@ -3927,12 +4072,22 @@ button
 			height: 98%
 			background-color: #689a23
 			transform: translateX(-50%)
+			+to(768px)
+				left: auto
+				right: 6%
+			+to(520px)
+				right: 2%
 
 		.stage-item
 			+col()
 			+size(7.4)
 			margin-bottom: 20px
-			position: relative	
+			position: relative
+			+to(768px)
+				+size(13)
+			+to(520px)
+				+size(14)
+
 			&::after
 				content: ''
 				position: absolute
@@ -3942,7 +4097,7 @@ button
 			&:nth-child(odd)
 				&::after
 					top: -10px
-					right: -25px
+					right: -18px
 					transform: rotate(-90deg)
 
 			&:nth-child(even)
@@ -3950,11 +4105,23 @@ button
 					bottom: -10px
 					left: -25px
 					transform: rotate(90deg)
+					+to(768px)
+						top: -10px
+						left: auto
+						right: -18px
+						transform: rotate(-90deg)
 					
 			&__img
 				position: relative
 				height: 300px
 				overflow: hidden
+				+to(1200px)
+					max-height: 185px
+				+to(768px)
+					max-height: 250px
+				+to(600px)
+					max-height: 185px
+
 				img
 					object-fit: cover
 					height: 100%
@@ -3978,10 +4145,23 @@ button
 		display: flex
 		flex-wrap: wrap	
 		justify-content: space-between	
+		+to(1200px)
+			padding: 10px 10px
+			justify-content: space-around
+		+to(640px)
+			padding: 10px 0
+			flex-direction: column
+			align-items: center
+		.link--wrap
+			+to(1200px)
+				flex-grow: 1
+
 		.progress-item
 			margin: 0 20px 10px
 			min-width: 300px
 			display: inline-block
+			+to(768px)
+				margin: 0 0 10px
 			&__title
 				margin-bottom: 7px
 				text-align: center
@@ -4013,6 +4193,7 @@ button
 					text-align: center
 					line-height: 40px
 					transition: all 5s
+					+to(1200px)
 					
 				.line--white
 					position: absolute
@@ -4029,10 +4210,13 @@ button
 					text-align: center
 					line-height: 40px
 					transition: all 5s
+
 		a
 			width: 670px
 			height: 48px
 			margin-top: 28px
+			+to(1200px)
+				width: auto
 			svg
 				margin-left: 15px	
 				width: 42px
@@ -4146,12 +4330,32 @@ button
 		padding: 55px 0 38px
 		+row-flex()
 		justify-content: space-between
+		+to(1200px)
+			padding-top: 38px
+		+to(768px)
+			flex-direction: column
 		.location-item
 			+col()
 			+size(4)
 			display: flex
+			+to(1200px)
+				+size(7.5)
+			+to(768px)
+				+size(14)
+				margin-bottom: 15px
+			+to(520px)
+				+size(15)
+
+
 			svg
 				margin-right: 30px
+				+to(1200px)
+					width: 50px
+					height: 50px
+				+to(768px)
+					margin-right: 10px
+					max-width: 50px
+					width: 80%
 			&__text
 				max-width: 255px
 				color: $bcolor
@@ -4159,14 +4363,43 @@ button
 				font-weight: 400
 				line-height: 30px
 				letter-spacing: 0.3px
+				+to(1200px)
+					max-width: 90%
+				+to(768px)
+					max-width: 90%
+
+.width--max
+	.location-item__text
+		+to(1200px)
+			max-width: 80%
+.flex--width
+	+to(1200px)
+		margin-top: 20px
+		width: 100%
+		.location-item__text
+			max-width: none
+		svg
+			width: 50px
+			height: 50px
+.flex--width:not(#fgfg)
+	+to(1200px)
+		margin-top: 20px
+		width: 95%
+	+to(768px)
+		margin-top: auto
+
 .map
 	&-block
 		min-height: 500px
 		position: relative
 		margin-bottom: 64px
+		+to(768px)
+			margin-bottom: 0
+
 		.main-map
 			#map
 				min-height: 500px
+
 				.content
 					color: #fff
 					font-size: 12px
@@ -4207,11 +4440,21 @@ button
 		top: 0
 		left: 0
 		bottom: 0
-		width: 25%
+		width: 30%
 		padding: 70px 40px 0
 		background-color: #efefef
 		box-sizing: border-box
 		z-index: 2
+		+to(1200px)
+			width: 37%
+			padding: 10px
+		+to(992px)
+			max-width: 300px
+		+to(768px)
+			position: static
+			width: 100%
+			max-width: none
+
 		&__title
 			margin-bottom: 20px
 			color: $bcolor
@@ -4221,6 +4464,8 @@ button
 			text-transform: uppercase
 			letter-spacing: 1.68px
 			text-align: center
+			+to(992px)
+				font-size: 20px
 		&__nav
 			li.active-map-item
 				background-color: $accent
@@ -4244,6 +4489,8 @@ button
 						vertical-align: middle
 						width: 22px
 						margin-right: 22px
+						+to(992px)
+							margin-right: 5px
 
 		
 .filter
@@ -4739,6 +4986,12 @@ button
 .atmosfera-block
 	padding: 50px 0
 	margin-bottom: 64px
+	overflow: hidden
+	+to(1200px)
+		padding: 35px 0
+	+to(768px)
+		margin-bottom: 0
+
 	.atmosfera__title
 		color: $accent
 		font-size: 30px
@@ -4746,6 +4999,10 @@ button
 		line-height: 60px
 		text-transform: uppercase
 		letter-spacing: 2.1px
+		+to(768px)
+			font-size: 24px
+			line-height: 30px
+
 	p, li
 		color: $bcolor
 		font-size: 12px
@@ -4756,6 +5013,8 @@ button
 		padding-left: 20px
 		padding-right: 20px
 		list-style: disc
+		+to(768px)
+			padding: 0
 	li.list--none
 		list-style: none
 	li.p0
@@ -4766,15 +5025,27 @@ button
 		justify-content: space-between
 		align-items: flex-start
 		border-bottom: 1px solid rgba(0,0,0, 0.15)
+		+to(1200px)
+			flex-direction: column
+			align-items: center
 		.atmosfera-header__descr
 			flex-basis: 45%
+			+to(1200px)
+				flex-basis: 100%
 			.logo-deckr
 				display: flex
+				+to(1200px)
+					justify-content: center
 				&__img
 					padding-top: 18px
 					min-width: 170px
+					+to(786px)
+						min-width: 110px
+						text-align: center
 					img
 						max-width: 100px
+						+to(786px)
+							max-width: 80px
 				&__title
 					margin-bottom: 0px
 				.wrap-text
@@ -4786,16 +5057,24 @@ button
 
 		.atmosfera-header__video
 			flex-basis: 52%
+			+to(1200px)
+				flex-basis: 85%
 	&__info
 		padding: 8px 0 36px
 		border-bottom: 1px solid rgba(0,0,0, 0.15)
 		.info-block
 			display: flex
+			+to(768px)
+				flex-direction: column
+				align-items: center
 			&__img
 				padding-top: 18px
 				padding-left: 60px
 				flex-basis: 21%
 				box-sizing: border-box
+				+to(768px)
+					padding-top: 0
+					padding-left: 0
 				img
 					width: auto
 			&__descr
@@ -4807,6 +5086,9 @@ button
 					&__items
 						padding-left: 20px
 						column-count: 2
+						+to(768px)
+							column-count: auto
+							
 					&__sub-items
 						li
 							padding-right: 30px
@@ -4818,6 +5100,8 @@ button
 					display: flex
 					justify-content: space-between
 					column-count: auto
+					+to(768px)
+						flex-direction: column
 					li
 						flex-basis: 45%
 	&__footer
@@ -4825,9 +5109,17 @@ button
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
+		+to(768px)
+			flex-direction: column
+			align-items: center
 		p
 			flex-basis: 33%
 			padding-right: 75px
+			+to(768px)
+				padding-right: 0
+				margin-bottom: 15px
+				text-align: center
+
 .atmosfera-header
 	padding: 60px 0
 	margin-bottom: 64px
@@ -4839,6 +5131,9 @@ button
 		width: 56.16%
 		padding-bottom: 29.25%
 		background-color: #eaeaea
+		+to(1200px)
+			width: 85%
+			padding-bottom: 47.76%
 		&:hover
 			.video-btn .video-btn-shape
 				fill: #ff0000

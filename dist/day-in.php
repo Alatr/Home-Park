@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-day-in">
 	<div class="container">
-		<h1 class='section-preview__title'>ДЕНЬ В HOME & PARK Comfort House</h1>
+		<h1 class='section-preview__title '>ДЕНЬ В HOME & PARK Comfort House</h1>
 		
 		<ul class="breadcrumb">
 		  <li><a href="/dist/index.php">Главная</a></li>

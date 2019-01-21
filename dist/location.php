@@ -22,13 +22,13 @@
 				<!-- /.location-item__text -->
 			</div>
 			<!-- /.location-item -->
-			<div class="location-item">
+			<div class="location-item width--max">
 				<?php include('img/svg/location/location-icon-car.svg'); ?>
 				<p class="location-item__text">Где бы вы ни работали — в Киеве или в Борисполе, вам будет удобно добираться до работы. А вашим детям — в школу или в детский садик, который находится в доме.</p>
 				<!-- /.location-item__text -->
 			</div>
 			<!-- /.location-item -->
-			<div class="location-item">
+			<div class="location-item flex--width">
 				<?php include('img/svg/location/location-icon-tree.svg'); ?>
 				<p class="location-item__text">Жилой комплекс окружен собственным парком, который обустроен детской и спортивной площадками, местами для отдыха, беговыми и прогулочными маршрутами.</p>
 				<!-- /.location-item__text -->

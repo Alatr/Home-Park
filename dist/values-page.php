@@ -29,38 +29,21 @@
 				<img src="img/home/home__about.jpg" alt="Слайд-3">
 			</div>
 			<!-- /.values-slider__items -->
+
 			<div class="values-slider__items">
-				<img src="img/values/values-slaider.jpg" alt="Слайд-3">
-			</div>
-			<!-- /.values-slider__items -->
-			<div class="values-slider__items">
-				<img src="img/home/home__galery.jpg" alt="Слайд-1">
-			</div>
-			<!-- /.values-slider__items -->
-			<div class="values-slider__items">
-				<img src="img/home/home__map.jpg" alt="Слайд-1">
+				<img src="img/home/home-bg.jpg" alt="Слайд-1">
 			</div>
 			<!-- /.values-slider__items -->
 			
 			<div class="values-slider__items">
-				<img src="img/home/home___build.jpg" alt="Слайд-2">
+				<img src="img/home/home__realEstate.jpg" alt="Слайд-2">
 			</div>
 			<!-- /.values-slider__items -->
 			<div class="values-slider__items">
 				<img src="img/home/home__about.jpg" alt="Слайд-3">
 			</div>
 			<!-- /.values-slider__items -->
-			<div class="values-slider__items">
-				<img src="img/values/values-bg.jpg" alt="Слайд-3">
-			</div>
-			<!-- /.values-slider__items -->
-			<div class="values-slider__items">
-				<img src="img/home/home-bg.jpg" alt="Слайд-1">
-			</div>
-			<!-- /.values-slider__items -->
 
-			
-			
 		</div>
 		<!-- /.values-slider-wrapper -->
 		<div class="article-slider__nav">

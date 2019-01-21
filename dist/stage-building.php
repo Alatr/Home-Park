@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-stage-building">
 	<div class="container">
-		<h1 class='section-preview__title'>Ход строительства</h1>
+		<h1 class='section-preview__title margin-before--lower'>Ход строительства</h1>
 		
 		<ul class="breadcrumb">
 		  <li><a href="/dist/index.php">Главная</a></li>

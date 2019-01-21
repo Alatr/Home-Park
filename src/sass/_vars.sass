@@ -249,6 +249,8 @@ $bcolor: #000
 		background: url('../img/bg-menu.jpg') center center no-repeat
 		background-size: cover
 		z-index: -2
+		+to(1200px)
+			height: 30%
 		.menu__word
 			padding-top: 80px
 			position: relative
@@ -286,6 +288,8 @@ $bcolor: #000
 		background: url('../img/home/home-bg.jpg') bottom center no-repeat
 		background-size: cover
 		z-index: -2
+		+to(1200px)
+			height: 70%
 		&::before
 			content: ''
 			display: block
@@ -306,15 +310,23 @@ $bcolor: #000
 			.header-menu
 				display: flex
 				justify-content: space-between
+				flex-wrap: wrap
 				transform: translateY(-70px)
 				z-index: 20
+				+to(1200px)
+					transform: translateY(0px)
+
 				.has-children
+					+to(1200px)
+						flex-basis: 20%
 					.menu__title
 						margin-bottom: 65px
 						display: block
 						font-size: 20px
 						color: $wcolor
 						text-transform: uppercase
+						+to(1200px)
+							margin-bottom: 10px
 					ul.sub-menu
 						list-style: square outside
 						li
@@ -366,10 +378,23 @@ $bcolor: #000
 		z-index: 10
 		opacity: 1
 
+@keyframes firstLeft--mob
+	from
+		opacity: 0
+		transform: translate(-60px,0px)
+		z-index: 12
+
+	to
+		transform: translate(0%,0%)
+		z-index: 10
+		opacity: 1
 
 .firstLeft
 	animation: firstLeft 0.9s forwards
 	visibility: visible !important
+	+to(700px)
+		animation: firstLeft--mob 0.9s forwards
+
 	
 
 
@@ -380,15 +405,26 @@ $bcolor: #000
 		opacity: 1
 
 	to
-		transform: translate(-60px,-60px)
+		transform: translate(-60px,0px)
 		z-index: -1
 		opacity: 0
 
+@keyframes firstRight--mob
+	from
+		transform: translate(0,0)
+		z-index: 10
+		opacity: 1
 
+	to
+		transform: translate(-60px,0px)
+		z-index: -1
+		opacity: 0
 .firstRight
 	animation: firstRight 0.6s forwards
 	visibility: visible!important
-
+	+to(700px)
+		animation: firstRight--mob 0.6s forwards
+		
 
 
 @keyframes twoLeft
@@ -401,14 +437,36 @@ $bcolor: #000
 		transform: translate(120px,120px)
 		z-index: -1
 		opacity: 1
+
+@keyframes twoLeft--tab
+	from
+		transform: translate(0%,0%)
+		z-index: -1
+		opacity: 1
+
+	to
+		transform: translate(43px,43px)
+		z-index: -1
+		opacity: 1
+@keyframes twoLeft--mob
+	from
+		transform: translate(0%,0%)
+		z-index: -1
+		opacity: 1
+
+	to
+		transform: translate(0px,0px)
+		z-index: -1
+		opacity: 1
 		
-
-
-
 .twoLeft
 	animation: twoLeft 0.9s forwards
 	visibility: visible!important
 	position: relative
+	+to(1200px)
+		animation: twoLeft--tab 0.9s forwards
+	+to(700px)
+		animation: twoLeft--mob 0.9s forwards
 	&::before
 		content: ''
 		position: absolute
@@ -418,9 +476,33 @@ $bcolor: #000
 		width: 100%
 		height: 100%
 		background-color: rgba(255, 255, 255, .8)
+
+
 @keyframes twoRight
 	from
 		transform: translate(120px,120px)
+		z-index: -2
+		opacity: 0
+
+	to
+		transform: translate(0%,0%)
+		z-index: -1
+		opacity: 1
+
+
+@keyframes twoRight--tab
+	from
+		transform: translate(43px,43px)
+		z-index: -2
+		opacity: 0
+
+	to
+		transform: translate(0%,0%)
+		z-index: -1
+		opacity: 1
+@keyframes twoRight--mob
+	from
+		transform: translate(0px,0px)
 		z-index: -2
 		opacity: 0
 
@@ -434,6 +516,10 @@ $bcolor: #000
 	animation: twoRight 0.6s forwards
 	transition: all  0.7s
 	visibility: visible!important
+	+to(1200px)
+		animation: twoRight--tab 0.6s forwards
+	+to(700px)
+		animation: twoRight--mob 0.6s forwards
 
 
 
@@ -449,10 +535,35 @@ $bcolor: #000
 		z-index: -2
 		opacity: 0
 
+@keyframes threeLeft--tab
+	from
+		transform: translate(43px,43px)
+		z-index: -1
+		opacity: 1
+
+	to
+		transform: translate(30%,40%)
+		z-index: -2
+		opacity: 0
+@keyframes threeLeft--mob
+	from
+		transform: translate(0px,0px)
+		z-index: -1
+		opacity: 1
+
+	to
+		transform: translate(30%,40%)
+		z-index: -2
+		opacity: 0
 
 .threeLeft
 	animation: threeLeft 0.9s forwards
 	visibility: visible!important
+	display: none
+	+to(1200px)
+		animation: threeLeft--tab 0.9s forwards
+	+to(700px)
+		animation: threeLeft--mob 0.9s forwards
 
 
 
@@ -464,6 +575,27 @@ $bcolor: #000
 
 	to
 		transform: translate(120px,120px)
+		z-index: -2
+		opacity: 1
+
+@keyframes threeRight--tab
+	from
+		transform: translate(86px,86px)
+		z-index: -1
+		opacity: 1
+
+	to
+		transform: translate(43px,43px)
+		z-index: -2
+		opacity: 1
+@keyframes threeRight--mob
+	from
+		transform: translate(0px,0px)
+		z-index: -1
+		opacity: 1
+
+	to
+		transform: translate(0px,0px)
 		z-index: -2
 		opacity: 1
 
@@ -481,6 +613,11 @@ $bcolor: #000
 		width: 100%
 		height: 100%
 		background-color: rgba(255, 255, 255, .8)
+	+to(1200px)
+		animation: threeRight--tab 0.6s forwards
+	+to(700px)
+		animation: threeRight--mob 0.6s forwards
+
 
 
 
