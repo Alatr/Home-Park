@@ -141,11 +141,19 @@
 	                    </ul>
 	                </li>
 	                <li class="has-children">
-	                    <span class="menu__title">Конткты</span>
+	                    <span class="menu__title">Контакты</span>
 	                    <ul class="sub-menu">
                         	<li><a href="/dist/location.php">Расположение</a></li>
                         	<li><a href="/dist/contacts.php">Связь</a></li>
 	                    </ul>
+	                </li>
+	                <li class="menu-number">
+	                	<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
+	                	 <button class="btn btn--header">
+	                	 	<?php include('img/svg/phone-icon.svg'); ?>
+	                	 	<span>Заказать звонок</span>
+	                	 </button>
+	                	 <!-- /.btn -->
 	                </li>
 				</ul>
 			</div>

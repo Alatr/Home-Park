@@ -283,23 +283,14 @@ $bcolor: #000
 			z-index: -1
 
 	.menu-block-bottom
-		height: 50%
+		min-height: 50%
 		position: relative
-		background: url('../img/home/home-bg.jpg') bottom center no-repeat
+		background: url('../img/bg-menu-bottom.jpg') bottom center no-repeat
 		background-size: cover
 		z-index: -2
+		overflow-y: auto
 		+to(1200px)
 			height: 70%
-		&::before
-			content: ''
-			display: block
-			position: absolute
-			top: 0
-			left: 0
-			height: 100%
-			width: 100%
-			background-color: rgba(85,136,15,0.85)
-			z-index: -1
 		.menu-wrap
 			font-weight: 400
 			line-height: 42px
@@ -314,11 +305,38 @@ $bcolor: #000
 				transform: translateY(-70px)
 				z-index: 20
 				+to(1200px)
+					padding: 30px 20px
 					transform: translateY(0px)
+				+to(520px)
+					padding: 20px 10px
+
+				.menu-number
+					display: none
+					+to(1200px)
+						flex-basis: 33%
+						display: block
+						text-align: left
+						.btn--header
+							margin-right: 0px
+						.tellink
+							display: block
+							margin-bottom: 20px
+					+to(768px)
+						flex-basis: 100%
+						text-align: center
+						.btn
+							margin: 0 auto
 
 				.has-children
+					user-select: none
 					+to(1200px)
-						flex-basis: 20%
+						margin-bottom: 30px
+						flex-basis: 33%
+					+to(768px)
+						flex-basis: 100%
+
+						&:hover
+							cursor: pointer
 					.menu__title
 						margin-bottom: 65px
 						display: block
@@ -326,12 +344,33 @@ $bcolor: #000
 						color: $wcolor
 						text-transform: uppercase
 						+to(1200px)
-							margin-bottom: 10px
+							margin-bottom: 0
+						+to(768px)
+							position: relative
+
+							&::after
+								content: ""
+								display: block
+								top: 40%
+								right: 20px
+								position: absolute
+								width: 15px
+								height: 15px
+								border-left: 2px solid #fff
+								border-bottom: 2px solid #fff
+								transform: translateY(-50%) rotate(-45deg)
+								+to(520px)
+									right: 0px
 					ul.sub-menu
 						list-style: square outside
+						user-select: none
+						+to(768px)
+							display: none
 						li
 							position: relative
 							padding-left: 35px
+							+to(1200px)
+								padding-left: 15px
 							&::before
 								content: ''
 								width: 3px
@@ -351,6 +390,8 @@ $bcolor: #000
 								font-weight: 400
 								line-height: 30px
 								letter-spacing: 0.4px
+								+to(768px)
+									display: block
 								&::after
 									position: absolute
 									bottom: -8px
@@ -365,7 +406,10 @@ $bcolor: #000
 									&::after
 										transition: 0.4s
 										transform: scale(1)
-
+.sub-menu-is-open
+	&::after
+		transform: rotate(135deg)!important
+		transition: all 0.4s
 //--------slider-------
 @keyframes firstLeft 
 	from

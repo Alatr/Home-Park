@@ -59,7 +59,7 @@
 				<div class="footer-copyright-wrap">
 					<p class="footer-copyright__title">© 2018 Home & Park все права защищены.</p>
 					<!-- /.footer-copyright__title -->
-					<a href="https://smarto.agency/" rel="nofollow" target="_blabk" class="footer-copyright__link">
+					<a href="https://smarto.agency/" rel="nofollow" target="_blank" class="footer-copyright__link">
 						<img src="img/logo-smart-orange.png" title="" alt="" class="footer-copyright__img">
 					</a>
 				</div>

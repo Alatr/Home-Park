@@ -228,6 +228,7 @@ button
 	letter-spacing: 0.14px
 	transition: all .4s
 	+to(768px)
+		min-height: 50px
 		display: flex
 		justify-content: space-between
 	&-section
@@ -272,6 +273,11 @@ button
 		+to(1200px)
 			width: 205px
 			height: 142px
+		+to(768px)
+			height: 45px
+			width: 140px
+			background: $accent url('../img/logo-h.svg') center center no-repeat
+			background-size: contain
 	.phone
 		display: none
 		+to(768px)
@@ -1079,6 +1085,8 @@ button
 	.banner__title.tablet-appartment--position
 		+to(1200px)
 			margin-left: 60px
+		+to(666px)
+			margin-left: 0
 
 	.bannerDescr
 		display: flex
@@ -1424,8 +1432,7 @@ button
 				align-items: center
 			.color--white
 				svg
-					use
-						fill: $wcolor
+					fill: $wcolor
 		&__input
 			height: 60px
 			position: relative
@@ -3095,6 +3102,7 @@ button
 				min-height: 123px
 			+to(768px)
 				border: none
+				width: 85%
 			.features-items__title--top
 				transform: translateX(-50px)
 				+to(1200px)
@@ -3187,6 +3195,9 @@ button
 					padding: 10px 0px
 			.features-items__title--top
 				transform: translateX(-52%)
+				+to(600px)
+					transform: translateX(-15%)
+
 			.note-left
 				bottom: -70%
 				left: 40%
@@ -3436,6 +3447,7 @@ button
 					line-height: 24px
 				+to(768px)
 					font-size: 30px
+					padding-top: 0
 				+to(520px)
 					font-size: 24px
 			&--bottom

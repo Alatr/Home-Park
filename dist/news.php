@@ -296,7 +296,7 @@
 			<!-- /.article -->
 		</div>
 		<!-- /.news-items -->
-		<nav class="navigation pagination" role="navigation">
+		<div class="navigation pagination" role="navigation">
 			<div class="nav-links">
 				<a class="prev page-numbers" href="#">
 					<?php include('img/svg/arrow.svg'); ?>
@@ -311,7 +311,7 @@
 					<?php include('img/svg/arrow.svg'); ?>
 				</a>
 			</div>
-		</nav>
+		</div>
 	</div>
 	<!-- /.news-block -->
 </div>

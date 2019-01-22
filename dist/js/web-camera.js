@@ -1,4 +1,7 @@
+	// суть скрипта в том что мы вставляем на страницу картинку обёрнутую в ссылку с видео и якобы кнопкой на ютуб, при клике на ссылку скрипт удаляет содержимое контейнера в которой ссылка  с картинкой и вставляет iframe youtube (регулярка ищет id видео из ссылки). Тем самым економя трафик пользователей.
 
+
+	// находим все видео на странице
 		function findVideos() {
 			let videos = document.querySelectorAll('.webCamera__video');
 
@@ -8,12 +11,12 @@
 		}
 
 		function setupVideo(video) {
-			let link = video.querySelector('.video__link');
-			let media = video.querySelector('.webCamera__video-embed');
-			let button = video.querySelector('.video-btn');
+			let link = video.querySelector('.video__link'); // ссылка на видео
+			let media = video.querySelector('.webCamera__video-embed'); // картинка на видео
+			let button = video.querySelector('.video-btn'); // svg кнопка 
 			let id = parseMediaURL(media);
-
-			video.addEventListener('click', () => {
+			// при клике на видео удаляем содержимое и добавляем iframe 
+			video.addEventListener('click', function(){
 				let iframe = createIframe(id);
 
 				link.remove();
@@ -24,7 +27,7 @@
 			link.removeAttribute('href');
 			video.classList.add('video--enabled');
 		}
-
+		// ищет id видео из адреса
 		function parseMediaURL(media) {
 			let regexp = /https:\/\/img\.youtube\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
 			let url = media.src;

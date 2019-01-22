@@ -39,7 +39,7 @@
 			<h2 class="section-title">О проeкте</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
-				<img src="img/home/home__about.jpg" alt="Мужик с собакой" >
+				<img src="img/home/home__about.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
 				<h3 class="article__subtitle">Что нужно для счастья? </h3>
@@ -65,7 +65,7 @@
 			<h2 class="section-title">РАСПОЛОЖЕНИЕ</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
-				<img src="img/home/home-locat.jpg" alt="карта" >
+				<img src="img/home/home-locat.jpg" alt="" title="" >
 			</div>
 			<div class="article__descr">
 				<h3 class="article__subtitle">HOME&PARK расположен</h3>
@@ -107,9 +107,8 @@
 			<!-- /.section-title -->
 			<div class="article__img">
 				<div class="slider-wrap">
-					<img src="img/home/home__featyres.jpg" alt="ПРЕИМУЩЕСТВА" >
-					<img src="img/home/home__appartment.jpg" alt="ПРЕИМУЩЕСТВА" >
-					<img src="img/home/home-bg.jpg" alt="ПРЕИМУЩЕСТВА" >
+					<img src="img/home/home__featyres.jpg" alt="" title="">
+					<img src="img/home/home__featyres.jpg" alt="" title="">
 				</div>
 				<!-- /.sloder-wrap -->
 			</div>
@@ -150,9 +149,8 @@
 			<!-- /.section-title -->
 			<div class="article__img">
 				<div class="slider-wrap">
-					<img src="img/home/home__infostructure.jpg" alt="ИНФРАСТРУКТУРА" >
-					<img src="img/home/home__infostructure.jpg" alt="ИНФРАСТРУКТУРА" >
-					<img src="img/home/home__infostructure.jpg" alt="ИНФРАСТРУКТУРА" >
+					<img src="img/home/home__infostructure.jpg" alt="" title="">
+					<img src="img/home/home__infostructure.jpg" alt="" title="">
 				</div>
 				<!-- /.sloder-wrap -->
 			</div>
@@ -206,9 +204,8 @@
 			<!-- /.section-title -->
 			<div class="article__img">
 				<div class="slider-wrap">
-					<img src="img/home/home__values.jpg" alt="Цености" >
-					<img src="img/home/home__values.jpg" alt="Цености" >
-					<img src="img/home/home__values.jpg" alt="Цености" >
+					<img src="img/home/home__values.jpg" alt="" title="">
+					<img src="img/home/home__values.jpg" alt="" title="">
 				</div>
 				<!-- /.slider-wrap -->
 			</div>
@@ -249,9 +246,7 @@
 			<!-- /.section-title -->
 			<div class="article__img">
 				<div class="slider-wrap">
-					<img src="img/home/home__specifically.jpg" alt="Специальные условия" >
-					<img src="img/home/home__specifically.jpg" alt="Специальные условия" >
-					<img src="img/home/home__specifically.jpg" alt="Специальные условия" >
+					<img src="img/home/home__specifically.jpg" alt="" title="">
 				</div>
 				<!-- /.slider-wrap -->
 			</div>
@@ -313,7 +308,7 @@
 			<h2 class="section-title">Коммерческая недвижимость</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
-				<img src="img/home/home__realEstate.jpg" alt="Коммерческая недвижимость" >
+				<img src="img/home/home__realEstate.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
 				<h3 class="article__subtitle">Киев – мегаполис, который</h3>
@@ -338,7 +333,7 @@
 			<h2 class="section-title">Sfera Living System</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
-				<img src="img/home/home__atmosfera.jpg" alt="Sfera Living System" >
+				<img src="img/home/home__atmosfera.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
 				<h3 class="article__subtitle">ATMOSFERA</h3>
@@ -364,7 +359,7 @@
 			<h2 class="section-title">Строительство</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
-				<img class="img--position" src="img/home/home___build.jpg" alt="Строительство" >
+				<img class="img--position" src="img/home/home___build.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
 				<h3 class="article__subtitle">Узнайте про ход строительства</h3>
@@ -389,7 +384,7 @@
 			<h2 class="section-title">Застройщик</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
-				<img class="img--position" src="img/home/home__builder.jpg" alt="Застройщик" >
+				<img class="img--position" src="img/home/home__builder.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
 				<h3 class="article__subtitle">Девелопер HOME&PARK –</h3>

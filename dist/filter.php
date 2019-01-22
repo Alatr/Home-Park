@@ -36,16 +36,16 @@
 					<div class="range-item__title">Подъезд</div>
 					<input class="js_val_entrance_min slider__currentMin" type="number" min="1" value="1" max="4" id="entrance_min">
 					<input class="js_val_entrance_max slider__currentMax" type="number" min="1" value="4" max="4" id="entrance_max">
-					<input type="hidden" class="range-init irs-hidden-input" id="val_entrance" value="1;4" readonly="">
+					<input type="hidden" class="range-init irs-hidden-input" id="val_entrance" value="1;4">
 				</div>
 				<!-- /.range-item -->
 
 
 				<div class="range-item option__item">
 					<div class="range-item__title">Этаж</div>
-					<input class="js_val_floor_min slider__currentMin" type="number" min="3" value="3" max="25" id="entrance_min">
-					<input class="js_val_floor_max slider__currentMax" type="number" min="3" value="25" max="25" id="entrance_max">
-					<input type="hidden" class="range-init irs-hidden-input" id="val_floor" value="3;25" readonly="">
+					<input class="js_val_floor_min slider__currentMin" type="number" min="3" value="3" max="25" id="floor_min">
+					<input class="js_val_floor_max slider__currentMax" type="number" min="3" value="25" max="25" id="floor_max">
+					<input type="hidden" class="range-init irs-hidden-input" id="val_floor" value="3;25">
 				</div>
 				<!-- /.range-item -->
 
@@ -53,18 +53,18 @@
 
 				<div class="range-item option__item">
 					<div class="range-item__title">Общая площадь, м.кв</div>
-					<input class="js_val_square_min slider__currentMin" type="number" min="39" value="39" max="100" id="entrance_min">
-					<input class="js_val_square_max slider__currentMax" type="number" min="39" value="100" max="100" id="entrance_max">
-					<input type="hidden" class="range-init irs-hidden-input" id="val_square" value="39;100" readonly="">
+					<input class="js_val_square_min slider__currentMin" type="number" min="39" value="39" max="100" id="square_min">
+					<input class="js_val_square_max slider__currentMax" type="number" min="39" value="100" max="100" id="square_max">
+					<input type="hidden" class="range-init irs-hidden-input" id="val_square" value="39;100">
 				</div>
 				<!-- /.range-item -->
 
 
 				<div class="range-item option__item">
 					<div class="range-item__title">Жилая площадь, м.кв</div>
-					<input class="js_val_squareLiv_min slider__currentMin" type="number" min="15" value="15" max="99" id="entrance_min">
-					<input class="js_val_squareLiv_max slider__currentMax" type="number" min="15" value="99" max="99" id="entrance_max">
-					<input type="hidden" class="range-init irs-hidden-input" id="val_squareLiv" value="15;99" readonly="">
+					<input class="js_val_squareLiv_min slider__currentMin" type="number" min="15" value="15" max="99" id="squareLiv_min">
+					<input class="js_val_squareLiv_max slider__currentMax" type="number" min="15" value="99" max="99" id="squareLiv_max">
+					<input type="hidden" class="range-init irs-hidden-input" id="val_squareLiv" value="15;99">
 				</div>
 				<!-- /.range-item -->
 
@@ -119,7 +119,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<button class="filter-item__button btn-fill">Смотреть квартиру</button>
+					<div  class="filter-item__button btn-fill">Смотреть квартиру</div>
 				</a>
 			</li>
 			<!-- /.filter-item -->
@@ -152,7 +152,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<button class="filter-item__button btn-fill">Смотреть квартиру</button>
+					<div class="filter-item__button btn-fill">Смотреть квартиру</div>
 				</a>
 			</li>
 			<!-- /.filter-item -->
@@ -183,7 +183,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<button class="filter-item__button btn-fill">Смотреть квартиру</button>
+					<div class="filter-item__button btn-fill">Смотреть квартиру</div>
 				</a>
 			</li>
 			<!-- /.filter-item -->
@@ -214,7 +214,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<button class="filter-item__button btn-fill">Смотреть квартиру</button>
+					<div  class="filter-item__button btn-fill">Смотреть квартиру</div>
 				</a>
 			</li>
 			<!-- /.filter-item -->
@@ -245,7 +245,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<button class="filter-item__button btn-fill">Смотреть квартиру</button>
+					<div class="filter-item__button btn-fill">Смотреть квартиру</div>
 				</a>
 			</li>
 			<!-- /.filter-item -->

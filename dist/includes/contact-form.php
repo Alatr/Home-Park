@@ -49,9 +49,9 @@
 				<form class="mainForm" id="mainForm">
 					<div class="mainForm-wrap requaired">
 						<span class="mainForm__text" data-defaultMessage="Имя:" data-errorMessage="Имя не заполнено">
-							<div class="wrap-icon">
+							<span class="wrap-icon">
 								<?php include('img/svg/user-icon.svg'); ?>
-							</div>
+							</span>
 						Имя:
 						</span>
 						<input name="name" type="text" class="mainForm__input mainForm__input-requaired">
@@ -64,9 +64,9 @@
 					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap">
 						<span class="mainForm__text display--mobile" data-defaultMessage="В какое удобное время Вам перезвонить:" data-errorMessage="Заполните сообщение">
-							<div class="wrap-icon">
+							<span class="wrap-icon">
 								<?php include('img/svg/phone-icon.svg'); ?>
-							</div>
+							</span>
 							<span>В какое удобное время Вам перезвонить:</span>
 						</span>
 						<input name="message" type="text" class="mainForm__input">
@@ -85,9 +85,9 @@
 				<form class="mainForm" id="mainForm2">
 					<div class="mainForm-wrap requaired">
 						<span class="mainForm__text" data-defaultMessage="Имя:" data-errorMessage="Имя не заполнено">
-							<div class="wrap-icon">
+							<span class="wrap-icon">
 								<?php include('img/svg/user-icon.svg'); ?>
-							</div>
+							</span>
 						Имя:
 						</span>
 						<input name="name" type="text" class="mainForm__input mainForm__input-requaired">
@@ -95,18 +95,18 @@
 					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap requaired">
 						<span class="mainForm__text" data-defaultMessage="Ваш телефон:" data-errorMessage="Email не заполнен">
-							<div class="wrap-icon color--white">
+							<span class="wrap-icon color--white">
 								<?php include('img/svg/email-icon.svg'); ?>
-							</div>
+							</span>
 						Ваш Email:</span>
 						<input name="email" type="text" class="mainForm__input mainForm__input-requaired">
 					</div>
 					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap">
 						<span class="mainForm__text " data-defaultMessage="В какое удобное время Вам перезвонить:" data-errorMessage="Заполните сообщение">
-							<div class="wrap-icon">
+							<span class="wrap-icon">
 								<?php include('img/svg/phone-icon.svg'); ?>
-							</div>
+							</span>
 							Ваш вопрос:
 						</span>
 						<input placeholder="" name="message" type="text" class="mainForm__input">
