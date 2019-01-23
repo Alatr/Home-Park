@@ -60,7 +60,8 @@
 
 
 				<div class="about-item">
-					<div class="about-item__title">детский<br>садик в доме</div>
+					<div class="about-item__title">детский 
+					садик в доме</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
 						<img src="img/about/about_3.jpg" alt="" title="">

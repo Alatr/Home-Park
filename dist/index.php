@@ -151,13 +151,14 @@
 				<div class="slider-wrap">
 					<img src="img/home/home__infostructure.jpg" alt="" title="">
 					<img src="img/home/home__infostructure.jpg" alt="" title="">
+					<img src="img/home/home__infostructure.jpg" alt="" title="">
 				</div>
 				<!-- /.sloder-wrap -->
 			</div>
 			<div class="article__descr">
 				<!-- /.article__subtitle -->
 				<div class="article__text">
-					<p class="article__text-top">Собственный парк для вашей семьи Собственный парк для вашей семьи Собственный парк для вашей семьи</p>
+					<p class="article__text-top">Собственный парк для вашей семьи</p>
 					<p class="article__text-bottom"><span class="color-accent-block">Гармоничная инфраструктура</span>
 					
 					<span class="color-accent">HOME&PARK</span> создана для семейного счастья.</p>

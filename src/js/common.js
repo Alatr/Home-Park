@@ -1,5 +1,17 @@
 (function($) {
 
+	var changePhoneNumber = function() {
+		    function replaceNumber() {
+		        var replaceCut = document.getElementsByClassName("replace");
+		        var numberAttr = number.getAttribute("href");
+
+		        var link = document.getElementById("tellink");
+		        link.setAttribute("href", numberAttr);
+		    }
+		        setTimeout(replaceNumber, 1500);
+		
+
+	};
 	var changeLang = function() {
 		$('.language').hover( function(){
 		        $('.lang_dropdown').addClass('lang-dropdown--active')
@@ -265,6 +277,7 @@
 			mainForm();
 			mobileMenu();
 			footerToggle();
+			//changePhoneNumber();
 	 });
 })(jQuery);
 

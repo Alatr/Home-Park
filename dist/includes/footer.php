@@ -45,7 +45,7 @@
 				<div class="footer-wrap">
 					<a href="tel:+380635781801" class="tellink footer--focus">(044) 222-35-47</a>
 					 <button class="btn btn-zindex">
-					 	<?php include('img/svg/phone-icon.svg'); ?>
+					 	<?php include('img/svg/email-icon.svg'); ?>
 					 	Заказать звонок
 					 </button>
 				</div>

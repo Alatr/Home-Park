@@ -158,6 +158,12 @@ button
 	background-color: transparent
 	+to(1200px)
 		margin-right: 20px
+	svg
+		fill: $wcolor
+	&:hover
+		svg
+			fill: $accent
+
 
 .tablet--hidden
 	+to(1200px)
@@ -167,9 +173,12 @@ button
 		display: none
 .tablet--hidden-1050
 	+to(1050px)
-		display: none
+		display: none !important
 .tablet--hidden-768
 	+to(768px)
+		display: none !important
+.tablet--hidden-868
+	+to(868px)
 		display: none !important
 
 /* ===========================Header_style========================*/
@@ -184,6 +193,8 @@ button
 		left: 0
 		+to(768px)
 			order: 2
+			flex-grow: 1
+			justify-content: space-around
 			min-height: auto
 			position: static
 			transform: translateY(0)
@@ -203,9 +214,13 @@ button
 			justify-content: flex-end
 		+to(768px)
 			order: 3
+			flex-grow: 1
+			justify-content: space-between
 			min-width: auto
 			position: static
 			transform: translateY(0)
+		+to(420px)
+			justify-content: space-between
 .logo
 	position: absolute
 	left: 50%
@@ -278,9 +293,9 @@ button
 			width: 140px
 			background: $accent url('../img/logo-h.svg') center center no-repeat
 			background-size: contain
-	.phone
+	.email
 		display: none
-		+to(768px)
+		+to(868px)
 			display: flex
 			width: 30px
 			height: 30px
@@ -289,7 +304,34 @@ button
 			background-color: #689a23
 			justify-content: center
 			align-items: center
+		svg
+			fill: $wcolor
+		&:hover
+			svg
+				fill: $accent
 		+to(410px)
+			margin: 0 2.5px
+	.phone
+		display: none
+		+to(1050px)
+			display: flex
+			width: 30px
+			height: 30px
+			margin: 0 22.5px
+			border-radius: 50%
+			background-color: #689a23
+			justify-content: center
+			align-items: center
+		+to(900px)
+			margin: 0 12.5px
+		+to(868px)
+			margin: 0 12%
+		svg
+			fill: $wcolor
+		&:hover
+			svg
+				fill: $accent
+		+to(600px)
 			margin: 0 2.5px
 	.gallery
 		display: flex
@@ -306,7 +348,10 @@ button
 			+to(768px)
 				margin: 0 12.5px
 			+to(410px)
-				margin: 0 2.5px
+		+to(868px)
+			padding: 0
+		+to(510px)
+			display: none
 		&:hover
 			.wrap-icon
 				background-color: transparent
@@ -696,7 +741,9 @@ button
 	+to(1200px)
 		text-align: center
 	+to(666px)
+		margin-bottom: 15px
 		font-size: 24px
+		line-height: 26px
 		
 .section-title.tablet-font--size
 	+to(1200px)
@@ -717,6 +764,9 @@ button
 +to(1200px)
 	.article:not(#q)
 		margin-top: 25px
++to(768px)
+	.article:not(#q)
+		margin-bottom: 10px
 .article
 	+col()
 	+size(7)
@@ -728,6 +778,7 @@ button
 		+size(11)
 	+to(666px)
 		+size(13)
+		line-height: 1.8
 	+to(450px)
 		+size(15)
 	&__img
@@ -779,6 +830,8 @@ button
 			margin-bottom: 20px
 		p
 			margin-bottom: 20px
+			+to(666px)
+				margin-bottom: 15px
 	&__btn
 		position: absolute
 		top: 115px
@@ -889,6 +942,8 @@ button
 				transition: all 0.5s
 				transform: scale(1.1)
 .article-slider
+	.slider-wrap, .slick-list, .slick-track
+		height: 100%
 	&__nav
 		position: absolute
 		display: flex
@@ -942,6 +997,7 @@ button
 			+to(666px)
 				padding: 26px 30px
 				padding-right: 10px
+				min-height: auto
 		&-bottom
 			padding-top: 20px
 			padding-bottom: 40px
@@ -951,6 +1007,7 @@ button
 			box-sizing: border-box
 			+to(666px)
 				padding-right: 0
+				padding-bottom: 0
 			span
 				margin-bottom: 6px
 				font-size: 20px
@@ -1419,7 +1476,7 @@ button
 			color: #000
 			transition: all 0.5s
 			+to(666px)
-				line-height: 1.6
+				line-height: 2
 			.wrap-icon
 				margin-right: 30px
 				position: relative
@@ -1550,10 +1607,14 @@ button
 				line-height: 31px
 				letter-spacing: 0.14px
 				z-index: 2
+				svg
+					fill: $wcolor
 				&::before
 					z-index: -1
 				&:hover
 					color: $accent
+					svg
+						fill: $accent
 	.footer-copyright
 		background-color: #568f0a
 		&-wrap
@@ -2435,6 +2496,10 @@ button
 .developer-slider
 	margin: 45px 0
 	border: 1px solid #efefef
+	+to(1200px)
+		margin: 30px 0
+	+to(768px)
+		margin: 15px 0
 	.logo-slaider-block .logo-slaider-btn-right
 		padding-right: 20px
 	.logo-slaider-block .logo-slaider-btn-left
@@ -2455,18 +2520,26 @@ button
 		letter-spacing: 0.6px
 		+to(1200px)
 			font-size: 20px
+			line-height: 32px
 		+to(768px)
 			font-size: 18px
+			line-height: 30px
 
 .main-developer
 	background: #eaeaea url('../img/developer/developer-main-bg.jpg') center no-repeat
 	min-height: 1084px
+	+to(768px)
+		min-height: 804px
+		background: #eaeaea url('../img/developer/developer-main-bg.jpg') 62% 50% no-repeat
+
 	.wrap
 		display: flex
 		justify-content: flex-end
 	.dev-descr
 		padding-top: 130px
 		margin-left: auto
+		+to(1200px)
+			padding-top: 40px
 		&__img
 			max-width: 180px
 			margin-bottom: 30px
@@ -2767,6 +2840,8 @@ button
 				line-height: 36px
 				text-transform: uppercase
 				letter-spacing: 1.4px
+				+to(666px)
+					line-height: 28px
 			.article__text
 				max-width: 340px
 				+to(666px)
@@ -2791,7 +2866,7 @@ button
 					object-fit: cover
 .post-type
 	position: relative
-	display: block
+	display: inline-block
 	color: $bcolor
 	font-size: 12px
 	font-weight: 400
@@ -2885,11 +2960,13 @@ button
 			color: $bcolor
 			font-size: 18px
 			font-weight: 400
-			line-height: 30px
+			line-height: 24px
 			letter-spacing: 0.18px
 			p
 				margin-bottom: 30px
 				text-align: justify
+				+to(666px)
+					margin-bottom: 15px
 			+to(768px)
 				font-size: 14px
 		&__btn
@@ -2966,11 +3043,12 @@ button
 			transform: translateX(-50%)
 			+to(1200px)
 				width: 80%
+				top: 30px
 			+to(786px)
 				width: 60%
 			+to(786px)
 				width: 50%
-				left: 45%
+				left: 42%
 	.also
 		&__title
 			margin-bottom: 25px
@@ -3109,6 +3187,7 @@ button
 					padding: 10px 0
 					transform: translateX(71px)
 				+to(768px)
+					padding: 0 0
 					transform: translateX(0)
 			.features-items__title--bottom
 				position: absolute
@@ -3169,6 +3248,9 @@ button
 				+to(1200px)
 					padding-right: 20px
 					transform: translateX(0)
+				+to(768px)
+					padding-top: 10px
+
 
 			.features-items__title--top
 				transform: translateX(37%)
@@ -3962,6 +4044,12 @@ button
 .about-block
 	padding-bottom: 60px
 	margin-bottom: 64px
+	+to(1200px)
+		padding-bottom: 20px
+
+	+to(768px)
+		padding-bottom: 0
+		margin-bottom: 0
 	&__descr
 		+row-flex()
 		padding: 50px 0
@@ -3974,13 +4062,23 @@ button
 		letter-spacing: 0.3px
 		&--wrap
 			background-color: #f3f3f3
+		+to(768px)
+			padding: 20px 0
 
 		.text--left
 			+col()
 			+size(5)
+			+to(768px)
+				+size(13)
+			+to(520px)
+				+size(14.5)
 		.text--right
 			+col()
 			+size(8.5)
+			+to(768px)
+				+size(13)
+			+to(520px)
+				+size(14.5)
 	&__title
 		padding: 40px 0
 		color: $bcolor
@@ -3989,27 +4087,47 @@ button
 		line-height: 30px
 		letter-spacing: 0.45px
 		text-align: center
+		+to(1200px)
+			padding: 20px 0
 	&__items
 		+row-flex()
 		justify-content: space-between
+		+to(768px)
+			justify-content: center
+
 		.about-item
 			+col()
 			+size(7)
 			display: flex
 			flex-direction: column
 			margin-bottom: 25px
+			+to(768px)
+				+size(13)
+				margin-bottom: 30px
+			+to(540px)
+				+size(15)
+				
 			&__title
+				margin-top: auto
 				margin-bottom: -12px
-
-				color: #cbcbcb
+				color: #bbb
 				font-size: 48px
 				font-weight: 700
 				line-height: 60px
 				text-transform: uppercase
 				letter-spacing: -0.96px
 				z-index: 22
+				white-space: pre-line
 				&::first-letter
 					color: $accent
+				+to(1200px)
+					margin-bottom: -4px
+					font-size: 28px
+					line-height: 30px
+				+to(768px)
+					white-space: normal
+					font-size: 24px
+
 			&__img
 				img
 					object-fit: cover
@@ -4028,15 +4146,33 @@ button
 				z-index: 22
 				&::first-letter
 					color: $accent
+				+to(1200px)
+					margin-bottom: -4px
+					font-size: 28px
+					line-height: 30px
+				+to(768px)
+					padding-left: 7%
+				+to(540px)
+					padding-left: 0
 			&__img
+				+to(768px)
+					margin: 0 auto
+					max-width: 87%
+				+to(540px)
+					max-width: 98%
+
 				img
 					object-fit: cover
 					height: 100%
 					margin-bottom: 43px
+					+to(1200px)
+						margin-bottom: 20px
 	&__info
 		display: flex
 		justify-content: space-between
 		align-items: center
+		+to(1200px)
+			flex-direction: column
 		.about-info
 			&__text
 				color: $bcolor
@@ -4044,11 +4180,21 @@ button
 				font-weight: 700
 				line-height: 29.99px
 				letter-spacing: 0.45px
+				+to(1200px)
+					margin-bottom: 20px
+				+to(768px)
+					margin: 0 auto
+					max-width: 87%
+					text-align: center
 			&__btn--wrap
 				display: flex
+				+to(768px)
+					flex-direction: column
 				a
 					padding: 10px 63px
 					margin: 0 16px
+					+to(768px)
+						margin-bottom: 20px
 
 .margin-before--lower
 	&::before
@@ -4057,6 +4203,8 @@ button
 .stage-block
 	padding-bottom: 61px
 	margin-bottom: 64px
+	
+
 	+to(768px)
 		margin-bottom: 0
 		padding-bottom: 20px
@@ -4507,12 +4655,17 @@ button
 	&-block
 		padding: 40px 0 45px
 		margin-bottom: 64px
+		+to(768px)
+			margin-bottom: 0
 		.filter-see-more
 			margin: 0 auto
 			min-width: 700px
 			min-height: 48px
 			font-size: 12px
 			font-weight: 600
+			+to(1200px)
+				min-width: auto
+				width: 95%
 		.option-block
 			padding: 30px 60px 40px
 			margin-bottom: 20px
@@ -4521,6 +4674,12 @@ button
 			justify-content: space-between
 			flex-wrap: wrap
 			border: 1px solid #cdcdcd
+			+to(1200px)
+				padding: 15px 15px 15px
+			+to(742px)
+				flex-direction: column
+				padding: 15px 30px 15px
+				justify-content: center
 			.irs--flat .irs-line
 				height: 2px
 				background-color: #525249
@@ -4539,6 +4698,10 @@ button
 				display: block
 				width: 300px
 				margin-bottom: 10px
+				+to(768px)
+					margin-bottom: 25px
+				+to(500px)
+					width: 290px
 			.option__item.btn-fill
 				padding: 9px 0
 				margin-top: 10px
@@ -4547,6 +4710,7 @@ button
 				line-height: 31px
 				letter-spacing: 0.7px
 				border: 1px solid $accent
+					
 			.option__results
 				padding: 0 55px
 				color: $accent
@@ -4555,6 +4719,8 @@ button
 				line-height: 20px
 				text-align: center
 				box-sizing: border-box
+				+to(768px)
+					padding: 0
 			.option__reset
 				margin: 0
 				padding: 17px 0
@@ -4608,9 +4774,12 @@ button
 					height: 46px
 					border: 1px solid #b8b8b8
 					text-align: center
-
+					+to(450px)
+						width: 80px
 				max-width: 300px
 				text-align: center
+				+to(742px)
+					max-width: 290px
 				&__title
 					margin-bottom: 13px
 					color: $accent
@@ -4621,19 +4790,35 @@ button
 		justify-content: space-around
 		align-items: center
 		margin-bottom: 23px
+		+to(768px)
+			margin-bottom: 0
+		+to(500px)
+			flex-direction: column
 		&__text
 			color: $bcolor
 			font-size: 12px
 			font-weight: 400
+			+to(500px)
+				margin-bottom: 20px
 		&--wrap
 			display: flex
+			+to(768px)
+				flex-direction: column
 			.apartment-button
+				+to(768px)
+					margin-bottom: 20px
+					padding: 14px 73px
 				margin: 0 6px
 				padding: 14px 33px
 	&-results
 		+row-flex()
 		justify-content: space-between
 		margin-bottom: 30px
+		+to(1200px)
+			justify-content: flex-start
+		+to(768px)
+			justify-content: space-around
+			
 		.filter-item
 			+col()
 			+size(3)
@@ -4641,6 +4826,15 @@ button
 			margin-bottom: 20px
 			border: 1px solid #cdcdcd
 			transition: all 0.4s
+			+to(1200px)
+				+size(5)
+			+to(768px)
+				+size(7)
+			+to(500px)
+				+size(10)
+			+to(400px)
+				+size(14)
+
 			&:hover
 				transform: scale(1.1)
 				box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px -1px
@@ -4679,6 +4873,9 @@ button
 			&__link
 				display: block
 				padding: 35px 15px 0
+				+to(500px)
+					padding: 35px 35px 0
+					
 				
 .appartment-block
 	padding: 30px 0 60px

@@ -47,6 +47,14 @@
 			},function(){
 		        $(this).addClass('active');
 			});
+
+		$(window).resize(function(){
+			if ($(window).width() < '768') {
+				$('.logo-slaider-items .logo-link svg').removeClass('active');
+			} else{
+				$('.logo-slaider-items .logo-link svg').addClass('active');	
+			}
+		});
 	};
 
 	/* Initialize
