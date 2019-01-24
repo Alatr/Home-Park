@@ -5194,13 +5194,18 @@ button
 	margin-bottom: 64px
 	+to(1200px)
 		padding: 70px 0 40px
+	+to(768px)
+		padding: 30px 0 30px
+		margin-bottom: 0
 
 	&__header
 		padding-bottom: 20px
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
-
+		+to(768px)
+			flex-direction: column
+			align-items: center
 		.button-wrap
 			a
 				padding: 11px 24px
@@ -5215,6 +5220,8 @@ button
 			z-index: 3
 			+to(1200px)
 				align-self: flex-start
+			+to(768px)
+				align-self: center
 			&__button
 				width: 70px
 				height: 48px
@@ -5245,8 +5252,8 @@ button
 					left: -67%
 				+to(768px)
 					max-width: 370px
-					top: -110px
-					left: -25px
+					top: -155px
+					left: 0px
 					flex-wrap: wrap
 				&--active
 					display: flex
@@ -5289,8 +5296,13 @@ button
 				letter-spacing: 0.7px
 				+to(1200px)
 					padding: 0 10px
+				+to(768px)
+					margin: 0 20px
 		.block--padding	
 			padding-right: 10%
+			+to(768px)
+				padding-right: 0
+
 	&__img
 		max-width: 828px
 		margin: 0 auto
@@ -5320,6 +5332,9 @@ button
 			margin: 30px 0
 			display: flex
 			justify-content: center
+			+to(500px)
+				margin: 0 0 20px 0
+				flex-direction: column
 			.before--red
 				&::before
 					background-color: #e5d59f
@@ -5332,6 +5347,8 @@ button
 		&__items
 			margin: 0 20px
 			text-align: center
+			+to(500px)
+				position: relative
 			&::before
 				content: ''
 				display: inline-block
@@ -5340,6 +5357,13 @@ button
 				height: 20px
 				border-radius: 50%
 				vertical-align: middle
+				+to(500px)
+					position: absolute
+					top: 50%
+					left: 33%
+					transform: translate(-50%,-50%)
+				+to(420px)
+					left: 26%
 
 .appartment-info
 	position: absolute
