@@ -1396,7 +1396,7 @@ button
 					
 
 
-	.mainForm
+.mainForm
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
@@ -1495,7 +1495,7 @@ button
 			position: relative
 			background: transparent
 			border: none
-			box-shadow: 0 1px 0 #efefef
+			box-shadow: 0 1px 0 #c1c1c1
 			+to(666px)
 				height: 40px
 
@@ -4991,6 +4991,8 @@ button
 	.mfp-figure:after
 		background-color: transparent
 		box-shadow: none
+.bg-modal--white
+	background-color: rgba(255,255,255,0.8)
 
 .check-floor
 	margin-bottom: 64px
@@ -5113,6 +5115,7 @@ button
 						top: 10px
 						left: 10px
 					+to(500px)
+						margin-top: 0
 						top: 5px
 						left: 5px
 						
@@ -5184,41 +5187,99 @@ button
 				use
 					fill: $accent
 .arrow--next
-	transform: rotate(180deg)
+	svg
+		transform: rotate(0)
 .floor-block
 	padding: 50px 0 147px
 	margin-bottom: 64px
+	+to(1200px)
+		padding: 70px 0 40px
+
 	&__header
 		padding-bottom: 20px
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
+
 		.button-wrap
 			a
 				padding: 11px 24px
 				margin-bottom: 20px
 		.floor-nav
+			position: relative
 			display: flex
 			justify-content: center	
-			align-items: center	
+			align-items: center
+			align-self: flex-end
+			margin-bottom: 20px
+			z-index: 3
+			+to(1200px)
+				align-self: flex-start
 			&__button
-					width: 70px
-					height: 48px
+				width: 70px
+				height: 48px
+				display: flex
+				justify-content: center	
+				align-items: center	
+				border: 2px solid #568f0a
+				box-sizing: border-box
+				transition: all 0.4s
+				&:hover
+					background-color: $accent
+					svg
+						.arrow-line
+							fill: $wcolor
+						.arrow-angle
+							fill: $wcolor
+							stroke: $wcolor
+			&__numbers
+				max-width: 846px
+				position: absolute
+				top: -59px
+				margin-bottom: 12px
+				background-color: $accent
+				display: none
+				+to(1200px)
+					left: -50%
+				+to(800px)
+					left: -67%
+				+to(768px)
+					max-width: 370px
+					top: -110px
+					left: -25px
+					flex-wrap: wrap
+				&--active
 					display: flex
-					justify-content: center	
-					align-items: center	
-					border: 2px solid #568f0a
-					box-sizing: border-box
-					transition: all 0.4s
+				&:hover
+					display: flex
+				
+				li
+					min-width: 17px
+					a
+						display: block
+						padding: 8px 13px
+						color: $wcolor
+						font-size: 14px
+						font-weight: 500
+						line-height: 31px
+						letter-spacing: 0.7px
+						text-align: center
 					&:hover
-						background-color: $accent
-						svg
-							.arrow-line
-								fill: $wcolor
-							.arrow-angle
-								fill: $wcolor
-								stroke: $wcolor
-
+						background-color: lighten($accent, 3%)
+			
+			.tooltip-arrow
+				position: relative
+				&::before
+					position: absolute
+					top: -27px
+					left: 50%
+					content: ''
+					border: 20px solid transparent
+					border-top: 20px solid $accent
+					transform: translateX(-50%)
+					visibility: visible
+					animation: tooltip-arrow-animate 0.5s ease-in-out 0s
+					
 			.floor-nav__current
 				margin: 0 45px	
 				color: $accent
@@ -5226,6 +5287,8 @@ button
 				font-weight: 500
 				line-height: 31px
 				letter-spacing: 0.7px
+				+to(1200px)
+					padding: 0 10px
 		.block--padding	
 			padding-right: 10%
 	&__img
@@ -5235,6 +5298,49 @@ button
 			transition: all 0.4s
 			&:hover
 				opacity: 0.5
+		.plan-appartment.color--red
+			fill: #e5d59f
+			&:hover
+				opacity: 0.7
+		.plan-appartment.color--gray
+			fill: #dfdfdf
+			&:hover
+				opacity: 0.7
+		.plan-appartment.color--blue
+			fill: #a5e1ee
+			&:hover
+				opacity: 0.7
+		.plan-appartment.color--green
+			fill: #b0e990
+			&:hover
+				opacity: 0.7
+			
+	.indicator
+		&-block
+			margin: 30px 0
+			display: flex
+			justify-content: center
+			.before--red
+				&::before
+					background-color: #e5d59f
+			.before--green
+				&::before
+					background-color: #b0e990
+			.before--blue
+				&::before
+					background-color: #a5e1ee
+		&__items
+			margin: 0 20px
+			text-align: center
+			&::before
+				content: ''
+				display: inline-block
+				margin-right: 10px
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				vertical-align: middle
+
 .appartment-info
 	position: absolute
 	padding: 10px 20px 20px
@@ -5446,5 +5552,83 @@ button
 	display: block
 .video--enabled
 	cursor: pointer
+#popup-form
+	max-width: 600px
+	width: 50%
+	margin: 0 auto
+	padding: 40px 50px
+	display: flex
+	flex-direction: column
+	background-color: #fff
+	box-sizing: border-box
+	+to(1200px)
+		padding: 20px 15px
+	+to(468px)
+		padding: 20px 10px
 
+	+to(768px)
+		width: 60%
+	+to(668px)
+		width: 70%
+	+to(568px)
+		width: 80%
+	+to(468px)
+		width: 100%
+	.intl-tel-input.allow-dropdown input, .intl-tel-input.allow-dropdown input[type=tel], .intl-tel-input.allow-dropdown input[type=text], .intl-tel-input.separate-dial-code input, .intl-tel-input.separate-dial-code input[type=tel], .intl-tel-input.separate-dial-code input[type=text]
+		padding-left: 19%
+	.intl-tel-input.allow-dropdown .flag-container, .intl-tel-input.separate-dial-code .flag-container
+		left: 5%
+	.btn-fill
+		width: 100%
+	.main-form__title
+		position: relative
+		margin-bottom: 30px
+		text-align: left
+		+to(1200px)
+			font-size: 20px
+		+to(468px)
+			margin-bottom: 40px
+			font-size: 16px
+		&::before
+			content: ''
+			display: inline-block
+			margin-right: 20px
+			width: 40px
+			height: 40px
+			background: url('../img/svg/leaves-w.svg') center center no-repeat
+			vertical-align: middle
+			+to(468px)
+				margin-right: 10px
+		button
+			width: 30px
+			height: 30px
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			padding: 0
+			background-color: transparent
+			+to(468px)
+				width: 20px
+				height: 20px
+			&::after
+				content: ''
+				position: absolute
+				display: block
+				width: 100%
+				height: 2px
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%) rotate(45deg)
+				background-color: $accent
+			&::before
+				content: ''
+				position: absolute
+				display: block
+				width: 100%
+				height: 2px
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%) rotate(-45deg)
+				background-color: $accent
 @import "media" // Always at the end

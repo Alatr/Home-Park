@@ -44,10 +44,10 @@
 				<!-- /.footer__menu -->
 				<div class="footer-wrap">
 					<a href="tel:+380635781801" class="tellink footer--focus">(044) 222-35-47</a>
-					 <button class="btn btn-zindex">
+					 <a href="#popup-form" class="btn btn-zindex popup-with-form-js" data-modal-class="bg-modal--white">
 					 	<?php include('img/svg/email-icon.svg'); ?>
 					 	Заказать звонок
-					 </button>
+					 </a>
 				</div>
 				<!-- /.footer-wrap -->
 			</div>

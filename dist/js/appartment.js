@@ -8,8 +8,8 @@
 				verticalFit: false
 			},
 			zoom: {
-						enabled: true,
-						duration: 300 // don't foget to change the duration also in CSS
+					enabled: true,
+					duration: 300 // don't foget to change the duration also in CSS
 			},
 			callbacks: {
 		        beforeOpen: function() {

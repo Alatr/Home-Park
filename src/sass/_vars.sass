@@ -328,12 +328,15 @@ $bcolor: #000
 									fill: $accent
 						.tellink
 							display: block
+							text-align: center
 							margin-bottom: 20px
+						.btn
+							margin: 0 auto
+							max-width: 200px
+							text-align: center
 					+to(768px)
 						flex-basis: 100%
 						text-align: center
-						.btn
-							margin: 0 auto
 
 				.has-children
 					user-select: none
@@ -415,6 +418,14 @@ $bcolor: #000
 									&::after
 										transition: 0.4s
 										transform: scale(1)
+@keyframes tooltip-arrow-animate 
+	from
+		transform: translate(-50%, -55%)
+		opacity: 0
+	to
+		transform: translate(-50%, 0)
+		opacity: 1
+
 .sub-menu-is-open
 	&::after
 		transform: rotate(135deg)!important

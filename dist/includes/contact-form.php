@@ -72,7 +72,7 @@
 						<input name="message" type="text" class="mainForm__input">
 					</div>
 					<!--  </mainForm-wrap> -->
-						<button class="btn-fill">
+						<button class="btn-fill sand-form">
 							Отправить
 						</button>
 					<!--  </contact-form-submit> -->
@@ -112,7 +112,7 @@
 						<input placeholder="" name="message" type="text" class="mainForm__input">
 					</div>
 					<!--  </mainForm-wrap> -->
-						<button class="btn-fill">
+						<button class="btn-fill sand-form">
 							Отправить
 						</button>
 					<!--  </contact-form-submit> -->

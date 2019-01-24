@@ -73,7 +73,7 @@
 		    <!-- /.left-top-menu -->
 			<a href="/dist/index.php"><div class="logo"></div></a>
 			<div class="top-menu-right">
-				<a href="#" class="email">
+				<a href="#popup-form" data-modal-class="bg-modal--white" class="email popup-with-form-js">
 					<?php include('img/svg/email-icon.svg'); ?>
 				</a>
 				<!-- /.email -->
@@ -82,10 +82,10 @@
 					<?php include('img/svg/phone-icon.svg'); ?>
 				</a>
 				<!-- /.phone -->
-				<button class="btn btn--header tablet--hidden-868">
+				<a href="#popup-form" class="btn btn--header tablet--hidden-868 popup-with-form-js" data-modal-class="bg-modal--white">
 					<?php include('img/svg/email-icon.svg'); ?>
 					<span>Заказать звонок</span>
-				</button>
+				</a>
 				<!-- /.btn -->
 				<button class="menu-icon">
 					<?php include('img/svg/menu-icon.svg'); ?>
@@ -154,10 +154,10 @@
 	                </li>
 	                <li class="menu-number">
 	                	<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
-	                	 <button class="btn btn--header">
+	                	 <a href="#popup-form" class="btn btn--header popup-with-form-js" data-modal-class="bg-modal--white">
 	                	 	<?php include('img/svg/email-icon.svg'); ?>
 	                	 	<span>Заказать звонок</span>
-	                	 </button>
+	                	 </a>
 	                	 <!-- /.btn -->
 	                </li>
 				</ul>
@@ -169,3 +169,27 @@
 	<!-- /.menu-block-bottom -->
 </div>
 <!-- /.menu-section -->
+
+<form class="mainForm white-popup-block mfp-hide" id="popup-form">
+	<h4 class="main-form__title section-title">Заказать звонок<button class="mfp-close" title="Закрыть"></button></h4>
+	<div class="mainForm-wrap requaired">
+		<span class="mainForm__text" data-defaultMessage="Имя:" data-errorMessage="Имя не заполнено">
+			<span class="wrap-icon">
+				<?php include('img/svg/user-icon.svg'); ?>
+			</span>
+		Имя:
+		</span>
+		<input name="name" type="text" class="mainForm__input mainForm__input-requaired">
+	</div>
+	<!--  </mainForm-wrap> -->
+	<div class="mainForm-wrap requaired">
+		<span class="mainForm__text position--left" data-defaultMessage="Ваш телефон:" data-errorMessage="Телефон не заполнен"></span>
+		<input name="tel" type="text" placeholder="Ваш телефон:" class="mainForm__input mainForm__input-requaired inputtelmask">
+	</div>
+	<!--  </mainForm-wrap> -->
+	<button class="btn-fill sand-form">
+		Отправить
+	</button>
+	<!--  </contact-form-submit> -->
+</form>
+<!-- /form -->

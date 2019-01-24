@@ -1,5 +1,31 @@
 (function($) {
 
+	var hoverBtn = function() {
+
+		var thisBtn; // переменная для сохранения контекста при наведении на кнопку
+		
+		$('.floor-nav__button').hover( function(){
+				thisBtn = $(this)
+		        $(this).addClass('tooltip-arrow');
+		        $('.floor-nav__numbers').addClass('flipInX');
+		        $('.floor-nav__numbers').addClass('floor-nav__numbers--active');
+			},function(){
+		        $(this).removeClass('tooltip-arrow');
+		        $('.floor-nav__numbers').removeClass('floor-nav__numbers--active');
+		        $('.floor-nav__numbers').removeClass('flipInX');
+
+			});
+
+		$('.floor-nav__numbers').hover( function(){
+		       thisBtn.addClass('tooltip-arrow')
+			},function(){
+		       thisBtn.removeClass('tooltip-arrow')
+
+			});
+		};
+
+
+
 	var hoverFloor = function() {
 		var currentMousePos = { x: -1, y: -1 };
 		  $(document).mousemove(function(event) {
@@ -47,6 +73,7 @@
 	 * ------------------------------------------------------ */
 	 $(function hpInitFloor() {
 			hoverFloor();
+			hoverBtn();
 	 });
 
 })(jQuery);
