@@ -359,6 +359,9 @@ button
 				box-sizing: border-box
 	.tellink
 		white-space: nowrap
+		transition: 0.3s all
+		&:hover
+			transform: scale(1.03)
 		+to(1200px)
 			margin-right: 10px
 	.menu-icon
@@ -773,7 +776,6 @@ button
 	color: #000000
 	font-weight: 400
 	line-height: 26px
-	overflow: hidden
 	+to(1200px)
 		+size(11)
 	+to(666px)
@@ -1053,9 +1055,12 @@ button
 		background: #eaeaea url('../img/home/home__plan.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+		transition: all 0.3s
 		+to(666px)
 			height: auto
 			min-height: 260px
+		&:hover
+			transform: scale(1.01)
 	&-gallery
 		height: 330px
 		display: flex
@@ -1064,10 +1069,13 @@ button
 		background: #eaeaea url('../img/home/home__galery.jpg') center center no-repeat
 		background-size: cover
 		z-index: 1
+		transition: all 0.3s
 		+to(666px)
 			height: auto
 			min-height: 260px
 			margin-top: 25px
+		&:hover
+			transform: scale(1.01)
 	&-apartment
 		height: 330px
 		background: #eaeaea url('../img/home/home__appartment.jpg') center center no-repeat
@@ -1171,6 +1179,8 @@ button
 			font-weight: 500
 			line-height: 31px
 			letter-spacing: 0.7px
+			&:hover
+				color: $accent
 	.sectionHome__banner-wrap--position
 		+to(1200px)
 			justify-content: flex-end
@@ -4882,16 +4892,39 @@ button
 	margin-bottom: 64px
 	display: flex
 	justify-content: space-between
+	+to(768px)
+		margin-bottom: 0
+		padding: 30px 0 30px
+		flex-direction: column
 	&__left
 		flex-basis: 17%
 		display: flex
 		flex-direction: column
 		justify-content: space-between
+		+to(1200px)
+			position: relative
+			max-width: 175px
+		+to(768px)
+			max-width: 100%
+			align-items: center
+			flex-direction: column-reverse
 		.button-wrap
+			+to(768px)
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
 			.appartment-btn
 				padding: 11px 0
 				margin: 20px 0
 				width: 100%
+				+to(1200px)
+					margin: 0 0 20px 0
+				+to(768px)
+					margin: 10px 5%
+					flex-basis: 180px
+			.padding-right--more
+				+to(1200px)
+					padding-right: 8px
 			.arrow--size
 				svg
 					width: 42px
@@ -4928,6 +4961,14 @@ button
 								fill: $accent
 
 		.plan-floor
+			+to(1200px)
+				position: absolute
+				bottom: 0
+				width: 250px
+			+to(768px)
+				position: static
+				margin-bottom: 20px
+				width: 80%
 			&__title
 				margin-bottom: 15px
 				text-align: center
@@ -4944,6 +4985,13 @@ button
 	&__center
 		flex-basis: 50%
 		align-self: center
+		+to(1200px)
+			padding: 0 10px 10px 10px
+			align-self: flex-start
+		+to(768px)
+			padding: 0
+			margin-top: 20px
+			align-self: center
 		&:hover
 			img
 				transform: scale(1.02)
@@ -4951,14 +4999,27 @@ button
 			user-select: none
 			transition: all 0.3s
 	&__right
-		flex-basis: 24%
+		flex-basis: 27%
 		display: flex
 		flex-direction: column
 		align-items: flex-end
 		overflow: hidden
+		+to(1200px)
+			flex-basis: 28%
+			flex-direction: column-reverse
+		+to(900px)
+			flex-basis: 38%
+		+to(768px)
+			flex-direction: column
 		.compass-img
 			margin-bottom: 35px
 			text-align: right
+			+to(1200px)
+				margin-bottom: 0
+				margin-top: 35px
+				align-self: center
+			+to(768px)
+				margin: 10px 0
 			img
 				user-select: none
 				max-width: 70px
@@ -4968,6 +5029,16 @@ button
 			display: block
 			background-color: #f0f0f0
 			box-sizing: border-box
+			+to(1200px)
+				min-width: 100%
+				margin: 0 auto
+			+to(768px)
+				min-width: 60%
+				padding: 30px
+			+to(568px)
+				min-width: 90%
+
+
 			table
 				width: 100%
 				tbody
@@ -4988,12 +5059,13 @@ button
 		color: $accent
 		font-size: 40px
 		font-weight: normal
+		+to(1200px)
+			right: 0
 	.mfp-figure:after
 		background-color: transparent
 		box-shadow: none
 .bg-modal--white
 	background-color: rgba(255,255,255,0.8)
-
 .check-floor
 	margin-bottom: 64px
 	position: relative
@@ -5036,6 +5108,7 @@ button
 				max-width: 100%
 				text-align: center
 			.button-wrap
+				+to(1200px)
 
 				a
 					padding: 11px 0
@@ -5051,6 +5124,7 @@ button
 					+to(530px)
 						min-width: 150px
 
+
 				.filter--margin
 					svg
 						margin-right: 10px
@@ -5063,6 +5137,7 @@ button
 				margin-top: 105px
 				+to(1200px)
 					margin-top: 0
+
 				+to(768px)
 					display: flex
 					justify-content: center	
@@ -5189,6 +5264,26 @@ button
 .arrow--next
 	svg
 		transform: rotate(0)
+.plan-appartment
+	transition: all 0.4s
+	&:hover
+		opacity: 0.5
+.plan-appartment.color--red
+	fill: #e5d59f
+	&:hover
+		opacity: 0.7
+.plan-appartment.color--gray
+	fill: #dfdfdf
+	&:hover
+		opacity: 0.7
+.plan-appartment.color--blue
+	fill: #a5e1ee
+	&:hover
+		opacity: 0.7
+.plan-appartment.color--green
+	fill: #b0e990
+	&:hover
+		opacity: 0.7
 .floor-block
 	padding: 50px 0 147px
 	margin-bottom: 64px
@@ -5241,6 +5336,7 @@ button
 							stroke: $wcolor
 			&__numbers
 				max-width: 846px
+
 				position: absolute
 				top: -59px
 				margin-bottom: 12px
@@ -5252,6 +5348,7 @@ button
 					left: -67%
 				+to(768px)
 					max-width: 370px
+					min-height: 141px
 					top: -155px
 					left: 0px
 					flex-wrap: wrap
@@ -5306,26 +5403,7 @@ button
 	&__img
 		max-width: 828px
 		margin: 0 auto
-		.plan-appartment
-			transition: all 0.4s
-			&:hover
-				opacity: 0.5
-		.plan-appartment.color--red
-			fill: #e5d59f
-			&:hover
-				opacity: 0.7
-		.plan-appartment.color--gray
-			fill: #dfdfdf
-			&:hover
-				opacity: 0.7
-		.plan-appartment.color--blue
-			fill: #a5e1ee
-			&:hover
-				opacity: 0.7
-		.plan-appartment.color--green
-			fill: #b0e990
-			&:hover
-				opacity: 0.7
+		
 			
 	.indicator
 		&-block
@@ -5655,4 +5733,48 @@ button
 				left: 50%
 				transform: translate(-50%,-50%) rotate(-45deg)
 				background-color: $accent
-@import "media" // Always at the end
+
+.page404
+	&-wrap
+		width: 100vw
+		height: 100vh
+		background-color: lighten($accent, 3%)
+		display: flex
+		justify-content: center
+		align-items: center
+	&__title
+		margin-bottom: 50px
+		font-weight: 700
+		line-height: normal
+		font-size: 220px
+		text-align: center
+		+to(578px)
+			font-size: 70px
+			margin-bottom: 30px
+		&-small
+			display: block
+			font-size: 50px
+			+to(578px)
+				font-size: 30px
+	&__subtitle
+		padding: 0 10px
+		text-align: center
+		font-size: 20px
+		margin-bottom: 30px
+	.link-wrap
+		display: flex
+		justify-content: space-between
+		+to(578px)
+			flex-direction: column
+		a
+			min-width: 220px
+			margin-right: 0
+			justify-content: center
+			span
+				z-index: 1
+			&::before
+				z-index: 0
+			+to(578px)
+				margin: 20px auto
+				width: 70%
+				min-width: 200px

@@ -36,7 +36,11 @@
 <div class="container">
 	<div class="article-block">
 		<article class="article ">
-			<h2 class="section-title">О проeкте</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.1s" 
+				data-wow-duration="0.6s"
+			>О проeкте</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<img src="img/home/home__about.jpg" alt="" title="">
@@ -62,7 +66,10 @@
 		<!-- /.article -->
 
 		<article class="article  mt60">
-			<h2 class="section-title">РАСПОЛОЖЕНИЕ</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.4s" 
+				data-wow-duration="0.6s">РАСПОЛОЖЕНИЕ</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<img src="img/home/home-locat.jpg" alt="" title="" >
@@ -103,12 +110,16 @@
 <div class="container">
 	<div class="article-block">
 		<article class="article article-slider features-slaider-js">
-			<h2 class="section-title">ПРЕИМУЩЕСТВА</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.1s" 
+				data-wow-duration="0.6s">ПРЕИМУЩЕСТВА</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<div class="slider-wrap">
 					<img src="img/home/home__featyres.jpg" alt="" title="">
-					<img src="img/home/home__featyres.jpg" alt="" title="">
+					<img src="img/features/features_2.jpg" alt="" title="">
+					<img src="img/features/features_6.jpg" alt="" title="">
 				</div>
 				<!-- /.sloder-wrap -->
 			</div>
@@ -145,7 +156,10 @@
 		<!-- /.article -->
 
 		<article class="article article-slider mt-90 infostructure-slaider-js">
-			<h2 class="section-title">ИНФРАСТРУКТУРА</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.4s" 
+				data-wow-duration="0.6s">ИНФРАСТРУКТУРА</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<div class="slider-wrap">
@@ -201,7 +215,10 @@
 <div class="container">
 	<div class="article-block">
 		<article class="article article-slider values-slaider-js">
-			<h2 class="section-title">Цености</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.1s" 
+				data-wow-duration="0.6s">Цености</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<div class="slider-wrap">
@@ -243,7 +260,10 @@
 		<!-- /.article -->
 
 		<article class="article article-slider mt-90 specifically-slaider-js">
-			<h2 class="section-title">Специальные условия</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.4s" 
+				data-wow-duration="0.6s">Специальные условия</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<div class="slider-wrap">
@@ -306,7 +326,10 @@
 <div class="container">
 	<div class="article-block">
 		<article class="article">
-			<h2 class="section-title">Коммерческая недвижимость</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.1s" 
+				data-wow-duration="0.6s">Коммерческая недвижимость</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<img src="img/home/home__realEstate.jpg" alt="" title="">
@@ -331,13 +354,19 @@
 		<!-- /.article -->
 
 		<article class="article mt90">
-			<h2 class="section-title">Sfera Living System</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.1s" 
+				data-wow-duration="0.6s">Sfera Living System</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<img src="img/home/home__atmosfera.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
-				<h3 class="article__subtitle">ATMOSFERA</h3>
+				<h3 class="article__subtitle"
+					data-wow-offset="200" 
+					data-wow-delay="0.4s" 
+					data-wow-duration="0.6s">ATMOSFERA</h3>
 				<!-- /.article__subtitle -->
 				<div class="article__text"> 
 					это высокотехнологичная управляющая компания, которая заботится о комфортной и счастливой жизни 
@@ -357,7 +386,10 @@
 		</article>
 		<!-- /.article -->
 		<article class="article">
-			<h2 class="section-title">Строительство</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.1s" 
+				data-wow-duration="0.6s">Строительство</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<img class="img--position" src="img/home/home___build.jpg" alt="" title="">
@@ -382,7 +414,10 @@
 		<!-- /.article -->
 
 		<article class="article mt-40">
-			<h2 class="section-title">Застройщик</h2>
+			<h2 class="section-title wow fadeInDown"
+				data-wow-offset="200" 
+				data-wow-delay="0.4s" 
+				data-wow-duration="0.6s">Застройщик</h2>
 			<!-- /.section-title -->
 			<div class="article__img">
 				<img class="img--position" src="img/home/home__builder.jpg" alt="" title="">
