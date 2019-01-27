@@ -229,6 +229,20 @@ $bcolor: #000
 .menu-section.active-js
 	opacity: 1
 	visibility: visible
+	animation: menu-animate 0.6s ease-in-out
+
+
+@keyframes menu-animate
+	0%
+		top: 20%
+		transform: scale(0.8)
+
+	50%
+		top: 0
+		transform: scale(0.8)
+	100%
+		transform: scale(1)
+		
 
 .menu-section
 	position: fixed
@@ -432,7 +446,9 @@ $bcolor: #000
 	&::after
 		transform: rotate(135deg)!important
 		transition: all 0.4s
-//--------slider-------
+
+
+
 @keyframes firstLeft 
 	from
 		opacity: 0

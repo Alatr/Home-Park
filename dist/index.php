@@ -8,12 +8,25 @@
 	</div>
 	<!-- /.main-slider -->
 	<div class="slaierNav">
-		<h2 class="slaierNav__title">Все для семейного счастья</h2>
+		<h2 class="slaierNav__title wow fadeInRight"
+			data-wow-offset="0" 
+			data-wow-delay="0.8s" 
+			data-wow-duration="1s">
+			Все для семейного счастья
+		</h2>
 		<div class="slaierNav__text">
-			<div class="slaierNav__subtitle">Home & Park –</div>
+			<div class="slaierNav__subtitle wow fadeInRight"
+				 data-wow-offset="0" 
+				 data-wow-delay="0.9s" 
+				 data-wow-duration="1s">
+				 Home & Park –
+			</div>
 			<!-- /.slaierNav__subtitle -->
-			<div class="slaierNav__descr">
-				будинок, у якому ми втілили мрії турботливих батьків. Інфраструктура для сім’ї, безпечна прибудинкова територія, закрита від автівок, сучасна архітектура та розташування неподалік метро — у Happy House є все для комфортного та щасливого життя.
+			<div class="slaierNav__descr wow fadeInRight"
+				data-wow-offset="0" 
+				data-wow-delay="1s" 
+				data-wow-duration="1s">
+				будинок, у якому ми втілили мрії турботливих батьків. Інфраструктура для сім’ї, безпечна прибудинкова територія, закрита від автівок, сучасна архітектура та розташування неподалік метро — у Home & Park має все для комфортного та щасливого життя.
 			</div>
 			<!-- /.slaierNav__descr -->
 		</div>
@@ -22,8 +35,13 @@
 			<a href="/dist/filter.php" class="btn-fill slaierNav__btn--size">Выбрать квартиру</a>
 			<button class="btn-slider-prev"><?php include('img/svg/arrow.svg'); ?></button>
 			<button class="btn-slider-next"><?php include('img/svg/arrow.svg'); ?></button>
+			<?php include('img/svg/leaves-w.svg'); ?>
+			<div class="decorative-line wow fadeInUp"
+				data-wow-offset="0" 
+				data-wow-delay="0.1s" 
+				data-wow-duration="0.7s"
+			></div>
 		</div>
-		
 	</div>
 	<!-- /.slaierNav -->
 		}
@@ -46,7 +64,12 @@
 				<img src="img/home/home__about.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
-				<h3 class="article__subtitle">Что нужно для счастья? </h3>
+				<h3 class="article__subtitle wow fadeInLeft"
+					data-wow-offset="0" 
+					data-wow-delay="0.2s" 
+					data-wow-duration="1s"
+					>Что нужно для счастья? 
+				</h3>
 				<!-- /.article__subtitle -->
 				<div class="article__text">
 					<p>Комфортное жилье по экономной цене. Парк для прогулок и спорта рядом с домом.</p>
@@ -75,7 +98,11 @@
 				<img src="img/home/home-locat.jpg" alt="" title="" >
 			</div>
 			<div class="article__descr">
-				<h3 class="article__subtitle">HOME&PARK расположен</h3>
+				<h3 class="article__subtitle wow fadeInLeft"
+					data-wow-offset="0" 
+					data-wow-delay="0.2s" 
+					data-wow-duration="1s">
+				HOME&PARK расположен</h3>
 				<!-- /.article__subtitle -->
 				<div class="article__text"> 
 					<p>в центре Борисполя по адресу ул. Беживка, 14 рядом
@@ -309,8 +336,8 @@
 <div class="sectionHome__banner sectionHome__banner-apartment">
 	<div class="container">
 		<div class="sectionHome__banner-wrap">
-			<h2 class='banner__title tablet-appartment--position'>Квартиры</h2>
-			<div class="bannerDescr">
+			<h2 class='banner__title tablet-appartment--position wow fadeInLeft'>Квартиры</h2>
+			<div class="bannerDescr wow fadeInRight">
 				<div class="bannerDescr__text bannerDescr__text-width">Выберите квартиру вашей мечты уже сейчас!</div>
 				<a href="/dist/filter.php" class="btn bannerDescr__btn">
 					<?php include('img/svg/key-icon.svg'); ?>
@@ -335,7 +362,10 @@
 				<img src="img/home/home__realEstate.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
-				<h3 class="article__subtitle">Киев – мегаполис, который</h3>
+				<h3 class="article__subtitle wow fadeInLeft"
+					data-wow-offset="0" 
+					data-wow-delay="0.2s" 
+					data-wow-duration="1s">Киев – мегаполис, который</h3>
 				<!-- /.article__subtitle -->
 				<div class="article__text">
 					активно развивается. Неизменным спросом пользуется коммерческая недвижимость...
@@ -363,10 +393,10 @@
 				<img src="img/home/home__atmosfera.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
-				<h3 class="article__subtitle"
-					data-wow-offset="200" 
-					data-wow-delay="0.4s" 
-					data-wow-duration="0.6s">ATMOSFERA</h3>
+				<h3 class="article__subtitle wow fadeInLeft"
+					data-wow-offset="0" 
+					data-wow-delay="0.2s" 
+					data-wow-duration="1s">ATMOSFERA</h3>
 				<!-- /.article__subtitle -->
 				<div class="article__text"> 
 					это высокотехнологичная управляющая компания, которая заботится о комфортной и счастливой жизни 
@@ -395,7 +425,10 @@
 				<img class="img--position" src="img/home/home___build.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
-				<h3 class="article__subtitle">Узнайте про ход строительства</h3>
+				<h3 class="article__subtitle wow fadeInLeft"
+					data-wow-offset="0" 
+					data-wow-delay="0.2s" 
+					data-wow-duration="1s">Узнайте про ход строительства</h3>
 				<!-- /.article__subtitle -->
 				<div class="article__text">
 					<p>	и этапы выполнения работ.</p>
@@ -423,7 +456,10 @@
 				<img class="img--position" src="img/home/home__builder.jpg" alt="" title="">
 			</div>
 			<div class="article__descr">
-				<h3 class="article__subtitle">Девелопер HOME&PARK –</h3>
+				<h3 class="article__subtitle wow fadeInLeft"
+					data-wow-offset="0" 
+					data-wow-delay="0.2s" 
+					data-wow-duration="1s">Девелопер HOME&PARK –</h3>
 				<!-- /.article__subtitle -->
 				<div class="article__text"> 
 					<p>	компания SAGA Development</p>
@@ -456,8 +492,8 @@
 <div class="sectionHome__banner sectionHome__banner-day-in">
 	<div class="container">
 		<div class="sectionHome__banner-wrap sectionHome__banner-wrap--position">
-			<h2 class='banner__title t25p tablet-dayin--position'>День в Home & park</h2>
-			<div class="bannerDescr">
+			<h2 class='banner__title t25p tablet-dayin--position wow fadeInLeft'>День в Home & park</h2>
+			<div class="bannerDescr wow fadeInRight">
 				<div class="bannerDescr__text bannerDescr__text-width">Посмотрите, как проходит наполненный счастьем день в HOME & PARK!</div>
 				<a href="/dist/day-in.php" class="btn bannerDescr__btn">
 					Смотреть

@@ -178,32 +178,32 @@ new WOW().init();
 	    };
 
 	var mainForm = function(){
-		$('.mainForm__input').on('focus', function () {
-			$(this).parent().addClass('input-focus-js');
-		}).blur(function() {
-			if ($(this).val() === '') {
-				$(this).parent().removeClass('input-focus-js');
-			}
-		});
+			$('.mainForm__input').on('focus', function () {
+				$(this).parent().addClass('input-focus-js');
+			}).blur(function() {
+				if ($(this).val() === '') {
+					$(this).parent().removeClass('input-focus-js');
+				}
+			});
 
 
-		$('#mainForm').on('submit', function(e){
-			event.preventDefault();
-			var parent = e.target;
-			ajax_form(parent);
-		});
+			$('#mainForm').on('submit', function(e){
+				event.preventDefault();
+				var parent = e.target;
+				ajax_form(parent);
+			});
 
-		$('#mainForm2').on('submit', function(e){
-			event.preventDefault();
-			var parent = e.target;
-			ajax_form(parent);
-		});
+			$('#mainForm2').on('submit', function(e){
+				event.preventDefault();
+				var parent = e.target;
+				ajax_form(parent);
+			});
 
-		$('#popup-form').on('submit', function(e){
-			event.preventDefault();
-			var parent = e.target;
-			ajax_form(parent);
-		});
+			$('#popup-form').on('submit', function(e){
+				event.preventDefault();
+				var parent = e.target;
+				ajax_form(parent);
+			});
 
 			function ajax_form(e) {
 				event.preventDefault();
@@ -266,30 +266,56 @@ new WOW().init();
 
 			footer.off('click'); // удаление обработчика клика т.к ф-я footerToggle вызывается каждый раз при resize
 			var winWidth = $(window).width();
-		// для адаптива <= 768px собитие клика по футеру и скрытие по скролу отключается 
+			// для адаптива <= 768px собитие клика по футеру и скрытие по скролу отключается 
 			if (winWidth > '768') {
 				footer.css({'position': 'fixed'});
-		// событие выезжающего footer при sroll
+
+
+
+
+
+
+				// событие выезжающего footer при sroll
 				$(window).scroll(function(){
 					var winPos = $(window).scrollTop(),
 						 scrollOffsetFooter = 50;
+						var hTabs = footer.innerHeight();
+						var prev = footer.prev('div:first')
+					if ($(window).scrollTop()+$(window).height()>=$(document).height() - 50) {
 
-					if (winPos >= scrollOffsetFooter) {
+
+
+						console.log(prev);
+						footer.css({'transform': 'translateY(0px)',});
+						prev.css({'paddingBottom': hTabs});
+
+					} else if  (winPos >= scrollOffsetFooter){
 						footer.css({'transform': 'translateY('+ footerHeightInner +'px)'});
+
+						console.log('не конец');
 					} else {
 						footer.css({'transform': 'translateY(100%)'});
 					}
 				});
 
-		// click on footer and open them
+
+
+
+
+
+
+
+
+
+
+
+				// click on footer and open them
 				footer.on('click', function() {
-					console.log('click')
 					$(this).toggleClass('footer-active');
+
 					if ($(this).hasClass('footer-active')) {
-						console.log('add')
 						$(this).css({'transform': 'translateY(0px)'});
 					} else {
-						console.log('del')
 						$(this).css({'transform': 'translateY('+footerHeightInner+'px)'});
 					}
 				});
@@ -307,6 +333,20 @@ new WOW().init();
 		
 	};
 	$(window).resize(footerToggle);
+/*	$(window).scroll(function(){
+			var footer = $('.sectionHome__footer');
+		if ($(window).scrollTop()+$(window).height()>=$(document).height()-10) {
+			console.log('конец');
+			footer.css({
+						'backgroundColor': 'red'
+					});
+		} else {
+			console.log(' не конец');
+			footer.css({
+						'backgroundColor': 'blue'
+					});
+		}
+	});*/
 	
 	
 

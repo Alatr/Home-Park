@@ -43,7 +43,9 @@
 		</div>
 	</div>
 </div> -->
-
+<div class="loader-wrap">
+   <div class="loader"></div>
+</div>
 <div class="header-section">
 	<div class="container">
 		<header class="header">

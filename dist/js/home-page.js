@@ -61,11 +61,13 @@
 
 		$('.logo-slaider-wrap').slick({
 			slidesToShow: 5,
-			slidesToScroll: 3,
+			slidesToScroll: 1,
 			arrows: false,
 			dots: false,
 			infinite: true,
 			speed: 500,
+			autoplay: true,
+			autoplaySpeed: 2000,
 			responsive: [
 			    {
 			      breakpoint: 1200,

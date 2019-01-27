@@ -605,13 +605,12 @@ button
 			width: 95%
 			padding: 25px 10px
 			transform: translate(-50%, -50%)
-		&::after
+		.leaves-w
 			content: ""
 			display: block
 			position: absolute
 			width: 50px
 			height: 44px
-			background: url('../img/svg/leaves-w.svg') center center no-repeat
 			top: 15px
 			right: 15px
 			bottom: auto
@@ -691,15 +690,15 @@ button
 			display: flex
 			align-items: center
 			position: static
-			&::after
-				content: ""
+			.decorative-line
 				display: block
 				position: absolute
 				height: 60px
 				width: 1px
-				right: 36px
-				top: 70px
+				right: 35px
+				top: 49px
 				background-color: $accent
+				border-radius: 1.5px
 
 	&-down
 		position: absolute
@@ -796,6 +795,9 @@ button
 		img
 			object-fit: cover
 			height: 100%
+			transition: all 0.3s
+			&:hover
+				transform: scale(1.04)
 	&__descr
 		position: relative
 		padding: 35px 45px 20px 0px
@@ -1238,6 +1240,10 @@ button
 					fill: $accent !important
 		.logo-link
 			display: block
+			svg
+				transition: all 0.4s
+				&:hover
+					transform: scale(1.04)
 			+to(1200px)
 				text-align: center
 
@@ -1315,6 +1321,7 @@ button
 				background-color: #efefef
 				color: #000
 				cursor: pointer
+				transition: all 0.3s
 		li.active-li
 			button
 				background-color: #efefef
@@ -1519,7 +1526,7 @@ button
 	bottom: 0
 	left: 0
 	z-index: 667
-	transition: all 1s
+	transition: all 0.5s
 	box-sizing: border-box
 	transform: translateY(100%)
 	&:hover
@@ -5778,3 +5785,31 @@ button
 				margin: 20px auto
 				width: 70%
 				min-width: 200px
+
+.loader
+	&-wrap
+		width: 100vw
+		height: 100vh
+		background-color: lighten($accent, 3%)
+		display: flex
+		justify-content: center
+		align-items: center
+		z-index: 1000
+
+::-webkit-scrollbar 
+	width: 8px
+
+ 
+/* Track */
+::-webkit-scrollbar-track
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb 
+	background: rgba(77,129,9,1)
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+
+::-webkit-scrollbar-thumb:window-inactive
+	background: #c1c1c1
+
