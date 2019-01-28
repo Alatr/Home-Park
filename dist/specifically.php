@@ -112,7 +112,5 @@
 <!-- /.container -->
 	<?php include('includes/footer.php'); ?>
 
-	<script src="js/scripts.min.js"></script>
-
 	</body>
 </html>

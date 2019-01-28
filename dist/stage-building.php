@@ -157,7 +157,6 @@
 
 <?php include('includes/footer.php'); ?>
 
-	<script src="js/scripts.min.js"></script>
 	<script src="js/stage-building.js"></script>
 
 	</body>

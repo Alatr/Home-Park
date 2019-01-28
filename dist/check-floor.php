@@ -58,7 +58,6 @@
 <!-- /.check-floor -->
 <?php include('includes/footer.php'); ?>
 
-	<script src="js/scripts.min.js"></script>
 	<script src="js/check-floor.js"></script>
 
 	</body>

@@ -43,7 +43,7 @@
 		</div>
 	</div>
 </div> -->
-<div class="loader-wrap">
+<!-- <div class="loader-wrap">
    <svg class="filter" version="1.1">
        <defs>
          <filter id="gooeyness">
@@ -60,7 +60,7 @@
      <div class="loader-dot"></div>
      <div class="loader-dot"></div>
    </div>
-</div>
+</div> -->
 <div class="header-section">
 	<div class="container">
 		<header class="header">

@@ -45,7 +45,6 @@
 
 <?php include('includes/footer.php'); ?>
 
-	<script src="js/scripts.min.js"></script>
 	<script src="js/web-camera.js"></script>
 
 	</body>

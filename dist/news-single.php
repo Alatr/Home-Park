@@ -128,7 +128,6 @@
 <!-- /.container -->
 
 	<?php include('includes/footer.php'); ?>
-	<script src="js/scripts.min.js"></script>
 	<script src="js/news-single.js"></script>
 
 	</body>

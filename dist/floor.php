@@ -115,7 +115,6 @@
 
 <?php include('includes/footer.php'); ?>
 	
-	<script src="js/scripts.min.js"></script>
 	<script src="js/floor.js"></script>
 
 	</body>

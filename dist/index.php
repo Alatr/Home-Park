@@ -508,7 +508,6 @@
 <?php include('includes/contact-form.php'); ?>
 <?php include('includes/footer.php'); ?>
 
-	<script src="js/scripts.min.js"></script>
 	<script src="js/home-page.js"></script>
 
 	</body>

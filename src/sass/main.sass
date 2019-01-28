@@ -5942,7 +5942,32 @@ button
 		transform: scale(1) translateX(0)
 
 
+.animation
 
+	.block
+		min-height: 800px
+		max-width: 300px
+		margin: 0 auto
+		.sq
+			width: 120px
+			height: 120px
+			margin: 0 auto
+			background-color: #000
+			text-align: center
+			animation: square 2s ease-in-out infinite
+@keyframes square
+	0%
+		width: 120px
+		height: 120px
+		transform: translateY(0px)
+	50%
+		width: 100px
+		height: 140px
+		transform: translateY(140px) rotate(180deg)
+	100%
+		width: 120px
+		height: 120px
+		transform: translateY(0px) rotate(-180deg)
 
 ::-webkit-scrollbar 
 	width: 8px
