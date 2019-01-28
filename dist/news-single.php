@@ -18,7 +18,7 @@
 	<div class="news-single-block">
 		<div class="slaider">
 			<div class="slaider-images">
-				<img src="img/three-6.jpg" alt="" title="">
+				
 				<img src="img/news-single/slider-photo.jpg" alt="" title="">
 				<img src="img/news-single/slider-photo.jpg" alt="" title="">
 			</div>

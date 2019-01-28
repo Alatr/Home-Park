@@ -20,9 +20,9 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitStageDevelopment() {
+	 (function hpInitStageDevelopment() {
 			progressBar();
-	 });
+	 })();
 
 })(jQuery);
 

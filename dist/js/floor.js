@@ -71,10 +71,10 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitFloor() {
+	 (function hpInitFloor() {
 			hoverFloor();
 			hoverBtn();
-	 });
+	 })();
 
 })(jQuery);
 

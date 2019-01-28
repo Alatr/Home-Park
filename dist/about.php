@@ -17,11 +17,11 @@
 		<div class="about-block__descr--wrap">
 			<div class="container">
 				<div class="about-block__descr">
-					<p class="text--left">
+					<p class="text--left wow fadeInLeft">
 						<span class="fw700">Что нужно для счастья? Комфортное жилье по экономной цене.</span> Парк для прогулок и спорта рядом с домом. Современная и безопасная инфраструктура для ваших детей. Все, что необходимо - в вашем доме или рядом с ним.
 					</p>
 					<!-- /.text--left -->
-					<p class="text--right">
+					<p class="text--right wow fadeInRight">
 						<span class="fw700">Мы позаботились о том, чтобы наполнить ваш дом счастьем.</span> И особое внимание мы уделили семейным потребностям. Именно поэтому HOME&PARK оснащен удобной инфраструктурой, ориентированной на детей и их родителей. Теперь ваши дети смогут учиться и развлекаться, не покидая территорию дома. А вы будете чувствовать себя уверенно, наблюдая за ними — ведь за игровой площадкой и другими местами, предназначенными для детей, можно наблюдать с помощью смартфона.
 					</p>
 					<!-- /.text--right -->
@@ -38,7 +38,7 @@
 			<!-- /.about-block__title -->
 			<div class="about-block__items">
 				<div class="about-item">
-					<div class="about-item__title">8 подъездов</div>
+					<div class="about-item__title wow fadeInUp">8 подъездов</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
 						<img src="img/about/about_1.jpg" alt="" title="">
@@ -49,7 +49,7 @@
 
 
 				<div class="about-item">
-					<div class="about-item__title"><span class="color-accent">16</span> этажей</div>
+					<div class="about-item__title wow fadeInUp"><span class="color-accent">16</span> этажей</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
 						<img src="img/about/about_2.jpg" alt="" title="">
@@ -60,7 +60,7 @@
 
 
 				<div class="about-item">
-					<div class="about-item__title">детский 
+					<div class="about-item__title wow fadeInUp">детский 
 					садик в доме</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
@@ -72,7 +72,7 @@
 
 
 				<div class="about-item">
-					<div class="about-item__title">центр детского развития</div>
+					<div class="about-item__title wow fadeInUp">центр детского развития</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
 						<img src="img/about/about_4.jpg" alt="" title="">
@@ -83,7 +83,7 @@
 
 
 				<div class="about-item">
-					<div class="about-item__title">детские и спортивные площадки</div>
+					<div class="about-item__title wow fadeInUp">детские и спортивные площадки</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
 						<img src="img/about/about_5.jpg" alt="" title="">
@@ -94,7 +94,7 @@
 
 
 				<div class="about-item">
-					<div class="about-item__title">собственный парк для спорта и отдыха</div>
+					<div class="about-item__title wow fadeInUp">собственный парк для спорта и отдыха</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
 						<img src="img/about/about_6.jpg" alt="" title="">
@@ -109,7 +109,7 @@
 			<!-- /.about-block__items -->
 			<div class="about-block__items--long">
 				<div class="about-item">
-					<div class="about-item__title">монолитно-каркасная технология строительства</div>
+					<div class="about-item__title wow fadeInUp">монолитно-каркасная технология строительства</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
 						<img src="img/about/about_7.jpg" alt="" title="">

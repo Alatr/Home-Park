@@ -25,9 +25,9 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitAppartment() {
+	 (function hpInitAppartment() {
 			showAppartment();
-	 });
+	 })();
 
 })(jQuery);
 

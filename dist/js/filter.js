@@ -198,9 +198,9 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitFilter() {
+	 (function hpInitFilter() {
 			filterIn();
-	 });
+	 })();
 
 })(jQuery);
 

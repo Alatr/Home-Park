@@ -80,64 +80,64 @@
 
 
 
-			<div class="stage-item">
+			<a href="/dist/news-single.php" class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/stage-building/stage-building_1.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</div>
+			</a>
 			<!-- /.stage-item -->
 
 
-			<div class="stage-item">
+			<a href="/dist/news-single.php" class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/home/home__galery.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</div>
+			</a>
 			<!-- /.stage-item -->
 
 
-			<div class="stage-item">
+			<a href="/dist/news-single.php" class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/news-single/slider-photo.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</div>
+			</a>
 			<!-- /.stage-item -->
 
 
-			<div class="stage-item">
+			<a href="/dist/news-single.php" class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/infostructure/infostructure_2.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</div>
+			</a>
 			<!-- /.stage-item -->
 
 
 
-			<div class="stage-item">
+			<a href="/dist/news-single.php" class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/stage-building/stage-building_1.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</div>
+			</a>
 			<!-- /.stage-item -->
 
 
-			<div class="stage-item">
+			<a href="/dist/news-single.php" class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/home/home__galery.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</div>
+			</a>
 			<!-- /.stage-item -->
 
 

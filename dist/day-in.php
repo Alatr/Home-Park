@@ -1,11 +1,11 @@
 <?php include('includes/header.php'); ?>
 <div class="section-preview section-preview-day-in">
 	<div class="container">
-		<h1 class='section-preview__title '>ДЕНЬ В HOME & PARK Comfort House</h1>
+		<h1 class='section-preview__title '>ДЕНЬ В HOME & PARK </h1>
 		
 		<ul class="breadcrumb">
 		  <li><a href="/dist/index.php">Главная</a></li>
-		  <li>День в HOME & PARK Comfort House</li>
+		  <li>День в HOME & PARK </li>
 		</ul>
 	</div>
 	<!-- /.container -->
@@ -19,10 +19,10 @@
 		<div class="images-block">
 			<div class="images-block-descr ">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">08:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">08:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Позавтракать всей семьей, обсудить планы на день 
 				</h4>
 				<!-- /.images-block-descr__title -->
@@ -40,10 +40,10 @@
 		<div class="images-block">
 			<div class="images-block-descr">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">09:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">09:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Отвести ребенка в детский сад, который находится в доме 
 				</h4>
 				<!-- /.images-block-descr__title -->
@@ -62,10 +62,10 @@
 		<div class="images-block">
 			<div class="images-block-descr">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">10:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">10:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Позаниматься спортом на уличных тренажерах
 				</h4>
 				<!-- /.images-block-descr__title -->
@@ -84,10 +84,10 @@
 		<div class="images-block">
 			<div class="images-block-descr">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">12:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">12:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Прогуляться	в собственном парке
 				</h4>
 				<!-- /.images-block-descr__title -->
@@ -106,10 +106,10 @@
 		<div class="images-block">
 			<div class="images-block-descr">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">13:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">13:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Пообедать в ближайшем кафе
 				</h4>
 				<!-- /.images-block-descr__title -->
@@ -128,10 +128,10 @@
 		<div class="images-block">
 			<div class="images-block-descr">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">15:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">15:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Посетить с ребенком центр детского развития
 				</h4>
 				<!-- /.images-block-descr__title -->
@@ -150,10 +150,10 @@
 		<div class="images-block">
 			<div class="images-block-descr">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">17:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">17:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Поиграть с малышом на детской площадке
 				</h4>
 				<!-- /.images-block-descr__title -->
@@ -172,10 +172,10 @@
 		<div class="images-block">
 			<div class="images-block-descr">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">19:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">19:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Поужинать в семейном кругу
 				</h4>
 				<!-- /.images-block-descr__title -->
@@ -193,10 +193,10 @@
 		<div class="images-block">
 			<div class="images-block-descr">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">20:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">20:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Посмотреть любимый фильм в уютной гостиной
 				</h4>
 				<!-- /.images-block-descr__title -->
@@ -214,10 +214,10 @@
 		<div class="images-block margin--bottom">
 			<div class="images-block-descr">
 				<div class="images-block-descr__time-wrap">
-					<span class="images-block-descr__time">22:00</span>
+					<span class="images-block-descr__time wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">22:00</span>
 				</div>
 				<!-- /.images-block-descr__time-wrap -->
-				<h4 class="images-block-descr__title">
+				<h4 class="images-block-descr__title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
 					Вечерняя пробежка в парке
 				</h4>
 				<!-- /.images-block-descr__title -->

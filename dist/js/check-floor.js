@@ -63,9 +63,9 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitchangeFloor() {
+	 (function hpInitchangeFloor() {
 			checkFloor();
-	 });
+	 })();
 
 })(jQuery);
 

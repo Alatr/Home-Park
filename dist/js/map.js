@@ -138,9 +138,9 @@ var uri = window.location.href;
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitMap() {
+	 (function hpInitMap() {
 			mapBlock();
-	 });
+	 })();
 
 })(jQuery);
 

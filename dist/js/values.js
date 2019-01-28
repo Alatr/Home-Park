@@ -122,9 +122,9 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitValues() {
+	 (function hpInitValues() {
 			valuesSlider();
-	 });
+	 })();
 
 })(jQuery);
 

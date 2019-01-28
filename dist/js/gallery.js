@@ -45,9 +45,9 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitGallery() {
+	 (function hpInitGallery() {
 			gallery();
-	 });
+	 })();
 
 })(jQuery);
 

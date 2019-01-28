@@ -61,9 +61,9 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitDeveloper() {
+	 (function hpInitDeveloper() {
 			logoSlider();
-	 });
+	 })();
 
 })(jQuery);
 

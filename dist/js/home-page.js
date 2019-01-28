@@ -181,11 +181,11 @@
 
 	/* Initialize Home page
 	 * ------------------------------------------------------ */
-	 $(function hpInit() {
+	 (function hpInit() {
 	    	mainSlider();
 	    	pagesSlider();
 	    	logoSlider();
 			tabs();
 			scrollBtn();
-	 });
+	 })();
 })(jQuery);

@@ -44,7 +44,22 @@
 	</div>
 </div> -->
 <div class="loader-wrap">
-   <div class="loader"></div>
+   <svg class="filter" version="1.1">
+       <defs>
+         <filter id="gooeyness">
+           <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+           <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+           <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+         </filter>
+       </defs>
+     </svg>
+   <div class="loader-dots">
+     <div class="loader-dot mainDot"></div>
+     <div class="loader-dot"></div>
+     <div class="loader-dot"></div>
+     <div class="loader-dot"></div>
+     <div class="loader-dot"></div>
+   </div>
 </div>
 <div class="header-section">
 	<div class="container">
@@ -110,14 +125,14 @@
 		<div class="container">
 			<div class="menu-wrap">
 				<ul class="header-menu">
-	                <li class="has-children">
+	                <li class="has-children" >
 	                    <span class="menu__title">Главная</span>
 	                    <ul class="sub-menu">
                         	<li><a href="/dist/news.php">Новости</a></li>
                         	<li><a href="/dist/gallery.php">Галерея</a></li>
 	                    </ul>
 	                </li>
-	                <li class="has-children">
+	                <li class="has-children" >
 	                    <span class="menu__title">О проекте</span>
 	                    <ul class="sub-menu">
                         	<li><a href="/dist/about.php">О Home & Park</a></li>
@@ -126,7 +141,7 @@
                         	<li><a href="/dist/infostructure.php">Инфраструктура</a></li>
 	                    </ul>
 	                </li>
-	                <li class="has-children">
+	                <li class="has-children" >
 	                    <span class="menu__title">Выбрать квартиру</span>
 	                    <ul class="sub-menu">
                         	<li><a href="/dist/check-floor.php">Выбрать по этажу</a></li>
@@ -137,7 +152,7 @@
 
 	                    </ul>
 	                </li>
-	                <li class="has-children">
+	                <li class="has-children" >
 	                    <span class="menu__title">Строительство</span>
 	                    <ul class="sub-menu">
 	                        <li><a href="/dist/developer.php">Застройщик</a></li>
@@ -147,14 +162,14 @@
 	                        <li><a href="#">Генплан</a></li>
 	                    </ul>
 	                </li>
-	                <li class="has-children">
+	                <li class="has-children" >
 	                    <span class="menu__title">Контакты</span>
 	                    <ul class="sub-menu">
                         	<li><a href="/dist/location.php">Расположение</a></li>
                         	<li><a href="/dist/contacts.php">Связь</a></li>
 	                    </ul>
 	                </li>
-	                <li class="menu-number">
+	                <li class="menu-number" >
 	                	<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
 	                	 <a href="#popup-form" class="btn btn--header popup-with-form-js" data-modal-class="bg-modal--white">
 	                	 	<?php include('img/svg/email-icon.svg'); ?>

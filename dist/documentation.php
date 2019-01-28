@@ -19,7 +19,7 @@
 
 
 
-			<div class="documentation-item">
+			<div class="documentation-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
 				<a href="#" class="documentation-item__img" target="_blank">
 					<img src="img/documentation/documentation_1.jpg" alt="" title="">
 				</a>
@@ -32,7 +32,7 @@
 
 
 
-			<div class="documentation-item">
+			<div class="documentation-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
 				<a href="#" class="documentation-item__img" target="_blank">
 					<img src="img/documentation/documentation_2.jpg" alt="" title="">
 				</a>
@@ -45,7 +45,7 @@
 
 
 
-			<div class="documentation-item">
+			<div class="documentation-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
 				<a href="#" class="documentation-item__img" target="_blank">
 					<img src="img/documentation/documentation_3.jpg" alt="" title="">
 				</a>
@@ -58,7 +58,7 @@
 
 
 
-			<div class="documentation-item">
+			<div class="documentation-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
 				<a href="#" class="documentation-item__img" target="_blank">
 					<img src="img/documentation/documentation_4.jpg" alt="" title="">
 				</a>

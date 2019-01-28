@@ -17,9 +17,9 @@
 	<div class="specifically-block">
 		<div class="specifically-items">
 			<div class="specifically__title">
-				<div class="specifically__title--top">Специальные</div>
+				<div class="specifically__title--top wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Специальные</div>
 				<!-- /.specifically__title--top -->
-				<div class="specifically__title--bottom ml60">условия </div>
+				<div class="specifically__title--bottom ml60 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">условия </div>
 				<!-- /.specifically__title--bottom -->
 				<div class="specifically__title--small w264">приобретения квартиры для молодых семей</div>
 				<!-- /.specifically__title--small -->
@@ -40,9 +40,9 @@
 
 		<div class="specifically-items">
 			<div class="specifically__title">
-				<div class="specifically__title--top">Дизайн</div>
+				<div class="specifically__title--top wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Дизайн</div>
 				<!-- /.specifically__title--top -->
-				<div class="specifically__title--bottom ml60">детской</div>
+				<div class="specifically__title--bottom ml60 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">детской</div>
 				<!-- /.specifically__title--bottom -->
 				<div class="specifically__title--small w260">комнаты в подарок при покупке квартиры</div>
 				<!-- /.specifically__title--small -->
@@ -63,9 +63,9 @@
 
 		<div class="specifically-items">
 			<div class="specifically__title">
-				<div class="specifically__title--top">Бонус за</div>
+				<div class="specifically__title--top wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Бонус за</div>
 				<!-- /.specifically__title--top -->
-				<div class="specifically__title--bottom ml60">рождение</div>
+				<div class="specifically__title--bottom ml60 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">рождение</div>
 				<!-- /.specifically__title--bottom -->
 				<div class="specifically__title--small w150">ребенка до завершения строительства дома</div>
 				<!-- /.specifically__title--small -->
@@ -86,9 +86,9 @@
 
 		<div class="specifically-items">
 			<div class="specifically__title">
-				<div class="specifically__title--top">Выгодное</div>
+				<div class="specifically__title--top wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Выгодное</div>
 				<!-- /.specifically__title--top -->
-				<div class="specifically__title--bottom ml60">кредитование</div>
+				<div class="specifically__title--bottom ml60 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">кредитование</div>
 				<!-- /.specifically__title--bottom -->
 			</div>
 			<!-- /.specifically__title -->

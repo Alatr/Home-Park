@@ -1682,6 +1682,7 @@ button
 		letter-spacing: 2.1px
 		color: #fff
 		text-transform: uppercase
+		animation: down-main-title 1.3s ease-out 0.3s
 		+to(1200px)
 			padding-top: 175px
 			font-size: 24px
@@ -2545,6 +2546,7 @@ button
 .main-developer
 	background: #eaeaea url('../img/developer/developer-main-bg.jpg') center no-repeat
 	min-height: 1084px
+	box-sizing: border-box
 	+to(768px)
 		min-height: 804px
 		background: #eaeaea url('../img/developer/developer-main-bg.jpg') 62% 50% no-repeat
@@ -4146,6 +4148,9 @@ button
 					font-size: 24px
 
 			&__img
+				transition: all 0.3s
+				&:hover
+					transform: scale(1.03)
 				img
 					object-fit: cover
 					height: 100%
@@ -4172,6 +4177,9 @@ button
 				+to(540px)
 					padding-left: 0
 			&__img
+				transition: all 0.3s
+				&:hover
+					transform: scale(1.01)
 				+to(768px)
 					margin: 0 auto
 					max-width: 87%
@@ -4290,6 +4298,10 @@ button
 				position: relative
 				height: 300px
 				overflow: hidden
+				transition: all 0.3s
+				&:hover
+					transform: scale(1.02)
+
 				+to(1200px)
 					max-height: 185px
 				+to(768px)
@@ -4424,6 +4436,9 @@ button
 			margin: 0 25px
 			padding: 40px 30px
 			box-shadow: 0 5px 13px rgba(128, 128, 128, 0.16)
+			transition: all 0.3s
+			&:hover
+				transform: scale(1.02)
 			+to(1200px)
 				+size(5)
 				margin-bottom: 45px
@@ -5073,6 +5088,8 @@ button
 		box-shadow: none
 .bg-modal--white
 	background-color: rgba(255,255,255,0.8)
+.mfp-animation .mainForm
+	animation: zoomIn 0.6s ease-out
 .check-floor
 	margin-bottom: 64px
 	position: relative
@@ -5222,6 +5239,7 @@ button
 		.arrow--position
 			margin-top: 10px
 			text-align: center
+			animation: fadeInDown 2s infinite
 			svg
 				width: 42px
 				height: 13px
@@ -5755,6 +5773,7 @@ button
 		line-height: normal
 		font-size: 220px
 		text-align: center
+		animation: tada 3s infinite
 		+to(578px)
 			font-size: 70px
 			margin-bottom: 30px
@@ -5795,6 +5814,135 @@ button
 		justify-content: center
 		align-items: center
 		z-index: 1000
+.filter
+	position: absolute
+	visibility: hidden
+
+
+.loader-dots
+	filter: url(#gooeyness)
+	padding: 30px 0
+
+
+.loader-dot
+	background: white
+	border-radius: 50%
+	display: inline-block
+	margin-right: 20px
+	width: 32px
+	height: 32px
+
+
+.loader-dot:first-child
+	animation: FirstDot 3s infinite
+
+
+.loader-dot:nth-child(2)
+	animation: SecondDot 3s infinite
+
+
+.loader-dot:nth-child(3)
+	animation: ThirdDot 3s infinite
+
+
+.loader-dot:nth-child(4)
+	animation: FourthDot 3s infinite
+
+
+.loader-dot:nth-child(5)
+	animation: FifthDot 3s infinite
+
+
+@keyframes FirstDot
+	0%
+		transform: scale(1) translateX(0)
+
+	25%
+		transform: scale(2.5) translateX(0)
+
+	50%
+		transform: scale(1) translateX(0)
+
+	83%
+		transform: scale(1) translateX(240px)
+
+	100%
+		transform: scale(1) translateX(0)
+
+
+
+@keyframes SecondDot
+	0%
+		transform: translateX(0px)
+
+	27%
+		transform: translateX(-40px)
+
+	50%
+		transform: translateX(0px)
+
+	81%
+		transform: translateX(180px)
+
+	100%
+		transform: translateX(0)
+
+
+
+@keyframes ThirdDot
+	0%
+		transform: translateX(0px)
+
+	29%
+		transform: translateX(-100px)
+
+	50%
+		transform: translateX(0px)
+
+	79%
+		transform: translateX(120px)
+
+	100%
+		transform: translateX(0)
+
+
+
+@keyframes FourthDot
+	0%
+		transform: translateX(0px)
+
+	31%
+		transform: translateX(-160px)
+
+	50%
+		transform: translateX(0px)
+
+	77%
+		transform: translateX(60px)
+
+	100%
+		transform: translateX(0)
+
+
+
+@keyframes FifthDot
+	0%
+		transform: scale(1) translateX(0)
+
+	33%
+		transform: scale(1) translateX(-220px)
+
+	50%
+		transform: scale(1) translateX(0)
+
+	75%
+		transform: scale(2.5) translateX(0)
+
+	100%
+		transform: scale(1) translateX(0)
+
+
+
 
 ::-webkit-scrollbar 
 	width: 8px

@@ -21,9 +21,9 @@
 
 	/* Initialize
 	 * ------------------------------------------------------ */
-	 $(function hpInitNewsSlaider() {
+	 (function hpInitNewsSlaider() {
 			newsSingleSlaider();
-	 });
+	 })();
 
 })(jQuery);
 

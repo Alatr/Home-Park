@@ -18,11 +18,15 @@
 		<div class="news-items">
 
 
-			<article class="article ">
-				<h2 class="section-title">В Home & Park — лучшие решения для инсоляции дома</h2>
+			<article class="article">
+				<h2 class="section-title  wow fadeInLeft"
+					data-wow-offset="0" 
+					data-wow-delay="0.2s" 
+					data-wow-duration="1s">
+				В Home & Park — лучшие решения для инсоляции дома</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
-					<img src="img/three-6.jpg" title="" alt="" >
+					<img src="img/news/news_1.jpg" title="" alt="" >
 				</div>
 				<div class="article__descr">
 					<!-- /.article__subtitle -->
@@ -47,7 +51,11 @@
 
 		
 			<article class="article ">
-				<h2 class="section-title">Home-предложение для семей: рассрочка без удорожания!</h2>
+				<h2 class="section-title wow fadeInLeft"
+				data-wow-offset="0" 
+				data-wow-delay="0.5s" 
+				data-wow-duration="1s">
+				Home-предложение для семей: рассрочка без удорожания!</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
 					<img src="img/news/news_2.jpg" title="" alt="" >
@@ -75,7 +83,11 @@
 
 			
 			<article class="article ">
-				<h2 class="section-title">График работы отдела продаж на День защитника Украины</h2>
+				<h2 class="section-title wow fadeInLeft"
+				data-wow-offset="0" 
+				data-wow-delay="0.2s" 
+				data-wow-duration="1s">
+				График работы отдела продаж на День защитника Украины</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
 					<img src="img/news/news_3.jpg" title="" alt="" >
@@ -103,7 +115,11 @@
 
 			
 			<article class="article ">
-				<h2 class="section-title">Детский сад нового поколения в Home & Park</h2>
+				<h2 class="section-title wow fadeInLeft"
+				data-wow-offset="0" 
+				data-wow-delay="0.5s" 
+				data-wow-duration="1s">
+				Детский сад нового поколения в Home & Park</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
 					<img src="img/news/news_4.jpg" title="" alt="" >
@@ -131,7 +147,11 @@
 
 			
 			<article class="article ">
-				<h2 class="section-title">В Home & Park — лучшие решения для инсоляции дома</h2>
+				<h2 class="section-title wow fadeInLeft"
+				data-wow-offset="0" 
+				data-wow-delay="0.2s" 
+				data-wow-duration="1s">
+				В Home & Park — лучшие решения для инсоляции дома</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
 					<img src="img/news/news_5.jpg" title="" alt="" >
@@ -158,8 +178,12 @@
 
 
 			
-			<article class="article ">
-				<h2 class="section-title">Home-предложение для семей: рассрочка без удорожания!</h2>
+			<article class="article">
+				<h2 class="section-title wow fadeInLeft"
+				data-wow-offset="0" 
+				data-wow-delay="0.5s" 
+				data-wow-duration="1s">
+				Home-предложение для семей: рассрочка без удорожания!</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
 					<img src="img/news/news_6.jpg" title="" alt="" >
@@ -187,7 +211,11 @@
 
 			
 			<article class="article ">
-				<h2 class="section-title">График работы отдела продаж на День защитника Украины</h2>
+				<h2 class="section-title wow fadeInLeft"
+				data-wow-offset="0" 
+				data-wow-delay="0.2s" 
+				data-wow-duration="1s">
+				График работы отдела продаж на День защитника Украины</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
 					<img src="img/news/news_7.jpg" title="" alt="" >
@@ -214,8 +242,12 @@
 
 
 			
-			<article class="article ">
-				<h2 class="section-title">В Home & Park — лучшие решения дляинсоляции дома</h2>
+			<article class="article">
+				<h2 class="section-title wow fadeInLeft"
+				data-wow-offset="0" 
+				data-wow-delay="0.5s" 
+				data-wow-duration="1s">
+				В Home & Park — лучшие решения дляинсоляции дома</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
 					<img src="img/news/news_8.jpg" title="" alt="" >
@@ -243,7 +275,11 @@
 
 			
 			<article class="article ">
-				<h2 class="section-title">В Home & Park — лучшие решения дляинсоляции дома</h2>
+				<h2 class="section-title wow fadeInLeft"
+				data-wow-offset="0" 
+				data-wow-delay="0.2s" 
+				data-wow-duration="1s">
+				В Home & Park — лучшие решения дляинсоляции дома</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
 					<img src="img/news/news_9.jpg" title="" alt="" >
@@ -271,7 +307,11 @@
 
 			
 			<article class="article ">
-				<h2 class="section-title">В Home & Park — лучшие решения дляинсоляции дома</h2>
+				<h2 class="section-title wow fadeInLeft"
+					data-wow-offset="0" 
+					data-wow-delay="0.5s" 
+					data-wow-duration="1s">
+				В Home & Park — лучшие решения дляинсоляции дома</h2>
 				<!-- /.section-title -->
 				<div class="article__img">
 					<img src="img/news/news_10.jpg" title="" alt="" >
