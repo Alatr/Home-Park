@@ -128,7 +128,7 @@
 </div>
 <!-- /.container -->
 
-<a href="#">
+<a href="#" class="sectionHome__banner-link">
 	<div class="sectionHome__banner sectionHome__banner-plan">
 		<h2 class='banner__title'>ГенПлан</h2>
 	</div>
@@ -145,8 +145,7 @@
 			<div class="article__img">
 				<div class="slider-wrap">
 					<img src="img/home/home__featyres.jpg" alt="" title="">
-					<img src="img/features/features_2.jpg" alt="" title="">
-					<img src="img/features/features_6.jpg" alt="" title="">
+					<img src="img/home/home__featyres.jpg" alt="" title="">
 				</div>
 				<!-- /.sloder-wrap -->
 			</div>
@@ -232,7 +231,7 @@
 	<!-- /.article-block -->
 </div>
 <!-- /.container -->
-<a href="/dist/gallery.php">
+<a href="/dist/gallery.php" class="sectionHome__banner-link">
 	<div class="sectionHome__banner sectionHome__banner-gallery">
 		<h2 class='banner__title'>галерея</h2>
 	</div>
@@ -504,6 +503,7 @@
 	</div>
 	<!-- /.container -->
 </div>
+<!-- /.sectionHome__banner-day-in -->
 
 <?php include('includes/contact-form.php'); ?>
 <?php include('includes/footer.php'); ?>

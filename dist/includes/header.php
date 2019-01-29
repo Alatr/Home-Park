@@ -43,7 +43,9 @@
 		</div>
 	</div>
 </div> -->
-<!-- <div class="loader-wrap">
+<!-- 
+	прелодер
+<div class="loader-wrap">
    <svg class="filter" version="1.1">
        <defs>
          <filter id="gooeyness">
@@ -210,3 +212,10 @@
 	<!--  </contact-form-submit> -->
 </form>
 <!-- /form -->
+
+
+<div class="thanks">
+	<h3 class="thanks__title">Cпасибо, заявка принята<button class="mfp-close" title="Закрыть"></button></h3>
+	<!-- /.thanks__title -->
+</div>
+<!-- /.thanks -->

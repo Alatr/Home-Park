@@ -63,7 +63,6 @@ new WOW().init();
 					duration: 300 // don't foget to change the duration also in CSS
 			},
 		});
-
 	};
 
 
@@ -304,6 +303,16 @@ new WOW().init();
 			                  eventAction: 'send',
 			                  eventLabel: 'newRequest'
 			                });*/
+
+			                // открытие модального окна с благодарностью
+
+			                $.magnificPopup.open({
+			                  items: {
+			                    src: '.thanks'
+			                  },
+			                  type: 'inline',
+			                  mainClass: 'mfp-animation'
+			                });
 			            });
 			    }
 			}
@@ -335,7 +344,7 @@ new WOW().init();
 
 
 						//console.log(prev);
-						footer.css({'transform': 'translateY(0px)',});
+						//footer.css({'transform': 'translateY(0px)',});
 						//prev.css({'paddingBottom': hTabs});
 
 					} else if  (winPos >= scrollOffsetFooter){
