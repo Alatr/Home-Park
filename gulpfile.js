@@ -15,7 +15,8 @@ var gulp          			= require('gulp'),
 	imagemin 	  			= require('gulp-imagemin'),
 	imageminPngquant 		= require('imagemin-pngquant'),
 	imageminJpegRecompress  = require('imagemin-jpeg-recompress'),
-	rsync        			= require('gulp-rsync');
+	rsync        			= require('gulp-rsync'),
+	gcmq 					= require('gulp-group-css-media-queries');
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -34,6 +35,7 @@ gulp.task('styles', function() {
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
+	.pipe(gcmq())
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe ( sourcemaps . write ('.'))
 
