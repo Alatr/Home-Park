@@ -90,8 +90,15 @@ button
 
 
 +reset()
-
-
+body
+	*:focus
+		outline: none
+body.focus-tab--enable
+	*:focus
+		outline-color: rgb(77, 144, 254)
+		outline-offset: -2px
+		outline-style: auto
+		outline-width: 7px
 
 .debug
 	z-index: 999999
@@ -248,7 +255,7 @@ button
 		justify-content: space-between
 	&-section
 		background-color: $accent
-		position: fixed
+		position: sticky
 		top: 0
 		left: 0
 		width: 100%
@@ -284,7 +291,9 @@ button
 	.logo
 		width: 290px
 		background: $accent url('../img/logo.svg') center center no-repeat
-		transition: all 0.5s ease-in-out
+		transition: all 0.5s
+		-moz-transition: all 0.5s
+		transition: height 0.5s ease-in-out
 		+to(1200px)
 			width: 205px
 			height: 142px
@@ -509,8 +518,6 @@ button
 			&::before
 				transform: rotate(-180deg)
 				transform-origin: 28% 20%
-		&:focus
-			outline: 1px rgba(255,255,255,.6) solid
 	&:hover
 		.lang--active
 			margin-top: -38px

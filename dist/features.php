@@ -31,7 +31,7 @@
 				<!-- /.images-block__counter -->
 			</div>
 			<!-- /.features-items__img -->
-			<div class="features-items__title border-location--width wow fadeInLeft" data-wow-duration="1.5s">
+			<div class="features-items__title border-location--width wow fadeInLeft" data-wow-duration="1s">
 				<div class="features-items__title--top">Удобное</div>
 				<div class="features-items__title--bottom">расположение</div>
 			</div>
@@ -44,7 +44,7 @@
 
 
 		<div class="features-items">
-			<div class="features-items__title border-garden--width wow fadeInRight" data-wow-duration="2s">
+			<div class="features-items__title border-garden--width wow fadeInRight" data-wow-duration="1s">
 				<div class="features-items__title--top">Собственный</div>
 				<!-- /.specifically__title--top -->
 				<div class="features-items__title--bottom">парк</div>
@@ -77,7 +77,7 @@
 				<!-- /.images-block__counter -->
 			</div>
 			<!-- /.features-items__img -->
-			<div class="features-items__title border-harmony--width wow fadeInLeft" data-wow-duration="2s">
+			<div class="features-items__title border-harmony--width wow fadeInLeft" data-wow-duration="1s">
 				<div class="features-items__title--top">Гармоничная</div>
 				<div class="features-items__title--bottom">инфраструктура</div>
 				<div class="features-items__subtitle note-left">
@@ -92,7 +92,7 @@
 
 
 		<div class="features-items">
-			<div class="features-items__title border-childgarden--width wow fadeInRight" data-wow-duration="2s">
+			<div class="features-items__title border-childgarden--width wow fadeInRight" data-wow-duration="1s">
 				<div class="features-items__title--top">Современный</div>
 				<!-- /.specifically__title--top -->
 				<div class="features-items__title--bottom">детский<br>садик</div>
@@ -126,7 +126,7 @@
 				<!-- /.images-block__counter -->
 			</div>
 			<!-- /.features-items__img -->
-			<div class="features-items__title border-safety--width wow fadeInLeft" data-wow-duration="2s">
+			<div class="features-items__title border-safety--width wow fadeInLeft" data-wow-duration="1s">
 				<div class="features-items__title--top">система</div>
 				<div class="features-items__title--bottom">видеонаблюдения</div>
 				<div class="features-items__subtitle note-left">
@@ -141,7 +141,7 @@
 		
 
 		<div class="features-items">
-			<div class="features-items__title border-comfort--width wow fadeInRight" data-wow-duration="2s">
+			<div class="features-items__title border-comfort--width wow fadeInRight" data-wow-duration="1s">
 				<div class="features-items__title--top">Удобные</div>
 				<!-- /.specifically__title--top -->
 				<div class="features-items__title--bottom"> планировки</div>
@@ -175,7 +175,7 @@
 				<!-- /.images-block__counter -->
 			</div>
 			<!-- /.features-items__img -->
-			<div class="features-items__title border-conditions--width wow fadeInLeft" data-wow-duration="2s">
+			<div class="features-items__title border-conditions--width wow fadeInLeft" data-wow-duration="1s">
 				<div class="features-items__title--top">Специальные</div>
 				<div class="features-items__title--bottom">условия</div>
 				<div class="features-items__subtitle note-left">

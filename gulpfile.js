@@ -35,7 +35,7 @@ gulp.task('styles', function() {
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
-	.pipe(gcmq())
+	//.pipe(gcmq())
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe ( sourcemaps . write ('.'))
 
