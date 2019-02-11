@@ -1,5 +1,4 @@
 new WOW().init();
-
 (function($) {
 
 	var hpOutline = function() {
@@ -37,7 +36,7 @@ new WOW().init();
 	    $(window).on('load', function() {
 	    	var wrap = $('.loader-wrap');
 	    	var loader = $('.dots'); 
-
+					console.log('ff')
 	        loader.fadeOut();
 	        // will fade out the whole DIV that covers the website.
 	        wrap.delay(300).fadeOut("slow");
@@ -130,8 +129,6 @@ new WOW().init();
 			body = document.querySelector('body');
 			titleMenu = $('.has-children');
 			titleMenuWord = $('.menu__word');
-			//topMenuBlock = document.querySelector('.menu-block-top');
-			//bottomMenuBlock = document.querySelector('.menu-block-bottom');
 
 		menuIcon.addEventListener('click', function(e){
 			e.preventDefault();
@@ -148,17 +145,13 @@ new WOW().init();
 
 			titleMenu.each(function(indx, element){
 			  $(element).css({'animation-delay':  (a + indx*1/10) +'s'});
-			 // $(element).css({'animation-delay': '0.2'+ indx +'s'})
 			});
-			console.log(titleMenu)
-			//topMenuBlock.classList.toggle('topMenuBlock-active');
-			//bottomMenuBlock.classList.toggle('bottomMenuBlock-active');
 		});
 
 
 		var logo = $('.logo'),
 		    header = $('.header'),
-			 scrollOffset = 110;
+			 scrollOffset = 50;
 
 			var checkWindowScroll = function(){
 				var winWidth = $(window).width();
@@ -171,13 +164,13 @@ new WOW().init();
 									'background-image': 'url(img/logo-h.svg)'});
 
 				} else if (winWidth >= '768' && winWidth <= '1200'){
-					header.css({'min-height': '90px'});
+					header.css({'min-height': '75px'});
 					logo.css({  'height': '142px',
 									'width': '205px',
 								});
 
 				} else {
-					header.css({'min-height': '90px'});
+					header.css({'min-height': '75px'});
 					logo.css({	'height': '170px',
 									'width': '290px'
 								});
@@ -187,34 +180,34 @@ new WOW().init();
 				if (winPos >= scrollOffset) {
 
 					if (winWidth <= '768') {
-						header.css({'min-height': '50px'});
 						logo.css({'background-image': 'url(img/logo-h.svg)'});
+						header.css({'min-height': '50px'});
 
 					} else if (winWidth >= '768' && winWidth <= '1200'){
-						header.css({'min-height': '64px'});
 						logo.css({'height': '64px',
-								  'background-image': 'url(img/logo-h.svg)'});
+						'background-image': 'url(img/logo-h.svg)'});
+						//header.css({'min-height': '64px'});
 
 					} else {
-						header.css({'min-height': '64px'});
 						logo.css({'height': '64px',
-								  'background-image': 'url(img/logo-h.svg)'});
+						'background-image': 'url(img/logo-h.svg)'});
+						//header.css({'min-height': '64px'});
 					}
 				} else {
 					if (winWidth <= '768') {
-						header.css({'min-height': '50px'});
 						logo.css({'background-image': 'url(img/logo-h.svg)',
-								  'height': '45',});
+						'height': '45',});
+						header.css({'min-height': '50px'});
 
 					} else if (winWidth >= '768' && winWidth <= '1200'){
-						header.css({'min-height': '90px'});
 						logo.css({'height': '142px',
-								  'background-image': 'url(img/logo.svg)'});
-
+						'background-image': 'url(img/logo.svg)'});
+						header.css({'min-height': '75px'});
+						
 					} else {
-						header.css({'min-height': '90px'});
 						logo.css({'height': '170px',
-								  'background-image': 'url(img/logo.svg)'});
+						'background-image': 'url(img/logo.svg)'});
+						header.css({'min-height': '75px'});
 					}
 				}
 			};
@@ -431,7 +424,7 @@ new WOW().init();
 			popup();
 			telMask();
 			hpOutline();
-			//hpPreloader();
+			hpPreloader();
 			//changePhoneNumber();
 	 })();
 })(jQuery);

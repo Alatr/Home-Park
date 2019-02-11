@@ -44,7 +44,6 @@ button
 	text-decoration: none
 	&:hover
 		cursor: pointer
-
 .button
 	margin: 0 auto
 	display: block
@@ -248,7 +247,7 @@ body.focus-tab--enable
 	font-weight: 500
 	line-height: 31px
 	letter-spacing: 0.14px
-	transition: all .4s
+	transition: all .2s
 	+to(768px)
 		min-height: 50px
 		display: flex
@@ -291,9 +290,7 @@ body.focus-tab--enable
 	.logo
 		width: 290px
 		background: $accent url('../img/logo.svg') center center no-repeat
-		transition: all 0.5s
-		-moz-transition: all 0.5s
-		transition: height 0.5s ease-in-out
+		transition: height 0.4s ease-out
 		+to(1200px)
 			width: 205px
 			height: 142px
@@ -612,6 +609,8 @@ body.focus-tab--enable
 			width: 95%
 			padding: 25px 10px
 			transform: translate(-50%, -50%)
+		.wow
+			visibility: visible !important
 		.leaves-w
 			content: ""
 			display: block
@@ -4310,9 +4309,10 @@ body.focus-tab--enable
 				position: relative
 				height: 300px
 				overflow: hidden
-				transition: all 0.3s
 				&:hover
-					transform: scale(1.02)
+					img
+						filter: grayscale(0)
+						transform: scale(1)
 
 				+to(1200px)
 					max-height: 185px
@@ -4322,6 +4322,9 @@ body.focus-tab--enable
 					max-height: 185px
 
 				img
+					transition: all 0.4s
+					transform: scale(1.2)
+					filter: grayscale(0.3)
 					object-fit: cover
 					height: 100%
 				time
@@ -4885,6 +4888,10 @@ body.focus-tab--enable
 			&__img
 				margin-bottom: 40px
 				height: 110px
+				+to(1200px)
+					height: 140px
+				+to(768px)
+					height: 130px
 				img
 					height: 100%
 			&__table
@@ -5101,7 +5108,7 @@ body.focus-tab--enable
 .bg-modal--white
 	background-color: rgba(255,255,255,0.8)
 .mfp-animation .mainForm, .mfp-animation .thanks
-	animation: zoomIn 0.6s ease-out
+	animation: zoomIn 0.3s ease-out
 .check-floor
 	margin-bottom: 64px
 	position: relative
@@ -5783,7 +5790,7 @@ body.focus-tab--enable
 		margin-bottom: 50px
 		font-weight: 700
 		line-height: normal
-		font-size: 220px
+		font-size: 150px
 		text-align: center
 		animation: tada 3s infinite
 		+to(578px)
@@ -5826,132 +5833,7 @@ body.focus-tab--enable
 		justify-content: center
 		align-items: center
 		z-index: 1000
-.filter
-	position: absolute
-	visibility: hidden
 
-
-.loader-dots
-	filter: url(#gooeyness)
-	padding: 30px 0
-
-
-.loader-dot
-	background: white
-	border-radius: 50%
-	display: inline-block
-	margin-right: 20px
-	width: 32px
-	height: 32px
-
-
-.loader-dot:first-child
-	animation: FirstDot 3s infinite
-
-
-.loader-dot:nth-child(2)
-	animation: SecondDot 3s infinite
-
-
-.loader-dot:nth-child(3)
-	animation: ThirdDot 3s infinite
-
-
-.loader-dot:nth-child(4)
-	animation: FourthDot 3s infinite
-
-
-.loader-dot:nth-child(5)
-	animation: FifthDot 3s infinite
-
-
-@keyframes FirstDot
-	0%
-		transform: scale(1) translateX(0)
-
-	25%
-		transform: scale(2.5) translateX(0)
-
-	50%
-		transform: scale(1) translateX(0)
-
-	83%
-		transform: scale(1) translateX(240px)
-
-	100%
-		transform: scale(1) translateX(0)
-
-
-
-@keyframes SecondDot
-	0%
-		transform: translateX(0px)
-
-	27%
-		transform: translateX(-40px)
-
-	50%
-		transform: translateX(0px)
-
-	81%
-		transform: translateX(180px)
-
-	100%
-		transform: translateX(0)
-
-
-
-@keyframes ThirdDot
-	0%
-		transform: translateX(0px)
-
-	29%
-		transform: translateX(-100px)
-
-	50%
-		transform: translateX(0px)
-
-	79%
-		transform: translateX(120px)
-
-	100%
-		transform: translateX(0)
-
-
-
-@keyframes FourthDot
-	0%
-		transform: translateX(0px)
-
-	31%
-		transform: translateX(-160px)
-
-	50%
-		transform: translateX(0px)
-
-	77%
-		transform: translateX(60px)
-
-	100%
-		transform: translateX(0)
-
-
-
-@keyframes FifthDot
-	0%
-		transform: scale(1) translateX(0)
-
-	33%
-		transform: scale(1) translateX(-220px)
-
-	50%
-		transform: scale(1) translateX(0)
-
-	75%
-		transform: scale(2.5) translateX(0)
-
-	100%
-		transform: scale(1) translateX(0)
 
 
 .animation
@@ -6056,4 +5938,44 @@ body.focus-tab--enable
 
 ::-webkit-scrollbar-thumb:window-inactive
 	background: #c1c1c1
+
+.sk-cube-grid 
+  width: 140px
+  height: 140px
+  margin: 100px auto
+
+
+.sk-cube-grid .sk-cube 
+  width: 33%
+  height: 33%
+  background-color: #fff
+  float: left
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out 
+
+.sk-cube-grid .sk-cube1
+  animation-delay: 0.2s 
+.sk-cube-grid .sk-cube2
+  animation-delay: 0.3s 
+.sk-cube-grid .sk-cube3
+  animation-delay: 0.4s 
+.sk-cube-grid .sk-cube4
+  animation-delay: 0.1s 
+.sk-cube-grid .sk-cube5
+  animation-delay: 0.2s 
+.sk-cube-grid .sk-cube6
+  animation-delay: 0.3s 
+.sk-cube-grid .sk-cube7
+  animation-delay: 0s 
+.sk-cube-grid .sk-cube8
+  animation-delay: 0.1s 
+.sk-cube-grid .sk-cube9
+  animation-delay: 0.2s 
+
+
+@keyframes sk-cubeGridScaleDelay 
+  0%, 70%, 100% 
+  	transform: scale3D(1, 1, 1)
+  35% 
+  	transform: scale3D(0, 0, 1)
+   
 

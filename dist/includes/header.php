@@ -43,26 +43,10 @@
 		</div>
 	</div>
 </div> -->
-<!-- 
-	прелодер
+
 <div class="loader-wrap">
-   <svg class="filter" version="1.1">
-       <defs>
-         <filter id="gooeyness">
-           <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-           <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
-           <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
-         </filter>
-       </defs>
-     </svg>
-   <div class="loader-dots">
-     <div class="loader-dot mainDot"></div>
-     <div class="loader-dot"></div>
-     <div class="loader-dot"></div>
-     <div class="loader-dot"></div>
-     <div class="loader-dot"></div>
-   </div>
-</div> -->
+	<?php include('includes/preloder-svg.php'); ?>
+</div>
 <div class="header-section">
 	<div class="container">
 		<header class="header">
@@ -121,6 +105,7 @@
 <div class="menu-section">
 	<div class="menu-block-top">
 		<h2 class="menu__word">Меню</h2>
+		<div class="menu-block-top-img"><img src="img/bg-menu.jpg" title="" alt=""></div>
 	</div>
 	<!-- /.menu-block-top -->
 	<div class="menu-block-bottom">

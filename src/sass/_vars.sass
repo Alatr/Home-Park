@@ -231,6 +231,9 @@ $bcolor: #000
 	visibility: visible
 	display: flex
 	animation: menu-animate 0.6s ease-out
+	.menu-block-top-img
+		transform: scale(1.2)
+		animation: menu-top-animate 1.5s ease-out
 
 
 @keyframes menu-animate
@@ -242,31 +245,12 @@ $bcolor: #000
 		transform: scale(0.5)
 	100%
 		transform: scale(1)
-		
 
-
-
-.ttopMenuBlock-active
-	animation: topMenuBlock-animate 0.5s ease-in-out
-
-
-@keyframes topMenuBlock-animate
+@keyframes menu-top-animate
 	0%
-		transform: rotateX(50deg)
+		transform: scale(1)
 	100%
-		transform: rotateX(0deg)
-
-.btottomMenuBlock-active
-	animation: bottomMenuBlock-animate 0.7s ease-in-out 0.3s
-
-
-@keyframes bottomMenuBlock-animate
-	0%
-		opacity: 0
-		transform: translateY(100%)
-	100%
-		opacity: 1
-		transform: translateY(0%)
+		transform: scale(1.2)
 
 @keyframes down-main-title
 	from
@@ -289,52 +273,57 @@ $bcolor: #000
 	display: none
 	flex-direction: column
 	+to(1200px)
-
 	.menu-block-top
 		flex-basis: 50%
 		position: relative
 		display: flex
 		justify-content: center
 		align-items: center
-		background: url('../img/bg-menu.jpg') center center no-repeat
 		background-size: cover
 		z-index: -2
+		&-img
+			height: 100%
+			z-index: -2
+			img
+				object-fit: cover
+				height: 100%
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				height: 100%
+				width: 100%
+				background-color: rgba(0,0,0,0.6)
+				z-index: 0
+			
 		+to(1200px)
 			flex-basis: 30%
 		.menu__word
-			padding-top: 80px
-			position: relative
+			position: absolute
+			left: 43%
+			top: 50%
 			font-size: 30px
 			font-weight: 300
 			line-height: 60px
 			text-transform: uppercase
 			letter-spacing: 2.1px
 			color: #fff
+			transform: translate(-50%,-50%)
 			text-transform: uppercase
 			+to(1200px)
 				font-size: 27px
 			+to(1200px)
 				font-size: 23px
 			&::before
-				position: absolute
-				top: 78%
-				left: -55px
-				transform: translateY(-50%)
+				margin-right: 15px
 				content: ''
 				display: inline-block
 				width: 40px
 				height: 34px
 				background: url('../img/svg/leaves-w-w.svg') center center no-repeat
-		&::before
-			content: ''
-			display: block
-			position: absolute
-			top: 0
-			left: 0
-			height: 100%
-			width: 100%
-			background-color: rgba(0,0,0,0.6)
-			z-index: -1
+				vertical-align: middle
 
 	.menu-block-bottom
 		flex-basis: 50%
@@ -350,7 +339,7 @@ $bcolor: #000
 			line-height: 42px
 			font-size: 20px
 			letter-spacing: 0.2px
-			a
+			.sub-menu a
 				color: #fff
 			.header-menu
 				display: flex
@@ -366,6 +355,9 @@ $bcolor: #000
 
 				.menu-number
 					display: none
+					.tellink
+						color: $wcolor
+						
 					+to(1200px)
 						flex-basis: 33%
 						display: block

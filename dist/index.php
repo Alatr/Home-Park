@@ -8,22 +8,17 @@
 	</div>
 	<!-- /.main-slider -->
 	<div class="slaierNav">
-		<h2 class="slaierNav__title wow fadeInRight"
-			data-wow-offset="0" 
-			data-wow-delay="0.8s" 
-			data-wow-duration="1s">
+		<h2 class="slaierNav__title wow fadeInRight">
 			Все для семейного счастья
 		</h2>
 		<div class="slaierNav__text">
 			<div class="slaierNav__subtitle wow fadeInRight"
-				 data-wow-offset="0" 
 				 data-wow-delay="0.9s" 
 				 data-wow-duration="1s">
 				 Home & Park –
 			</div>
 			<!-- /.slaierNav__subtitle -->
 			<div class="slaierNav__descr wow fadeInRight"
-				data-wow-offset="0" 
 				data-wow-delay="1s" 
 				data-wow-duration="1s">
 				будинок, у якому ми втілили мрії турботливих батьків. Інфраструктура для сім’ї, безпечна прибудинкова територія, закрита від автівок, сучасна архітектура та розташування неподалік метро — у Home & Park має все для комфортного та щасливого життя.
@@ -44,7 +39,7 @@
 		</div>
 	</div>
 	<!-- /.slaierNav -->
-		}
+		
 	<div class="section-main-down">
 		<?php include('img/svg/arrow.svg'); ?>
 	</div>

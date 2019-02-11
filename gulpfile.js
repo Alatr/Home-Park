@@ -1,22 +1,22 @@
 var syntax        			= 'sass'; // Syntax: sass or scss;
 			
-var gulp          			= require('gulp'),
-	gutil         			= require('gulp-util' ),
-	sass          			= require('gulp-sass'),
-	browserSync   			= require('browser-sync'),
-	concat        			= require('gulp-concat'),
-	uglify        			= require('gulp-uglify'),
-	cleancss      			= require('gulp-clean-css'),
-	rename        			= require('gulp-rename'),
-	autoprefixer  			= require('gulp-autoprefixer'),
-	notify        			= require("gulp-notify"),
-	sourcemaps 	  			= require('gulp-sourcemaps'),
-	cache        			= require('gulp-cache'),
-	imagemin 	  			= require('gulp-imagemin'),
-	imageminPngquant 		= require('imagemin-pngquant'),
-	imageminJpegRecompress  = require('imagemin-jpeg-recompress'),
-	rsync        			= require('gulp-rsync'),
-	gcmq 					= require('gulp-group-css-media-queries');
+var gulp          						= require('gulp'),
+		gutil         						= require('gulp-util' ),
+		sass          						= require('gulp-sass'),
+		browserSync   						= require('browser-sync'),
+		concat        						= require('gulp-concat'),
+		uglify        						= require('gulp-uglify'),
+		cleancss      						= require('gulp-clean-css'),
+		rename        						= require('gulp-rename'),
+		autoprefixer  						= require('gulp-autoprefixer'),
+		notify        						= require("gulp-notify"),
+		sourcemaps 	  						= require('gulp-sourcemaps'),
+		imagemin 	  						= require('gulp-imagemin'),
+		cache        						= require('gulp-cache'),
+		imageminPngquant 					= require('imagemin-pngquant'),
+		imageminJpegRecompress  			= require('imagemin-jpeg-recompress'),
+		rsync        						= require('gulp-rsync'),
+		gcmq 								= require('gulp-group-css-media-queries');
 
 gulp.task('browser-sync', function() {
 	browserSync({
