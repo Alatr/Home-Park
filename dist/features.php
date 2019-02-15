@@ -147,7 +147,7 @@
 				<div class="features-items__title--bottom"> планировки</div>
 				<!-- /.specifically__title--bottom -->
 				<div class="features-items__subtitle note-left">
-					квартир, которые удовлетворяют запросы любой семьи 
+				которые удовлетворяют запросы любой семьи 
 				</div>
 				<!-- /.features-items__subtitle -->
 			</div>
@@ -167,7 +167,7 @@
 
 		<div class="features-items">
 			<div class="features-items__img">
-				<img src="img/features/features_5.jpg" alt="" title="">
+				<img src="img/features/features_7.jpg" alt="" title="">
 				<div class="images-block__counter">
 					<span class="images-block__counter--current">07</span>
 					<span class="images-block__counter--total">07</span>

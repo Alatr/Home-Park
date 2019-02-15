@@ -63,58 +63,61 @@
 			<h3 class="also__title">Читайте также</h3>
 			<!-- /.also__title -->
 			<div class="news-items">
-
-				<article class="article ">
-					<h2 class="section-title">В Home & Park — лучшие решения для инсоляции дома</h2>
-					<!-- /.section-title -->
-					<div class="article__img">
-						<img src="img/news/news_1.jpg" title="" alt="" >
-					</div>
-					<div class="article__descr">
-						<!-- /.article__subtitle -->
-						<div class="article__text">
-							<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
+				<a href="/dist/news-single.php" class="article">
+					<article >
+						<h2 class="section-title">В Home & Park — лучшие решения для инсоляции дома</h2>
+						<!-- /.section-title -->
+						<div class="article__img">
+							<img src="img/news/news_1.jpg" title="" alt="" >
 						</div>
-						<!-- /.article__text -->
-						<a href="#" class="article__btn">
-							<span class="article__btn-text">
-								<?php include('img/svg/arrow.svg'); ?>
-								Читать
-								<?php include('img/svg/leaves-w.svg'); ?>
+						<div class="article__descr">
+							<!-- /.article__subtitle -->
+							<div class="article__text">
+								<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
+							</div>
+							<!-- /.article__text -->
+							<span class="article__btn">
+								<span class="article__btn-text">
+									<?php include('img/svg/arrow.svg'); ?>
+									Читать
+									<?php include('img/svg/leaves-w.svg'); ?>
+								</span>
 							</span>
-						</a>
-					</div>
-					<!-- /.article__descr -->
-					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
-				</article>
-				<!-- /.article -->
-
-
-
-				<article class="article ">
-					<h2 class="section-title">Home-предложение для семей: рассрочка без удорожания!</h2>
-					<!-- /.section-title -->
-					<div class="article__img">
-						<img src="img/news/news_2.jpg" title="" alt="" >
-					</div>
-					<div class="article__descr">
-						<!-- /.article__subtitle -->
-						<div class="article__text">
-							<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
 						</div>
-						<!-- /.article__text -->
-						<a href="#" class="article__btn">
-							<span class="article__btn-text">
-								<?php include('img/svg/arrow.svg'); ?>
-								Читать
-								<?php include('img/svg/leaves-w.svg'); ?>
+						<!-- /.article__descr -->
+						<time class="post-type" datetime="2018-11-01">2018-11-01</time>
+					</article>
+					<!-- /.article -->
+				</a>
+				<!-- /a -->
+
+				<a href="/dist/news-single.php" class="article">
+					<article>
+						<h2 class="section-title">Home-предложение для семей: рассрочка без удорожания!</h2>
+						<!-- /.section-title -->
+						<div class="article__img">
+							<img src="img/news/news_2.jpg" title="" alt="" >
+						</div>
+						<div class="article__descr">
+							<!-- /.article__subtitle -->
+							<div class="article__text">
+								<p>Образование, развитие и досуг — внутренняя инфраструктурам Happy House будет формироваться по трем ключевым принципам.</p>
+							</div>
+							<!-- /.article__text -->
+							<span class="article__btn">
+								<span class="article__btn-text">
+									<?php include('img/svg/arrow.svg'); ?>
+									Читать
+									<?php include('img/svg/leaves-w.svg'); ?>
+								</span>
 							</span>
-						</a>
-					</div>
-					<!-- /.article__descr -->
-					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
-				</article>
-				<!-- /.article -->
+						</div>
+						<!-- /.article__descr -->
+						<time class="post-type" datetime="2018-11-01">2018-11-01</time>
+					</article>
+					<!-- /.article -->
+				</a>
+				<!-- /a -->
 			</div>
 			<!-- /.news-items -->
 		</div>

@@ -37,7 +37,7 @@
 					<li class="has-children">
 						<span class="sub-menu__title">Отдел продаж</span>
 						<ul class="sub-menu">
-							<li class="footer-location__text">ул. Бежовка, 14 рядом с гимназией «Перспектива».</li>
+							<li class="footer-location__text">ул. Беживка, 14 рядом с гимназией «Перспектива».</li>
 						</ul>
 					</li>
 				</ul>

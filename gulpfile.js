@@ -78,6 +78,8 @@ gulp.task('js', function() {
 		'src/libs/velocity/velocity.min.js',
 		'src/libs/masked-input/masked-input.min.js',
 		'src/libs/wow/dist/wow.min.js',
+		'src/libs/datetimepicker/datetimepicker.js',
+		'src/libs/datetimepicker/php-date-formatter.min.js',
 		'src/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

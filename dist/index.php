@@ -48,75 +48,80 @@
 
 <div class="container">
 	<div class="article-block">
-		<article class="article ">
-			<h2 class="section-title wow fadeInDown"
-				data-wow-offset="200" 
-				data-wow-delay="0.1s" 
-				data-wow-duration="0.6s"
-			>О проeкте</h2>
-			<!-- /.section-title -->
-			<div class="article__img">
-				<img src="img/home/home__about.jpg" alt="" title="">
-			</div>
-			<div class="article__descr">
-				<h3 class="article__subtitle wow fadeInLeft"
-					data-wow-offset="0" 
-					data-wow-delay="0.2s" 
-					data-wow-duration="1s"
-					>Что нужно для счастья? 
-				</h3>
-				<!-- /.article__subtitle -->
-				<div class="article__text">
-					<p>Комфортное жилье по экономной цене. Парк для прогулок и спорта рядом с домом.</p>
-					<p>Современная и безопасная для ваших детей. Все, что необходимо - в вашем доме или рядом с ним.</p>
+		<a href="/dist/about.php" class="article">
+			<article>
+				<h2 class="section-title wow fadeInDown"
+					data-wow-offset="200" 
+					data-wow-delay="0.1s" 
+					data-wow-duration="0.6s"
+				>О проeкте</h2>
+				<!-- /.section-title -->
+				<div class="article__img">
+					<img src="img/home/home__about.jpg" alt="" title="">
 				</div>
-				<!-- /.article__text -->
-				<a href="/dist/about.php" class="article__btn">
-					<span class="article__btn-text">
-						<?php include('img/svg/arrow.svg'); ?>
-						Читать
-						<?php include('img/svg/leaves-w.svg'); ?>
+				<div class="article__descr">
+					<h3 class="article__subtitle wow fadeInLeft"
+						data-wow-offset="0" 
+						data-wow-delay="0.2s" 
+						data-wow-duration="1s"
+						>Что нужно для счастья? 
+					</h3>
+					<!-- /.article__subtitle -->
+					<div class="article__text">
+						<p>Комфортное жилье по экономной цене. Парк для прогулок и спорта рядом с домом.</p>
+						<p>Современная и безопасная для ваших детей. Все, что необходимо - в вашем доме или рядом с ним.</p>
+					</div>
+					<!-- /.article__text -->
+					<span class="article__btn">
+						<span class="article__btn-text">
+							<?php include('img/svg/arrow.svg'); ?>
+							Читать
+							<?php include('img/svg/leaves-w.svg'); ?>
+						</span>
 					</span>
-				</a>
-			</div>
-			<!-- /.article__descr -->
-		</article>
-		<!-- /.article -->
-
-		<article class="article  mt60">
-			<h2 class="section-title wow fadeInDown"
-				data-wow-offset="200" 
-				data-wow-delay="0.4s" 
-				data-wow-duration="0.6s">РАСПОЛОЖЕНИЕ</h2>
-			<!-- /.section-title -->
-			<div class="article__img">
-				<img src="img/home/home-locat.jpg" alt="" title="" >
-			</div>
-			<div class="article__descr">
-				<h3 class="article__subtitle wow fadeInLeft"
-					data-wow-offset="0" 
-					data-wow-delay="0.2s" 
-					data-wow-duration="1s">
-				HOME&PARK расположен</h3>
-				<!-- /.article__subtitle -->
-				<div class="article__text"> 
-					<p>в центре Борисполя по адресу ул. Беживка, 14 рядом
-					с гимназией «Перспектива».</p>
-					<p>Где бы вы ни работали — в Киеве или в Борисполе, вам будет удобно добираться до работы. А вашим детям — в школу или в детский садик, который находится в доме.</p>
-					
 				</div>
-				<a href="/dist/location.php" class="article__btn">
-					<span class="article__btn-text">
-						<?php include('img/svg/arrow.svg'); ?>
-						Читать
-						<?php include('img/svg/leaves-w.svg'); ?>
+				<!-- /.article__descr -->
+			</article>
+			<!-- /.article -->
+		</a>
+		<!-- /.a -->
+		<a href="/dist/location.php" class="article  mt60">
+			<article>
+				<h2 class="section-title wow fadeInDown"
+					data-wow-offset="200" 
+					data-wow-delay="0.4s" 
+					data-wow-duration="0.6s">РАСПОЛОЖЕНИЕ</h2>
+				<!-- /.section-title -->
+				<div class="article__img">
+					<img src="img/home/home-locat.jpg" alt="" title="" >
+				</div>
+				<div class="article__descr">
+					<h3 class="article__subtitle wow fadeInLeft"
+						data-wow-offset="0" 
+						data-wow-delay="0.2s" 
+						data-wow-duration="1s">
+					HOME&PARK расположен</h3>
+					<!-- /.article__subtitle -->
+					<div class="article__text"> 
+						<p>в центре Борисполя по адресу ул. Беживка, 14 рядом
+						с гимназией «Перспектива».</p>
+						<p>Где бы вы ни работали — в Киеве или в Борисполе, вам будет удобно добираться до работы. А вашим детям — в школу или в детский садик, который находится в доме.</p>
+						
+					</div>
+					<span class="article__btn">
+						<span class="article__btn-text">
+							<?php include('img/svg/arrow.svg'); ?>
+							Читать
+							<?php include('img/svg/leaves-w.svg'); ?>
+						</span>
 					</span>
-				</a>
-				<!-- /.article__text -->
-			</div>
-			<!-- /.article__descr -->
-		</article>
-		<!-- /.article -->
+					<!-- /.article__text -->
+				</div>
+				<!-- /.article__descr -->
+			</article>
+			<!-- /.article -->
+		</a>
+		<!-- /.a -->
 
 	</div>
 	<!-- /.article-block -->
@@ -289,6 +294,8 @@
 			<div class="article__img">
 				<div class="slider-wrap">
 					<img src="img/home/home__specifically.jpg" alt="" title="">
+					<img src="img/home/home__specifically.jpg" alt="" title="">
+					<img src="img/home/home__specifically.jpg" alt="" title="">
 				</div>
 				<!-- /.slider-wrap -->
 			</div>
@@ -346,130 +353,140 @@
 <!-- /.sectionHome__apartment -->
 <div class="container">
 	<div class="article-block">
-		<article class="article">
-			<h2 class="section-title wow fadeInDown"
-				data-wow-offset="200" 
-				data-wow-delay="0.1s" 
-				data-wow-duration="0.6s">Коммерческая недвижимость</h2>
-			<!-- /.section-title -->
-			<div class="article__img">
-				<img src="img/home/home__realEstate.jpg" alt="" title="">
-			</div>
-			<div class="article__descr">
-				<h3 class="article__subtitle wow fadeInLeft"
-					data-wow-offset="0" 
-					data-wow-delay="0.2s" 
-					data-wow-duration="1s">Киев – мегаполис, который</h3>
-				<!-- /.article__subtitle -->
-				<div class="article__text">
-					активно развивается. Неизменным спросом пользуется коммерческая недвижимость...
+		<a href="/dist/news.php" class="article">
+			<article>
+				<h2 class="section-title wow fadeInDown"
+					data-wow-offset="200" 
+					data-wow-delay="0.1s" 
+					data-wow-duration="0.6s">Коммерческая недвижимость</h2>
+				<!-- /.section-title -->
+				<div class="article__img">
+					<img src="img/home/home__realEstate.jpg" alt="" title="">
 				</div>
-				<!-- /.article__text -->
-				<a href="/dist/news.php" class="article__btn">
-					<span class="article__btn-text">
-						<?php include('img/svg/arrow.svg'); ?>
-						Читать
-						<?php include('img/svg/leaves-w.svg'); ?>
+				<div class="article__descr">
+					<h3 class="article__subtitle wow fadeInLeft"
+						data-wow-offset="0" 
+						data-wow-delay="0.2s" 
+						data-wow-duration="1s">Киев – мегаполис, который</h3>
+					<!-- /.article__subtitle -->
+					<div class="article__text">
+						активно развивается. Неизменным спросом пользуется коммерческая недвижимость...
+					</div>
+					<!-- /.article__text -->
+					<span class="article__btn">
+						<span class="article__btn-text">
+							<?php include('img/svg/arrow.svg'); ?>
+							Читать
+							<?php include('img/svg/leaves-w.svg'); ?>
+						</span>
 					</span>
-				</a>
-			</div>
-			<!-- /.article__descr -->
-		</article>
-		<!-- /.article -->
-
-		<article class="article mt90">
-			<h2 class="section-title wow fadeInDown"
-				data-wow-offset="200" 
-				data-wow-delay="0.1s" 
-				data-wow-duration="0.6s">Sfera Living System</h2>
-			<!-- /.section-title -->
-			<div class="article__img">
-				<img src="img/home/home__atmosfera.jpg" alt="" title="">
-			</div>
-			<div class="article__descr">
-				<h3 class="article__subtitle wow fadeInLeft"
-					data-wow-offset="0" 
-					data-wow-delay="0.2s" 
-					data-wow-duration="1s">ATMOSFERA</h3>
-				<!-- /.article__subtitle -->
-				<div class="article__text"> 
-					это высокотехнологичная управляющая компания, которая заботится о комфортной и счастливой жизни 
-					во всех дома, созданных компанией SAGA Development.
-					
 				</div>
-				<a href="/dist/atmosfera.php" class="article__btn">
-					<span class="article__btn-text">
-						<?php include('img/svg/arrow.svg'); ?>
-						Читать
-						<?php include('img/svg/leaves-w.svg'); ?>
-					</span>
-				</a>
-				<!-- /.article__text -->
-			</div>
-			<!-- /.article__descr -->
-		</article>
-		<!-- /.article -->
-		<article class="article">
-			<h2 class="section-title wow fadeInDown"
-				data-wow-offset="200" 
-				data-wow-delay="0.1s" 
-				data-wow-duration="0.6s">Строительство</h2>
-			<!-- /.section-title -->
-			<div class="article__img">
-				<img class="img--position" src="img/home/home___build.jpg" alt="" title="">
-			</div>
-			<div class="article__descr">
-				<h3 class="article__subtitle wow fadeInLeft"
-					data-wow-offset="0" 
-					data-wow-delay="0.2s" 
-					data-wow-duration="1s">Узнайте про ход строительства</h3>
-				<!-- /.article__subtitle -->
-				<div class="article__text">
-					<p>	и этапы выполнения работ.</p>
+				<!-- /.article__descr -->
+			</article>
+			<!-- /.article -->
+		</a>
+		<!-- /a -->
+		<a href="/dist/atmosfera.php" class="article mt90">
+			<article >
+				<h2 class="section-title wow fadeInDown"
+					data-wow-offset="200" 
+					data-wow-delay="0.1s" 
+					data-wow-duration="0.6s">Sfera Living System</h2>
+				<!-- /.section-title -->
+				<div class="article__img">
+					<img src="img/home/home__atmosfera.jpg" alt="" title="">
 				</div>
-				<!-- /.article__text -->
-				<a href="/dist/stage-building.php" class="article__btn">
-					<span class="article__btn-text">
-						<?php include('img/svg/arrow.svg'); ?>
-						Читать
-						<?php include('img/svg/leaves-w.svg'); ?>
+				<div class="article__descr">
+					<h3 class="article__subtitle wow fadeInLeft"
+						data-wow-offset="0" 
+						data-wow-delay="0.2s" 
+						data-wow-duration="1s">ATMOSFERA</h3>
+					<!-- /.article__subtitle -->
+					<div class="article__text"> 
+						это высокотехнологичная управляющая компания, которая заботится о комфортной и счастливой жизни 
+						во всех дома, созданных компанией SAGA Development.
+						
+					</div>
+					<span class="article__btn">
+						<span class="article__btn-text">
+							<?php include('img/svg/arrow.svg'); ?>
+							Читать
+							<?php include('img/svg/leaves-w.svg'); ?>
+						</span>
 					</span>
-				</a>
-			</div>
-			<!-- /.article__descr -->
-		</article>
-		<!-- /.article -->
-
-		<article class="article mt-40">
-			<h2 class="section-title wow fadeInDown"
-				data-wow-offset="200" 
-				data-wow-delay="0.4s" 
-				data-wow-duration="0.6s">Застройщик</h2>
-			<!-- /.section-title -->
-			<div class="article__img">
-				<img class="img--position" src="img/home/home__builder.jpg" alt="" title="">
-			</div>
-			<div class="article__descr">
-				<h3 class="article__subtitle wow fadeInLeft"
-					data-wow-offset="0" 
-					data-wow-delay="0.2s" 
-					data-wow-duration="1s">Девелопер HOME&PARK –</h3>
-				<!-- /.article__subtitle -->
-				<div class="article__text"> 
-					<p>	компания SAGA Development</p>
+					<!-- /.article__text -->
 				</div>
-				<a href="/dist/developer.php" class="article__btn">
-					<span class="article__btn-text">
-						<?php include('img/svg/arrow.svg'); ?>
-						Читать
-						<?php include('img/svg/leaves-w.svg'); ?>
+				<!-- /.article__descr -->
+			</article>
+			<!-- /.article -->
+		</a>
+		<!-- /a -->
+		<a href="/dist/stage-building.php" class="article">
+			<article >
+				<h2 class="section-title wow fadeInDown"
+					data-wow-offset="200" 
+					data-wow-delay="0.1s" 
+					data-wow-duration="0.6s">Строительство</h2>
+				<!-- /.section-title -->
+				<div class="article__img">
+					<img class="img--position" src="img/home/home___build.jpg" alt="" title="">
+				</div>
+				<div class="article__descr">
+					<h3 class="article__subtitle wow fadeInLeft"
+						data-wow-offset="0" 
+						data-wow-delay="0.2s" 
+						data-wow-duration="1s">Узнайте про ход строительства</h3>
+					<!-- /.article__subtitle -->
+					<div class="article__text">
+						<p>	и этапы выполнения работ.</p>
+					</div>
+					<!-- /.article__text -->
+					<span class="article__btn">
+						<span class="article__btn-text">
+							<?php include('img/svg/arrow.svg'); ?>
+							Читать
+							<?php include('img/svg/leaves-w.svg'); ?>
+						</span>
 					</span>
-				</a>
-				<!-- /.article__text -->
-			</div>
-			<!-- /.article__descr -->
-		</article>
-		<!-- /.article -->
+				</div>
+				<!-- /.article__descr -->
+			</article>
+			<!-- /.article -->
+		</a>
+		<!-- /a -->
+		<a href="/dist/developer.php" class="article mt-40">
+			<article>
+				<h2 class="section-title wow fadeInDown"
+					data-wow-offset="200" 
+					data-wow-delay="0.4s" 
+					data-wow-duration="0.6s">Застройщик</h2>
+				<!-- /.section-title -->
+				<div class="article__img">
+					<img class="img--position" src="img/home/home__builder.jpg" alt="" title="">
+				</div>
+				<div class="article__descr">
+					<h3 class="article__subtitle wow fadeInLeft"
+						data-wow-offset="0" 
+						data-wow-delay="0.2s" 
+						data-wow-duration="1s">Девелопер HOME&PARK –</h3>
+					<!-- /.article__subtitle -->
+					<div class="article__text"> 
+						<p>	компания SAGA Development</p>
+					</div>
+					<span class="article__btn">
+						<span class="article__btn-text">
+							<?php include('img/svg/arrow.svg'); ?>
+							Читать
+							<?php include('img/svg/leaves-w.svg'); ?>
+						</span>
+					</span>
+					<!-- /.article__text -->
+				</div>
+				<!-- /.article__descr -->
+			</article>
+			<!-- /.article -->
+		</a>
+		<!-- /a -->
 	</div>
 	<!-- /.article-block -->
 </div>

@@ -105,45 +105,6 @@ body.focus-tab--enable
 
 .container
 	+wrapper()
-	
-
-.productItems
-	+row-flex()
-	
-	justify-content: space-around	
-	
-.productItem
-	padding: 20px
-	margin: 20px 0		
-	border-radius: 5px
-	background-color: #fff
-
-	+col()
-	
-	+size(4)
-
-	+size-md(6)
-	
-	+size-xs(12)
-	
-	&__img
-
-	&__title
-		margin-top: 15px
-		color: $accent
-		font-size: 20px
-		font-weight: 700
-		text-align: center
-		text-transform: uppercase
-		font-weight: 500
-	&__descr
-		margin: 15px 0
-		font-size: 18px
-		font-weight: 400
-	button
-		font-weight: 300
-
-
 
 /* ===========================Header_style========================*/
 /* ===========================Home_main_slaider========================*/
@@ -709,7 +670,7 @@ body.focus-tab--enable
 	&-down
 		position: absolute
 		bottom: 40px
-		left: 50%
+		left: 47%
 		width: 50px
 		height: 50px
 		border-radius: 50%
@@ -1236,7 +1197,7 @@ body.focus-tab--enable
 			margin: 0 20px
 			height: 100%
 			line-height: 48px
-		.logo-slaider-items
+		/* .logo-slaider-items
 			.logo-link svg.active
 				fill: $accent !important
 				stroke: $accent !important
@@ -1246,7 +1207,7 @@ body.focus-tab--enable
 				polygon
 					fill: $accent !important
 				rect
-					fill: $accent !important
+					fill: $accent !important */
 		.logo-link
 			display: block
 			svg
@@ -2106,6 +2067,14 @@ body.focus-tab--enable
 				left: 0
 				bottom: auto
 				top: 247px
+			.hover-color--white
+				background-color: $accent
+				&:hover
+					background-color: #efefef
+					svg
+						stroke: $accent
+				svg
+					stroke: #fff
 
 		.values-note
 			position: absolute
@@ -2142,7 +2111,7 @@ body.focus-tab--enable
 			z-index: 666
 			+to(1200px)
 				min-height: 170px
-				max-width: 220px
+				max-width: 250px
 				padding: 65px 20px 15px 15px
 				text-align: justify
 				&::before
@@ -2166,6 +2135,7 @@ body.focus-tab--enable
 
 
 			.descr__subtitle
+				width: 230px
 				margin: 0
 				+to(700px)
 					max-width: 56%
@@ -2188,6 +2158,7 @@ body.focus-tab--enable
 					padding-right: 50px
 				+to(520px)
 					padding-right: 0
+				
 				li
 					position: relative
 					margin-bottom: 20px
@@ -4080,7 +4051,7 @@ body.focus-tab--enable
 		margin-bottom: 0
 	&__descr
 		+row-flex()
-		padding: 50px 0
+		padding: 50px 0 120px
 		justify-content: space-around
 		text-align: justify
 		color: $bcolor
@@ -4089,6 +4060,7 @@ body.focus-tab--enable
 		line-height: 29.99px
 		letter-spacing: 0.3px
 		&--wrap
+			position: relative
 			background-color: #f3f3f3
 		+to(768px)
 			padding: 20px 0
@@ -4205,7 +4177,7 @@ body.focus-tab--enable
 						margin-bottom: 20px
 	&__info
 		display: flex
-		justify-content: space-between
+		justify-content: center
 		align-items: center
 		+to(1200px)
 			flex-direction: column
@@ -4531,8 +4503,9 @@ body.focus-tab--enable
 
 .location
 	&-block
+		position: relative
 	&-items
-		padding: 55px 0 38px
+		padding: 55px 0 120px
 		+row-flex()
 		justify-content: space-between
 		+to(1200px)
@@ -4622,6 +4595,7 @@ body.focus-tab--enable
 						display: block
 						width: 0
 						height: 0
+						border-top: 11px solid $accent
 						border: 22px solid transparent
 						border-top-color: $accent
 						z-index: 4
@@ -4636,8 +4610,12 @@ body.focus-tab--enable
 				.gm-style-iw
 					background: $accent
 					box-shadow: -14px 0px 0px $accent, -14px 9px 0px $accent, -14px -8px 0px $accent, 15px -8px 0px $accent, 15px 9px 0px $accent
-				.gm-style-iw
+				.gm-style-iw, .gm-style-iw div
 					overflow: visible !important
+				.gm-style .gm-style-iw-t::after
+					border-top: 11px solid transparent
+				.gm-style-iw .gm-style-iw-c
+					width: 200px
 				
 				
 	&-aside
@@ -4744,7 +4722,7 @@ body.focus-tab--enable
 			.option__item
 				display: block
 				width: 300px
-				margin-bottom: 10px
+				margin-bottom: 20px
 				+to(768px)
 					margin-bottom: 25px
 				+to(500px)
@@ -4956,7 +4934,7 @@ body.focus-tab--enable
 				justify-content: center
 			.appartment-btn
 				padding: 11px 0
-				margin: 20px 0
+				margin-bottom: 24px
 				width: 100%
 				+to(1200px)
 					margin: 0 0 20px 0
@@ -5024,6 +5002,7 @@ body.focus-tab--enable
 				img
 					transition: all 0.3s
 	&__center
+		margin-top: 40px
 		flex-basis: 50%
 		align-self: center
 		+to(1200px)
@@ -5053,7 +5032,7 @@ body.focus-tab--enable
 		+to(768px)
 			flex-direction: column
 		.compass-img
-			margin-bottom: 35px
+			margin-bottom: 15px
 			text-align: right
 			+to(1200px)
 				margin-bottom: 0
@@ -5939,43 +5918,217 @@ body.focus-tab--enable
 ::-webkit-scrollbar-thumb:window-inactive
 	background: #c1c1c1
 
-.sk-cube-grid 
-  width: 140px
-  height: 140px
-  margin: 100px auto
+
+.preloader__text
+  color: #ffffff
+  text-transform: uppercase
+  font-size: 36px
+  max-width: 150px
+  margin-bottom: 45px
+  opacity: 0
+  text-shadow: 0 4px 6px rgba(5, 6, 7, 0.6)
+  animation-name: fadeIn
+  animation-duration: 1s
+  animation-delay: 2s
+  animation-fill-mode: forwards
+
+@keyframes svg-circle 
+  from
+		opacity: 0
+		transform: translate(-10%, 10%) 
+  to
+		opacity: 1
+		transform: translate(0, 0) 
 
 
-.sk-cube-grid .sk-cube 
-  width: 33%
-  height: 33%
-  background-color: #fff
-  float: left
-  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out 
+.svg-circle 
+	stroke: #ffffff
+	fill: #fff
+	stroke-linecap: round
+	animation: svg-circle 2s
+	animation-duration: 1s
+	animation-delay: 0.5s
+	animation-fill-mode: both
 
-.sk-cube-grid .sk-cube1
-  animation-delay: 0.2s 
-.sk-cube-grid .sk-cube2
-  animation-delay: 0.3s 
-.sk-cube-grid .sk-cube3
-  animation-delay: 0.4s 
-.sk-cube-grid .sk-cube4
-  animation-delay: 0.1s 
-.sk-cube-grid .sk-cube5
-  animation-delay: 0.2s 
-.sk-cube-grid .sk-cube6
-  animation-delay: 0.3s 
-.sk-cube-grid .sk-cube7
-  animation-delay: 0s 
-.sk-cube-grid .sk-cube8
-  animation-delay: 0.1s 
-.sk-cube-grid .sk-cube9
-  animation-delay: 0.2s 
+/* Circle end */
+
+/* Letters start */
+.svg-letters 
+  fill: #405174
 
 
-@keyframes sk-cubeGridScaleDelay 
-  0%, 70%, 100% 
-  	transform: scale3D(1, 1, 1)
-  35% 
-  	transform: scale3D(0, 0, 1)
-   
 
+.svg-letters_upper path
+	opacity: 0
+	animation-name: svg-letters_upper
+	animation-fill-mode: forwards
+	animation-duration: 1s
+	z-index: 2
+	fill: #405174
+	stroke: #405174
+
+@keyframes svg-letters_upper
+	from
+		opacity: 0
+	to
+		opacity: 1
+	
+.svg-Saga
+	animation-delay: 1.3s
+.svg-sAga
+	animation-delay: 1.5s
+.svg-saGa
+	animation-delay: 1.7s
+.svg-sagA
+	animation-delay: 1.9s
+
+.svg-letters_lower 
+	opacity: 0
+	animation-name: svg-letters_upper
+	animation-fill-mode: forwards
+	animation-duration: 1s
+	animation-delay: 2.5s
+	fill: #405174
+	stroke: #405174
+
+/* Letters end */
+
+/* Loading circle start */
+@keyframes svg-loading-cirlce 
+	from
+		stroke-dashoffset: 236
+	to
+		stroke-dashoffset: 0
+
+
+.svg-loading-circle 
+	stroke:#b5b5b5
+	stroke-width: 2px
+	fill: none
+	stroke: #fff
+	stroke-dasharray: 236
+	stroke-dashoffset: 236
+	animation-name: svg-loading-cirlce
+	animation-fill-mode: forwards
+	animation-duration: 5s
+
+
+.svg-loading-circle__text 
+	font-family: sans-serif
+	font-size: 16px
+	fill: #b5b5b5
+
+/* Loading circle end */
+
+/* Outer lines start */
+@keyframes svg-outer-lines 
+	0%
+		stroke-dashoffset: 2684
+	50%
+		opacity: 1
+	100%
+		stroke-dashoffset: 0
+		opacity: 0
+
+.svg-outer-lines path 
+	stroke: #ffffff
+	stroke-width: 2
+	stroke-dasharray: 2684
+	stroke-dashoffset: 2684
+	animation-name: svg-outer-lines
+	animation-duration: 0.7s
+	animation-delay: 1.5s
+	animation-fill-mode: forwards
+		position: relative
+
+path.svg-outer_s
+	animation-delay: 1.6s
+path.svg-outer_a_1_3
+	animation-delay: 1.7s
+path.svg-outer_a_2
+	animation-delay: 1.8s
+path.svg-outer_a_1_1
+	animation-delay: 1.9s
+path.svg-outer_g
+	animation-delay: 2s
+path.svg-outer_a_1_2
+	animation-delay: 2.1s
+/* Outer lines end */
+
+/* Inner lines start */
+@keyframes svg-inner-lines 
+	from
+		stroke-dashoffset: 185
+	to
+		stroke-dashoffset: 0
+
+
+.svg-inner-lines path
+	stroke: #405174
+	stroke-width: 2
+	stroke-dasharray: 185
+	stroke-dashoffset: 185
+	animation-name: svg-inner-lines
+	animation-duration: 1s
+	animation-delay: 1.7s
+	animation-fill-mode: forwards
+
+
+path.svg-inner_s
+	animation-delay: 1.8s
+path.svg-inner_a_1_3
+	animation-delay: 1.9s
+path.svg-inner_a_2
+	animation-delay: 2s
+path.svg-inner_a_1_1
+	animation-delay: 2.1s
+path.svg-inner_g
+	animation-delay: 2.2s
+path.svg-inner_a_1_2
+	animation-delay: 2.3s
+/* Inner lines end */
+
+/* Svg remove content start */
+
+@keyframes removeCircle 
+	15%
+		transform: translateY(20px)
+		opacity: 1
+	100%
+		transform: translateY(-400px)
+		opacity: 0
+
+
+.remove-svg .svg-circle 
+	animation-name: removeCircle
+	animation-duration: 1s
+	animation-delay: 0.25s
+	animation-fill-mode: forwards
+	
+.remove-svg .svg-letters_upper 
+	animation-name: removeCircle
+	animation-duration: 1s
+	animation-delay: 0.25s
+	animation-fill-mode: forwards
+
+.remove-svg .svg-inner-lines 
+	animation-name: removeCircle
+	animation-duration: 1s
+	animation-delay: 0.25s
+	animation-fill-mode: forwards
+
+.remove-svg .svg-loading-circle-container 
+	animation-name: removeCircle
+	animation-duration: 1s
+	animation-delay: .2s
+	animation-fill-mode: forwards
+
+
+
+.remove-svg.loader-wrap
+	opacity: 0
+	transform: translateY(-150%)
+.preloader__saga-container
+	display: flex
+	flex-direction: column
+	align-items: center

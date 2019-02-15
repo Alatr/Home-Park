@@ -29,8 +29,11 @@
 				<!-- /.about-block__descr -->
 			</div>
 			<!-- /.container -->
+			<div class="section-main-down">
+				<?php include('img/svg/arrow.svg'); ?>
+			</div>
 		</div>
-		<!-- /.about-block__descr -->
+		<!-- /.about-block__descr--wrap -->
 		<div class="container">
 			<div class="about-block__title">
 				HOME&PARK создан для семейного счастья! Убедитесь в этом, узнав больше про жилой комплекс
@@ -86,7 +89,7 @@
 					<div class="about-item__title wow fadeInUp">детские и спортивные площадки</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
-						<img src="img/about/about_5.jpg" alt="" title="">
+						<img src="img/about/about_6.jpg" alt="" title="">
 					</div>
 					<!-- /.about-item__img -->
 				</div>
@@ -97,7 +100,7 @@
 					<div class="about-item__title wow fadeInUp">собственный парк для спорта и отдыха</div>
 					<!-- /.about-item__title -->
 					<div class="about-item__img">
-						<img src="img/about/about_6.jpg" alt="" title="">
+						<img src="img/about/about_5.jpg" alt="" title="">
 					</div>
 					<!-- /.about-item__img -->
 				</div>
@@ -120,8 +123,7 @@
 			</div>
 			<!-- /.about-block__items--long -->
 			<div class="about-block__info">
-				<div class="about-info__text">Завершение строительства: || квартал 2019 года</div>
-				<!-- /.about-info__text -->
+				<!-- <div class="about-info__text">Завершение строительства: || квартал 2019 года</div> -->
 				<div class="about-info__btn--wrap">
 					<a class="btn-green-border" href="/dist/stage-building.php">Ход строительства</a>
 					<a class="btn-green-border" href="/dist/filter.php">Выбрать квартиру</a>
@@ -137,6 +139,6 @@
 
 	<?php include('includes/footer.php'); ?>
 
-
+  <script src="js/about.js"></script>
 	</body>
 </html>

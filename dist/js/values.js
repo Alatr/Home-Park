@@ -4,6 +4,8 @@
 		
 		let touchStartX,touchStartY;
 		let sliderImage = document.querySelectorAll('.values-slider-wrapper>div');
+		let descrSlide = document.querySelector('.descr__subtitle');
+		
 		let slider = {
 		  position:{
 		    active1: 0,
@@ -57,7 +59,9 @@
 		  	for (var i = 0; i < sliderImage.length; i++) {
 		  		liNavigation[i].classList.remove('active');
 		  		if(sliderImage[i].classList.contains('active1')){
-		  			liNavigation[i].classList.add('active');
+						liNavigation[i].classList.add('active');
+						var textSlide = sliderImage[i].getAttribute('data-text');
+						descrSlide.innerText = textSlide;
 		  		}
 		  	}
 		  }

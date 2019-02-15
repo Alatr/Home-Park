@@ -20,7 +20,10 @@
 				min: '',
 				max: ''
 			},
-			rooms: []
+			rooms: [],
+			balcony: [],
+			loggia: [],
+			replanning: []
 		};
 
 // Ф-я которая записывает общие данные из slider(при инициализации) в глобальный Object
@@ -62,16 +65,59 @@
 			sliders.push($(range).data("ionRangeSlider"));
 
 		});
+		
+		// Отслежка выбора checbox и запись выбраных элементов в глобальный Object filter
 		var checkboxesConainer = document.querySelector('.js_checkboxes__rooms'); // wrap checkboxs
 		var checkboxes = document.querySelectorAll('.checkbox__room'); // label
-
-// Отслежка выбора checbox и запись выбраных элементов в глобальный Object filter
 
 		checkboxesConainer.addEventListener('change', function() {
 			filter.rooms = [];
 			checkboxes.forEach(function(checkbox) {
 				if(checkbox.checked) {
 					filter.rooms.push(parseInt(checkbox.value));
+				}
+			})
+		});
+		
+		
+		var checkboxesBalcony = document.querySelector('.js_checkboxes__balcony'); // wrap checkboxs
+		var labelBalcony = document.querySelectorAll('.checkbox__balcony-js'); // label
+
+		console.log(labelBalcony)
+checkboxesBalcony.addEventListener('change', function() {
+	console.log('checked')
+	filter.balcony = [];
+			labelBalcony.forEach(function (checkbox) {
+				if(checkbox.checked) {
+					filter.balcony.push(parseInt(checkbox.value));
+				}
+			})
+			console.log(filter.balcony)
+		});
+		
+		
+		var checkboxesLoggia = document.querySelector('.js_checkboxes__loggia'); // wrap checkboxs
+		var labelLoggia = document.querySelectorAll('.checkbox__loggia-js'); // label
+		
+		
+		checkboxesLoggia.addEventListener('change', function() {
+			filter.loggia = [];
+			labelLoggia.forEach(function(checkbox) {
+				if(checkbox.checked) {
+					filter.loggia.push(parseInt(checkbox.value));
+				}
+			})
+		});
+
+		
+		var checkboxesReplanning = document.querySelector('.js_checkboxes__replanning'); // wrap checkboxs
+		var labelReplanning = document.querySelectorAll('.checkbox__replanning-js'); // label
+
+		checkboxesReplanning.addEventListener('change', function() {
+			filter.replanning = [];
+			labelReplanning.forEach(function(checkbox) {
+				if(checkbox.checked) {
+					filter.replanning.push(parseInt(checkbox.value));
 				}
 			})
 		});

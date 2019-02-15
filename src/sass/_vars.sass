@@ -232,6 +232,7 @@ $bcolor: #000
 	display: flex
 	animation: menu-animate 0.6s ease-out
 	.menu-block-top-img
+		width: 100%
 		transform: scale(1.2)
 		animation: menu-top-animate 1.5s ease-out
 
@@ -393,10 +394,12 @@ $bcolor: #000
 					.menu__title
 						margin-bottom: 65px
 						display: block
+						text-align: center
 						font-size: 20px
 						color: $wcolor
 						text-transform: uppercase
 						+to(1200px)
+							text-align: left
 							margin-bottom: 0
 						+to(768px)
 							font-size: 18px

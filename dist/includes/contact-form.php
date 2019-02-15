@@ -18,11 +18,11 @@
 						<li class="contact-list__item">
 							<h4 class='contact-list__title location-icon'>Адрес ЖК:</h4>
 							<a href="#" class="mb30">Home & Park comfort house
-								ул. Бежовка, 14</a>
+								ул. Беживка, 14</a>
 
 							<h4 class='contact-list__title location-icon'>Отдел продаж:</h4>
 							<a href="#">Home & Park comfort house
-								ул. Бежовка, 15</a>
+								ул. Беживка, 15</a>
 
 
 						</li>
@@ -63,13 +63,13 @@
 					</div>
 					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap">
-						<span class="mainForm__text display--mobile" data-defaultMessage="В какое удобное время Вам перезвонить:" data-errorMessage="Заполните сообщение">
+						<span class="mainForm__text display--mobile" data-defaultMessage="В какое удобное время вам перезвонить:" data-errorMessage="Заполните сообщение">
 							<span class="wrap-icon">
 								<?php include('img/svg/phone-icon.svg'); ?>
 							</span>
-							<span>В какое удобное время Вам перезвонить:</span>
+							<span>В какое удобное время вам перезвонить:</span>
 						</span>
-						<input name="message" type="text" class="mainForm__input">
+						<input id="datetimepicker_dark" name="message" type="text" autocomplete="off" class="mainForm__input">
 					</div>
 					<!--  </mainForm-wrap> -->
 						<button class="btn-fill sand-form">
@@ -103,7 +103,7 @@
 					</div>
 					<!--  </mainForm-wrap> -->
 					<div class="mainForm-wrap">
-						<span class="mainForm__text " data-defaultMessage="В какое удобное время Вам перезвонить:" data-errorMessage="Заполните сообщение">
+						<span class="mainForm__text " data-defaultMessage="В какое удобное время вам перезвонить:" data-errorMessage="Заполните сообщение">
 							<span class="wrap-icon">
 								<?php include('img/svg/phone-icon.svg'); ?>
 							</span>

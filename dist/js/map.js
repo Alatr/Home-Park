@@ -7,7 +7,8 @@
     var gmarkers1 = [];
     var markers1 = [];
     var infowindow = new google.maps.InfoWindow({
-        content: ''
+		content: '',
+		maxWidth: 200
     });
 
 
@@ -134,12 +135,29 @@ var uri = window.location.href;
 
 
 // подробнее o методах и классах гугл API https://developers.google.com/maps/documentation/javascript/reference/
-};
+	};
+	var scrollBtn = function () {
+		var scrollBtn = document.querySelector('.section-main-down');
+		var headerHeight = $('.header-section').height();
 
+		$(window).on('resize', function () {
+			var headerHeightResize = $('.header-section').height();
+			headerHeight = headerHeightResize;
+		});
+
+		scrollBtn.addEventListener('click', function () {
+			var secondSection = $('#map');
+
+			$('html, body').animate({
+				scrollTop: secondSection.offset().top - headerHeight
+			}, 1500);
+		});
+	};
 	/* Initialize
 	 * ------------------------------------------------------ */
 	 (function hpInitMap() {
 			mapBlock();
+			scrollBtn();
 	 })();
 
 })(jQuery);

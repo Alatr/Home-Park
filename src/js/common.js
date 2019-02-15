@@ -31,17 +31,45 @@ new WOW().init();
 			}
 		});
 	};
-	var hpPreloader = function() {
-		
-	    $(window).on('load', function() {
-	    	var wrap = $('.loader-wrap');
-	    	var loader = $('.dots'); 
-					console.log('ff')
-	        loader.fadeOut();
-	        // will fade out the whole DIV that covers the website.
-	        wrap.delay(300).fadeOut("slow");
-	    });
-	};
+				// ф-я показа прелодера
+				var sagapreloaderAnimation = (function () {
+					var preloaderContainer = document.querySelector('.loader-wrap');
+					var lowerLetters = document.querySelector('.svg-letters_lower');
+	
+					function init() {
+						preloaderContainer.style.display = 'block';
+						lowerLetters.addEventListener('animationend', function () {
+							preloaderContainer.classList.add('remove-svg');
+							preloaderContainer.style.display = 'none';
+						});
+					};
+	
+					function checkDate() {
+						if (localStorage.getItem('preloader') === null) {
+							localStorage.setItem('preloader', Date.now());
+							return true;
+						}
+						var hour = 3600 * 1000;
+						if (Date.now() - localStorage.getItem('preloader') < hour) {
+							return false;
+						} else {
+							localStorage.setItem('preloader', Date.now());
+							return true;
+						}
+					};
+					return {
+						init: init,
+						preloaderContainer: preloaderContainer,
+						checkDate: checkDate
+					};
+				})();
+	
+				if (sagapreloaderAnimation.checkDate() && window.innerWidth > 768) {
+					sagapreloaderAnimation.init();
+				} else {
+					sagapreloaderAnimation.preloaderContainer.style.display = 'none';
+				}
+				//sagapreloaderAnimation.init();
 	var telMask = function() {
 		jQuery(function($){
 				$.mask.definitions['#']='[0-9]';
@@ -363,8 +391,8 @@ new WOW().init();
 
 
 						//console.log(prev);
-						//footer.css({'transform': 'translateY(0px)',});
-						//prev.css({'paddingBottom': hTabs});
+						footer.css({'transform': 'translateY(0px)',});
+						prev.css({'paddingBottom': hTabs});
 
 					} else if  (winPos >= scrollOffsetFooter){
 						footer.css({'transform': 'translateY('+ footerHeightInner +'px)'});
@@ -410,7 +438,36 @@ new WOW().init();
 		
 	};
 	$(window).resize(footerToggle);
+
 	
+	var dataInput = function () {
+		$.datetimepicker.setLocale('ru');
+		var logic1 = function (currentDateTime) {
+			if (currentDateTime.getDate() == new Date().getDate()) {
+				this.setOptions({
+					minTime: new Date()
+				});
+			} else {
+				this.setOptions({
+					minTime: '9:00'
+				});
+			}
+		};
+
+		$('#datetimepicker_dark').datetimepicker({
+			//            theme:'dark',
+			// value: 'trololo',
+			// value: new Date(),
+			minDate: new Date(),
+			maxTime: '20:00',
+			yearStart: 2019,
+			yearEnd: 2019,
+			dayOfWeekStart: 1,
+			onSelectDate: logic1,
+			onShow: logic1
+
+		});
+	};
 	
 
 	/* Initialize 
@@ -424,7 +481,7 @@ new WOW().init();
 			popup();
 			telMask();
 			hpOutline();
-			hpPreloader();
+			dataInput();
 			//changePhoneNumber();
 	 })();
 })(jQuery);

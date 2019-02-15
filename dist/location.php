@@ -36,6 +36,9 @@
 			<!-- /.location-item -->
 		</div>
 		<!-- /.location-items -->
+		<div class="section-main-down">
+		<?php include('img/svg/arrow.svg'); ?>
+	</div>
 	</div>
 	<!-- /.location-block -->
 </div>

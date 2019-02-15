@@ -101,7 +101,7 @@
 		  $('.logo-slaider-wrap').slick('slickNext');
 		});
 
-		$('.logo-slaider-items .logo-link svg').hover( function(){
+		/* $('.logo-slaider-items .logo-link svg').hover( function(){
 		        $(this).removeClass('active');
 			},function(){
 		        $(this).addClass('active');
@@ -109,7 +109,7 @@
 
 		if ($(window).width() < '768') {
 			$('.logo-slaider-items .logo-link svg').removeClass('active');
-		}
+		} */
 
 		$(window).resize(function(){
 			if ($(window).width() < '768') {

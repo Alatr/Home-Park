@@ -16,30 +16,30 @@
 	<div class="values-block">
 		<div class="values-slider-wrapper">
 			
-			<div class="values-slider__items">
+			<div class="values-slider__items" data-text="Описание слайда 1">
 				<img src="img/home/home-bg.jpg" alt="Слайд-1">
 			</div>
 			<!-- /.values-slider__items -->
 			
-			<div class="values-slider__items">
+			<div class="values-slider__items" data-text="Описание слайда 2">
 				<img src="img/home/home__realEstate.jpg" alt="Слайд-2">
 			</div>
 			<!-- /.values-slider__items -->
-			<div class="values-slider__items">
+			<div class="values-slider__items" data-text="Описание слайда 3">
 				<img src="img/home/home__about.jpg" alt="Слайд-3">
 			</div>
 			<!-- /.values-slider__items -->
 
-			<div class="values-slider__items">
+			<div class="values-slider__items" data-text="Описание слайда 4">
 				<img src="img/home/home-bg.jpg" alt="Слайд-1">
 			</div>
 			<!-- /.values-slider__items -->
 			
-			<div class="values-slider__items">
+			<div class="values-slider__items" data-text="Описание слайда 5">
 				<img src="img/home/home__realEstate.jpg" alt="Слайд-2">
 			</div>
 			<!-- /.values-slider__items -->
-			<div class="values-slider__items">
+			<div class="values-slider__items" data-text="Описание слайда 6">
 				<img src="img/home/home__about.jpg" alt="Слайд-3">
 			</div>
 			<!-- /.values-slider__items -->
@@ -47,11 +47,11 @@
 		</div>
 		<!-- /.values-slider-wrapper -->
 		<div class="article-slider__nav">
-			<div class="article-slider__nav-left">
+			<div class="article-slider__nav-left 	hover-color--white">
 				<?php include('img/svg/arrow.svg'); ?>
 			</div>
 			<!-- /.article-slider__nav-left -->
-			<div class="article-slider__nav-right">
+			<div class="article-slider__nav-right 	hover-color--white">
 				<?php include('img/svg/arrow.svg'); ?>
 			</div>
 			<!-- /.article-slider__nav-right -->

@@ -44,7 +44,7 @@
 	</div>
 </div> -->
 
-<div class="loader-wrap">
+<div class="loader-wrap" style="display: none;">
 	<?php include('includes/preloder-svg.php'); ?>
 </div>
 <div class="header-section">
@@ -189,6 +189,16 @@
 	<div class="mainForm-wrap requaired">
 		<span class="mainForm__text position--left" data-defaultMessage="Ваш телефон:" data-errorMessage="Телефон не заполнен"></span>
 		<input name="tel" type="text" placeholder="Ваш телефон:" class="mainForm__input mainForm__input-requaired inputtelmask">
+	</div>
+	<!--  </mainForm-wrap> -->
+	<div class="mainForm-wrap">
+		<span class="mainForm__text display--mobile" data-defaultMessage="В какое удобное время вам перезвонить:" data-errorMessage="Заполните сообщение">
+			<span class="wrap-icon">
+				<?php include('img/svg/phone-icon.svg'); ?>
+			</span>
+			<span>В какое удобное время вам перезвонить:</span>
+		</span>
+		<input id="datetimepicker_dark" name="message" type="text" autocomplete="off" class="mainForm__input">
 	</div>
 	<!--  </mainForm-wrap> -->
 	<button class="btn-fill sand-form">
