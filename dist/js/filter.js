@@ -65,6 +65,51 @@
 			sliders.push($(range).data("ionRangeSlider"));
 
 		});
+
+
+		    var bl = 0;
+		    var ld = 0;
+		    var rep = 0;
+
+		    $("#check__balcony" ).click(function() {
+		        var x = document.getElementById("check__balcony").checked;
+		         if(x===true) {
+		             bl = 1;
+		         }
+		         else{
+		         	bl = 0;
+				 }
+
+		    });
+			
+			 
+			
+		    $("#check__loggia" ).click(function() {
+		        var y = document.getElementById("check__loggia").checked;
+		        if(y===true) {
+		            ld = 1;
+		        }
+		        else{
+		            ld = 0;
+		        }
+		    });
+			
+
+		    
+		    $( "#check__replanning" ).click(function() {
+		        var z = document.getElementById("check__replanning").checked;
+		        if(z===true) {
+		            rep = 1;
+		        }
+		        else{
+		            rep = 0;
+		        }
+
+		    });
+
+
+
+
 		
 		// Отслежка выбора checbox и запись выбраных элементов в глобальный Object filter
 		var checkboxesConainer = document.querySelector('.js_checkboxes__rooms'); // wrap checkboxs
@@ -84,15 +129,14 @@
 		var labelBalcony = document.querySelectorAll('.checkbox__balcony-js'); // label
 
 		console.log(labelBalcony)
-checkboxesBalcony.addEventListener('change', function() {
-	console.log('checked')
-	filter.balcony = [];
+		console.log('checked')
+		checkboxesBalcony.addEventListener('change', function() {
+			filter.balcony = [];
 			labelBalcony.forEach(function (checkbox) {
 				if(checkbox.checked) {
 					filter.balcony.push(parseInt(checkbox.value));
 				}
 			})
-			console.log(filter.balcony)
 		});
 		
 		
@@ -133,6 +177,9 @@ checkboxesBalcony.addEventListener('change', function() {
 			this.val_squareLiv = parseInt(app.dataset.larea);
 			this.val_floor = parseInt(app.dataset.floor);
 			this.rooms = parseInt(app.dataset.rooms);
+			this.balcony = parseInt(app.dataset.balcony);
+			this.loggia = parseInt(app.dataset.loggia);
+			this.replanning = parseInt(app.dataset.replanning);
 		}
 // Записывает все квартиры в отдельный массив
 		var appartments = [];
@@ -167,6 +214,44 @@ checkboxesBalcony.addEventListener('change', function() {
 						i++;
 						break;
 					}
+
+					if(bl==1 && ld==1){
+	                    // if(key === 'balcony' && filter[key].length > 0 && key === 'lodj' && filter[key].length > 0) {
+	                    if(filter[key].length > 0) {
+	                    	
+	                        if(!filter[key].includes(appartment[key])) {
+	                            appartment.selector.style.display = 'none';
+	                            i++;
+	                            break;
+	                        }
+	                    }
+
+					}else {
+
+	                    if (key === 'balcony' && filter[key].length > 0) {
+	                        if (!filter[key].includes(appartment[key])) {
+	                            appartment.selector.style.display = 'none';
+	                            i++;
+	                            break;
+	                        }
+	                    }
+	                    if (key === 'loggia' && filter[key].length > 0) {
+	                        if (!filter[key].includes(appartment[key])) {
+	                            appartment.selector.style.display = 'none';
+	                            i++;
+	                            break;
+	                        }
+	                    }
+	                }
+	                
+	                if(key === 'replanning' && filter[key].length > 0) {
+	                	// console.log(filter);
+	                	if(!filter[key].includes(appartment[key])) {
+	                		appartment.selector.style.display = 'none';
+	                		i++;
+	                		break;
+	                	}
+	                }
 				}
 			});
 			document.querySelector(".number_flats").innerHTML = totalAppartments - i <= 0 ? 0 : totalAppartments - i;

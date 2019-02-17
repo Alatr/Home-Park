@@ -67,19 +67,19 @@
 					<input type="hidden" class="range-init irs-hidden-input" id="val_squareLiv" value="15;99">
 				</div>
 				<!-- /.range-item -->
-				<div class="checkbox-item option__item checkboxes__balcony-js js_checkboxes__balcony">
+				<div class="checkbox-item option__item js_checkboxes__balcony">
 					<div class="range-item__title">С балконом</div>
-					<input id="check_balcony" class="checkbox__balcony filter__checkbox" type="checkbox" value="1">
+					<input id="check_balcony" class="checkbox__balcony-js filter__checkbox" type="checkbox" value="1">
 					<label for="check_balcony" class="checkbox__text">Да</label>
 				</div>
 				<!-- /.checkbox-wrap -->
-				<div class="checkbox-item option__item checkboxes__loggia-js js_checkboxes__loggia">
+				<div class="checkbox-item option__item js_checkboxes__loggia">
 					<div class="range-item__title">С лоджией</div>
-					<input id="check__loggia" class="checkbox__loggia filter__checkbox" type="checkbox" value="1">
+					<input id="check__loggia" class="checkbox__loggia-js filter__checkbox" type="checkbox" value="1">
 					<label for="check__loggia" class="checkbox__text">Да</label>
 				</div>
 				<!-- /.checkbox-wrap -->
-				<div class="checkbox-item option__item checkboxes__replanning js_checkboxes__replanning">
+				<div class="checkbox-item option__item js_checkboxes__replanning">
 					<div class="range-item__title">Перепланировка в студию</div>
 					<input id="check__replanning" class="checkbox__replanning-js filter__checkbox" type="checkbox" value="1">
 					<label for="check__replanning" class="checkbox__text">Да</label>
@@ -112,7 +112,7 @@
 
 
 			
-			<li class="filter-item js-result__item" data-balcony="1" data-loggia="0" data-replanning="1" data-floor="6" data-rooms="1" data-area="66" data-larea="68" data-build="4">
+			<li class="filter-item js-result__item" data-balcony="1" data-loggia="1" data-replanning="1" data-floor="6" data-rooms="1" data-area="66" data-larea="68" data-build="4">
 				<a href="/dist/appartment.php" class="filter-item__link">
 					<div class="filter-item__img">
 						<img src="img/home/home-bg.jpg" alt="" title="">
@@ -145,7 +145,7 @@
 			
 
 
-			<li class="filter-item js-result__item"  data-balcony="1" data-loggia="0" data-replanning="1" data-floor="3" data-rooms="2" data-area="40" data-larea="35" data-build="1">
+			<li class="filter-item js-result__item"  data-balcony="0" data-loggia="1" data-replanning="0" data-floor="3" data-rooms="2" data-area="40" data-larea="35" data-build="1">
 				<a href="/dist/appartment.php" class="filter-item__link">
 					<div class="filter-item__img">
 						<img src="img/filter/Plan_copy.png" alt="" title="">
@@ -178,7 +178,7 @@
 
 
 			
-			<li class="filter-item js-result__item"  data-balcony="1" data-loggia="0" data-replanning="1" data-floor="3" data-rooms="2" data-area="39" data-larea="20" data-build="1">
+			<li class="filter-item js-result__item"  data-balcony="0" data-loggia="0" data-replanning="1" data-floor="3" data-rooms="2" data-area="39" data-larea="20" data-build="1">
 				<a href="/dist/appartment.php" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
@@ -209,7 +209,7 @@
 
 
 			
-			<li class="filter-item js-result__item"  data-balcony="1" data-loggia="0" data-replanning="1" data-floor="3" data-rooms="3" data-area="70" data-larea="65" data-build="1">
+			<li class="filter-item js-result__item"  data-balcony="0" data-loggia="0" data-replanning="0" data-floor="3" data-rooms="3" data-area="70" data-larea="65" data-build="1">
 				<a href="/dist/appartment.php" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
@@ -240,7 +240,7 @@
 
 
 			
-			<li class="filter-item js-result__item"  data-balcony="1" data-loggia="0" data-replanning="1" data-floor="3" data-rooms="4" data-area="95" data-larea="90" data-build="1">
+			<li class="filter-item js-result__item"  data-balcony="0" data-loggia="0" data-replanning="0" data-floor="3" data-rooms="4" data-area="95" data-larea="90" data-build="1">
 				<a href="/dist/appartment.php" class="filter-item__link">
 					<img src="img/filter/Plan_copy.png" alt="" title="" class="filter-item__img">
 					<table class="filter-item__table">
