@@ -46,6 +46,7 @@
 			<!-- /.tabs__inner -->
 			<div class="tabs__inner active-js">
 				<h3 class="section-title tablet-font--size leaves-green leaves-green--hidden">Заказать телефонный звонок</h3>
+				<p class="tabs-form-sublitle">Отправьте заявку на звонок и менеджер отдела продаж свяжется с вами в ближайшее время.<br>Или выберите удобное вам время для звонка</p>
 				<form class="mainForm" id="mainForm">
 					<div class="mainForm-wrap requaired">
 						<span class="mainForm__text" data-defaultMessage="Имя:" data-errorMessage="Имя не заполнено">
@@ -69,7 +70,7 @@
 							</span>
 							<span>В какое удобное время вам перезвонить:</span>
 						</span>
-						<input id="datetimepicker_dark" name="message" type="text" autocomplete="off" class="mainForm__input">
+						<input name="message" type="text" autocomplete="off" class="datetimepicker_dark mainForm__input">
 					</div>
 					<!--  </mainForm-wrap> -->
 						<button class="btn-fill sand-form">

@@ -454,7 +454,7 @@ new WOW().init();
 			}
 		};
 
-		$('#datetimepicker_dark').datetimepicker({
+		$('.datetimepicker_dark').datetimepicker({
 			//            theme:'dark',
 			// value: 'trololo',
 			// value: new Date(),

@@ -176,6 +176,7 @@
 
 <form class="mainForm white-popup-block mfp-hide" id="popup-form">
 	<h4 class="main-form__title section-title">Заказать звонок<button class="mfp-close" title="Закрыть"></button></h4>
+	<p class="tabs-form-sublitle">Отправьте заявку на звонок и менеджер отдела продаж свяжется с вами в ближайшее время.<br>Или выберите удобное вам время для звонка</p>
 	<div class="mainForm-wrap requaired">
 		<span class="mainForm__text" data-defaultMessage="Имя:" data-errorMessage="Имя не заполнено">
 			<span class="wrap-icon">
@@ -198,7 +199,7 @@
 			</span>
 			<span>В какое удобное время вам перезвонить:</span>
 		</span>
-		<input id="datetimepicker_dark" name="message" type="text" autocomplete="off" class="mainForm__input">
+		<input id="" name="message" type="text" autocomplete="off" class="datetimepicker_dark mainForm__input">
 	</div>
 	<!--  </mainForm-wrap> -->
 	<button class="btn-fill sand-form">

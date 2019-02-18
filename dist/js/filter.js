@@ -129,7 +129,6 @@
 		var labelBalcony = document.querySelectorAll('.checkbox__balcony-js'); // label
 
 		console.log(labelBalcony)
-		console.log('checked')
 		checkboxesBalcony.addEventListener('change', function() {
 			filter.balcony = [];
 			labelBalcony.forEach(function (checkbox) {
