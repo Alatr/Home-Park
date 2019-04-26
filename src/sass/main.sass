@@ -4285,6 +4285,7 @@ body.focus-tab--enable
 				position: relative
 				height: 300px
 				overflow: hidden
+				
 				&:hover
 					img
 						filter: grayscale(0)
@@ -4298,11 +4299,14 @@ body.focus-tab--enable
 					max-height: 185px
 
 				img
+					display: none
 					transition: all 0.4s
 					transform: scale(1.2)
 					filter: grayscale(0.3)
 					object-fit: cover
 					height: 100%
+					&:first-child
+						display: block
 				time
 					position: absolute
 					bottom: 0
@@ -6136,3 +6140,5 @@ path.svg-inner_a_1_2
 	display: flex
 	flex-direction: column
 	align-items: center
+.preloader__saga-logo
+	width: 30vw

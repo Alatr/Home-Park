@@ -9,14 +9,14 @@ var gulp          						= require('gulp'),
 		cleancss      						= require('gulp-clean-css'),
 		rename        						= require('gulp-rename'),
 		autoprefixer  						= require('gulp-autoprefixer'),
-		notify        						= require("gulp-notify"),
+		notify        						= require('gulp-notify'),
 		sourcemaps 	  						= require('gulp-sourcemaps'),
-		imagemin 	  						= require('gulp-imagemin'),
-		cache        						= require('gulp-cache'),
+		imagemin 	  							= require('gulp-imagemin'),
+		cache        							= require('gulp-cache'),
 		imageminPngquant 					= require('imagemin-pngquant'),
-		imageminJpegRecompress  			= require('imagemin-jpeg-recompress'),
-		rsync        						= require('gulp-rsync'),
-		gcmq 								= require('gulp-group-css-media-queries');
+		imageminJpegRecompress  	= require('imagemin-jpeg-recompress'),
+		rsync        							= require('gulp-rsync'),
+		gcmq 											= require('gulp-group-css-media-queries');
 
 gulp.task('browser-sync', function() {
 	browserSync({

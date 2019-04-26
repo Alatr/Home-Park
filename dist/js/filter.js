@@ -105,12 +105,8 @@
 		            rep = 0;
 		        }
 
-		    });
-
-
-
-
-		
+				});
+				
 		// Отслежка выбора checbox и запись выбраных элементов в глобальный Object filter
 		var checkboxesConainer = document.querySelector('.js_checkboxes__rooms'); // wrap checkboxs
 		var checkboxes = document.querySelectorAll('.checkbox__room'); // label
@@ -333,12 +329,3 @@
 	 })();
 
 })(jQuery);
-
-
-
-/*$('.range-init').ionRangeSlider({
-	type: "double",
-	hide_min_max: true,
-	grid: false
-});*/
-

@@ -37,6 +37,6 @@
 <rect x="7.6" y="50.7" class="st0 top" width="72.4" height="9"/>
 <rect x="7.6" y="79.3" class="st0 middle" width="38" height="9"/>
 <rect x="7.6" y="107.8" class="st0 bottom" width="110.4" height="9"/>
-<rect x="0" y="0" class="st0 cross_1" width="110.4" height="9"/>
-<rect x="0" y="0" class="st0 cross_2" width="110.4" height="9"/>
+<rect x="0" y="0" class="st0 cross_1" height="9"/>
+<rect x="0" y="0" class="st0 cross_2" height="9"/>
 </svg>

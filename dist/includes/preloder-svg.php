@@ -1,6 +1,6 @@
 <div class="preloader__saga-container">
 
-  <svg class="preloader__saga-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 517.545 415.479" style="enable-background:new 0 0 517.545 415.479;" width="30vw" xml:space="preserve">
+  <svg class="preloader__saga-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 517.545 415.479" style="enable-background:new 0 0 517.545 415.479;"  xml:space="preserve">
     
     <g class="svg-outer-lines">
       <path class="svg-outer_s" d="M485.579-517.175L-110.834,803.562"></path>

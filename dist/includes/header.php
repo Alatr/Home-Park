@@ -112,58 +112,58 @@
 		<div class="container">
 			<div class="menu-wrap">
 				<ul class="header-menu">
-	                <li class="has-children" >
-	                    <span class="menu__title">Главная</span>
-	                    <ul class="sub-menu">
-                        	<li><a href="/dist/news.php">Новости</a></li>
-                        	<li><a href="/dist/gallery.php">Галерея</a></li>
-	                    </ul>
-	                </li>
-	                <li class="has-children" >
-	                    <span class="menu__title">О проекте</span>
-	                    <ul class="sub-menu">
-                        	<li><a href="/dist/about.php">О Home & Park</a></li>
-                        	<li><a href="/dist/features.php">Преимущества</a></li>
-                        	<li><a href="/dist/values-page.php">Ценности</a></li>
-                        	<li><a href="/dist/infostructure.php">Инфраструктура</a></li>
-	                    </ul>
-	                </li>
-	                <li class="has-children" >
-	                    <span class="menu__title">Выбрать квартиру</span>
-	                    <ul class="sub-menu">
-                        	<li><a href="/dist/check-floor.php">Выбрать по этажу</a></li>
-                        	<li><a href="/dist/filter.php">Выбрать по параметрам</a></li>
-                        	<li><a href="/dist/floor.php">Однокомнатные</a></li>
-                        	<li><a href="/dist/floor.php">Двухкомнатные</a></li>
-                        	<li><a href="/dist/floor.php">Трехкомнатные</a></li>
+						<li class="has-children" >
+								<span class="menu__title">Главная</span>
+								<ul class="sub-menu">
+										<li><a href="/dist/news.php">Новости</a></li>
+										<li><a href="/dist/gallery.php">Галерея</a></li>
+								</ul>
+						</li>
+						<li class="has-children" >
+								<span class="menu__title">О проекте</span>
+								<ul class="sub-menu">
+										<li><a href="/dist/about.php">О Home & Park</a></li>
+										<li><a href="/dist/features.php">Преимущества</a></li>
+										<li><a href="/dist/values-page.php">Ценности</a></li>
+										<li><a href="/dist/infostructure.php">Инфраструктура</a></li>
+								</ul>
+						</li>
+						<li class="has-children" >
+								<span class="menu__title">Выбрать квартиру</span>
+								<ul class="sub-menu">
+										<li><a href="/dist/check-floor.php">Выбрать по этажу</a></li>
+										<li><a href="/dist/filter.php">Выбрать по параметрам</a></li>
+										<li><a href="/dist/floor.php">Однокомнатные</a></li>
+										<li><a href="/dist/floor.php">Двухкомнатные</a></li>
+										<li><a href="/dist/floor.php">Трехкомнатные</a></li>
 
-	                    </ul>
-	                </li>
-	                <li class="has-children" >
-	                    <span class="menu__title">Строительство</span>
-	                    <ul class="sub-menu">
-	                        <li><a href="/dist/developer.php">Застройщик</a></li>
-	                        <li><a href="/dist/stage-building.php">Ход строительства</a></li>
-	                        <li><a href="/dist/web-camera.php">Веб-камера</a></li>
-	                        <li><a href="/dist/documentation.php">Документация</a></li>
-	                        <li><a href="#">Генплан</a></li>
-	                    </ul>
-	                </li>
-	                <li class="has-children" >
-	                    <span class="menu__title">Контакты</span>
-	                    <ul class="sub-menu">
-                        	<li><a href="/dist/location.php">Расположение</a></li>
-                        	<li><a href="/dist/contacts.php">Связь</a></li>
-	                    </ul>
-	                </li>
-	                <li class="menu-number" >
-	                	<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
-	                	 <a href="#popup-form" class="btn btn--header popup-with-form-js" data-modal-class="bg-modal--white">
-	                	 	<?php include('img/svg/email-icon.svg'); ?>
-	                	 	<span>Заказать звонок</span>
-	                	 </a>
-	                	 <!-- /.btn -->
-	                </li>
+								</ul>
+						</li>
+						<li class="has-children" >
+								<span class="menu__title">Строительство</span>
+								<ul class="sub-menu">
+										<li><a href="/dist/developer.php">Застройщик</a></li>
+										<li><a href="/dist/stage-building.php">Ход строительства</a></li>
+										<li><a href="/dist/web-camera.php">Веб-камера</a></li>
+										<li><a href="/dist/documentation.php">Документация</a></li>
+										<li><a href="#">Генплан</a></li>
+								</ul>
+						</li>
+						<li class="has-children" >
+								<span class="menu__title">Контакты</span>
+								<ul class="sub-menu">
+										<li><a href="/dist/location.php">Расположение</a></li>
+										<li><a href="/dist/contacts.php">Связь</a></li>
+								</ul>
+						</li>
+						<li class="menu-number" >
+							<a href="tel:+380635781801" class="tellink">(044) 222-35-47</a>
+								<a href="#popup-form" class="btn btn--header popup-with-form-js" data-modal-class="bg-modal--white">
+								<?php include('img/svg/email-icon.svg'); ?>
+								<span>Заказать звонок</span>
+								</a>
+								<!-- /.btn -->
+						</li>
 				</ul>
 			</div>
 			<!-- /.menu-wrap -->

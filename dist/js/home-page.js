@@ -32,8 +32,17 @@
 				fade: true,
 				cssEase: 'linear',
 				initialSlide: initialSlide,
-				arrows: false
+				arrows: false,
+				asNavFor: article + ' ' +'.wrap-text-top'
 			  });
+			$(article + ' ' +'.wrap-text-top').slick({
+			  slidesToShow: 1,
+			  fade: true,
+			  slidesToScroll: 1,
+			  asNavFor: $(article + ' ' + '.slider-wrap'),
+			  dots: false,
+			  arrows: false
+			});
 
 			$(article + ' ' + '.article-slider__nav-left').click(function(){
 			  $(article + ' ' + '.slider-wrap').slick('slickPrev');
@@ -50,10 +59,10 @@
 			 $(article + ' ' + '.slider__count').text(initialSlide + 1) // вывод номера слайдера которой показан 
 		}
 
-		initPagesSlaider('.features-slaider-js', 1);
-		initPagesSlaider('.infostructure-slaider-js', 1);
+		initPagesSlaider('.features-slaider-js', 0);
+		initPagesSlaider('.infostructure-slaider-js', 0);
 		initPagesSlaider('.specifically-slaider-js', 0);
-		initPagesSlaider('.values-slaider-js', 1);
+		initPagesSlaider('.values-slaider-js', 0);
 
 	};
 
@@ -174,10 +183,6 @@
 	        }, 1500);
 		});
 	};
-
-
-
-	
 
 	/* Initialize Home page
 	 * ------------------------------------------------------ */

@@ -71,73 +71,86 @@
 			<span class="fw700">Завершение строительства:</span> Введение в эксплуатацию - IV квартал 2020г.
 		</div>
 		<!-- /.stage-block__title -->
-		
-
-
-
 		<div class="stage-block__items">
-
-
-
-
-			<a href="/dist/news-single.php" class="stage-item">
+			<div class="stage-item">
 				<div class="stage-item__img">
-					<img src="img/stage-building/stage-building_1.jpg" alt="" title="">
+					<a class="galleryItem-stage" href="img/news-single/slider-photo.jpg" data-group="1">
+						<img   src="img/news-single/slider-photo.jpg" alt="" title="">
+					</a>
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
+					<a class="galleryItem-stage" data-group="1" href="img/stage-building/stage-building_1.jpg" alt="" title=""></a>
+					<a class="galleryItem-stage" data-group="1" href="img/stage-building/stage-building_1.jpg" alt="" title=""></a>
+					<a class="galleryItem-stage" data-group="1" href="img/stage-building/stage-building_1.jpg" alt="" title=""></a>
 				</div>
 				<!-- /.stage-item__img -->
-			</a>
+			</div>
+			<!-- /.stage-item -->
+			<div class="stage-item">
+				<div class="stage-item__img">
+					<a class="galleryItem-stage" href="img/stage-building/stage-building_1.jpg" data-group="4" >
+						<img src="img/stage-building/stage-building_1.jpg" alt="" title="">
+					</a>
+					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
+					<a class="galleryItem-stage" data-group="4" href="img/stage-building/stage-building_1.jpg" alt="" title=""></a>
+					<a class="galleryItem-stage" data-group="4" href="img/stage-building/stage-building_1.jpg" alt="" title=""></a>
+					<a class="galleryItem-stage" data-group="4" href="img/stage-building/stage-building_1.jpg" alt="" title=""></a>
+					<a class="galleryItem-stage" data-group="4" href="img/stage-building/stage-building_1.jpg" alt="" title=""></a>
+					<a class="galleryItem-stage" data-group="4" href="img/stage-building/stage-building_1.jpg" alt="" title=""></a>
+					<a class="galleryItem-stage" data-group="4" href="img/stage-building/stage-building_1.jpg" alt="" title=""></a>
+				</div>
+				<!-- /.stage-item__img -->
+			</div>
 			<!-- /.stage-item -->
 
 
-			<a href="/dist/news-single.php" class="stage-item">
+			<div class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/home/home__galery.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</a>
+			</div>
 			<!-- /.stage-item -->
 
 
-			<a href="/dist/news-single.php" class="stage-item">
+			<div class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/news-single/slider-photo.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</a>
+			</div>
 			<!-- /.stage-item -->
 
 
-			<a href="/dist/news-single.php" class="stage-item">
+			<div class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/infostructure/infostructure_2.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</a>
+			</div>
 			<!-- /.stage-item -->
 
 
 
-			<a href="/dist/news-single.php" class="stage-item">
+			<div class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/stage-building/stage-building_1.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</a>
+			</div>
 			<!-- /.stage-item -->
 
 
-			<a href="/dist/news-single.php" class="stage-item">
+			<div class="stage-item">
 				<div class="stage-item__img">
 					<img src="img/home/home__galery.jpg" alt="" title="">
 					<time class="post-type" datetime="2018-11-01">2018-11-01</time>
 				</div>
 				<!-- /.stage-item__img -->
-			</a>
+			</div>
 			<!-- /.stage-item -->
 
 

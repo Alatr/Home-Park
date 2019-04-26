@@ -146,13 +146,19 @@
 				<div class="slider-wrap">
 					<img src="img/home/home__featyres.jpg" alt="" title="">
 					<img src="img/home/home__featyres.jpg" alt="" title="">
+					<img src="img/home/home__featyres.jpg" alt="" title="">
 				</div>
 				<!-- /.sloder-wrap -->
 			</div>
 			<div class="article__descr">
 				<!-- /.article__subtitle -->
 				<div class="article__text">
-					<p class="article__text-top">Удобные планировки квартир, которые удовлетворяют запросы любой семьи </p>
+					<div class="wrap-text-top">
+						<p class="article__text-top">Удобные планировки квартир, которые удовлетворяют запросы любой семьи </p>
+						<p class="article__text-top">которые удовлетворяют запросы любой семьи </p>
+						<p class="article__text-top">Запросы любой семьи </p>
+					</div>
+					<!-- /.wrap-text-top -->
 					<p class="article__text-bottom"><span class="color-accent-block">Выбирая жилье,</span>
 					надо учесть много различных факторов. Но главный из них - счастливое и гармоничное жизни вашей семьи</p>
 					<span class="slider__count">6</span>
@@ -198,7 +204,12 @@
 			<div class="article__descr">
 				<!-- /.article__subtitle -->
 				<div class="article__text">
-					<p class="article__text-top">Собственный парк для вашей семьи</p>
+					<div class="wrap-text-top">
+						<p class="article__text-top">Удобные планировки квартир, которые удовлетворяют запросы любой семьи </p>
+						<p class="article__text-top">которые удовлетворяют запросы любой семьи </p>
+						<p class="article__text-top">Запросы любой семьи </p>
+					</div>
+					<!-- /.wrap-text-top -->
 					<p class="article__text-bottom"><span class="color-accent-block">Гармоничная инфраструктура</span>
 					
 					<span class="color-accent">HOME&PARK</span> создана для семейного счастья.</p>
@@ -255,10 +266,14 @@
 			</div>
 			<div class="article__descr">
 				<div class="article__text">
-					<p class="article__text-top"><span class="fw500  block">СЕМЬЯ</span>
-					Благодаря вниманию к деталям уют и комфорт 
-					вашей семьи обеспечен </p>
-					<!-- <p class="article__text-bottom"></p> -->
+					<div class="wrap-text-top">
+						<p class="article__text-top"><span class="fw500  block">СЕМЬЯ</span>Благодаря вниманию к деталям уют и комфорт вашей семьи обеспечен </p>
+						<p class="article__text-top">которые удовлетворяют запросы любой семьи </p>
+						<p class="article__text-top">Запросы любой семьи </p>
+					</div>
+					<!-- /.wrap-text-top -->
+					
+					<p class="article__text-bottom"></p>
 					<span class="slider__count">6</span>
 				</div>
 				<!-- /.article__text -->
@@ -302,7 +317,12 @@
 			<div class="article__descr">
 				<!-- /.article__subtitle -->
 				<div class="article__text">
-					<p class="article__text-top">Выгодное кредитование</p>
+					<div class="wrap-text-top">
+						<p class="article__text-top">Удобные планировки квартир, которые удовлетворяют запросы любой семьи </p>
+						<p class="article__text-top">которые удовлетворяют запросы любой семьи </p>
+						<p class="article__text-top">Запросы любой семьи </p>
+					</div>
+					<!-- /.wrap-text-top -->
 					<p class="article__text-bottom"><span class="color-accent-block">HOME&PARK предлагает</span>
 					сразу несколько программ лояльности для покупателей:</p>
 					<span class="slider__count">1</span>

@@ -161,8 +161,3 @@ var uri = window.location.href;
 	 })();
 
 })(jQuery);
-
-
-
-
-

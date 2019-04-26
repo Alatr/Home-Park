@@ -243,35 +243,35 @@ new WOW().init();
 			$(window).scroll(checkWindowScroll);
 			$(window).resize(checkWindowScroll);
 	};
-   	var mobileMenu = function() {
+	var mobileMenu = function() {
 
-        // open (or close) submenu items in mobile view menu. 
-        // close all the other open submenu items.
-        $('.header-menu .has-children').children('.menu__title').on('click', function (e) {
-            e.preventDefault();
+			// open (or close) submenu items in mobile view menu. 
+			// close all the other open submenu items.
+			$('.header-menu .has-children').children('.menu__title').on('click', function (e) {
+					e.preventDefault();
 
-            if ($(".menu__word").is(":visible") == true) {
+					if ($(".menu__word").is(":visible") == true) {
 
-                $(this).toggleClass('sub-menu-is-open')
-                    .next('ul')
-                    .slideToggle(200)
-                    .end()
-                    .parent('.has-children')
-                    .siblings('.has-children')
-                    .children('.menu__title')
-                    .removeClass('sub-menu-is-open')
-                    .next('ul')
-                    .slideUp(200);
+							$(this).toggleClass('sub-menu-is-open')
+									.next('ul')
+									.slideToggle(200)
+									.end()
+									.parent('.has-children')
+									.siblings('.has-children')
+									.children('.menu__title')
+									.removeClass('sub-menu-is-open')
+									.next('ul')
+									.slideUp(200);
 
-            }
-        });
+					}
+			});
 
-        $(window).resize(function(){
-        	if ($(window).width() > '768') {
-        		$('.sub-menu').removeAttr('style');
-        	}
-        });
-    };
+			$(window).resize(function(){
+				if ($(window).width() > '768') {
+					$('.sub-menu').removeAttr('style');
+				}
+			});
+	};
 	var mainForm = function(){
 			$('.mainForm__input').on('focus', function () {
 				$(this).parent().addClass('input-focus-js');
@@ -364,7 +364,6 @@ new WOW().init();
 			    }
 			}
 	};
-
 	var footerToggle = function() {
 			var footer = $('.sectionHome__footer'),
 				 footerHeightInner = footer.innerHeight() - 64; // высота footer  на котрую он выезжает 
@@ -375,11 +374,6 @@ new WOW().init();
 			if (winWidth > '768') {
 				footer.css({'position': 'fixed'});
 
-
-
-
-
-
 				// событие выезжающего footer при sroll
 				$(window).scroll(function(){
 					var winPos = $(window).scrollTop(),
@@ -387,33 +381,21 @@ new WOW().init();
 						var hTabs = footer.innerHeight();
 						var prev = footer.prev('div:first')
 					if ($(window).scrollTop()+$(window).height()>=$(document).height() - 50) {
-
-
-
-						//console.log(prev);
 						footer.css({'transform': 'translateY(0px)',});
-						prev.css({'paddingBottom': hTabs});
-
+						// проверка для страницы с картой, т.к там нужно давать padding самой карте
+						var mapDiv = prev.find('#map')
+						if (mapDiv.length != 0){
+							mapDiv.css({'paddingBottom': hTabs});
+						} else {
+							prev.css({'paddingBottom': hTabs});
+						}
 					} else if  (winPos >= scrollOffsetFooter){
 						footer.css({'transform': 'translateY('+ footerHeightInner +'px)'});
 
-						console.log('не конец');
 					} else {
 						footer.css({'transform': 'translateY(100%)'});
 					}
 				});
-
-
-
-
-
-
-
-
-
-
-
-
 				// click on footer and open them
 				footer.on('click', function() {
 					$(this).toggleClass('footer-active');
@@ -439,7 +421,6 @@ new WOW().init();
 	};
 	$(window).resize(footerToggle);
 
-	
 	var dataInput = function () {
 		$.datetimepicker.setLocale('ru');
 		var logic1 = function (currentDateTime) {
@@ -485,8 +466,3 @@ new WOW().init();
 			//changePhoneNumber();
 	 })();
 })(jQuery);
-
-
-
-
-
